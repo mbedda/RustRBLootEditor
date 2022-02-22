@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <PackageIcon></PackageIcon>
+    <ApplicationIcon>hazmat_xQg_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\items.json" />
+    <None Remove="Assets\placeholder.png" />
+    <None Remove="Assets\rust-bg.jpg" />
+    <None Remove="Assets\rustitems.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="hazmat_xQg_icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\rust-bg.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <EmbeddedResource Include="Assets\items.json" />
+    <EmbeddedResource Include="Assets\placeholder.png" />
+    <EmbeddedResource Include="Assets\rustitems.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.42" />
+    <PackageReference Include="Prism.Core" Version="8.1.97" />
+    <PackageReference Include="Prism.Wpf" Version="8.1.97" />
+    <PackageReference Include="SteamWebAPI2" Version="4.3.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="UserControls\" />
+  </ItemGroup>
+
+</Project>
