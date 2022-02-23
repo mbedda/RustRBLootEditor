@@ -6,9 +6,100 @@
     <Application.Resources>
         <Converters:CaseConverter x:Key="CaseConverterToUpper" Case="Upper"/>
         <Converters:CaseConverter x:Key="CaseConverterToLower" Case="Lower"/>
+        <Converters:UriFromShortnameConverter x:Key="UriFromShortnameConverter"/>
+        <Converters:FormatNumberConverter x:Key="FormatNumberConverter"/>
         
         <Style TargetType="{x:Type TextBlock}">
             <Setter Property="FontFamily" Value="Lato Bold"/>
+        </Style>
+
+        <Style TargetType="{x:Type ListBoxItem}" x:Key="inventoryItemStyle">
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="Focusable" Value="False" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="Margin" Value="0" />
+            <Setter Property="Padding" Value="0" />
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="White" />
+                    <Setter Property="BorderBrush" Value="White" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        
+        <Style TargetType="{x:Type Grid}" x:Key="inventoryItemGridStyle">
+            <Setter Property="Background" Value="#33BDBDBD" />
+            <Setter Property="Width" Value="75" />
+            <Setter Property="Height" Value="75" />
+            <Setter Property="Margin" Value="2" />
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding RelativeSource={RelativeSource AncestorType=ListBoxItem}, Path=IsMouseOver}" Value="True">
+                    <Setter Property="Background" Value="#33BDBDBD" />
+                    <Setter Property="Margin" Value="1"/>
+                    <Setter Property="Width" Value="77" />
+                    <Setter Property="Height" Value="77" />
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+        
+        <Style x:Key="ItemsGroupItem" TargetType="{x:Type GroupItem}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Expander Padding="0" BorderThickness="0" Header="{Binding Name}" IsExpanded="True" Margin="0,0,0,20">
+                            <Expander.Style>
+                                <Style TargetType="Expander">
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="Expander" x:Name="exp">
+                                                <Grid>
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="Auto"/>
+                                                        <RowDefinition Name="ContentRow" Height="0"/>
+                                                    </Grid.RowDefinitions>
+                                                    <Border Name="border" Grid.Row="0" Background="{TemplateBinding Background}" BorderThickness="0" CornerRadius="0" >
+                                                        <Grid Background="#33BDBDBD">
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition Width="*" />
+                                                                <ColumnDefinition Width="0" />
+                                                            </Grid.ColumnDefinitions>
+                                                            <!--<ToggleButton x:Name="tb" FontFamily="Marlett" FontSize="9.75" Height="5" Grid.Column="1" 
+                                                                                                  IsChecked="{Binding Path=IsExpanded,Mode=TwoWay,RelativeSource={RelativeSource TemplatedParent}}" />-->
+                                                            <ContentPresenter x:Name="HeaderContent" Grid.Column="0" Margin="0" ContentSource="Header" RecognizesAccessKey="True" />
+                                                        </Grid>
+                                                    </Border>
+                                                    <Border x:Name="Content" Grid.Row="1" BorderThickness="0" CornerRadius="0" >
+                                                        <ContentPresenter Margin="0,4" />
+                                                    </Border>
+                                                </Grid>
+                                                <ControlTemplate.Triggers>
+                                                    <Trigger Property="IsExpanded" Value="True">
+                                                        <Setter TargetName="ContentRow" Property="Height" Value="{Binding ElementName=Content,Path=Height}" />
+                                                        <!--<Setter Property="Content" TargetName="tb" Value="t"></Setter>-->
+                                                    </Trigger>
+                                                </ControlTemplate.Triggers>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Style>
+                            </Expander.Style>
+                            <Expander.HeaderTemplate>
+                                <DataTemplate>
+                                    <Grid  Margin="0,0,0,3" HorizontalAlignment="{Binding Path=HorizontalAlignment, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ContentPresenter}}, Mode=OneWayToSource}" >
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition   />
+                                            <ColumnDefinition  Width="Auto"/>
+                                            <ColumnDefinition  Width="64"/>
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock FontWeight="Bold" Margin="10,7,5,2" FontSize="14" Text="{Binding Converter={StaticResource CaseConverterToUpper}}" Foreground="White" />
+                                    </Grid>
+                                </DataTemplate>
+                            </Expander.HeaderTemplate>
+                            <ItemsPresenter/>
+                        </Expander>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
         </Style>
     </Application.Resources>
 </Application>

@@ -3,9 +3,11 @@ using RustRBLootEditor.Helpers;
 using RustRBLootEditor.Models;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Data;
 
 namespace RustRBLootEditor.ViewModels
@@ -40,11 +42,11 @@ namespace RustRBLootEditor.ViewModels
             set { SetProperty(ref lootTableItemsCollectionView, value); }
         }
 
-        private string activity;
-        public string Activity
+        private string status;
+        public string Status
         {
-            get { return activity; }
-            set { SetProperty(ref activity, value); }
+            get { return status; }
+            set { SetProperty(ref status, value); }
         }
 
         private string filename;
@@ -62,7 +64,47 @@ namespace RustRBLootEditor.ViewModels
             if (AllItems == null)
                 AllItems = new RustItems();
 
-            Activity = "No file loaded...";
+            Status = "No file loaded...";
+        }
+
+        public void LoadFile(string filepath)
+        {
+            LootTableFile = new LootTableFile();
+
+            List<LootItem> tmpLootItems = Common.LoadJson<List<LootItem>>(filepath);
+
+            if (LootTableFile.LootItems != null)
+            {
+                foreach (var item in tmpLootItems)
+                {
+                    RustItem tmpItem = AllItems.GetRustItem(item.shortname);
+
+                    if (tmpItem != null)
+                    {
+                        item.category = tmpItem.category;
+                        item.displayName = tmpItem.displayName;
+                    }
+                    else
+                    {
+                        item.category = "Misc";
+                        item.displayName = item.shortname;
+                    }
+                }
+
+                LootTableFile.LootItems = new ObservableCollection<LootItem>(tmpLootItems);
+            }
+
+            //LootTableItemsCollectionView.Refresh();
+            //UpdateLootTableItemsCollectionView();
+            UpdateStatus();
+        }
+
+        public void Save(string filepath)
+        {
+            //if (DataChanged)
+            //{
+            Common.SaveJson(LootTableFile.LootItems, filepath);
+            //}
         }
 
         public void UpdateAllItemsCollectionView()
@@ -83,72 +125,39 @@ namespace RustRBLootEditor.ViewModels
             LootTableItemsCollectionView.GroupDescriptions.Add(new PropertyGroupDescription("category"));
         }
 
-        public void UpdateActivity()
+        public void UpdateStatus()
         {
             if (LootTableFile == null || LootTableFile.LootItems == null)
             {
-                Activity = "No file loaded...";
+                Status = "No file loaded...";
             }
             else
             {
-                Activity = "Loot table file imported.. " + LootTableFile.LootItems.Count() + " items";
+                Status = "Loot table file imported.. " + LootTableFile.LootItems.Count() + " items";
             }
-        }
-
-        public void LoadFile(string filepath)
-        {
-            LootTableFile = new LootTableFile();
-
-            LootTableFile.LootItems = Common.LoadJson<List<LootItem>>(filepath);
-
-            if (LootTableFile.LootItems != null)
-            {
-                foreach (var item in LootTableFile.LootItems)
-                {
-                    RustItem tmpItem = AllItems.GetItemDetailsByShortname(item.shortname);
-
-                    if (tmpItem != null)
-                    {
-                        item.category = tmpItem.category;
-                        item.displayName = tmpItem.displayName;
-                    }
-                    else
-                    {
-                        item.category = "Misc";
-                        item.displayName = item.shortname;
-                    }
-                }
-
-                //LootTableFile.LootItems = tmpLootItems;
-            }
-
-            //LootTableItemsCollectionView.Refresh();
-            //UpdateLootTableItemsCollectionView();
-            UpdateActivity();
-        }
-
-        public void Save(string filepath)
-        {
-            //if (DataChanged)
-            //{
-            Common.SaveJson(LootTableFile.LootItems, filepath);
-            //}
         }
 
         public void AddLootTableItem(RustItem rustItem)
         {
             if(lootTableFile!=null && lootTableFile.LootItems != null)
             {
-                LootTableFile.LootItems.Add(new LootItem()
-                {
-                    shortname = rustItem.shortName,
-                    displayName = rustItem.displayName,
-                    category = rustItem.category
-                });
+                var tmpitem = lootTableFile.LootItems.FirstOrDefault(s => s.shortname == rustItem.shortName);
 
-                //LootTableItemsCollectionView.Refresh();
-                //UpdateLootTableItemsCollectionView();
-                UpdateActivity();
+                if (tmpitem == null)
+                {
+                    LootTableFile.LootItems.Add(new LootItem()
+                    {
+                        shortname = rustItem.shortName,
+                        displayName = rustItem.displayName,
+                        category = rustItem.category
+                    });
+
+                    UpdateStatus();
+                }
+                else
+                {
+                    MessageBox.Show("Loot table already contains this item.", "Duplicate Item");
+                }
             }
         }
 
@@ -156,11 +165,11 @@ namespace RustRBLootEditor.ViewModels
         {
             if (lootTableFile != null && lootTableFile.LootItems != null)
             {
-                lootTableFile.LootItems.Remove(lootItem);
-
-                //LootTableItemsCollectionView.Refresh();
-                ////UpdateLootTableItemsCollectionView();
-                //UpdateActivity();
+                MessageBoxResult messageBoxResult = MessageBox.Show("Are you sure you would like to delete this item from the Loot Table?", "Delete Confirmation", System.Windows.MessageBoxButton.YesNo);
+                if (messageBoxResult == MessageBoxResult.Yes)
+                {
+                    lootTableFile.LootItems.Remove(lootItem);
+                }
             }
         }
     }

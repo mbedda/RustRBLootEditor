@@ -4,10 +4,12 @@ using System.IO;
 using System.Reflection;
 using System.Runtime.Serialization.Json;
 using System.Text;
+using System.Windows;
+using System.Windows.Media;
 
 namespace RustRBLootEditor.Helpers
 {
-    public class Common
+    public static class Common
     {
         public static bool SaveJson<T>(T theobject, string filePath)
         {
@@ -105,6 +107,43 @@ namespace RustRBLootEditor.Helpers
             }
 
             return result;
+        }
+
+        public static T GetParent<T>(DependencyObject child) where T : DependencyObject
+        {
+            DependencyObject dependencyObject = VisualTreeHelper.GetParent(child);
+
+            if (dependencyObject != null)
+            {
+                T parent = dependencyObject as T;
+
+                if (parent != null)
+                {
+                    return parent;
+                }
+                else
+                {
+                    return GetParent<T>(dependencyObject);
+                }
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public static T GetChildOfType<T>(this DependencyObject depObj) where T : DependencyObject
+        {
+            if (depObj == null) return null;
+
+            for (int i = 0; i < VisualTreeHelper.GetChildrenCount(depObj); i++)
+            {
+                var child = VisualTreeHelper.GetChild(depObj, i);
+
+                var result = (child as T) ?? GetChildOfType<T>(child);
+                if (result != null) return result;
+            }
+            return null;
         }
     }
 }

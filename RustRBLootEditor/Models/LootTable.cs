@@ -1,6 +1,7 @@
 ﻿using Prism.Mvvm;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
@@ -12,11 +13,11 @@ namespace RustRBLootEditor.Models
     {
         public LootTableFile()
         {
-            LootItems = new List<LootItem>();
+            LootItems = new ObservableCollection<LootItem>();
         }
 
-        private List<LootItem> lootItems;
-        public List<LootItem> LootItems
+        private ObservableCollection<LootItem> lootItems;
+        public ObservableCollection<LootItem> LootItems
         {
             get { return lootItems; }
             set { SetProperty(ref lootItems, value); }
@@ -62,9 +63,22 @@ namespace RustRBLootEditor.Models
         }
 
         [IgnoreDataMember]
-        public string category { get; set; }
+        private string _category;
         [IgnoreDataMember]
-        public string displayName { get; set; }
+        public string category
+        {
+            get { return _category; }
+            set { SetProperty(ref _category, value); }
+        }
+
+        [IgnoreDataMember]
+        private string _displayName; 
+        [IgnoreDataMember]
+        public string displayName
+        {
+            get { return _displayName; }
+            set { SetProperty(ref _displayName, value); }
+        }
     }
 
 }

@@ -37,7 +37,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="UserControls\" />
+    <Compile Update="UserControls\LootTableItemsUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="UserControls\LootTableItemsUC.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
 
 </Project>

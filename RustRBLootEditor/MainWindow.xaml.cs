@@ -1,5 +1,6 @@
 ﻿using Microsoft.Win32;
 using RustRBLootEditor.Models;
+using RustRBLootEditor.UI;
 using RustRBLootEditor.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -55,25 +56,6 @@ namespace RustRBLootEditor
 
             if (saveFileDialog.ShowDialog() == true)
                 viewModel.Save(saveFileDialog.FileName);
-        }
-
-        private void Storyboard_Completed(object sender, EventArgs e)
-        {
-
-        }
-
-        private void AllItemsGrid_MouseRightButtonUp(object sender, MouseButtonEventArgs e)
-        {
-            RustItem rustitem = (sender as Grid).DataContext as RustItem;
-
-            viewModel.AddLootTableItem(rustitem);
-        }
-
-        private void LootTableGrid_MouseRightButtonUp(object sender, MouseButtonEventArgs e)
-        {
-            LootItem lootitem = (sender as Grid).DataContext as LootItem;
-
-            viewModel.RemoveLootTableItem(lootitem);
         }
     }
 }
