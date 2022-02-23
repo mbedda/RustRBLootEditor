@@ -43,6 +43,20 @@ namespace RustRBLootEditor.ViewModels
             set { SetProperty(ref _LootItemEditorOn, value); }
         }
 
+        private RustItem _SelectedEditGameItem;
+        public RustItem SelectedEditGameItem
+        {
+            get { return _SelectedEditGameItem; }
+            set { SetProperty(ref _SelectedEditGameItem, value); }
+        }
+
+        private bool _GameItemEditorOn;
+        public bool GameItemEditorOn
+        {
+            get { return _GameItemEditorOn; }
+            set { SetProperty(ref _GameItemEditorOn, value); }
+        }
+
         private string status;
         public string Status
         {
@@ -61,6 +75,10 @@ namespace RustRBLootEditor.ViewModels
         {
             if (AllItems == null)
                 AllItems = new RustItems();
+
+            LootTableFile = new LootTableFile();
+
+            //Common.DownloadImages(AllItems.Items.ToList(), "Assets\\RustItems\\");
 
             Status = "No file loaded...";
         }
@@ -156,6 +174,15 @@ namespace RustRBLootEditor.ViewModels
         public void HideLootItemEditor()
         {
             LootItemEditorOn = false;
+        }
+        public void ShowGameItemEditor(RustItem item)
+        {
+            SelectedEditGameItem = item;
+            GameItemEditorOn = true;
+        }
+        public void HideGameItemEditor()
+        {
+            GameItemEditorOn = false;
         }
     }
 }

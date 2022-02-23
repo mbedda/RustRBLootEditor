@@ -18,15 +18,16 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Grid>
+        <Grid Margin="10,10,10,0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <TextBlock Margin="10,10,10,0" FontWeight="Bold" Foreground="White" FontFamily="Lato Bold">
+            <TextBlock Grid.ColumnSpan="2" FontWeight="Bold" Foreground="White" FontFamily="Lato Bold" VerticalAlignment="Center">
                 LOOT TABLE <Run Text="{Binding MainViewModel.Filename}" Foreground="#9bcf3e"/>
             </TextBlock>
-            <TextBox x:Name="filtertxt" Grid.Column="1" PreviewKeyUp="filtertxt_PreviewKeyUp" Margin="10,0,10,0" Width="150"></TextBox>
+            <TextBox x:Name="filtertxt" Grid.Column="2" PreviewKeyUp="filtertxt_PreviewKeyUp"/>
         </Grid>
         <ListBox x:Name="LootTableItemsListbox" Grid.Row="1" ItemsSource="{Binding Source={StaticResource ListBoxItems}}" ItemContainerStyle="{StaticResource inventoryItemStyle}"
                      SelectionMode="Extended" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
@@ -49,7 +50,8 @@
                 <DataTemplate>
                     <Grid Style="{StaticResource inventoryItemGridStyle}" ToolTip="{Binding displayName}" PreviewMouseLeftButtonUp="Grid_PreviewMouseLeftButtonUp" PreviewMouseRightButtonUp="Grid_PreviewMouseRightButtonUp">
                         <Grid>
-                            <Image Source="{Binding shortname, Converter={StaticResource UriFromShortnameConverter}}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5"></Image>
+                            <!--<Image Source="{Binding shortname, Converter={StaticResource UriFromShortnameConverter}}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5"></Image>-->
+                            <Image Source="{Binding shortname, Converter={StaticResource LocalUriFromShortnameConverter}}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5"></Image>
                             <TextBlock Margin="0,0,5,5" ToolTip="{Binding Path=shortname}" Foreground="White" FontWeight="Bold"
                                        TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Bottom" HorizontalAlignment="Right">
                                     x<Run Text="{Binding amountMin, Converter={StaticResource FormatNumberConverter}}"/>-<Run Text="{Binding amount, Converter={StaticResource FormatNumberConverter}}"/>

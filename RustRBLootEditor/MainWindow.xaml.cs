@@ -1,6 +1,8 @@
 ﻿using Microsoft.Win32;
+using RustRBLootEditor.Helpers;
 using RustRBLootEditor.ViewModels;
 using System;
+using System.Reflection;
 using System.Windows;
 
 namespace RustRBLootEditor
@@ -19,6 +21,10 @@ namespace RustRBLootEditor
             InitializeComponent();
 
             DataContext = viewModel;
+
+            Version version = Assembly.GetExecutingAssembly().GetName().Version;
+
+            Title = Title + " - v" + version.Major + "." + version.Minor + "." + version.Build.ToString();
         }
 
         private void ImportFile_Click(object sender, RoutedEventArgs e)
@@ -46,6 +52,16 @@ namespace RustRBLootEditor
         private void LootItemEdit_PreviewMouseLeftButtonUp(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             viewModel.HideLootItemEditor();
+        }
+
+        private void GameItemEdit_PreviewMouseLeftButtonUp(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            viewModel.HideGameItemEditor();
+        }
+
+        private void SaveGameItems_Click(object sender, RoutedEventArgs e)
+        {
+            Common.SaveJson(viewModel.AllItems.Items, "Assets\\items.json");
         }
     }
 }

@@ -27,5 +27,10 @@ namespace RustRBLootEditor.ViewModels
         {
             MainViewModel.AddLootTableItem(item);
         }
+
+        public void ItemLeftClick(RustItem item)
+        {
+            MainViewModel.ShowGameItemEditor(item);
+        }
     }
 }

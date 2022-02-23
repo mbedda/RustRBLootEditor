@@ -24,6 +24,7 @@
             <TextBlock Text="{Binding Status}" Margin="10" Foreground="White" VerticalAlignment="Center"></TextBlock>
             <TextBox x:Name="FilePathTB" Visibility="Collapsed" Text="D:\Rust Server\Current\oxide\config\Skins.json" VerticalAlignment="Center" Margin="10,10,0,10"/>
             <StackPanel Orientation="Horizontal" Grid.Column="1">
+                <Button x:Name="SaveGameItems" Grid.Column="2" Content="Save Game Items" HorizontalAlignment="Right" Margin="0,10,10,10" Padding="10,5" Click="SaveGameItems_Click" Visibility="Collapsed"/>
                 <Button x:Name="ImportFile" Grid.Column="2" Content="Import" HorizontalAlignment="Right" Margin="0,10,10,10" Padding="10,5" Click="ImportFile_Click"/>
                 <Button x:Name="ExportFile" Grid.Column="2" Content="Export" HorizontalAlignment="Right" Margin="0,10,10,10" Padding="10,5" Click="ExportFile_Click"/>
             </StackPanel>
@@ -42,27 +43,81 @@
             </Grid>
         </Grid>
         <Grid Grid.RowSpan="10" Grid.ColumnSpan="10" Visibility="{Binding LootItemEditorOn, Converter={StaticResource BooleanToVisibilityConverter}}">
-            <Grid Background="#66000000" PreviewMouseLeftButtonUp="LootItemEdit_PreviewMouseLeftButtonUp"></Grid>
-            <StackPanel Width="300" Height="200" VerticalAlignment="Center" HorizontalAlignment="Center" Background="#66000000">
-                <Image Source="{Binding SelectedEditItem.shortname, Converter={StaticResource UriFromShortnameConverter}}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5"></Image>
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.ColumnSpan="10" Background="#66000000" PreviewMouseLeftButtonUp="LootItemEdit_PreviewMouseLeftButtonUp"></Grid>
+            <Grid Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Stretch" Background="#FF564D4D">
+                <StackPanel Margin="10">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel>
+                            <TextBlock Text="{Binding SelectedEditItem.displayName}" FontFamily="Lato Bold" FontSize="16" Margin="0,0,0,10" Foreground="#9bcf3e" TextWrapping="Wrap" />
+                            <TextBlock Text="{Binding SelectedEditItem.shortname}" FontFamily="Lato Bold" FontSize="16" Margin="0,0,0,10" Foreground="White" TextWrapping="Wrap" />
+                        </StackPanel>
+                        <Image Grid.Column="1" Source="{Binding SelectedEditItem.shortname, Converter={StaticResource LocalUriFromShortnameConverter}}" 
+                           Width="75" Height="75"
+                           HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,0,0,10"></Image>
+                    </Grid>
+                    <Grid Margin="0,0,0,10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="10"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel>
+                            <TextBlock Text="Amount Min" FontFamily="Lato" FontSize="14" Foreground="White" FontStyle="Italic" Margin="0,0,0,5"/>
+                            <TextBox Text="{Binding SelectedEditItem.amountMin, UpdateSourceTrigger=PropertyChanged}" FontSize="14" FontFamily="Lato Bold" />
+                        </StackPanel>
+                        <StackPanel Grid.Column="2">
+                            <TextBlock Text="Amount Max" FontFamily="Lato" FontSize="14" Foreground="White" FontStyle="Italic" Margin="0,0,0,5"/>
+                            <TextBox Text="{Binding SelectedEditItem.amount, UpdateSourceTrigger=PropertyChanged}" FontSize="14" FontFamily="Lato Bold" />
+                        </StackPanel>
+                    </Grid>
                     <StackPanel>
-                        <TextBlock Text="Amount Min" FontFamily="Lato Bold" Foreground="White" FontStyle="Italic"/>
-                        <TextBox Text="{Binding SelectedEditItem.amountMin}" FontFamily="Lato Bold" />
+                        <TextBlock Text="Skin" FontFamily="Lato" FontSize="14" Foreground="White" FontStyle="Italic" Margin="0,0,0,5"/>
+                        <TextBox Text="{Binding SelectedEditItem.skin, UpdateSourceTrigger=PropertyChanged}" FontSize="14" FontFamily="Lato Bold" />
                     </StackPanel>
-                    <StackPanel Grid.Column="1">
-                        <TextBlock Text="Amount Max" FontFamily="Lato Bold" Foreground="White" FontStyle="Italic"/>
-                        <TextBox Text="{Binding SelectedEditItem.amount}" FontFamily="Lato Bold" />
+                </StackPanel>
+            </Grid>
+        </Grid>
+        <Grid Grid.RowSpan="10" Grid.ColumnSpan="10" Visibility="{Binding GameItemEditorOn, Converter={StaticResource BooleanToVisibilityConverter}}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.ColumnSpan="10" Background="#66000000" PreviewMouseLeftButtonUp="GameItemEdit_PreviewMouseLeftButtonUp"></Grid>
+            <Grid Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Stretch" Background="#FF564D4D">
+                <StackPanel Margin="10">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel>
+                            <TextBlock Text="{Binding SelectedEditGameItem.displayName}" FontFamily="Lato Bold" FontSize="16" Margin="0,0,0,10" Foreground="#9bcf3e" TextWrapping="Wrap" />
+                            <TextBlock Text="{Binding SelectedEditGameItem.shortName}" FontFamily="Lato Bold" FontSize="16" Margin="0,0,0,10" Foreground="White" TextWrapping="Wrap" />
+                        </StackPanel>
+                        <Image Grid.Column="1" Source="{Binding SelectedEditGameItem.shortName, Converter={StaticResource LocalUriFromShortnameConverter}}" 
+                           Width="75" Height="75"
+                           HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,0,0,10"></Image>
+                    </Grid>
+                    <StackPanel>
+                        <TextBlock Text="Category" FontFamily="Lato" FontSize="14" Foreground="White" FontStyle="Italic" Margin="0,0,0,5"/>
+                        <TextBox Text="{Binding SelectedEditGameItem.category, UpdateSourceTrigger=PropertyChanged}" FontSize="14" FontFamily="Lato Bold" />
                     </StackPanel>
-                </Grid>
-                <TextBlock Text="{Binding SelectedEditItem.displayName}" FontFamily="Lato Bold" />
-                <TextBlock Text="{Binding SelectedEditItem.shortname}" FontFamily="Lato Bold" />
-                <TextBox Text="{Binding SelectedEditItem.skin}" FontFamily="Lato Bold" />
-            </StackPanel>
+                    <StackPanel>
+                        <TextBlock Text="Display Name" FontFamily="Lato" FontSize="14" Foreground="White" FontStyle="Italic" Margin="0,0,0,5"/>
+                        <TextBox Text="{Binding SelectedEditGameItem.displayName, UpdateSourceTrigger=PropertyChanged}" FontSize="14" FontFamily="Lato Bold" />
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
         </Grid>
     </Grid>
 </Window>

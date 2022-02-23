@@ -7,11 +7,22 @@
         <Converters:CaseConverter x:Key="CaseConverterToUpper" Case="Upper"/>
         <Converters:CaseConverter x:Key="CaseConverterToLower" Case="Lower"/>
         <Converters:UriFromShortnameConverter x:Key="UriFromShortnameConverter"/>
+        <Converters:LocalUriFromShortnameConverter x:Key="LocalUriFromShortnameConverter"/>
         <Converters:FormatNumberConverter x:Key="FormatNumberConverter"/>
         <Converters:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
         
         <Style TargetType="{x:Type TextBlock}">
             <Setter Property="FontFamily" Value="Lato Bold"/>
+        </Style>
+        
+        <Style TargetType="{x:Type TextBox}">
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Padding" Value="3,2"/>
+            <Setter Property="FontFamily" Value="Lato Bold"/>
+            <Setter Property="Background" Value="#E5FFFFFF"/>
+            <Setter Property="BorderThickness" Value="3"/>
+            <Setter Property="BorderBrush" Value="#33000000"/>
         </Style>
 
         <Style TargetType="{x:Type ListBoxItem}" x:Key="inventoryItemStyle">

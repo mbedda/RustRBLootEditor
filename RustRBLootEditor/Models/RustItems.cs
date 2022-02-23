@@ -34,7 +34,31 @@ namespace RustRBLootEditor.Models
         public void Load()
         {
             Items = new ObservableCollection<RustItem>(Common.LoadJsonResource<List<RustItem>>("RustRBLootEditor.Assets.items.json"));
+            //SyncShortnames();
         }
+
+        public void SyncShortnames()
+        {
+            foreach(var item in _defaults)
+            {
+                if(Items.FirstOrDefault(s=>s.shortName == item.Key) == null)
+                {
+                    Items.Add(new RustItem() { category = "Unknown", shortName = item.Key, displayName = item.Key, image = new Uri("https://rustlabs.com/img/items180/" + item.Key + ".png") });
+                }
+            }
+
+            for (int i = Items.Count-1; i >= 0; i--)
+            {
+                if (!_defaults.ContainsKey(Items[i].shortName))
+                {
+                    Items.RemoveAt(i);
+                }
+            }
+        }
+
+        private readonly Dictionary<string, int> _defaults = new Dictionary<string, int>
+        {
+        };
     }
 
     public class RustItem : BindableBase

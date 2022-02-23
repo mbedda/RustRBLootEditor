@@ -1,7 +1,10 @@
-﻿using System;
+﻿using RustRBLootEditor.Models;
+using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Net;
 using System.Reflection;
+using System.Resources;
 using System.Runtime.Serialization.Json;
 using System.Text;
 using System.Windows;
@@ -144,6 +147,53 @@ namespace RustRBLootEditor.Helpers
                 if (result != null) return result;
             }
             return null;
+        }
+
+        public static void DownloadImages(List<RustItem> items, string saveLoc)
+        {
+            Directory.CreateDirectory(saveLoc);
+            foreach (var item in items)
+            {
+                using (WebClient client = new WebClient())
+                {
+                    client.DownloadFileAsync(item.image, saveLoc + "\\" + item.shortName + ".png");
+                }
+            }
+        }
+
+
+        public static bool ResourceExists(string resourcePath)
+        {
+            var assembly = Assembly.GetExecutingAssembly();
+
+            return ResourceExists(assembly, resourcePath);
+        }
+
+        public static bool ResourceExists(Assembly assembly, string resourcePath)
+        {
+            var a = new List<object>(GetResourcePaths(assembly));
+            return a.Contains(resourcePath.ToLowerInvariant());
+        }
+
+        public static IEnumerable<object> GetResourcePaths(Assembly assembly)
+        {
+            var culture = System.Threading.Thread.CurrentThread.CurrentCulture;
+            var resourceName = assembly.GetName().Name + ".g";
+            var resourceManager = new ResourceManager(resourceName, assembly);
+
+            try
+            {
+                var resourceSet = resourceManager.GetResourceSet(culture, true, true);
+
+                foreach (System.Collections.DictionaryEntry resource in resourceSet)
+                {
+                    yield return resource.Key;
+                }
+            }
+            finally
+            {
+                resourceManager.ReleaseAllResources();
+            }
         }
     }
 }

@@ -69,15 +69,18 @@ namespace RustRBLootEditor.UserControls
         {
             ICollectionView itemsViewOriginal = (CollectionView)CollectionViewSource.GetDefaultView(LootTableItemsListbox.ItemsSource);
 
-            itemsViewOriginal.Filter = ((o) =>
+            if(itemsViewOriginal != null)
             {
-                if (String.IsNullOrEmpty(filtertxt.Text)) return true;
-                else
+                itemsViewOriginal.Filter = ((o) =>
                 {
-                    if (((LootItem)o).displayName.ToLower().Contains(filtertxt.Text.Trim().ToLower())) return true;
-                    else return false;
-                }
-            });
+                    if (String.IsNullOrEmpty(filtertxt.Text)) return true;
+                    else
+                    {
+                        if (((LootItem)o).displayName.ToLower().Contains(filtertxt.Text.Trim().ToLower())) return true;
+                        else return false;
+                    }
+                });
+            }
         }
 
         private void Grid_PreviewMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
