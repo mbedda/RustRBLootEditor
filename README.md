@@ -6,6 +6,8 @@ UI Loot Tables Editor for [Raidable Bases plugin by Nivex](https://lone.design/p
 
 >This is NOT the official plugin editor and is NOT affiliated with the RB plugin developer.
 
+Download: [v.1.1.0](https://github.com/mbedda/RustRBLootEditor/releases/download/v1.1.0/RustRBLootEditorv1.1.exe)
+
 ## Features
 - Import/Export loot table json file
 - Complete database of game items (Categorized, friendly names and pics)
