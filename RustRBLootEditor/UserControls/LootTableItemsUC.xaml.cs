@@ -79,5 +79,10 @@ namespace RustRBLootEditor.UserControls
                 }
             });
         }
+
+        private void Grid_PreviewMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            viewModel.ItemLeftClick((sender as Grid).DataContext as LootItem);
+        }
     }
 }

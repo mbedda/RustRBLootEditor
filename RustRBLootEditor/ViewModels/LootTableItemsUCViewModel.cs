@@ -27,5 +27,10 @@ namespace RustRBLootEditor.ViewModels
         {
             MainViewModel.RemoveLootTableItem(item);
         }
+
+        public void ItemLeftClick(LootItem lootItem)
+        {
+            MainViewModel.ShowLootItemEditor(lootItem);
+        }
     }
 }

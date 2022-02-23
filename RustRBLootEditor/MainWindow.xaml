@@ -41,5 +41,28 @@
                 <UserControls:LootTableItemsUC MainViewModel="{Binding}" />
             </Grid>
         </Grid>
+        <Grid Grid.RowSpan="10" Grid.ColumnSpan="10" Visibility="{Binding LootItemEditorOn, Converter={StaticResource BooleanToVisibilityConverter}}">
+            <Grid Background="#66000000" PreviewMouseLeftButtonUp="LootItemEdit_PreviewMouseLeftButtonUp"></Grid>
+            <StackPanel Width="300" Height="200" VerticalAlignment="Center" HorizontalAlignment="Center" Background="#66000000">
+                <Image Source="{Binding SelectedEditItem.shortname, Converter={StaticResource UriFromShortnameConverter}}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5"></Image>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel>
+                        <TextBlock Text="Amount Min" FontFamily="Lato Bold" Foreground="White" FontStyle="Italic"/>
+                        <TextBox Text="{Binding SelectedEditItem.amountMin}" FontFamily="Lato Bold" />
+                    </StackPanel>
+                    <StackPanel Grid.Column="1">
+                        <TextBlock Text="Amount Max" FontFamily="Lato Bold" Foreground="White" FontStyle="Italic"/>
+                        <TextBox Text="{Binding SelectedEditItem.amount}" FontFamily="Lato Bold" />
+                    </StackPanel>
+                </Grid>
+                <TextBlock Text="{Binding SelectedEditItem.displayName}" FontFamily="Lato Bold" />
+                <TextBlock Text="{Binding SelectedEditItem.shortname}" FontFamily="Lato Bold" />
+                <TextBox Text="{Binding SelectedEditItem.skin}" FontFamily="Lato Bold" />
+            </StackPanel>
+        </Grid>
     </Grid>
 </Window>

@@ -1,4 +1,5 @@
-﻿using Prism.Mvvm;
+﻿using Prism.Commands;
+using Prism.Mvvm;
 using RustRBLootEditor.Helpers;
 using RustRBLootEditor.Models;
 using System;
@@ -28,18 +29,18 @@ namespace RustRBLootEditor.ViewModels
             set { SetProperty(ref lootTableFile, value); }
         }
 
-        private CollectionView allItemsCollectionView;
-        public CollectionView AllItemsCollectionView
+        private LootItem _SelectedEditItem;
+        public LootItem SelectedEditItem
         {
-            get { return allItemsCollectionView; }
-            set { SetProperty(ref allItemsCollectionView, value); }
+            get { return _SelectedEditItem; }
+            set { SetProperty(ref _SelectedEditItem, value); }
         }
 
-        private CollectionView lootTableItemsCollectionView;
-        public CollectionView LootTableItemsCollectionView
+        private bool _LootItemEditorOn;
+        public bool LootItemEditorOn
         {
-            get { return lootTableItemsCollectionView; }
-            set { SetProperty(ref lootTableItemsCollectionView, value); }
+            get { return _LootItemEditorOn; }
+            set { SetProperty(ref _LootItemEditorOn, value); }
         }
 
         private string status;
@@ -58,9 +59,6 @@ namespace RustRBLootEditor.ViewModels
 
         public MainViewModel()
         {
-            UpdateAllItemsCollectionView();
-            UpdateLootTableItemsCollectionView();
-
             if (AllItems == null)
                 AllItems = new RustItems();
 
@@ -94,35 +92,12 @@ namespace RustRBLootEditor.ViewModels
                 LootTableFile.LootItems = new ObservableCollection<LootItem>(tmpLootItems);
             }
 
-            //LootTableItemsCollectionView.Refresh();
-            //UpdateLootTableItemsCollectionView();
             UpdateStatus();
         }
 
         public void Save(string filepath)
         {
-            //if (DataChanged)
-            //{
             Common.SaveJson(LootTableFile.LootItems, filepath);
-            //}
-        }
-
-        public void UpdateAllItemsCollectionView()
-        {
-            if (AllItems == null)
-                AllItems = new RustItems();
-
-            AllItemsCollectionView = (CollectionView)CollectionViewSource.GetDefaultView(AllItems.Items);
-            AllItemsCollectionView.GroupDescriptions.Add(new PropertyGroupDescription("category"));
-        }
-
-        public void UpdateLootTableItemsCollectionView()
-        {
-            if (LootTableFile == null)
-                LootTableFile = new LootTableFile();
-
-            LootTableItemsCollectionView = (CollectionView)CollectionViewSource.GetDefaultView(LootTableFile.LootItems);
-            LootTableItemsCollectionView.GroupDescriptions.Add(new PropertyGroupDescription("category"));
         }
 
         public void UpdateStatus()
@@ -139,7 +114,7 @@ namespace RustRBLootEditor.ViewModels
 
         public void AddLootTableItem(RustItem rustItem)
         {
-            if(lootTableFile!=null && lootTableFile.LootItems != null)
+            if (lootTableFile != null && lootTableFile.LootItems != null)
             {
                 var tmpitem = lootTableFile.LootItems.FirstOrDefault(s => s.shortname == rustItem.shortName);
 
@@ -171,6 +146,16 @@ namespace RustRBLootEditor.ViewModels
                     lootTableFile.LootItems.Remove(lootItem);
                 }
             }
+        }
+
+        public void ShowLootItemEditor(LootItem lootItem)
+        {
+            SelectedEditItem = lootItem;
+            LootItemEditorOn = true;
+        }
+        public void HideLootItemEditor()
+        {
+            LootItemEditorOn = false;
         }
     }
 }

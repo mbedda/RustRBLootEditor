@@ -47,10 +47,10 @@
             </ListBox.GroupStyle>
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <Grid Style="{StaticResource inventoryItemGridStyle}" ToolTip="{Binding displayName}" MouseRightButtonUp="Grid_PreviewMouseRightButtonUp">
+                    <Grid Style="{StaticResource inventoryItemGridStyle}" ToolTip="{Binding displayName}" PreviewMouseLeftButtonUp="Grid_PreviewMouseLeftButtonUp" PreviewMouseRightButtonUp="Grid_PreviewMouseRightButtonUp">
                         <Grid>
                             <Image Source="{Binding shortname, Converter={StaticResource UriFromShortnameConverter}}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5"></Image>
-                            <TextBlock Margin="0,0,5,5" ToolTip="{Binding Path=shortName}" Foreground="White" FontWeight="Bold"
+                            <TextBlock Margin="0,0,5,5" ToolTip="{Binding Path=shortname}" Foreground="White" FontWeight="Bold"
                                        TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Bottom" HorizontalAlignment="Right">
                                     x<Run Text="{Binding amountMin, Converter={StaticResource FormatNumberConverter}}"/>-<Run Text="{Binding amount, Converter={StaticResource FormatNumberConverter}}"/>
                             </TextBlock>
