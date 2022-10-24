@@ -5108,5 +5108,82 @@
     "id": null,
     "image": "https:\/\/rustlabs.com\/img\/items180\/rifle.ak.ice.png",
     "shortName": "rifle.ak.ice"
+  },
+  {
+    "category": "Attire",
+    "displayName": "Lumberjack Suit",
+    "id": null,
+    "image": "https:\/\/rustlabs.com\/img\/skins\/324\/10211.png",
+    "shortName": "hazmatsuit.lumberjack"
+  },
+  {
+    "category": "Weapon",
+    "displayName": "Extended Magazine",
+    "id": null,
+    "image": "https:\/\/rustlabs.com\/img\/items180\/weapon.mod.extendedmags.png",
+    "shortName": "weapon.mod.extendedmags"
+  },
+  {
+    "category": "Weapon",
+    "displayName": "Flashbang",
+    "id": null,
+    "image": "https:\/\/rustlabs.com\/img\/items180\/grenade.flashbang.png",
+    "shortName": "grenade.flashbang"
+  },
+  {
+    "category": "Weapon",
+    "displayName": "Molotov Cocktail",
+    "id": null,
+    "image": "https:\/\/rustlabs.com\/img\/items180\/grenade.molotov.png",
+    "shortName": "grenade.molotov"
+  },
+  {
+    "category": "Tool",
+    "displayName": "Lumberjack Hatchet",
+    "id": null,
+    "image": "https:\/\/rustlabs.com\/img\/items180\/lumberjack.hatchet.png",
+    "shortName": "lumberjack.hatchet"
+  },
+  {
+    "category": "Tool",
+    "displayName": "Lumberjack Pickaxe",
+    "id": null,
+    "image": "https:\/\/rustlabs.com\/img\/items180\/lumberjack.pickaxe.png",
+    "shortName": "lumberjack.pickaxe"
+  },
+  {
+    "category": "Tool",
+    "displayName": "Concrete Hatchet",
+    "id": null,
+    "image": "https:\/\/rustlabs.com\/img\/items180\/concretehatchet.png",
+    "shortName": "concretehatchet"
+  },
+  {
+    "category": "Tool",
+    "displayName": "Concrete Pickaxe",
+    "id": null,
+    "image": "https:\/\/rustlabs.com\/img\/items180\/concretepickaxe.png",
+    "shortName": "concretepickaxe"
+  },
+  {
+    "category": "Tool",
+    "displayName": "Baseball Bat",
+    "id": null,
+    "image": "https:\/\/rustlabs.com\/img\/items180\/mace.baseballbat.png",
+    "shortName": "mace.baseballbat"
+  },
+  {
+    "category": "Tool",
+    "displayName": "Cultist Deer Torch",
+    "id": null,
+    "image": "https:\/\/rustlabs.com\/img\/items180\/torch.torch.skull.png",
+    "shortName": "torch.torch.skull"
+  },
+  {
+    "category": "Attire",
+    "displayName": "Hockey Mask",
+    "id": null,
+    "image": "https:\/\/rustlabs.com\/img\/items180\/metal.facemask.hockey.png",
+    "shortName": "metal.facemask.hockey"
   }
 ]

@@ -7,9 +7,13 @@
     <UseWPF>true</UseWPF>
     <PackageIcon></PackageIcon>
     <ApplicationIcon>hazmat_xQg_icon.ico</ApplicationIcon>
-    <FileVersion>1.1.0.0</FileVersion>
-    <AssemblyVersion>1.1.0.0</AssemblyVersion>
-    <Version>$(VersionPrefix)1.1.0.0</Version>
+    <FileVersion>1.2.0.0</FileVersion>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
+    <Version>$(VersionPrefix)1.2.0.0</Version>
+    <Authors>beee</Authors>
+    <PackageProjectUrl>https://github.com/mbedda/RustRBLootEditor</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/mbedda/RustRBLootEditor.git</RepositoryUrl>
+    <PackageLicenseFile>C:\Users\mbedd\source\repos\RustRBLootEditor\RustRBLootEditor\MIT-License.txt</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -156,6 +160,8 @@
     <None Remove="Assets\RustItems\coffin.storage.png" />
     <None Remove="Assets\RustItems\composter.png" />
     <None Remove="Assets\RustItems\computerstation.png" />
+    <None Remove="Assets\RustItems\concretehatchet.png" />
+    <None Remove="Assets\RustItems\concretepickaxe.png" />
     <None Remove="Assets\RustItems\connected.speaker.png" />
     <None Remove="Assets\RustItems\corn.png" />
     <None Remove="Assets\RustItems\crankshaft1.png" />
@@ -320,6 +326,8 @@
     <None Remove="Assets\RustItems\green.berry.png" />
     <None Remove="Assets\RustItems\grenade.beancan.png" />
     <None Remove="Assets\RustItems\grenade.f1.png" />
+    <None Remove="Assets\RustItems\grenade.flashbang.png" />
+    <None Remove="Assets\RustItems\grenade.molotov.png" />
     <None Remove="Assets\RustItems\grenade.smoke.png" />
     <None Remove="Assets\RustItems\grub.png" />
     <None Remove="Assets\RustItems\gun.water.png" />
@@ -348,6 +356,7 @@
     <None Remove="Assets\RustItems\hat.wolf.png" />
     <None Remove="Assets\RustItems\hatchet.png" />
     <None Remove="Assets\RustItems\hazmatsuit.arcticsuit.png" />
+    <None Remove="Assets\RustItems\hazmatsuit.lumberjack.png" />
     <None Remove="Assets\RustItems\hazmatsuit.nomadsuit.png" />
     <None Remove="Assets\RustItems\hazmatsuit.png" />
     <None Remove="Assets\RustItems\hazmatsuit.spacesuit.png" />
@@ -414,7 +423,10 @@
     <None Remove="Assets\RustItems\longsword.png" />
     <None Remove="Assets\RustItems\lowgradefuel.png" />
     <None Remove="Assets\RustItems\lumberjack hoodie.png" />
+    <None Remove="Assets\RustItems\lumberjack.hatchet.png" />
+    <None Remove="Assets\RustItems\lumberjack.pickaxe.png" />
     <None Remove="Assets\RustItems\lunar.firecrackers.png" />
+    <None Remove="Assets\RustItems\mace.baseballbat.png" />
     <None Remove="Assets\RustItems\mace.png" />
     <None Remove="Assets\RustItems\machete.png" />
     <None Remove="Assets\RustItems\mailbox.png" />
@@ -428,6 +440,7 @@
     <None Remove="Assets\RustItems\meat.pork.burned.png" />
     <None Remove="Assets\RustItems\meat.pork.cooked.png" />
     <None Remove="Assets\RustItems\megaphone.png" />
+    <None Remove="Assets\RustItems\metal.facemask.hockey.png" />
     <None Remove="Assets\RustItems\metal.facemask.png" />
     <None Remove="Assets\RustItems\metal.fragments.png" />
     <None Remove="Assets\RustItems\metal.ore.png" />
@@ -670,6 +683,7 @@
     <None Remove="Assets\RustItems\tool.instant_camera.png" />
     <None Remove="Assets\RustItems\toolgun.png" />
     <None Remove="Assets\RustItems\torch.png" />
+    <None Remove="Assets\RustItems\torch.torch.skull.png" />
     <None Remove="Assets\RustItems\trap.bear.png" />
     <None Remove="Assets\RustItems\trap.landmine.png" />
     <None Remove="Assets\RustItems\tshirt.long.png" />
@@ -724,6 +738,7 @@
     <None Remove="Assets\RustItems\waterjug.png" />
     <None Remove="Assets\RustItems\waterpump.png" />
     <None Remove="Assets\RustItems\weapon.mod.8x.scope.png" />
+    <None Remove="Assets\RustItems\weapon.mod.extendedmags.png" />
     <None Remove="Assets\RustItems\weapon.mod.flashlight.png" />
     <None Remove="Assets\RustItems\weapon.mod.holosight.png" />
     <None Remove="Assets\RustItems\weapon.mod.lasersight.png" />
@@ -925,6 +940,8 @@
     <Resource Include="Assets\RustItems\coffin.storage.png" />
     <Resource Include="Assets\RustItems\composter.png" />
     <Resource Include="Assets\RustItems\computerstation.png" />
+    <Resource Include="Assets\RustItems\concretehatchet.png" />
+    <Resource Include="Assets\RustItems\concretepickaxe.png" />
     <Resource Include="Assets\RustItems\connected.speaker.png" />
     <Resource Include="Assets\RustItems\corn.png" />
     <Resource Include="Assets\RustItems\crankshaft1.png" />
@@ -1089,6 +1106,8 @@
     <Resource Include="Assets\RustItems\green.berry.png" />
     <Resource Include="Assets\RustItems\grenade.beancan.png" />
     <Resource Include="Assets\RustItems\grenade.f1.png" />
+    <Resource Include="Assets\RustItems\grenade.flashbang.png" />
+    <Resource Include="Assets\RustItems\grenade.molotov.png" />
     <Resource Include="Assets\RustItems\grenade.smoke.png" />
     <Resource Include="Assets\RustItems\grub.png" />
     <Resource Include="Assets\RustItems\gun.water.png" />
@@ -1117,6 +1136,7 @@
     <Resource Include="Assets\RustItems\hat.wolf.png" />
     <Resource Include="Assets\RustItems\hatchet.png" />
     <Resource Include="Assets\RustItems\hazmatsuit.arcticsuit.png" />
+    <Resource Include="Assets\RustItems\hazmatsuit.lumberjack.png" />
     <Resource Include="Assets\RustItems\hazmatsuit.nomadsuit.png" />
     <Resource Include="Assets\RustItems\hazmatsuit.png" />
     <Resource Include="Assets\RustItems\hazmatsuit.spacesuit.png" />
@@ -1183,7 +1203,10 @@
     <Resource Include="Assets\RustItems\longsword.png" />
     <Resource Include="Assets\RustItems\lowgradefuel.png" />
     <Resource Include="Assets\RustItems\lumberjack hoodie.png" />
+    <Resource Include="Assets\RustItems\lumberjack.hatchet.png" />
+    <Resource Include="Assets\RustItems\lumberjack.pickaxe.png" />
     <Resource Include="Assets\RustItems\lunar.firecrackers.png" />
+    <Resource Include="Assets\RustItems\mace.baseballbat.png" />
     <Resource Include="Assets\RustItems\mace.png" />
     <Resource Include="Assets\RustItems\machete.png" />
     <Resource Include="Assets\RustItems\mailbox.png" />
@@ -1197,6 +1220,7 @@
     <Resource Include="Assets\RustItems\meat.pork.burned.png" />
     <Resource Include="Assets\RustItems\meat.pork.cooked.png" />
     <Resource Include="Assets\RustItems\megaphone.png" />
+    <Resource Include="Assets\RustItems\metal.facemask.hockey.png" />
     <Resource Include="Assets\RustItems\metal.facemask.png" />
     <Resource Include="Assets\RustItems\metal.fragments.png" />
     <Resource Include="Assets\RustItems\metal.ore.png" />
@@ -1439,6 +1463,7 @@
     <Resource Include="Assets\RustItems\tool.instant_camera.png" />
     <Resource Include="Assets\RustItems\toolgun.png" />
     <Resource Include="Assets\RustItems\torch.png" />
+    <Resource Include="Assets\RustItems\torch.torch.skull.png" />
     <Resource Include="Assets\RustItems\trap.bear.png" />
     <Resource Include="Assets\RustItems\trap.landmine.png" />
     <Resource Include="Assets\RustItems\tshirt.long.png" />
@@ -1493,6 +1518,7 @@
     <Resource Include="Assets\RustItems\waterjug.png" />
     <Resource Include="Assets\RustItems\waterpump.png" />
     <Resource Include="Assets\RustItems\weapon.mod.8x.scope.png" />
+    <Resource Include="Assets\RustItems\weapon.mod.extendedmags.png" />
     <Resource Include="Assets\RustItems\weapon.mod.flashlight.png" />
     <Resource Include="Assets\RustItems\weapon.mod.holosight.png" />
     <Resource Include="Assets\RustItems\weapon.mod.lasersight.png" />
