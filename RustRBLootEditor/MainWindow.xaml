@@ -25,8 +25,8 @@
             <TextBox x:Name="FilePathTB" Visibility="Collapsed" Text="D:\Rust Server\Current\oxide\config\Skins.json" VerticalAlignment="Center" Margin="10,10,0,10"/>
             <StackPanel Orientation="Horizontal" Grid.Column="1">
                 <Button x:Name="SaveGameItems" Grid.Column="2" Content="Save Game Items" HorizontalAlignment="Right" Margin="0,10,10,10" Padding="10,5" Click="SaveGameItems_Click" Visibility="Collapsed"/>
-                <Button x:Name="ImportFile" Grid.Column="2" Content="Import" HorizontalAlignment="Right" Margin="0,10,10,10" Padding="10,5" Click="ImportFile_Click"/>
-                <Button x:Name="ExportFile" Grid.Column="2" Content="Export" HorizontalAlignment="Right" Margin="0,10,10,10" Padding="10,5" Click="ExportFile_Click"/>
+                <Button x:Name="ImportFile" Grid.Column="2" Content="Load" HorizontalAlignment="Right" Margin="0,10,10,10" Padding="10,5" Click="ImportFile_Click"/>
+                <Button x:Name="ExportFile" Grid.Column="2" Content="Save" HorizontalAlignment="Right" Margin="0,10,10,10" Padding="10,5" Click="ExportFile_Click"/>
             </StackPanel>
         </Grid>
         <Grid Grid.Row="2" Background="#4C222222">
@@ -60,7 +60,7 @@
                             <TextBlock Text="{Binding SelectedEditItem.displayName}" FontFamily="Lato Bold" FontSize="16" Margin="0,0,0,10" Foreground="#9bcf3e" TextWrapping="Wrap" />
                             <TextBlock Text="{Binding SelectedEditItem.shortname}" FontFamily="Lato Bold" FontSize="16" Margin="0,0,0,10" Foreground="White" TextWrapping="Wrap" />
                         </StackPanel>
-                        <Image Grid.Column="1" Source="{Binding SelectedEditItem.shortname, Converter={StaticResource LocalUriFromShortnameConverter}}" 
+                        <Image Grid.Column="1" Source="{Binding SelectedEditItem.shortname, Converter={StaticResource RelativeUriFromShortnameConverter}}" 
                            Width="75" Height="75"
                            HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,0,0,10"></Image>
                     </Grid>
@@ -104,7 +104,7 @@
                             <TextBlock Text="{Binding SelectedEditGameItem.displayName}" FontFamily="Lato Bold" FontSize="16" Margin="0,0,0,10" Foreground="#9bcf3e" TextWrapping="Wrap" />
                             <TextBlock Text="{Binding SelectedEditGameItem.shortName}" FontFamily="Lato Bold" FontSize="16" Margin="0,0,0,10" Foreground="White" TextWrapping="Wrap" />
                         </StackPanel>
-                        <Image Grid.Column="1" Source="{Binding SelectedEditGameItem.shortName, Converter={StaticResource LocalUriFromShortnameConverter}}" 
+                        <Image Grid.Column="1" Source="{Binding SelectedEditGameItem.shortName, Converter={StaticResource RelativeUriFromShortnameConverter}}" 
                            Width="75" Height="75"
                            HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,0,0,10"></Image>
                     </Grid>

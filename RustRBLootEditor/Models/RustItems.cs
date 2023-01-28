@@ -4,7 +4,9 @@ using RustRBLootEditor.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
@@ -33,7 +35,14 @@ namespace RustRBLootEditor.Models
 
         public void Load()
         {
-            Items = new ObservableCollection<RustItem>(Common.LoadJsonResource<List<RustItem>>("RustRBLootEditor.Assets.items.json"));
+            string debugpath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+            string jsonpath = Path.Combine(debugpath, "Assets", "items.json");
+
+            if (File.Exists(jsonpath))
+            {
+                Items = new ObservableCollection<RustItem>(Common.LoadJson<List<RustItem>>(jsonpath));
+            }
+            //Items = new ObservableCollection<RustItem>(Common.LoadJsonResource<List<RustItem>>("RustRBLootEditor.Assets.items.json"));
             //SyncShortnames();
         }
 

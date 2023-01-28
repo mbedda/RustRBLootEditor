@@ -7,9 +7,9 @@
     <UseWPF>true</UseWPF>
     <PackageIcon></PackageIcon>
     <ApplicationIcon>hazmat_xQg_icon.ico</ApplicationIcon>
-    <FileVersion>1.2.0.0</FileVersion>
-    <AssemblyVersion>1.2.0.0</AssemblyVersion>
-    <Version>$(VersionPrefix)1.2.0.0</Version>
+    <FileVersion>1.3.0.0</FileVersion>
+    <AssemblyVersion>1.3.0.0</AssemblyVersion>
+    <Version>$(VersionPrefix)1.3.0.0</Version>
     <Authors>beee</Authors>
     <PackageProjectUrl>https://github.com/mbedda/RustRBLootEditor</PackageProjectUrl>
     <RepositoryUrl>https://github.com/mbedda/RustRBLootEditor.git</RepositoryUrl>
@@ -798,775 +798,2313 @@
     <Resource Include="Assets\rust-bg.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <EmbeddedResource Include="Assets\items.json" />
-    <Resource Include="Assets\RustItems\abovegroundpool.png" />
-    <Resource Include="Assets\RustItems\aiming.module.mlrs.png" />
-    <Resource Include="Assets\RustItems\ammo.grenadelauncher.buckshot.png" />
-    <Resource Include="Assets\RustItems\ammo.grenadelauncher.he.png" />
-    <Resource Include="Assets\RustItems\ammo.grenadelauncher.smoke.png" />
-    <Resource Include="Assets\RustItems\ammo.handmade.shell.png" />
-    <Resource Include="Assets\RustItems\ammo.nailgun.nails.png" />
-    <Resource Include="Assets\RustItems\ammo.pistol.fire.png" />
-    <Resource Include="Assets\RustItems\ammo.pistol.hv.png" />
-    <Resource Include="Assets\RustItems\ammo.pistol.png" />
-    <Resource Include="Assets\RustItems\ammo.rifle.explosive.png" />
-    <Resource Include="Assets\RustItems\ammo.rifle.hv.png" />
-    <Resource Include="Assets\RustItems\ammo.rifle.incendiary.png" />
-    <Resource Include="Assets\RustItems\ammo.rifle.png" />
-    <Resource Include="Assets\RustItems\ammo.rocket.basic.png" />
-    <Resource Include="Assets\RustItems\ammo.rocket.fire.png" />
-    <Resource Include="Assets\RustItems\ammo.rocket.hv.png" />
-    <Resource Include="Assets\RustItems\ammo.rocket.mlrs.png" />
-    <Resource Include="Assets\RustItems\ammo.rocket.sam.png" />
-    <Resource Include="Assets\RustItems\ammo.rocket.smoke.png" />
-    <Resource Include="Assets\RustItems\ammo.shotgun.fire.png" />
-    <Resource Include="Assets\RustItems\ammo.shotgun.png" />
-    <Resource Include="Assets\RustItems\ammo.shotgun.slug.png" />
-    <Resource Include="Assets\RustItems\ammo.snowballgun.png" />
-    <Resource Include="Assets\RustItems\antiradpills.png" />
-    <Resource Include="Assets\RustItems\apple.png" />
-    <Resource Include="Assets\RustItems\apple.spoiled.png" />
-    <Resource Include="Assets\RustItems\arcade.machine.chippy.png" />
-    <Resource Include="Assets\RustItems\arrow.bone.png" />
-    <Resource Include="Assets\RustItems\arrow.fire.png" />
-    <Resource Include="Assets\RustItems\arrow.hv.png" />
-    <Resource Include="Assets\RustItems\arrow.wooden.png" />
-    <Resource Include="Assets\RustItems\attire.banditguard.png" />
-    <Resource Include="Assets\RustItems\attire.bunny.onesie.png" />
-    <Resource Include="Assets\RustItems\attire.bunnyears.png" />
-    <Resource Include="Assets\RustItems\attire.hide.boots.png" />
-    <Resource Include="Assets\RustItems\attire.hide.helterneck.png" />
-    <Resource Include="Assets\RustItems\attire.hide.pants.png" />
-    <Resource Include="Assets\RustItems\attire.hide.poncho.png" />
-    <Resource Include="Assets\RustItems\attire.hide.skirt.png" />
-    <Resource Include="Assets\RustItems\attire.hide.vest.png" />
-    <Resource Include="Assets\RustItems\attire.nesthat.png" />
-    <Resource Include="Assets\RustItems\attire.ninja.suit.png" />
-    <Resource Include="Assets\RustItems\attire.reindeer.headband.png" />
-    <Resource Include="Assets\RustItems\attire.snowman.helmet.png" />
-    <Resource Include="Assets\RustItems\autoturret.png" />
-    <Resource Include="Assets\RustItems\axe.salvaged.png" />
-    <Resource Include="Assets\RustItems\bandage.png" />
-    <Resource Include="Assets\RustItems\barrelcostume.png" />
-    <Resource Include="Assets\RustItems\barricade.concrete.png" />
-    <Resource Include="Assets\RustItems\barricade.metal.png" />
-    <Resource Include="Assets\RustItems\barricade.sandbags.png" />
-    <Resource Include="Assets\RustItems\barricade.stone.png" />
-    <Resource Include="Assets\RustItems\barricade.wood.cover.png" />
-    <Resource Include="Assets\RustItems\barricade.wood.png" />
-    <Resource Include="Assets\RustItems\barricade.woodwire.png" />
-    <Resource Include="Assets\RustItems\battery.small.png" />
-    <Resource Include="Assets\RustItems\bbq.png" />
-    <Resource Include="Assets\RustItems\beachchair.png" />
-    <Resource Include="Assets\RustItems\beachparasol.png" />
-    <Resource Include="Assets\RustItems\beachtable.png" />
-    <Resource Include="Assets\RustItems\beachtowel.png" />
-    <Resource Include="Assets\RustItems\bearmeat.burned.png" />
-    <Resource Include="Assets\RustItems\bearmeat.cooked.png" />
-    <Resource Include="Assets\RustItems\bearmeat.png" />
-    <Resource Include="Assets\RustItems\bed.png" />
-    <Resource Include="Assets\RustItems\black.berry.png" />
-    <Resource Include="Assets\RustItems\black.raspberries.png" />
-    <Resource Include="Assets\RustItems\bleach.png" />
-    <Resource Include="Assets\RustItems\blood.png" />
-    <Resource Include="Assets\RustItems\blue.berry.png" />
-    <Resource Include="Assets\RustItems\blueberries.png" />
-    <Resource Include="Assets\RustItems\blueprintbase.png" />
-    <Resource Include="Assets\RustItems\bone.armor.suit.png" />
-    <Resource Include="Assets\RustItems\bone.club.png" />
-    <Resource Include="Assets\RustItems\bone.fragments.png" />
-    <Resource Include="Assets\RustItems\boogieboard.png" />
-    <Resource Include="Assets\RustItems\boombox.png" />
-    <Resource Include="Assets\RustItems\boots.frog.png" />
-    <Resource Include="Assets\RustItems\botabag.png" />
-    <Resource Include="Assets\RustItems\bottle.vodka.png" />
-    <Resource Include="Assets\RustItems\bow.compound.png" />
-    <Resource Include="Assets\RustItems\bow.hunting.png" />
-    <Resource Include="Assets\RustItems\box.repair.bench.png" />
-    <Resource Include="Assets\RustItems\box.wooden.large.png" />
-    <Resource Include="Assets\RustItems\box.wooden.png" />
-    <Resource Include="Assets\RustItems\bucket.helmet.png" />
-    <Resource Include="Assets\RustItems\bucket.water.png" />
-    <Resource Include="Assets\RustItems\building.planner.png" />
-    <Resource Include="Assets\RustItems\burlap.gloves.new.png" />
-    <Resource Include="Assets\RustItems\burlap.gloves.png" />
-    <Resource Include="Assets\RustItems\burlap.headwrap.png" />
-    <Resource Include="Assets\RustItems\burlap.shirt.png" />
-    <Resource Include="Assets\RustItems\burlap.shoes.png" />
-    <Resource Include="Assets\RustItems\burlap.trousers.png" />
-    <Resource Include="Assets\RustItems\cactusflesh.png" />
-    <Resource Include="Assets\RustItems\cakefiveyear.png" />
-    <Resource Include="Assets\RustItems\campfire.png" />
-    <Resource Include="Assets\RustItems\can.beans.empty.png" />
-    <Resource Include="Assets\RustItems\can.beans.png" />
-    <Resource Include="Assets\RustItems\can.tuna.empty.png" />
-    <Resource Include="Assets\RustItems\can.tuna.png" />
-    <Resource Include="Assets\RustItems\candycane.png" />
-    <Resource Include="Assets\RustItems\candycaneclub.png" />
-    <Resource Include="Assets\RustItems\captainslog.png" />
-    <Resource Include="Assets\RustItems\car.key.png" />
-    <Resource Include="Assets\RustItems\carburetor1.png" />
-    <Resource Include="Assets\RustItems\carburetor2.png" />
-    <Resource Include="Assets\RustItems\carburetor3.png" />
-    <Resource Include="Assets\RustItems\carvable.pumpkin.png" />
-    <Resource Include="Assets\RustItems\cassette.medium.png" />
-    <Resource Include="Assets\RustItems\cassette.png" />
-    <Resource Include="Assets\RustItems\cassette.short.png" />
-    <Resource Include="Assets\RustItems\cctv.camera.png" />
-    <Resource Include="Assets\RustItems\ceilinglight.png" />
-    <Resource Include="Assets\RustItems\chainsaw.png" />
-    <Resource Include="Assets\RustItems\chair.png" />
-    <Resource Include="Assets\RustItems\charcoal.png" />
-    <Resource Include="Assets\RustItems\chicken.burned.png" />
-    <Resource Include="Assets\RustItems\chicken.cooked.png" />
-    <Resource Include="Assets\RustItems\chicken.raw.png" />
-    <Resource Include="Assets\RustItems\chicken.spoiled.png" />
-    <Resource Include="Assets\RustItems\chineselantern.png" />
-    <Resource Include="Assets\RustItems\chocholate.png" />
-    <Resource Include="Assets\RustItems\clatter.helmet.png" />
-    <Resource Include="Assets\RustItems\clone.black.berry.png" />
-    <Resource Include="Assets\RustItems\clone.blue.berry.png" />
-    <Resource Include="Assets\RustItems\clone.corn.png" />
-    <Resource Include="Assets\RustItems\clone.green.berry.png" />
-    <Resource Include="Assets\RustItems\clone.hemp.png" />
-    <Resource Include="Assets\RustItems\clone.potato.png" />
-    <Resource Include="Assets\RustItems\clone.pumpkin.png" />
-    <Resource Include="Assets\RustItems\clone.red.berry.png" />
-    <Resource Include="Assets\RustItems\clone.white.berry.png" />
-    <Resource Include="Assets\RustItems\clone.yellow.berry.png" />
-    <Resource Include="Assets\RustItems\cloth.png" />
-    <Resource Include="Assets\RustItems\coal.png" />
-    <Resource Include="Assets\RustItems\coffeecan.helmet.png" />
-    <Resource Include="Assets\RustItems\coffin.storage.png" />
-    <Resource Include="Assets\RustItems\composter.png" />
-    <Resource Include="Assets\RustItems\computerstation.png" />
-    <Resource Include="Assets\RustItems\concretehatchet.png" />
-    <Resource Include="Assets\RustItems\concretepickaxe.png" />
-    <Resource Include="Assets\RustItems\connected.speaker.png" />
-    <Resource Include="Assets\RustItems\corn.png" />
-    <Resource Include="Assets\RustItems\crankshaft1.png" />
-    <Resource Include="Assets\RustItems\crankshaft2.png" />
-    <Resource Include="Assets\RustItems\crankshaft3.png" />
-    <Resource Include="Assets\RustItems\cratecostume.png" />
-    <Resource Include="Assets\RustItems\crossbow.png" />
-    <Resource Include="Assets\RustItems\crude.oil.png" />
-    <Resource Include="Assets\RustItems\cupboard.tool.png" />
-    <Resource Include="Assets\RustItems\cursedcauldron.png" />
-    <Resource Include="Assets\RustItems\deer.skull.mask.png" />
-    <Resource Include="Assets\RustItems\deermeat.burned.png" />
-    <Resource Include="Assets\RustItems\deermeat.cooked.png" />
-    <Resource Include="Assets\RustItems\deermeat.raw.png" />
-    <Resource Include="Assets\RustItems\diesel_barrel.png" />
-    <Resource Include="Assets\RustItems\discoball.png" />
-    <Resource Include="Assets\RustItems\discofloor.largetiles.png" />
-    <Resource Include="Assets\RustItems\discofloor.png" />
-    <Resource Include="Assets\RustItems\diving.fins.png" />
-    <Resource Include="Assets\RustItems\diving.mask.png" />
-    <Resource Include="Assets\RustItems\diving.tank.png" />
-    <Resource Include="Assets\RustItems\diving.wetsuit.png" />
-    <Resource Include="Assets\RustItems\door.closer.png" />
-    <Resource Include="Assets\RustItems\door.double.hinged.metal.png" />
-    <Resource Include="Assets\RustItems\door.double.hinged.toptier.png" />
-    <Resource Include="Assets\RustItems\door.double.hinged.wood.png" />
-    <Resource Include="Assets\RustItems\door.hinged.industrial.a.png" />
-    <Resource Include="Assets\RustItems\door.hinged.metal.png" />
-    <Resource Include="Assets\RustItems\door.hinged.toptier.png" />
-    <Resource Include="Assets\RustItems\door.hinged.wood.png" />
-    <Resource Include="Assets\RustItems\door.key.png" />
-    <Resource Include="Assets\RustItems\dragondoorknocker.png" />
-    <Resource Include="Assets\RustItems\drone.png" />
-    <Resource Include="Assets\RustItems\dropbox.png" />
-    <Resource Include="Assets\RustItems\drumkit.png" />
-    <Resource Include="Assets\RustItems\ducttape.png" />
-    <Resource Include="Assets\RustItems\easter.bronzeegg.png" />
-    <Resource Include="Assets\RustItems\easter.goldegg.png" />
-    <Resource Include="Assets\RustItems\easter.paintedeggs.png" />
-    <Resource Include="Assets\RustItems\easter.silveregg.png" />
-    <Resource Include="Assets\RustItems\easterbasket.png" />
-    <Resource Include="Assets\RustItems\easterdoorwreath.png" />
-    <Resource Include="Assets\RustItems\electric.andswitch.png" />
-    <Resource Include="Assets\RustItems\electric.audioalarm.png" />
-    <Resource Include="Assets\RustItems\electric.battery.rechargable.large.png" />
-    <Resource Include="Assets\RustItems\electric.battery.rechargable.medium.png" />
-    <Resource Include="Assets\RustItems\electric.battery.rechargable.small.png" />
-    <Resource Include="Assets\RustItems\electric.blocker.png" />
-    <Resource Include="Assets\RustItems\electric.button.png" />
-    <Resource Include="Assets\RustItems\electric.cabletunnel.png" />
-    <Resource Include="Assets\RustItems\electric.counter.png" />
-    <Resource Include="Assets\RustItems\electric.doorcontroller.png" />
-    <Resource Include="Assets\RustItems\electric.flasherlight.png" />
-    <Resource Include="Assets\RustItems\electric.fuelgenerator.small.png" />
-    <Resource Include="Assets\RustItems\electric.generator.small.png" />
-    <Resource Include="Assets\RustItems\electric.hbhfsensor.png" />
-    <Resource Include="Assets\RustItems\electric.heater.png" />
-    <Resource Include="Assets\RustItems\electric.igniter.png" />
-    <Resource Include="Assets\RustItems\electric.laserdetector.png" />
-    <Resource Include="Assets\RustItems\electric.orswitch.png" />
-    <Resource Include="Assets\RustItems\electric.pressurepad.png" />
-    <Resource Include="Assets\RustItems\electric.random.switch.png" />
-    <Resource Include="Assets\RustItems\electric.rf.broadcaster.png" />
-    <Resource Include="Assets\RustItems\electric.rf.receiver.png" />
-    <Resource Include="Assets\RustItems\electric.simplelight.png" />
-    <Resource Include="Assets\RustItems\electric.sirenlight.png" />
-    <Resource Include="Assets\RustItems\electric.solarpanel.large.png" />
-    <Resource Include="Assets\RustItems\electric.splitter.png" />
-    <Resource Include="Assets\RustItems\electric.sprinkler.png" />
-    <Resource Include="Assets\RustItems\electric.switch.png" />
-    <Resource Include="Assets\RustItems\electric.teslacoil.png" />
-    <Resource Include="Assets\RustItems\electric.timer.png" />
-    <Resource Include="Assets\RustItems\electric.xorswitch.png" />
-    <Resource Include="Assets\RustItems\electrical.branch.png" />
-    <Resource Include="Assets\RustItems\electrical.combiner.png" />
-    <Resource Include="Assets\RustItems\electrical.memorycell.png" />
-    <Resource Include="Assets\RustItems\elevator.png" />
-    <Resource Include="Assets\RustItems\explosive.satchel.png" />
-    <Resource Include="Assets\RustItems\explosive.timed.png" />
-    <Resource Include="Assets\RustItems\explosives.png" />
-    <Resource Include="Assets\RustItems\factorydoor.png" />
-    <Resource Include="Assets\RustItems\fat.animal.png" />
-    <Resource Include="Assets\RustItems\fertilizer.png" />
-    <Resource Include="Assets\RustItems\fireplace.stone.png" />
-    <Resource Include="Assets\RustItems\firework.boomer.blue.png" />
-    <Resource Include="Assets\RustItems\firework.boomer.champagne.png" />
-    <Resource Include="Assets\RustItems\firework.boomer.green.png" />
-    <Resource Include="Assets\RustItems\firework.boomer.orange.png" />
-    <Resource Include="Assets\RustItems\firework.boomer.pattern.png" />
-    <Resource Include="Assets\RustItems\firework.boomer.red.png" />
-    <Resource Include="Assets\RustItems\firework.boomer.violet.png" />
-    <Resource Include="Assets\RustItems\firework.romancandle.blue.png" />
-    <Resource Include="Assets\RustItems\firework.romancandle.green.png" />
-    <Resource Include="Assets\RustItems\firework.romancandle.red.png" />
-    <Resource Include="Assets\RustItems\firework.romancandle.violet.png" />
-    <Resource Include="Assets\RustItems\firework.volcano.png" />
-    <Resource Include="Assets\RustItems\firework.volcano.red.png" />
-    <Resource Include="Assets\RustItems\firework.volcano.violet.png" />
-    <Resource Include="Assets\RustItems\fish.anchovy.png" />
-    <Resource Include="Assets\RustItems\fish.catfish.png" />
-    <Resource Include="Assets\RustItems\fish.cooked.png" />
-    <Resource Include="Assets\RustItems\fish.herring.png" />
-    <Resource Include="Assets\RustItems\fish.minnows.png" />
-    <Resource Include="Assets\RustItems\fish.orangeroughy.png" />
-    <Resource Include="Assets\RustItems\fish.raw.png" />
-    <Resource Include="Assets\RustItems\fish.salmon.png" />
-    <Resource Include="Assets\RustItems\fish.sardine.png" />
-    <Resource Include="Assets\RustItems\fish.smallshark.png" />
-    <Resource Include="Assets\RustItems\fish.troutsmall.png" />
-    <Resource Include="Assets\RustItems\fish.yellowperch.png" />
-    <Resource Include="Assets\RustItems\fishing.tackle.png" />
-    <Resource Include="Assets\RustItems\fishingrod.handmade.png" />
-    <Resource Include="Assets\RustItems\fishtrap.small.png" />
-    <Resource Include="Assets\RustItems\flamethrower.png" />
-    <Resource Include="Assets\RustItems\flameturret.png" />
-    <Resource Include="Assets\RustItems\flare.png" />
-    <Resource Include="Assets\RustItems\flashlight.held.png" />
-    <Resource Include="Assets\RustItems\floor.grill.png" />
-    <Resource Include="Assets\RustItems\floor.ladder.hatch.png" />
-    <Resource Include="Assets\RustItems\floor.triangle.grill.png" />
-    <Resource Include="Assets\RustItems\floor.triangle.ladder.hatch.png" />
-    <Resource Include="Assets\RustItems\fluid.combiner.png" />
-    <Resource Include="Assets\RustItems\fluid.splitter.png" />
-    <Resource Include="Assets\RustItems\fluid.switch.png" />
-    <Resource Include="Assets\RustItems\fogmachine.png" />
-    <Resource Include="Assets\RustItems\frankensteins.monster.01.head.png" />
-    <Resource Include="Assets\RustItems\frankensteins.monster.01.legs.png" />
-    <Resource Include="Assets\RustItems\frankensteins.monster.01.torso.png" />
-    <Resource Include="Assets\RustItems\frankensteins.monster.02.head.png" />
-    <Resource Include="Assets\RustItems\frankensteins.monster.02.legs.png" />
-    <Resource Include="Assets\RustItems\frankensteins.monster.02.torso.png" />
-    <Resource Include="Assets\RustItems\frankensteins.monster.03.head.png" />
-    <Resource Include="Assets\RustItems\frankensteins.monster.03.legs.png" />
-    <Resource Include="Assets\RustItems\frankensteins.monster.03.torso.png" />
-    <Resource Include="Assets\RustItems\frankensteintable.png" />
-    <Resource Include="Assets\RustItems\fridge.png" />
-    <Resource Include="Assets\RustItems\fun.bass.png" />
-    <Resource Include="Assets\RustItems\fun.boomboxportable.png" />
-    <Resource Include="Assets\RustItems\fun.casetterecorder.png" />
-    <Resource Include="Assets\RustItems\fun.cowbell.png" />
-    <Resource Include="Assets\RustItems\fun.flute.png" />
-    <Resource Include="Assets\RustItems\fun.guitar.png" />
-    <Resource Include="Assets\RustItems\fun.jerrycanguitar.png" />
-    <Resource Include="Assets\RustItems\fun.tambourine.png" />
-    <Resource Include="Assets\RustItems\fun.trumpet.png" />
-    <Resource Include="Assets\RustItems\fun.tuba.png" />
-    <Resource Include="Assets\RustItems\furnace.large.png" />
-    <Resource Include="Assets\RustItems\furnace.png" />
-    <Resource Include="Assets\RustItems\fuse.png" />
-    <Resource Include="Assets\RustItems\gates.external.high.stone.png" />
-    <Resource Include="Assets\RustItems\gates.external.high.wood.png" />
-    <Resource Include="Assets\RustItems\gears.png" />
-    <Resource Include="Assets\RustItems\geiger.counter.png" />
-    <Resource Include="Assets\RustItems\generator.wind.scrap.png" />
-    <Resource Include="Assets\RustItems\ghostsheet.png" />
-    <Resource Include="Assets\RustItems\giantcandycanedecor.png" />
-    <Resource Include="Assets\RustItems\giantlollipops.png" />
-    <Resource Include="Assets\RustItems\gloweyes.png" />
-    <Resource Include="Assets\RustItems\glue.png" />
-    <Resource Include="Assets\RustItems\granolabar.png" />
-    <Resource Include="Assets\RustItems\gravestone.png" />
-    <Resource Include="Assets\RustItems\green.berry.png" />
-    <Resource Include="Assets\RustItems\grenade.beancan.png" />
-    <Resource Include="Assets\RustItems\grenade.f1.png" />
-    <Resource Include="Assets\RustItems\grenade.flashbang.png" />
-    <Resource Include="Assets\RustItems\grenade.molotov.png" />
-    <Resource Include="Assets\RustItems\grenade.smoke.png" />
-    <Resource Include="Assets\RustItems\grub.png" />
-    <Resource Include="Assets\RustItems\gun.water.png" />
-    <Resource Include="Assets\RustItems\gunpowder.png" />
-    <Resource Include="Assets\RustItems\guntrap.png" />
-    <Resource Include="Assets\RustItems\habrepair.png" />
-    <Resource Include="Assets\RustItems\halloween.candy.png" />
-    <Resource Include="Assets\RustItems\halloween.lootbag.large.png" />
-    <Resource Include="Assets\RustItems\halloween.lootbag.medium.png" />
-    <Resource Include="Assets\RustItems\halloween.lootbag.small.png" />
-    <Resource Include="Assets\RustItems\halloween.mummysuit.png" />
-    <Resource Include="Assets\RustItems\halloween.surgeonsuit.png" />
-    <Resource Include="Assets\RustItems\hammer.png" />
-    <Resource Include="Assets\RustItems\hammer.salvaged.png" />
-    <Resource Include="Assets\RustItems\hat.beenie.png" />
-    <Resource Include="Assets\RustItems\hat.boonie.png" />
-    <Resource Include="Assets\RustItems\hat.bunnyhat.png" />
-    <Resource Include="Assets\RustItems\hat.candle.png" />
-    <Resource Include="Assets\RustItems\hat.cap.png" />
-    <Resource Include="Assets\RustItems\hat.dragonmask.png" />
-    <Resource Include="Assets\RustItems\hat.gas.mask.png" />
-    <Resource Include="Assets\RustItems\hat.miner.png" />
-    <Resource Include="Assets\RustItems\hat.oxmask.png" />
-    <Resource Include="Assets\RustItems\hat.ratmask.png" />
-    <Resource Include="Assets\RustItems\hat.tigermask.png" />
-    <Resource Include="Assets\RustItems\hat.wolf.png" />
-    <Resource Include="Assets\RustItems\hatchet.png" />
-    <Resource Include="Assets\RustItems\hazmatsuit.arcticsuit.png" />
-    <Resource Include="Assets\RustItems\hazmatsuit.lumberjack.png" />
-    <Resource Include="Assets\RustItems\hazmatsuit.nomadsuit.png" />
-    <Resource Include="Assets\RustItems\hazmatsuit.png" />
-    <Resource Include="Assets\RustItems\hazmatsuit.spacesuit.png" />
-    <Resource Include="Assets\RustItems\hazmatsuit_scientist.png" />
-    <Resource Include="Assets\RustItems\hazmatsuit_scientist_arctic.png" />
-    <Resource Include="Assets\RustItems\hazmatsuit_scientist_peacekeeper.png" />
-    <Resource Include="Assets\RustItems\healingtea.advanced.png" />
-    <Resource Include="Assets\RustItems\healingtea.png" />
-    <Resource Include="Assets\RustItems\healingtea.pure.png" />
-    <Resource Include="Assets\RustItems\heavy.plate.helmet.png" />
-    <Resource Include="Assets\RustItems\heavy.plate.jacket.png" />
-    <Resource Include="Assets\RustItems\heavy.plate.pants.png" />
-    <Resource Include="Assets\RustItems\hitchtroughcombo.png" />
-    <Resource Include="Assets\RustItems\hobobarrel.png" />
-    <Resource Include="Assets\RustItems\hoodie.png" />
-    <Resource Include="Assets\RustItems\horse.armor.roadsign.png" />
-    <Resource Include="Assets\RustItems\horse.armor.wood.png" />
-    <Resource Include="Assets\RustItems\horse.saddle.png" />
-    <Resource Include="Assets\RustItems\horse.saddlebag.png" />
-    <Resource Include="Assets\RustItems\horse.shoes.advanced.png" />
-    <Resource Include="Assets\RustItems\horse.shoes.basic.png" />
-    <Resource Include="Assets\RustItems\horsedung.png" />
-    <Resource Include="Assets\RustItems\horsemeat.burned.png" />
-    <Resource Include="Assets\RustItems\horsemeat.cooked.png" />
-    <Resource Include="Assets\RustItems\horsemeat.raw.png" />
-    <Resource Include="Assets\RustItems\hosetool.png" />
-    <Resource Include="Assets\RustItems\hq.metal.ore.png" />
-    <Resource Include="Assets\RustItems\humanmeat.burned.png" />
-    <Resource Include="Assets\RustItems\humanmeat.cooked.png" />
-    <Resource Include="Assets\RustItems\humanmeat.raw.png" />
-    <Resource Include="Assets\RustItems\humanmeat.spoiled.png" />
-    <Resource Include="Assets\RustItems\icepick.salvaged.png" />
-    <Resource Include="Assets\RustItems\industrial.wall.light.green.png" />
-    <Resource Include="Assets\RustItems\industrial.wall.light.png" />
-    <Resource Include="Assets\RustItems\industrial.wall.light.red.png" />
-    <Resource Include="Assets\RustItems\innertube.horse.png" />
-    <Resource Include="Assets\RustItems\innertube.png" />
-    <Resource Include="Assets\RustItems\innertube.unicorn.png" />
-    <Resource Include="Assets\RustItems\jacket.png" />
-    <Resource Include="Assets\RustItems\jacket.snow.png" />
-    <Resource Include="Assets\RustItems\jackhammer.png" />
-    <Resource Include="Assets\RustItems\jackolantern.angry.png" />
-    <Resource Include="Assets\RustItems\jackolantern.happy.png" />
-    <Resource Include="Assets\RustItems\jar.pickle.png" />
-    <Resource Include="Assets\RustItems\jumpsuit.suit.blue.png" />
-    <Resource Include="Assets\RustItems\jumpsuit.suit.png" />
-    <Resource Include="Assets\RustItems\kayak.png" />
-    <Resource Include="Assets\RustItems\keycard_blue.png" />
-    <Resource Include="Assets\RustItems\keycard_green.png" />
-    <Resource Include="Assets\RustItems\keycard_red.png" />
-    <Resource Include="Assets\RustItems\knife.bone.png" />
-    <Resource Include="Assets\RustItems\knife.butcher.png" />
-    <Resource Include="Assets\RustItems\knife.combat.png" />
-    <Resource Include="Assets\RustItems\ladder.wooden.wall.png" />
-    <Resource Include="Assets\RustItems\lantern.png" />
-    <Resource Include="Assets\RustItems\largecandles.png" />
-    <Resource Include="Assets\RustItems\largemedkit.png" />
-    <Resource Include="Assets\RustItems\laserlight.png" />
-    <Resource Include="Assets\RustItems\leather.png" />
-    <Resource Include="Assets\RustItems\lmg.m249.png" />
-    <Resource Include="Assets\RustItems\lock.code.png" />
-    <Resource Include="Assets\RustItems\lock.key.png" />
-    <Resource Include="Assets\RustItems\locker.png" />
-    <Resource Include="Assets\RustItems\longsword.png" />
-    <Resource Include="Assets\RustItems\lowgradefuel.png" />
-    <Resource Include="Assets\RustItems\lumberjack hoodie.png" />
-    <Resource Include="Assets\RustItems\lumberjack.hatchet.png" />
-    <Resource Include="Assets\RustItems\lumberjack.pickaxe.png" />
-    <Resource Include="Assets\RustItems\lunar.firecrackers.png" />
-    <Resource Include="Assets\RustItems\mace.baseballbat.png" />
-    <Resource Include="Assets\RustItems\mace.png" />
-    <Resource Include="Assets\RustItems\machete.png" />
-    <Resource Include="Assets\RustItems\mailbox.png" />
-    <Resource Include="Assets\RustItems\map.png" />
-    <Resource Include="Assets\RustItems\mask.balaclava.png" />
-    <Resource Include="Assets\RustItems\mask.bandana.png" />
-    <Resource Include="Assets\RustItems\maxhealthtea.advanced.png" />
-    <Resource Include="Assets\RustItems\maxhealthtea.png" />
-    <Resource Include="Assets\RustItems\maxhealthtea.pure.png" />
-    <Resource Include="Assets\RustItems\meat.boar.png" />
-    <Resource Include="Assets\RustItems\meat.pork.burned.png" />
-    <Resource Include="Assets\RustItems\meat.pork.cooked.png" />
-    <Resource Include="Assets\RustItems\megaphone.png" />
-    <Resource Include="Assets\RustItems\metal.facemask.hockey.png" />
-    <Resource Include="Assets\RustItems\metal.facemask.png" />
-    <Resource Include="Assets\RustItems\metal.fragments.png" />
-    <Resource Include="Assets\RustItems\metal.ore.png" />
-    <Resource Include="Assets\RustItems\metal.plate.torso.png" />
-    <Resource Include="Assets\RustItems\metal.refined.png" />
-    <Resource Include="Assets\RustItems\metalblade.png" />
-    <Resource Include="Assets\RustItems\metalpipe.png" />
-    <Resource Include="Assets\RustItems\metalspring.png" />
-    <Resource Include="Assets\RustItems\microphonestand.png" />
-    <Resource Include="Assets\RustItems\minihelicopter.repair.png" />
-    <Resource Include="Assets\RustItems\mining.pumpjack.png" />
-    <Resource Include="Assets\RustItems\mining.quarry.png" />
-    <Resource Include="Assets\RustItems\mixingtable.png" />
-    <Resource Include="Assets\RustItems\mlrs.png" />
-    <Resource Include="Assets\RustItems\mobilephone.png" />
-    <Resource Include="Assets\RustItems\modularcarlift.png" />
-    <Resource Include="Assets\RustItems\movembermoustache.png" />
-    <Resource Include="Assets\RustItems\movembermoustachecard.png" />
-    <Resource Include="Assets\RustItems\multiplegrenadelauncher.png" />
-    <Resource Include="Assets\RustItems\mushroom.png" />
-    <Resource Include="Assets\RustItems\newyeargong.png" />
-    <Resource Include="Assets\RustItems\nightvisiongoggles.png" />
-    <Resource Include="Assets\RustItems\note.png" />
-    <Resource Include="Assets\RustItems\oretea.advanced.png" />
-    <Resource Include="Assets\RustItems\oretea.png" />
-    <Resource Include="Assets\RustItems\oretea.pure.png" />
-    <Resource Include="Assets\RustItems\paddle.png" />
-    <Resource Include="Assets\RustItems\paddlingpool.png" />
-    <Resource Include="Assets\RustItems\pants.png" />
-    <Resource Include="Assets\RustItems\pants.shorts.png" />
-    <Resource Include="Assets\RustItems\paper.png" />
-    <Resource Include="Assets\RustItems\partyhat.png" />
-    <Resource Include="Assets\RustItems\photo.png" />
-    <Resource Include="Assets\RustItems\photoframe.landscape.png" />
-    <Resource Include="Assets\RustItems\photoframe.large.png" />
-    <Resource Include="Assets\RustItems\photoframe.portrait.png" />
-    <Resource Include="Assets\RustItems\piano.png" />
-    <Resource Include="Assets\RustItems\pickaxe.png" />
-    <Resource Include="Assets\RustItems\pistol.eoka.png" />
-    <Resource Include="Assets\RustItems\pistol.m92.png" />
-    <Resource Include="Assets\RustItems\pistol.nailgun.png" />
-    <Resource Include="Assets\RustItems\pistol.python.png" />
-    <Resource Include="Assets\RustItems\pistol.revolver.png" />
-    <Resource Include="Assets\RustItems\pistol.semiauto.png" />
-    <Resource Include="Assets\RustItems\pistol.water.png" />
-    <Resource Include="Assets\RustItems\piston1.png" />
-    <Resource Include="Assets\RustItems\piston2.png" />
-    <Resource Include="Assets\RustItems\piston3.png" />
-    <Resource Include="Assets\RustItems\pitchfork.png" />
-    <Resource Include="Assets\RustItems\planter.large.png" />
-    <Resource Include="Assets\RustItems\planter.small.png" />
-    <Resource Include="Assets\RustItems\plantfiber.png" />
-    <Resource Include="Assets\RustItems\pookie.bear.png" />
-    <Resource Include="Assets\RustItems\potato.png" />
-    <Resource Include="Assets\RustItems\powered.water.purifier.png" />
-    <Resource Include="Assets\RustItems\propanetank.png" />
-    <Resource Include="Assets\RustItems\pumpkin.png" />
-    <Resource Include="Assets\RustItems\pumpkinbasket.png" />
-    <Resource Include="Assets\RustItems\radiationremovetea.advanced.png" />
-    <Resource Include="Assets\RustItems\radiationremovetea.png" />
-    <Resource Include="Assets\RustItems\radiationremovetea.pure.png" />
-    <Resource Include="Assets\RustItems\radiationresisttea.advanced.png" />
-    <Resource Include="Assets\RustItems\radiationresisttea.png" />
-    <Resource Include="Assets\RustItems\radiationresisttea.pure.png" />
-    <Resource Include="Assets\RustItems\red.berry.png" />
-    <Resource Include="Assets\RustItems\research.table.png" />
-    <Resource Include="Assets\RustItems\researchpaper.png" />
-    <Resource Include="Assets\RustItems\rf.detonator.png" />
-    <Resource Include="Assets\RustItems\rf_pager.png" />
-    <Resource Include="Assets\RustItems\rifle.ak.ice.png" />
-    <Resource Include="Assets\RustItems\rifle.ak.png" />
-    <Resource Include="Assets\RustItems\rifle.bolt.png" />
-    <Resource Include="Assets\RustItems\rifle.l96.png" />
-    <Resource Include="Assets\RustItems\rifle.lr300.png" />
-    <Resource Include="Assets\RustItems\rifle.m39.png" />
-    <Resource Include="Assets\RustItems\rifle.semiauto.png" />
-    <Resource Include="Assets\RustItems\riflebody.png" />
-    <Resource Include="Assets\RustItems\riot.helmet.png" />
-    <Resource Include="Assets\RustItems\roadsign.gloves.png" />
-    <Resource Include="Assets\RustItems\roadsign.jacket.png" />
-    <Resource Include="Assets\RustItems\roadsign.kilt.png" />
-    <Resource Include="Assets\RustItems\roadsigns.png" />
-    <Resource Include="Assets\RustItems\rock.png" />
-    <Resource Include="Assets\RustItems\rocket.launcher.png" />
-    <Resource Include="Assets\RustItems\rope.png" />
-    <Resource Include="Assets\RustItems\rowboat.png" />
-    <Resource Include="Assets\RustItems\rug.bear.png" />
-    <Resource Include="Assets\RustItems\rug.png" />
-    <Resource Include="Assets\RustItems\rustige_egg_a.png" />
-    <Resource Include="Assets\RustItems\rustige_egg_b.png" />
-    <Resource Include="Assets\RustItems\rustige_egg_c.png" />
-    <Resource Include="Assets\RustItems\rustige_egg_d.png" />
-    <Resource Include="Assets\RustItems\rustige_egg_e.png" />
-    <Resource Include="Assets\RustItems\salvaged.cleaver.png" />
-    <Resource Include="Assets\RustItems\salvaged.sword.png" />
-    <Resource Include="Assets\RustItems\samsite.png" />
-    <Resource Include="Assets\RustItems\santabeard.png" />
-    <Resource Include="Assets\RustItems\santahat.png" />
-    <Resource Include="Assets\RustItems\scarecrow.png" />
-    <Resource Include="Assets\RustItems\scarecrow.suit.png" />
-    <Resource Include="Assets\RustItems\scarecrowhead.png" />
-    <Resource Include="Assets\RustItems\scientistsuit_heavy.png" />
-    <Resource Include="Assets\RustItems\scrap.png" />
-    <Resource Include="Assets\RustItems\scraptea.advanced.png" />
-    <Resource Include="Assets\RustItems\scraptea.png" />
-    <Resource Include="Assets\RustItems\scraptea.pure.png" />
-    <Resource Include="Assets\RustItems\scraptransportheli.repair.png" />
-    <Resource Include="Assets\RustItems\searchlight.png" />
-    <Resource Include="Assets\RustItems\secretlabchair.png" />
-    <Resource Include="Assets\RustItems\seed.black.berry.png" />
-    <Resource Include="Assets\RustItems\seed.blue.berry.png" />
-    <Resource Include="Assets\RustItems\seed.corn.png" />
-    <Resource Include="Assets\RustItems\seed.green.berry.png" />
-    <Resource Include="Assets\RustItems\seed.hemp.png" />
-    <Resource Include="Assets\RustItems\seed.potato.png" />
-    <Resource Include="Assets\RustItems\seed.pumpkin.png" />
-    <Resource Include="Assets\RustItems\seed.red.berry.png" />
-    <Resource Include="Assets\RustItems\seed.white.berry.png" />
-    <Resource Include="Assets\RustItems\seed.yellow.berry.png" />
-    <Resource Include="Assets\RustItems\semibody.png" />
-    <Resource Include="Assets\RustItems\sewingkit.png" />
-    <Resource Include="Assets\RustItems\sheetmetal.png" />
-    <Resource Include="Assets\RustItems\shelves.png" />
-    <Resource Include="Assets\RustItems\shirt.collared.png" />
-    <Resource Include="Assets\RustItems\shirt.tanktop.png" />
-    <Resource Include="Assets\RustItems\shoes.boots.png" />
-    <Resource Include="Assets\RustItems\shotgun.double.png" />
-    <Resource Include="Assets\RustItems\shotgun.pump.png" />
-    <Resource Include="Assets\RustItems\shotgun.spas12.png" />
-    <Resource Include="Assets\RustItems\shotgun.waterpipe.png" />
-    <Resource Include="Assets\RustItems\shutter.metal.embrasure.a.png" />
-    <Resource Include="Assets\RustItems\shutter.metal.embrasure.b.png" />
-    <Resource Include="Assets\RustItems\shutter.wood.a.png" />
-    <Resource Include="Assets\RustItems\sickle.png" />
-    <Resource Include="Assets\RustItems\sign.hanging.banner.large.png" />
-    <Resource Include="Assets\RustItems\sign.hanging.ornate.png" />
-    <Resource Include="Assets\RustItems\sign.hanging.png" />
-    <Resource Include="Assets\RustItems\sign.neon.125x125.png" />
-    <Resource Include="Assets\RustItems\sign.neon.125x215.animated.png" />
-    <Resource Include="Assets\RustItems\sign.neon.125x215.png" />
-    <Resource Include="Assets\RustItems\sign.neon.xl.animated.png" />
-    <Resource Include="Assets\RustItems\sign.neon.xl.png" />
-    <Resource Include="Assets\RustItems\sign.pictureframe.landscape.png" />
-    <Resource Include="Assets\RustItems\sign.pictureframe.portrait.png" />
-    <Resource Include="Assets\RustItems\sign.pictureframe.tall.png" />
-    <Resource Include="Assets\RustItems\sign.pictureframe.xl.png" />
-    <Resource Include="Assets\RustItems\sign.pictureframe.xxl.png" />
-    <Resource Include="Assets\RustItems\sign.pole.banner.large.png" />
-    <Resource Include="Assets\RustItems\sign.post.double.png" />
-    <Resource Include="Assets\RustItems\sign.post.single.png" />
-    <Resource Include="Assets\RustItems\sign.post.town.png" />
-    <Resource Include="Assets\RustItems\sign.post.town.roof.png" />
-    <Resource Include="Assets\RustItems\sign.wooden.huge.png" />
-    <Resource Include="Assets\RustItems\sign.wooden.large.png" />
-    <Resource Include="Assets\RustItems\sign.wooden.medium.png" />
-    <Resource Include="Assets\RustItems\sign.wooden.small.png" />
-    <Resource Include="Assets\RustItems\skull.human.png" />
-    <Resource Include="Assets\RustItems\skull.png" />
-    <Resource Include="Assets\RustItems\skull.trophy.jar.png" />
-    <Resource Include="Assets\RustItems\skull.trophy.jar2.png" />
-    <Resource Include="Assets\RustItems\skull.trophy.png" />
-    <Resource Include="Assets\RustItems\skull.trophy.table.png" />
-    <Resource Include="Assets\RustItems\skull.wolf.png" />
-    <Resource Include="Assets\RustItems\skulldoorknocker.png" />
-    <Resource Include="Assets\RustItems\skullspikes.candles.png" />
-    <Resource Include="Assets\RustItems\skullspikes.png" />
-    <Resource Include="Assets\RustItems\skullspikes.pumpkin.png" />
-    <Resource Include="Assets\RustItems\skull_fire_pit.png" />
-    <Resource Include="Assets\RustItems\skylantern.png" />
-    <Resource Include="Assets\RustItems\skylantern.skylantern.green.png" />
-    <Resource Include="Assets\RustItems\skylantern.skylantern.orange.png" />
-    <Resource Include="Assets\RustItems\skylantern.skylantern.purple.png" />
-    <Resource Include="Assets\RustItems\skylantern.skylantern.red.png" />
-    <Resource Include="Assets\RustItems\sled.png" />
-    <Resource Include="Assets\RustItems\sled.xmas.png" />
-    <Resource Include="Assets\RustItems\sleepingbag.png" />
-    <Resource Include="Assets\RustItems\small.oil.refinery.png" />
-    <Resource Include="Assets\RustItems\smallcandles.png" />
-    <Resource Include="Assets\RustItems\smallwaterbottle.png" />
-    <Resource Include="Assets\RustItems\smart.alarm.png" />
-    <Resource Include="Assets\RustItems\smart.switch.png" />
-    <Resource Include="Assets\RustItems\smg.2.png" />
-    <Resource Include="Assets\RustItems\smg.mp5.png" />
-    <Resource Include="Assets\RustItems\smg.thompson.png" />
-    <Resource Include="Assets\RustItems\smgbody.png" />
-    <Resource Include="Assets\RustItems\snowball.png" />
-    <Resource Include="Assets\RustItems\snowballgun.png" />
-    <Resource Include="Assets\RustItems\snowmachine.png" />
-    <Resource Include="Assets\RustItems\snowman.png" />
-    <Resource Include="Assets\RustItems\snowmobile.png" />
-    <Resource Include="Assets\RustItems\snowmobiletomaha.png" />
-    <Resource Include="Assets\RustItems\sofa.pattern.png" />
-    <Resource Include="Assets\RustItems\sofa.png" />
-    <Resource Include="Assets\RustItems\soundlight.png" />
-    <Resource Include="Assets\RustItems\sparkplug1.png" />
-    <Resource Include="Assets\RustItems\sparkplug2.png" />
-    <Resource Include="Assets\RustItems\sparkplug3.png" />
-    <Resource Include="Assets\RustItems\spear.stone.png" />
-    <Resource Include="Assets\RustItems\spear.wooden.png" />
-    <Resource Include="Assets\RustItems\speargun.png" />
-    <Resource Include="Assets\RustItems\speargun.spear.png" />
-    <Resource Include="Assets\RustItems\spiderweb.png" />
-    <Resource Include="Assets\RustItems\spikes.floor.png" />
-    <Resource Include="Assets\RustItems\spinner.wheel.png" />
-    <Resource Include="Assets\RustItems\spookyspeaker.png" />
-    <Resource Include="Assets\RustItems\spraycan.png" />
-    <Resource Include="Assets\RustItems\stash.small.png" />
-    <Resource Include="Assets\RustItems\sticks.png" />
-    <Resource Include="Assets\RustItems\stocking.large.png" />
-    <Resource Include="Assets\RustItems\stocking.small.png" />
-    <Resource Include="Assets\RustItems\stone.pickaxe.png" />
-    <Resource Include="Assets\RustItems\stonehatchet.png" />
-    <Resource Include="Assets\RustItems\stones.png" />
-    <Resource Include="Assets\RustItems\storage.monitor.png" />
-    <Resource Include="Assets\RustItems\strobelight.png" />
-    <Resource Include="Assets\RustItems\submarine.torpedo.straight.png" />
-    <Resource Include="Assets\RustItems\submarineduo.png" />
-    <Resource Include="Assets\RustItems\submarinesolo.png" />
-    <Resource Include="Assets\RustItems\sulfur.ore.png" />
-    <Resource Include="Assets\RustItems\sulfur.png" />
-    <Resource Include="Assets\RustItems\sunglasses.png" />
-    <Resource Include="Assets\RustItems\sunglasses02black.png" />
-    <Resource Include="Assets\RustItems\sunglasses02camo.png" />
-    <Resource Include="Assets\RustItems\sunglasses02red.png" />
-    <Resource Include="Assets\RustItems\sunglasses03black.png" />
-    <Resource Include="Assets\RustItems\sunglasses03chrome.png" />
-    <Resource Include="Assets\RustItems\sunglasses03gold.png" />
-    <Resource Include="Assets\RustItems\supply.signal.png" />
-    <Resource Include="Assets\RustItems\surveycharge.png" />
-    <Resource Include="Assets\RustItems\syringe.medical.png" />
-    <Resource Include="Assets\RustItems\table.png" />
-    <Resource Include="Assets\RustItems\tactical.gloves.png" />
-    <Resource Include="Assets\RustItems\target.reactive.png" />
-    <Resource Include="Assets\RustItems\targeting.computer.png" />
-    <Resource Include="Assets\RustItems\tarp.png" />
-    <Resource Include="Assets\RustItems\techparts.png" />
-    <Resource Include="Assets\RustItems\telephone.png" />
-    <Resource Include="Assets\RustItems\tool.binoculars.png" />
-    <Resource Include="Assets\RustItems\tool.camera.png" />
-    <Resource Include="Assets\RustItems\tool.instant_camera.png" />
-    <Resource Include="Assets\RustItems\toolgun.png" />
-    <Resource Include="Assets\RustItems\torch.png" />
-    <Resource Include="Assets\RustItems\torch.torch.skull.png" />
-    <Resource Include="Assets\RustItems\trap.bear.png" />
-    <Resource Include="Assets\RustItems\trap.landmine.png" />
-    <Resource Include="Assets\RustItems\tshirt.long.png" />
-    <Resource Include="Assets\RustItems\tshirt.png" />
-    <Resource Include="Assets\RustItems\tunalight.png" />
-    <Resource Include="Assets\RustItems\twitch.headset.png" />
-    <Resource Include="Assets\RustItems\twitchsunglasses.png" />
-    <Resource Include="Assets\RustItems\valve1.png" />
-    <Resource Include="Assets\RustItems\valve2.png" />
-    <Resource Include="Assets\RustItems\valve3.png" />
-    <Resource Include="Assets\RustItems\vehicle.1mod.cockpit.armored.png" />
-    <Resource Include="Assets\RustItems\vehicle.1mod.cockpit.png" />
-    <Resource Include="Assets\RustItems\vehicle.1mod.cockpit.with.engine.png" />
-    <Resource Include="Assets\RustItems\vehicle.1mod.engine.png" />
-    <Resource Include="Assets\RustItems\vehicle.1mod.flatbed.png" />
-    <Resource Include="Assets\RustItems\vehicle.1mod.passengers.armored.png" />
-    <Resource Include="Assets\RustItems\vehicle.1mod.rear.seats.png" />
-    <Resource Include="Assets\RustItems\vehicle.1mod.storage.png" />
-    <Resource Include="Assets\RustItems\vehicle.1mod.taxi.png" />
-    <Resource Include="Assets\RustItems\vehicle.2mod.camper.png" />
-    <Resource Include="Assets\RustItems\vehicle.2mod.flatbed.png" />
-    <Resource Include="Assets\RustItems\vehicle.2mod.fuel.tank.png" />
-    <Resource Include="Assets\RustItems\vehicle.2mod.passengers.png" />
-    <Resource Include="Assets\RustItems\vehicle.chassis.2mod.png" />
-    <Resource Include="Assets\RustItems\vehicle.chassis.3mod.png" />
-    <Resource Include="Assets\RustItems\vehicle.chassis.4mod.png" />
-    <Resource Include="Assets\RustItems\vehicle.chassis.png" />
-    <Resource Include="Assets\RustItems\vehicle.module.png" />
-    <Resource Include="Assets\RustItems\vending.machine.png" />
-    <Resource Include="Assets\RustItems\wall.external.high.ice.png" />
-    <Resource Include="Assets\RustItems\wall.external.high.png" />
-    <Resource Include="Assets\RustItems\wall.external.high.stone.png" />
-    <Resource Include="Assets\RustItems\wall.frame.cell.gate.png" />
-    <Resource Include="Assets\RustItems\wall.frame.cell.png" />
-    <Resource Include="Assets\RustItems\wall.frame.fence.gate.png" />
-    <Resource Include="Assets\RustItems\wall.frame.fence.png" />
-    <Resource Include="Assets\RustItems\wall.frame.garagedoor.png" />
-    <Resource Include="Assets\RustItems\wall.frame.netting.png" />
-    <Resource Include="Assets\RustItems\wall.frame.shopfront.metal.png" />
-    <Resource Include="Assets\RustItems\wall.frame.shopfront.png" />
-    <Resource Include="Assets\RustItems\wall.graveyard.fence.png" />
-    <Resource Include="Assets\RustItems\wall.ice.wall.png" />
-    <Resource Include="Assets\RustItems\wall.window.bars.metal.png" />
-    <Resource Include="Assets\RustItems\wall.window.bars.toptier.png" />
-    <Resource Include="Assets\RustItems\wall.window.bars.wood.png" />
-    <Resource Include="Assets\RustItems\wall.window.glass.reinforced.png" />
-    <Resource Include="Assets\RustItems\watchtower.wood.png" />
-    <Resource Include="Assets\RustItems\water.barrel.png" />
-    <Resource Include="Assets\RustItems\water.catcher.large.png" />
-    <Resource Include="Assets\RustItems\water.catcher.small.png" />
-    <Resource Include="Assets\RustItems\water.purifier.png" />
-    <Resource Include="Assets\RustItems\waterjug.png" />
-    <Resource Include="Assets\RustItems\waterpump.png" />
-    <Resource Include="Assets\RustItems\weapon.mod.8x.scope.png" />
-    <Resource Include="Assets\RustItems\weapon.mod.extendedmags.png" />
-    <Resource Include="Assets\RustItems\weapon.mod.flashlight.png" />
-    <Resource Include="Assets\RustItems\weapon.mod.holosight.png" />
-    <Resource Include="Assets\RustItems\weapon.mod.lasersight.png" />
-    <Resource Include="Assets\RustItems\weapon.mod.muzzleboost.png" />
-    <Resource Include="Assets\RustItems\weapon.mod.muzzlebrake.png" />
-    <Resource Include="Assets\RustItems\weapon.mod.silencer.png" />
-    <Resource Include="Assets\RustItems\weapon.mod.simplesight.png" />
-    <Resource Include="Assets\RustItems\weapon.mod.small.scope.png" />
-    <Resource Include="Assets\RustItems\white.berry.png" />
-    <Resource Include="Assets\RustItems\wiretool.png" />
-    <Resource Include="Assets\RustItems\wolfmeat.burned.png" />
-    <Resource Include="Assets\RustItems\wolfmeat.cooked.png" />
-    <Resource Include="Assets\RustItems\wolfmeat.raw.png" />
-    <Resource Include="Assets\RustItems\wolfmeat.spoiled.png" />
-    <Resource Include="Assets\RustItems\wood.armor.helmet.png" />
-    <Resource Include="Assets\RustItems\wood.armor.jacket.png" />
-    <Resource Include="Assets\RustItems\wood.armor.pants.png" />
-    <Resource Include="Assets\RustItems\wood.png" />
-    <Resource Include="Assets\RustItems\woodcross.png" />
-    <Resource Include="Assets\RustItems\woodtea.advanced.png" />
-    <Resource Include="Assets\RustItems\woodtea.png" />
-    <Resource Include="Assets\RustItems\woodtea.pure.png" />
-    <Resource Include="Assets\RustItems\workbench1.png" />
-    <Resource Include="Assets\RustItems\workbench2.png" />
-    <Resource Include="Assets\RustItems\workbench3.png" />
-    <Resource Include="Assets\RustItems\worm.png" />
-    <Resource Include="Assets\RustItems\wrappedgift.png" />
-    <Resource Include="Assets\RustItems\wrappingpaper.png" />
-    <Resource Include="Assets\RustItems\xmas.advent.png" />
-    <Resource Include="Assets\RustItems\xmas.decoration.baubels.png" />
-    <Resource Include="Assets\RustItems\xmas.decoration.candycanes.png" />
-    <Resource Include="Assets\RustItems\xmas.decoration.gingerbreadmen.png" />
-    <Resource Include="Assets\RustItems\xmas.decoration.lights.png" />
-    <Resource Include="Assets\RustItems\xmas.decoration.pinecone.png" />
-    <Resource Include="Assets\RustItems\xmas.decoration.star.png" />
-    <Resource Include="Assets\RustItems\xmas.decoration.tinsel.png" />
-    <Resource Include="Assets\RustItems\xmas.door.garland.png" />
-    <Resource Include="Assets\RustItems\xmas.double.door.garland.png" />
-    <Resource Include="Assets\RustItems\xmas.lightstring.advanced.png" />
-    <Resource Include="Assets\RustItems\xmas.lightstring.png" />
-    <Resource Include="Assets\RustItems\xmas.present.large.png" />
-    <Resource Include="Assets\RustItems\xmas.present.medium.png" />
-    <Resource Include="Assets\RustItems\xmas.present.small.png" />
-    <Resource Include="Assets\RustItems\xmas.tree.png" />
-    <Resource Include="Assets\RustItems\xmas.window.garland.png" />
-    <Resource Include="Assets\RustItems\xmasdoorwreath.png" />
-    <Resource Include="Assets\RustItems\xylophone.png" />
-    <Resource Include="Assets\RustItems\yellow.berry.png" />
+    <Content Include="Assets\items.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\abovegroundpool.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\aiming.module.mlrs.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\ammo.grenadelauncher.buckshot.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\ammo.grenadelauncher.he.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\ammo.grenadelauncher.smoke.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\ammo.handmade.shell.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\ammo.nailgun.nails.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\ammo.pistol.fire.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\ammo.pistol.hv.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\ammo.pistol.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\ammo.rifle.explosive.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\ammo.rifle.hv.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\ammo.rifle.incendiary.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\ammo.rifle.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\ammo.rocket.basic.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\ammo.rocket.fire.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\ammo.rocket.hv.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\ammo.rocket.mlrs.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\ammo.rocket.sam.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\ammo.rocket.smoke.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\ammo.shotgun.fire.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\ammo.shotgun.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\ammo.shotgun.slug.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\ammo.snowballgun.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\antiradpills.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\apple.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\apple.spoiled.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\arcade.machine.chippy.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\arrow.bone.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\arrow.fire.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\arrow.hv.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\arrow.wooden.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\attire.banditguard.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\attire.bunny.onesie.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\attire.bunnyears.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\attire.hide.boots.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\attire.hide.helterneck.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\attire.hide.pants.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\attire.hide.poncho.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\attire.hide.skirt.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\attire.hide.vest.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\attire.nesthat.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\attire.ninja.suit.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\attire.reindeer.headband.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\attire.snowman.helmet.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\autoturret.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\axe.salvaged.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\bandage.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\barrelcostume.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\barricade.concrete.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\barricade.metal.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\barricade.sandbags.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\barricade.stone.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\barricade.wood.cover.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\barricade.wood.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\barricade.woodwire.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\battery.small.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\bbq.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\beachchair.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\beachparasol.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\beachtable.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\beachtowel.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\bearmeat.burned.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\bearmeat.cooked.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\bearmeat.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\bed.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\black.berry.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\black.raspberries.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\bleach.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\blood.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\blue.berry.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\blueberries.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\blueprintbase.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\bone.armor.suit.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\bone.club.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\bone.fragments.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\boogieboard.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\boombox.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\boots.frog.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\botabag.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\bottle.vodka.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\bow.compound.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\bow.hunting.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\box.repair.bench.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\box.wooden.large.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\box.wooden.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\bucket.helmet.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\bucket.water.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\building.planner.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\burlap.gloves.new.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\burlap.gloves.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\burlap.headwrap.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\burlap.shirt.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\burlap.shoes.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\burlap.trousers.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\cactusflesh.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\cakefiveyear.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\campfire.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\can.beans.empty.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\can.beans.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\can.tuna.empty.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\can.tuna.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\candycane.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\candycaneclub.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\captainslog.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\car.key.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\carburetor1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\carburetor2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\carburetor3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\carvable.pumpkin.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\cassette.medium.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\cassette.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\cassette.short.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\cctv.camera.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\ceilinglight.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\chainsaw.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\chair.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\charcoal.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\chicken.burned.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\chicken.cooked.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\chicken.raw.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\chicken.spoiled.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\chineselantern.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\chocholate.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\clatter.helmet.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\clone.black.berry.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\clone.blue.berry.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\clone.corn.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\clone.green.berry.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\clone.hemp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\clone.potato.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\clone.pumpkin.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\clone.red.berry.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\clone.white.berry.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\clone.yellow.berry.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\cloth.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\coal.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\coffeecan.helmet.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\coffin.storage.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\composter.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\computerstation.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\concretehatchet.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\concretepickaxe.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\connected.speaker.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\corn.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\crankshaft1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\crankshaft2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\crankshaft3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\cratecostume.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\crossbow.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\crude.oil.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\cupboard.tool.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\cursedcauldron.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\deer.skull.mask.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\deermeat.burned.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\deermeat.cooked.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\deermeat.raw.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\diesel_barrel.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\discoball.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\discofloor.largetiles.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\discofloor.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\diving.fins.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\diving.mask.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\diving.tank.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\diving.wetsuit.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\door.closer.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\door.double.hinged.metal.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\door.double.hinged.toptier.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\door.double.hinged.wood.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\door.hinged.industrial.a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\door.hinged.metal.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\door.hinged.toptier.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\door.hinged.wood.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\door.key.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\dragondoorknocker.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\drone.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\dropbox.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\drumkit.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\ducttape.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\easter.bronzeegg.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\easter.goldegg.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\easter.paintedeggs.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\easter.silveregg.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\easterbasket.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\easterdoorwreath.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\electric.andswitch.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\electric.audioalarm.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\electric.battery.rechargable.large.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\electric.battery.rechargable.medium.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\electric.battery.rechargable.small.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\electric.blocker.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\electric.button.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\electric.cabletunnel.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\electric.counter.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\electric.doorcontroller.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\electric.flasherlight.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\electric.fuelgenerator.small.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\electric.generator.small.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\electric.hbhfsensor.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\electric.heater.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\electric.igniter.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\electric.laserdetector.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\electric.orswitch.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\electric.pressurepad.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\electric.random.switch.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\electric.rf.broadcaster.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\electric.rf.receiver.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\electric.simplelight.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\electric.sirenlight.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\electric.solarpanel.large.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\electric.splitter.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\electric.sprinkler.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\electric.switch.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\electric.teslacoil.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\electric.timer.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\electric.xorswitch.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\electrical.branch.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\electrical.combiner.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\electrical.memorycell.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\elevator.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\explosive.satchel.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\explosive.timed.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\explosives.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\factorydoor.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\fat.animal.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\fertilizer.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\fireplace.stone.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\firework.boomer.blue.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\firework.boomer.champagne.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\firework.boomer.green.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\firework.boomer.orange.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\firework.boomer.pattern.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\firework.boomer.red.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\firework.boomer.violet.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\firework.romancandle.blue.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\firework.romancandle.green.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\firework.romancandle.red.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\firework.romancandle.violet.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\firework.volcano.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\firework.volcano.red.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\firework.volcano.violet.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\fish.anchovy.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\fish.catfish.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\fish.cooked.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\fish.herring.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\fish.minnows.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\fish.orangeroughy.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\fish.raw.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\fish.salmon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\fish.sardine.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\fish.smallshark.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\fish.troutsmall.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\fish.yellowperch.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\fishing.tackle.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\fishingrod.handmade.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\fishtrap.small.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\flamethrower.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\flameturret.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\flare.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\flashlight.held.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\floor.grill.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\floor.ladder.hatch.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\floor.triangle.grill.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\floor.triangle.ladder.hatch.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\fluid.combiner.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\fluid.splitter.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\fluid.switch.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\fogmachine.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\frankensteins.monster.01.head.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\frankensteins.monster.01.legs.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\frankensteins.monster.01.torso.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\frankensteins.monster.02.head.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\frankensteins.monster.02.legs.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\frankensteins.monster.02.torso.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\frankensteins.monster.03.head.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\frankensteins.monster.03.legs.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\frankensteins.monster.03.torso.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\frankensteintable.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\fridge.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\fun.bass.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\fun.boomboxportable.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\fun.casetterecorder.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\fun.cowbell.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\fun.flute.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\fun.guitar.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\fun.jerrycanguitar.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\fun.tambourine.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\fun.trumpet.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\fun.tuba.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\furnace.large.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\furnace.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\fuse.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\gates.external.high.stone.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\gates.external.high.wood.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\gears.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\geiger.counter.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\generator.wind.scrap.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\ghostsheet.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\giantcandycanedecor.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\giantlollipops.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\gloweyes.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\glue.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\granolabar.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\gravestone.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\green.berry.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\grenade.beancan.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\grenade.f1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\grenade.flashbang.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\grenade.molotov.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\grenade.smoke.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\grub.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\gun.water.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\gunpowder.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\guntrap.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\habrepair.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\halloween.candy.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\halloween.lootbag.large.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\halloween.lootbag.medium.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\halloween.lootbag.small.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\halloween.mummysuit.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\halloween.surgeonsuit.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\hammer.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\hammer.salvaged.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\hat.beenie.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\hat.boonie.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\hat.bunnyhat.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\hat.candle.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\hat.cap.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\hat.dragonmask.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\hat.gas.mask.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\hat.miner.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\hat.oxmask.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\hat.ratmask.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\hat.tigermask.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\hat.wolf.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\hatchet.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\hazmatsuit.arcticsuit.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\hazmatsuit.lumberjack.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\hazmatsuit.nomadsuit.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\hazmatsuit.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\hazmatsuit.spacesuit.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\hazmatsuit_scientist.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\hazmatsuit_scientist_arctic.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\hazmatsuit_scientist_peacekeeper.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\healingtea.advanced.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\healingtea.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\healingtea.pure.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\heavy.plate.helmet.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\heavy.plate.jacket.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\heavy.plate.pants.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\hitchtroughcombo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\hobobarrel.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\hoodie.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\horse.armor.roadsign.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\horse.armor.wood.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\horse.saddle.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\horse.saddlebag.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\horse.shoes.advanced.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\horse.shoes.basic.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\horsedung.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\horsemeat.burned.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\horsemeat.cooked.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\horsemeat.raw.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\hosetool.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\hq.metal.ore.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\humanmeat.burned.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\humanmeat.cooked.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\humanmeat.raw.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\humanmeat.spoiled.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\icepick.salvaged.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\industrial.wall.light.green.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\industrial.wall.light.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\industrial.wall.light.red.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\innertube.horse.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\innertube.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\innertube.unicorn.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\jacket.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\jacket.snow.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\jackhammer.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\jackolantern.angry.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\jackolantern.happy.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\jar.pickle.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\jumpsuit.suit.blue.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\jumpsuit.suit.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\kayak.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\keycard_blue.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\keycard_green.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\keycard_red.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\knife.bone.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\knife.butcher.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\knife.combat.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\ladder.wooden.wall.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\lantern.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\largecandles.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\largemedkit.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\laserlight.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\leather.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\lmg.m249.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\lock.code.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\lock.key.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\locker.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\longsword.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\lowgradefuel.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\lumberjack hoodie.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\lumberjack.hatchet.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\lumberjack.pickaxe.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\lunar.firecrackers.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\mace.baseballbat.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\mace.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\machete.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\mailbox.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\map.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\mask.balaclava.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\mask.bandana.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\maxhealthtea.advanced.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\maxhealthtea.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\maxhealthtea.pure.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\meat.boar.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\meat.pork.burned.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\meat.pork.cooked.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\megaphone.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\metal.facemask.hockey.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\metal.facemask.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\metal.fragments.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\metal.ore.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\metal.plate.torso.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\metal.refined.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\metalblade.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\metalpipe.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\metalspring.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\microphonestand.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\minihelicopter.repair.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\mining.pumpjack.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\mining.quarry.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\mixingtable.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\mlrs.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\mobilephone.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\modularcarlift.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\movembermoustache.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\movembermoustachecard.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\multiplegrenadelauncher.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\mushroom.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\newyeargong.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\nightvisiongoggles.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\note.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\oretea.advanced.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\oretea.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\oretea.pure.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\paddle.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\paddlingpool.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\pants.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\pants.shorts.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\paper.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\partyhat.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\photo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\photoframe.landscape.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\photoframe.large.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\photoframe.portrait.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\piano.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\pickaxe.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\pistol.eoka.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\pistol.m92.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\pistol.nailgun.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\pistol.python.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\pistol.revolver.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\pistol.semiauto.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\pistol.water.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\piston1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\piston2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\piston3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\pitchfork.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\planter.large.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\planter.small.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\plantfiber.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\pookie.bear.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\potato.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\powered.water.purifier.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\propanetank.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\pumpkin.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\pumpkinbasket.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\radiationremovetea.advanced.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\radiationremovetea.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\radiationremovetea.pure.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\radiationresisttea.advanced.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\radiationresisttea.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\radiationresisttea.pure.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\red.berry.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\research.table.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\researchpaper.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\rf.detonator.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\rf_pager.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\rifle.ak.ice.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\rifle.ak.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\rifle.bolt.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\rifle.l96.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\rifle.lr300.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\rifle.m39.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\rifle.semiauto.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\riflebody.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\riot.helmet.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\roadsign.gloves.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\roadsign.jacket.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\roadsign.kilt.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\roadsigns.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\rock.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\rocket.launcher.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\rope.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\rowboat.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\rug.bear.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\rug.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\rustige_egg_a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\rustige_egg_b.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\rustige_egg_c.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\rustige_egg_d.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\rustige_egg_e.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\salvaged.cleaver.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\salvaged.sword.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\samsite.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\santabeard.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\santahat.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\scarecrow.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\scarecrow.suit.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\scarecrowhead.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\scientistsuit_heavy.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\scrap.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\scraptea.advanced.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\scraptea.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\scraptea.pure.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\scraptransportheli.repair.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\searchlight.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\secretlabchair.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\seed.black.berry.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\seed.blue.berry.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\seed.corn.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\seed.green.berry.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\seed.hemp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\seed.potato.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\seed.pumpkin.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\seed.red.berry.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\seed.white.berry.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\seed.yellow.berry.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\semibody.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\sewingkit.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\sheetmetal.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\shelves.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\shirt.collared.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\shirt.tanktop.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\shoes.boots.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\shotgun.double.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\shotgun.pump.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\shotgun.spas12.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\shotgun.waterpipe.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\shutter.metal.embrasure.a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\shutter.metal.embrasure.b.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\shutter.wood.a.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\sickle.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\sign.hanging.banner.large.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\sign.hanging.ornate.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\sign.hanging.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\sign.neon.125x125.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\sign.neon.125x215.animated.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\sign.neon.125x215.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\sign.neon.xl.animated.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\sign.neon.xl.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\sign.pictureframe.landscape.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\sign.pictureframe.portrait.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\sign.pictureframe.tall.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\sign.pictureframe.xl.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\sign.pictureframe.xxl.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\sign.pole.banner.large.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\sign.post.double.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\sign.post.single.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\sign.post.town.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\sign.post.town.roof.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\sign.wooden.huge.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\sign.wooden.large.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\sign.wooden.medium.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\sign.wooden.small.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\skull.human.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\skull.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\skull.trophy.jar.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\skull.trophy.jar2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\skull.trophy.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\skull.trophy.table.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\skull.wolf.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\skulldoorknocker.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\skullspikes.candles.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\skullspikes.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\skullspikes.pumpkin.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\skull_fire_pit.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\skylantern.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\skylantern.skylantern.green.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\skylantern.skylantern.orange.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\skylantern.skylantern.purple.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\skylantern.skylantern.red.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\sled.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\sled.xmas.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\sleepingbag.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\small.oil.refinery.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\smallcandles.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\smallwaterbottle.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\smart.alarm.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\smart.switch.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\smg.2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\smg.mp5.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\smg.thompson.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\smgbody.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\snowball.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\snowballgun.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\snowmachine.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\snowman.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\snowmobile.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\snowmobiletomaha.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\sofa.pattern.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\sofa.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\soundlight.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\sparkplug1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\sparkplug2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\sparkplug3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\spear.stone.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\spear.wooden.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\speargun.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\speargun.spear.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\spiderweb.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\spikes.floor.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\spinner.wheel.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\spookyspeaker.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\spraycan.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\stash.small.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\sticks.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\stocking.large.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\stocking.small.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\stone.pickaxe.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\stonehatchet.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\stones.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\storage.monitor.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\strobelight.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\submarine.torpedo.straight.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\submarineduo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\submarinesolo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\sulfur.ore.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\sulfur.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\sunglasses.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\sunglasses02black.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\sunglasses02camo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\sunglasses02red.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\sunglasses03black.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\sunglasses03chrome.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\sunglasses03gold.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\supply.signal.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\surveycharge.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\syringe.medical.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\table.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\tactical.gloves.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\target.reactive.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\targeting.computer.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\tarp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\techparts.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\telephone.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\tool.binoculars.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\tool.camera.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\tool.instant_camera.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\toolgun.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\torch.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\torch.torch.skull.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\trap.bear.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\trap.landmine.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\tshirt.long.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\tshirt.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\tunalight.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\twitch.headset.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\twitchsunglasses.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\valve1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\valve2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\valve3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\vehicle.1mod.cockpit.armored.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\vehicle.1mod.cockpit.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\vehicle.1mod.cockpit.with.engine.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\vehicle.1mod.engine.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\vehicle.1mod.flatbed.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\vehicle.1mod.passengers.armored.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\vehicle.1mod.rear.seats.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\vehicle.1mod.storage.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\vehicle.1mod.taxi.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\vehicle.2mod.camper.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\vehicle.2mod.flatbed.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\vehicle.2mod.fuel.tank.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\vehicle.2mod.passengers.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\vehicle.chassis.2mod.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\vehicle.chassis.3mod.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\vehicle.chassis.4mod.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\vehicle.chassis.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\vehicle.module.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\vending.machine.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\wall.external.high.ice.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\wall.external.high.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\wall.external.high.stone.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\wall.frame.cell.gate.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\wall.frame.cell.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\wall.frame.fence.gate.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\wall.frame.fence.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\wall.frame.garagedoor.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\wall.frame.netting.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\wall.frame.shopfront.metal.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\wall.frame.shopfront.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\wall.graveyard.fence.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\wall.ice.wall.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\wall.window.bars.metal.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\wall.window.bars.toptier.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\wall.window.bars.wood.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\wall.window.glass.reinforced.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\watchtower.wood.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\water.barrel.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\water.catcher.large.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\water.catcher.small.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\water.purifier.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\waterjug.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\waterpump.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\weapon.mod.8x.scope.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\weapon.mod.extendedmags.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\weapon.mod.flashlight.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\weapon.mod.holosight.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\weapon.mod.lasersight.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\weapon.mod.muzzleboost.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\weapon.mod.muzzlebrake.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\weapon.mod.silencer.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\weapon.mod.simplesight.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\weapon.mod.small.scope.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\white.berry.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\wiretool.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\wolfmeat.burned.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\wolfmeat.cooked.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\wolfmeat.raw.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\wolfmeat.spoiled.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\wood.armor.helmet.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\wood.armor.jacket.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\wood.armor.pants.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\wood.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\woodcross.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\woodtea.advanced.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\woodtea.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\woodtea.pure.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\workbench1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\workbench2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\workbench3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\worm.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\wrappedgift.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\wrappingpaper.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\xmas.advent.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\xmas.decoration.baubels.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\xmas.decoration.candycanes.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\xmas.decoration.gingerbreadmen.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\xmas.decoration.lights.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\xmas.decoration.pinecone.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\xmas.decoration.star.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\xmas.decoration.tinsel.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\xmas.door.garland.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\xmas.double.door.garland.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\xmas.lightstring.advanced.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\xmas.lightstring.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\xmas.present.large.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\xmas.present.medium.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\xmas.present.small.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\xmas.tree.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\xmas.window.garland.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\xmasdoorwreath.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\xylophone.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\yellow.berry.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Resource Include="Assets\unavailable.png" />
   </ItemGroup>
 

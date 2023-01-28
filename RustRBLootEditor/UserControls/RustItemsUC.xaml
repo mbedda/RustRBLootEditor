@@ -49,8 +49,8 @@
                     <Grid Style="{StaticResource inventoryItemGridStyle}" ToolTip="{Binding shortName}" PreviewMouseRightButtonUp="Grid_PreviewMouseRightButtonUp">
                         <Grid>
                             <!--<Image Source="{Binding image}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5"></Image>-->
-                            <Image Source="{Binding shortName, Converter={StaticResource LocalUriFromShortnameConverter}}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5"></Image>
-                            <TextBlock Margin="0,0,5,5" Text="{Binding displayName}" Foreground="White" FontWeight="Bold"
+                            <Image Source="{Binding shortName, Converter={StaticResource RelativeUriFromShortnameConverter}}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5"></Image>
+                            <TextBlock Margin="0,0,5,5" Text="{Binding displayName}" Foreground="White" FontWeight="Bold" FontSize="11"
                                        TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Bottom" HorizontalAlignment="Right"></TextBlock>
                         </Grid>
                         <UI:RustLoadingUC x:Name="rustLoadingUC" Animation_Completed="rustLoadingUC_Animation_Completed"/>
