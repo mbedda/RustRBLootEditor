@@ -7,9 +7,9 @@
     <UseWPF>true</UseWPF>
     <PackageIcon></PackageIcon>
     <ApplicationIcon>hazmat_xQg_icon.ico</ApplicationIcon>
-    <FileVersion>1.3.2.0</FileVersion>
-    <AssemblyVersion>1.3.2.0</AssemblyVersion>
-    <Version>$(VersionPrefix)1.3.2.0</Version>
+    <FileVersion>1.3.3.0</FileVersion>
+    <AssemblyVersion>1.3.3.0</AssemblyVersion>
+    <Version>$(VersionPrefix)1.3.3.0</Version>
     <Authors>beee</Authors>
     <PackageProjectUrl>https://github.com/mbedda/RustRBLootEditor</PackageProjectUrl>
     <RepositoryUrl>https://github.com/mbedda/RustRBLootEditor.git</RepositoryUrl>
@@ -354,6 +354,7 @@
     <None Remove="Assets\RustItems\hat.gas.mask.png" />
     <None Remove="Assets\RustItems\hat.miner.png" />
     <None Remove="Assets\RustItems\hat.oxmask.png" />
+    <None Remove="Assets\RustItems\hat.rabbitmask.png" />
     <None Remove="Assets\RustItems\hat.ratmask.png" />
     <None Remove="Assets\RustItems\hat.tigermask.png" />
     <None Remove="Assets\RustItems\hat.wolf.png" />
@@ -794,6 +795,7 @@
     <None Remove="Assets\RustItems\xmasdoorwreath.png" />
     <None Remove="Assets\RustItems\xylophone.png" />
     <None Remove="Assets\RustItems\yellow.berry.png" />
+    <None Remove="Assets\settings.png" />
     <None Remove="Assets\unavailable.png" />
   </ItemGroup>
 
@@ -805,6 +807,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\RustItems\gingerbreadsuit.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\hat.rabbitmask.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\RustItems\hmlmg.png">
@@ -824,7 +829,7 @@
 
   <ItemGroup>
     <Content Include="Assets\rust-bg.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\items.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -3133,6 +3138,9 @@
     <Content Include="Assets\RustItems\yellow.berry.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Resource Include="Assets\settings.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Assets\unavailable.png" />
   </ItemGroup>
 

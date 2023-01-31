@@ -4,11 +4,11 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RustRBLootEditor" xmlns:converters="clr-namespace:RustRBLootEditor.Converters"
-        mc:Ignorable="d"
+        mc:Ignorable="d" Loaded="Window_Loaded"
         Title="RB Loot Editor" Height="600" Width="1080" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="{Binding BgName, Converter={StaticResource RelativeUriFromShortnameConverter}, ConverterParameter='Assets'}" Stretch="UniformToFill"/>
+            <ImageBrush x:Name="MainGridBrush" Stretch="UniformToFill"/>
         </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -18,12 +18,21 @@
         </Grid.RowDefinitions>
         <Grid Background="#66000000">
             <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
-            <TextBlock Text="{Binding Status}" Margin="10" Foreground="White" VerticalAlignment="Center"></TextBlock>
-            <TextBox x:Name="FilePathTB" Visibility="Collapsed" Text="" VerticalAlignment="Center" Margin="10,10,0,10"/>
-            <StackPanel Orientation="Horizontal" Grid.Column="1">
+            <Border HorizontalAlignment="Left" Margin="10" MouseDown="Border_MouseDown" Cursor="Hand">
+                <Border.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Change Background" Click="ChangeBGMenuItem_Click"/>
+                    </ContextMenu>
+                </Border.ContextMenu>
+                <Image Source="/RustRBLootEditor;component/Assets/settings.png" Width="20" Height="20" />
+            </Border>
+            <TextBlock Text="{Binding Status}" TextAlignment="Center" Margin="10" Foreground="White" VerticalAlignment="Center" Grid.Column="1"></TextBlock>
+            <TextBox x:Name="FilePathTB" Visibility="Collapsed" Text="" TextAlignment="Center" VerticalAlignment="Center" Margin="10,10,0,10" Grid.Column="1"/>
+            <StackPanel Orientation="Horizontal" Grid.Column="2">
                 <Button x:Name="SaveGameItems" Grid.Column="2" Content="Save Game Items" HorizontalAlignment="Right" Margin="0,10,10,10" Padding="10,5" Click="SaveGameItems_Click" Visibility="Collapsed"/>
                 <Button x:Name="ImportFile" Grid.Column="2" Content="Load" HorizontalAlignment="Right" Margin="0,10,10,10" Padding="10,5" Click="ImportFile_Click"/>
                 <Button x:Name="ExportFile" Grid.Column="2" Content="Save" HorizontalAlignment="Right" Margin="0,10,10,10" Padding="10,5" Click="ExportFile_Click"/>
@@ -119,5 +128,8 @@
                 </StackPanel>
             </Grid>
         </Grid>
+
+
+        
     </Grid>
 </Window>

@@ -24,7 +24,9 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <TextBlock Text="GAME ITEMS" Grid.ColumnSpan="2" FontWeight="Bold" Foreground="White" FontFamily="Lato Bold" VerticalAlignment="Center"/>
+            <TextBlock Grid.ColumnSpan="2" FontWeight="Bold" Foreground="White" FontFamily="Lato Bold" VerticalAlignment="Center">
+                GAME ITEMS <Run Text="    Right click to add" FontFamily="Lato Light Italic"/>
+            </TextBlock>
             <TextBox x:Name="filtertxt" Grid.Column="2" PreviewKeyUp="filtertxt_PreviewKeyUp"/>
         </Grid>
         <ListBox x:Name="AllItemsListbox" ItemsSource="{Binding Source={StaticResource ListBoxItems}}" Grid.Row="1" ItemContainerStyle="{StaticResource inventoryItemStyle}"

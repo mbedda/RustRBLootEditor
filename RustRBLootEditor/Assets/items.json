@@ -778,7 +778,7 @@
   },
   {
     "category": "Attire",
-    "displayName": "Scientist Suit",
+    "displayName": "Scientist Suit Peacekeeper",
     "id": "-1958316066",
     "image": "https:\/\/rustlabs.com\/img\/items180\/hazmatsuit_scientist_peacekeeper.png",
     "shortName": "hazmatsuit_scientist_peacekeeper"
@@ -5227,6 +5227,34 @@
     "id": null,
     "image": "",
     "shortName": "attire.egg.suit"
+  },
+  {
+    "category": "Attire",
+    "displayName": "Blue Jumpsuit",
+    "id": null,
+    "image": "",
+    "shortName": "jumpsuit.suit.blue"
+  },
+  {
+    "category": "Attire",
+    "displayName": "Jumpsuit",
+    "id": null,
+    "image": "",
+    "shortName": "jumpsuit.suit"
+  },
+  {
+    "category": "Attire",
+    "displayName": "Rabbit Mask",
+    "id": null,
+    "image": "",
+    "shortName": "hat.rabbitmask"
+  },
+  {
+    "category": "Attire",
+    "displayName": "Lumberjack Hoodie",
+    "id": null,
+    "image": "",
+    "shortName": "lumberjack hoodie"
   },
   {
     "category": "Attire",

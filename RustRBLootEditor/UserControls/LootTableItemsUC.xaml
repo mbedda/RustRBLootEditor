@@ -25,7 +25,7 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <TextBlock Grid.ColumnSpan="2" FontWeight="Bold" Foreground="White" FontFamily="Lato Bold" VerticalAlignment="Center">
-                LOOT TABLE <Run Text="{Binding MainViewModel.Filename}" Foreground="#9bcf3e"/>
+                LOOT TABLE <Run Text="{Binding MainViewModel.Filename}" Foreground="#9bcf3e"/> <Run Text="    Right click to delete" FontFamily="Lato Light Italic"/>
             </TextBlock>
             <TextBox x:Name="filtertxt" Grid.Column="2" PreviewKeyUp="filtertxt_PreviewKeyUp"/>
         </Grid>
@@ -48,7 +48,14 @@
             </ListBox.GroupStyle>
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <Grid Style="{StaticResource inventoryItemGridStyle}" ToolTip="{Binding displayName}" PreviewMouseLeftButtonUp="Grid_PreviewMouseLeftButtonUp" PreviewMouseRightButtonUp="Grid_PreviewMouseRightButtonUp">
+                    <Grid Style="{StaticResource inventoryItemGridStyle}" PreviewMouseLeftButtonUp="Grid_PreviewMouseLeftButtonUp" PreviewMouseRightButtonUp="Grid_PreviewMouseRightButtonUp">
+                        <Grid.ToolTip>
+                            <ToolTip Background="#1b6798" Placement="Top" ToolTipService.InitialShowDelay="0">
+                                <StackPanel>
+                                    <TextBlock Text="{Binding displayName, Converter={StaticResource CaseConverterToUpper}}" Foreground="#6ab9f1" Margin="5 0"/>
+                                </StackPanel>
+                            </ToolTip>
+                        </Grid.ToolTip>
                         <Grid>
                             <!--<Image Source="{Binding shortname, Converter={StaticResource UriFromShortnameConverter}}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5"></Image>-->
                             <Image Source="{Binding shortname, Converter={StaticResource RelativeUriFromShortnameConverter}, ConverterParameter='Assets\\RustItems'}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5"></Image>
