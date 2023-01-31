@@ -8,7 +8,7 @@
         Title="RB Loot Editor" Height="600" Width="1080" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="/RustRBLootEditor;component/Assets/rust-bg.jpg" Stretch="UniformToFill"/>
+            <ImageBrush ImageSource="{Binding BgName, Converter={StaticResource RelativeUriFromShortnameConverter}, ConverterParameter='Assets'}" Stretch="UniformToFill"/>
         </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -22,7 +22,7 @@
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
             <TextBlock Text="{Binding Status}" Margin="10" Foreground="White" VerticalAlignment="Center"></TextBlock>
-            <TextBox x:Name="FilePathTB" Visibility="Collapsed" Text="D:\Rust Server\Current\oxide\config\Skins.json" VerticalAlignment="Center" Margin="10,10,0,10"/>
+            <TextBox x:Name="FilePathTB" Visibility="Collapsed" Text="" VerticalAlignment="Center" Margin="10,10,0,10"/>
             <StackPanel Orientation="Horizontal" Grid.Column="1">
                 <Button x:Name="SaveGameItems" Grid.Column="2" Content="Save Game Items" HorizontalAlignment="Right" Margin="0,10,10,10" Padding="10,5" Click="SaveGameItems_Click" Visibility="Collapsed"/>
                 <Button x:Name="ImportFile" Grid.Column="2" Content="Load" HorizontalAlignment="Right" Margin="0,10,10,10" Padding="10,5" Click="ImportFile_Click"/>
@@ -60,7 +60,7 @@
                             <TextBlock Text="{Binding SelectedEditItem.displayName}" FontFamily="Lato Bold" FontSize="16" Margin="0,0,0,10" Foreground="#9bcf3e" TextWrapping="Wrap" />
                             <TextBlock Text="{Binding SelectedEditItem.shortname}" FontFamily="Lato Bold" FontSize="16" Margin="0,0,0,10" Foreground="White" TextWrapping="Wrap" />
                         </StackPanel>
-                        <Image Grid.Column="1" Source="{Binding SelectedEditItem.shortname, Converter={StaticResource RelativeUriFromShortnameConverter}}" 
+                        <Image Grid.Column="1" Source="{Binding SelectedEditItem.shortname, Converter={StaticResource RelativeUriFromShortnameConverter}, ConverterParameter='Assets\\RustItems'}" 
                            Width="75" Height="75"
                            HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,0,0,10"></Image>
                     </Grid>
@@ -104,7 +104,7 @@
                             <TextBlock Text="{Binding SelectedEditGameItem.displayName}" FontFamily="Lato Bold" FontSize="16" Margin="0,0,0,10" Foreground="#9bcf3e" TextWrapping="Wrap" />
                             <TextBlock Text="{Binding SelectedEditGameItem.shortName}" FontFamily="Lato Bold" FontSize="16" Margin="0,0,0,10" Foreground="White" TextWrapping="Wrap" />
                         </StackPanel>
-                        <Image Grid.Column="1" Source="{Binding SelectedEditGameItem.shortName, Converter={StaticResource RelativeUriFromShortnameConverter}}" 
+                        <Image Grid.Column="1" Source="{Binding SelectedEditGameItem.shortName, Converter={StaticResource RelativeUriFromShortnameConverter}, ConverterParameter='Assets\\RustItems'}" 
                            Width="75" Height="75"
                            HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,0,0,10"></Image>
                     </Grid>

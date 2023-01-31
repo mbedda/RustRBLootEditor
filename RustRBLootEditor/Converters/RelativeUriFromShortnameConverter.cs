@@ -20,8 +20,17 @@ namespace RustRBLootEditor.Converters
                 return DependencyProperty.UnsetValue;
             else
             {
+                string partialpath = "";
+
+                if(parameter != null && parameter.ToString() != null) { partialpath = parameter.ToString(); }
+
                 string debugpath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-                string imagepath = Path.Combine(debugpath, "Assets", "RustItems", value.ToString() + ".png");
+                string imagepath = Path.Combine(debugpath, partialpath, value.ToString());
+
+                if(!imagepath.EndsWith(".png") && !imagepath.EndsWith(".jpg") && !imagepath.EndsWith(".jpeg"))
+                {
+                    imagepath = imagepath + ".png";
+                }
 
                 if (File.Exists(imagepath))
                 {

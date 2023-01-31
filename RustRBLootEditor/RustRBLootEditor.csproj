@@ -7,9 +7,9 @@
     <UseWPF>true</UseWPF>
     <PackageIcon></PackageIcon>
     <ApplicationIcon>hazmat_xQg_icon.ico</ApplicationIcon>
-    <FileVersion>1.3.0.0</FileVersion>
-    <AssemblyVersion>1.3.0.0</AssemblyVersion>
-    <Version>$(VersionPrefix)1.3.0.0</Version>
+    <FileVersion>1.3.2.0</FileVersion>
+    <AssemblyVersion>1.3.2.0</AssemblyVersion>
+    <Version>$(VersionPrefix)1.3.2.0</Version>
     <Authors>beee</Authors>
     <PackageProjectUrl>https://github.com/mbedda/RustRBLootEditor</PackageProjectUrl>
     <RepositoryUrl>https://github.com/mbedda/RustRBLootEditor.git</RepositoryUrl>
@@ -54,6 +54,7 @@
     <None Remove="Assets\RustItems\attire.banditguard.png" />
     <None Remove="Assets\RustItems\attire.bunny.onesie.png" />
     <None Remove="Assets\RustItems\attire.bunnyears.png" />
+    <None Remove="Assets\RustItems\attire.egg.suit.png" />
     <None Remove="Assets\RustItems\attire.hide.boots.png" />
     <None Remove="Assets\RustItems\attire.hide.helterneck.png" />
     <None Remove="Assets\RustItems\attire.hide.pants.png" />
@@ -135,6 +136,7 @@
     <None Remove="Assets\RustItems\cctv.camera.png" />
     <None Remove="Assets\RustItems\ceilinglight.png" />
     <None Remove="Assets\RustItems\chainsaw.png" />
+    <None Remove="Assets\RustItems\chair.icethrone.png" />
     <None Remove="Assets\RustItems\chair.png" />
     <None Remove="Assets\RustItems\charcoal.png" />
     <None Remove="Assets\RustItems\chicken.burned.png" />
@@ -319,6 +321,7 @@
     <None Remove="Assets\RustItems\ghostsheet.png" />
     <None Remove="Assets\RustItems\giantcandycanedecor.png" />
     <None Remove="Assets\RustItems\giantlollipops.png" />
+    <None Remove="Assets\RustItems\gingerbreadsuit.png" />
     <None Remove="Assets\RustItems\gloweyes.png" />
     <None Remove="Assets\RustItems\glue.png" />
     <None Remove="Assets\RustItems\granolabar.png" />
@@ -370,6 +373,7 @@
     <None Remove="Assets\RustItems\heavy.plate.jacket.png" />
     <None Remove="Assets\RustItems\heavy.plate.pants.png" />
     <None Remove="Assets\RustItems\hitchtroughcombo.png" />
+    <None Remove="Assets\RustItems\hmlmg.png" />
     <None Remove="Assets\RustItems\hobobarrel.png" />
     <None Remove="Assets\RustItems\hoodie.png" />
     <None Remove="Assets\RustItems\horse.armor.roadsign.png" />
@@ -441,9 +445,11 @@
     <None Remove="Assets\RustItems\meat.pork.cooked.png" />
     <None Remove="Assets\RustItems\megaphone.png" />
     <None Remove="Assets\RustItems\metal.facemask.hockey.png" />
+    <None Remove="Assets\RustItems\metal.facemask.icemask.png" />
     <None Remove="Assets\RustItems\metal.facemask.png" />
     <None Remove="Assets\RustItems\metal.fragments.png" />
     <None Remove="Assets\RustItems\metal.ore.png" />
+    <None Remove="Assets\RustItems\metal.plate.torso.icevest.png" />
     <None Remove="Assets\RustItems\metal.plate.torso.png" />
     <None Remove="Assets\RustItems\metal.refined.png" />
     <None Remove="Assets\RustItems\metalblade.png" />
@@ -482,6 +488,7 @@
     <None Remove="Assets\RustItems\pistol.eoka.png" />
     <None Remove="Assets\RustItems\pistol.m92.png" />
     <None Remove="Assets\RustItems\pistol.nailgun.png" />
+    <None Remove="Assets\RustItems\pistol.prototype17.png" />
     <None Remove="Assets\RustItems\pistol.python.png" />
     <None Remove="Assets\RustItems\pistol.revolver.png" />
     <None Remove="Assets\RustItems\pistol.semiauto.png" />
@@ -791,13 +798,34 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Assets\RustItems\attire.egg.suit.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\chair.icethrone.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\gingerbreadsuit.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\hmlmg.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\metal.facemask.icemask.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\metal.plate.torso.icevest.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\pistol.prototype17.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="hazmat_xQg_icon.ico" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Assets\rust-bg.jpg">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </Resource>
+    <Content Include="Assets\rust-bg.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\items.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

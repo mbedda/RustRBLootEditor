@@ -5180,6 +5180,55 @@
     "shortName": "torch.torch.skull"
   },
   {
+    "category": "Weapon",
+    "displayName": "Prototype 17",
+    "id": null,
+    "image": "https:\/\/rustlabs.com/img\/items180\/pistol.prototype17.png",
+    "shortName": "pistol.prototype17"
+  },
+  {
+    "category": "Weapon",
+    "displayName": "HMLMG",
+    "id": null,
+    "image": "",
+    "shortName": "hmlmg"
+  },
+  {
+    "category": "Items",
+    "displayName": "Ice Throne",
+    "id": null,
+    "image": "",
+    "shortName": "chair.icethrone"
+  },
+  {
+    "category": "Attire",
+    "displayName": "Ice Metal Chest Plate",
+    "id": null,
+    "image": "",
+    "shortName": "metal.plate.torso.icevest"
+  },
+  {
+    "category": "Attire",
+    "displayName": "Ice Metal Facemask",
+    "id": null,
+    "image": "",
+    "shortName": "metal.facemask.icemask"
+  },
+  {
+    "category": "Attire",
+    "displayName": "Gingerbread Suit",
+    "id": null,
+    "image": "",
+    "shortName": "gingerbreadsuit"
+  },
+  {
+    "category": "Attire",
+    "displayName": "Egg Suit",
+    "id": null,
+    "image": "",
+    "shortName": "attire.egg.suit"
+  },
+  {
     "category": "Attire",
     "displayName": "Hockey Mask",
     "id": null,

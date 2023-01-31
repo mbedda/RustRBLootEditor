@@ -71,12 +71,21 @@ namespace RustRBLootEditor.ViewModels
             set { SetProperty(ref filename, value); }
         }
 
+        private string bgName;
+        public string BgName
+        {
+            get { return bgName; }
+            set { SetProperty(ref bgName, value); }
+        }
+
         public MainViewModel()
         {
             if (AllItems == null)
                 AllItems = new RustItems();
 
             LootTableFile = new LootTableFile();
+
+            BgName = "rust-bg.jpg";
 
             //Common.DownloadImages(AllItems.Items.ToList(), "Assets\\RustItems\\");
 

@@ -46,11 +46,18 @@
             </ListBox.GroupStyle>
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <Grid Style="{StaticResource inventoryItemGridStyle}" ToolTip="{Binding shortName}" PreviewMouseRightButtonUp="Grid_PreviewMouseRightButtonUp">
+                    <Grid Style="{StaticResource inventoryItemGridStyle}" PreviewMouseRightButtonUp="Grid_PreviewMouseRightButtonUp">
+                        <Grid.ToolTip>
+                            <ToolTip Background="#1b6798" Placement="Top" ToolTipService.InitialShowDelay="0">
+                                <StackPanel>
+                                    <TextBlock Text="{Binding displayName, Converter={StaticResource CaseConverterToUpper}}" Foreground="#6ab9f1" Margin="5 0"/>
+                                </StackPanel>
+                            </ToolTip>
+                        </Grid.ToolTip>
                         <Grid>
                             <!--<Image Source="{Binding image}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5"></Image>-->
-                            <Image Source="{Binding shortName, Converter={StaticResource RelativeUriFromShortnameConverter}}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5"></Image>
-                            <TextBlock Margin="0,0,5,5" Text="{Binding displayName}" Foreground="White" FontWeight="Bold" FontSize="11"
+                            <Image Source="{Binding shortName, Converter={StaticResource RelativeUriFromShortnameConverter}, ConverterParameter='Assets\\RustItems'}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5"></Image>
+                            <TextBlock Margin="0,0,5,5" Visibility="Hidden" Text="{Binding displayName}" Foreground="White" FontWeight="Bold" FontSize="11"
                                        TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Bottom" HorizontalAlignment="Right"></TextBlock>
                         </Grid>
                         <UI:RustLoadingUC x:Name="rustLoadingUC" Animation_Completed="rustLoadingUC_Animation_Completed"/>
