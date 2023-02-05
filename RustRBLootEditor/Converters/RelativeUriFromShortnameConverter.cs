@@ -16,18 +16,16 @@ namespace RustRBLootEditor.Converters
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            if (value == null)
-                return DependencyProperty.UnsetValue;
-            else
+            if (value != null)
             {
                 string partialpath = "";
 
-                if(parameter != null && parameter.ToString() != null) { partialpath = parameter.ToString(); }
+                if (parameter != null && parameter.ToString() != null) { partialpath = parameter.ToString(); }
 
                 string debugpath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
                 string imagepath = Path.Combine(debugpath, partialpath, value.ToString());
 
-                if(!imagepath.EndsWith(".png") && !imagepath.EndsWith(".jpg") && !imagepath.EndsWith(".jpeg"))
+                if (!imagepath.EndsWith(".png") && !imagepath.EndsWith(".jpg") && !imagepath.EndsWith(".jpeg"))
                 {
                     imagepath = imagepath + ".png";
                 }
@@ -40,6 +38,10 @@ namespace RustRBLootEditor.Converters
                 {
                     return new Uri("/RustRBLootEditor;component/Assets/unavailable.png", UriKind.Relative);
                 }
+            }
+            else
+            {
+                return DependencyProperty.UnsetValue;
             }
         }
 

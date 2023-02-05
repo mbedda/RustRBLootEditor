@@ -1106,18 +1106,18 @@
     "shortName": "jackolantern.happy"
   },
   {
-    "category": "Traps",
-    "displayName": "Land Mine",
-    "id": "-1663759755",
-    "image": "https:\/\/rustlabs.com\/img\/items180\/trap.landmine.png",
-    "shortName": "trap.landmine"
-  },
-  {
     "category": "Items",
     "displayName": "Lantern",
     "id": "1658229558",
     "image": "https:\/\/rustlabs.com\/img\/items180\/lantern.png",
     "shortName": "lantern"
+  },
+  {
+    "category": "Items",
+    "displayName": "Twitch Rivals Trophy",
+    "id": "1658229558",
+    "image": "",
+    "shortName": "trophy"
   },
   {
     "category": "Items",
@@ -4739,7 +4739,7 @@
     "shortName": "woodtea.pure"
   },
   {
-    "category": "Tool",
+    "category": "Electrical",
     "displayName": "Hose Tool",
     "id": null,
     "image": "https:\/\/rustlabs.com\/img\/items180\/hosetool.png",
@@ -5255,6 +5255,97 @@
     "id": null,
     "image": "",
     "shortName": "lumberjack hoodie"
+  },
+  {
+    "category": "Attire",
+    "displayName": "Gas Mask",
+    "id": null,
+    "image": "",
+    "shortName": "hat.gas.mask"
+  },
+  {
+    "category": "Resources",
+    "displayName": "Dog Tag",
+    "id": null,
+    "image": "",
+    "shortName": "dogtagneutral"
+  },
+  {
+    "category": "Resources",
+    "displayName": "Red Dog Tags",
+    "id": null,
+    "image": "",
+    "shortName": "reddogtags"
+  },
+  {
+    "category": "Resources",
+    "displayName": "Blue Dog Tags",
+    "id": null,
+    "image": "",
+    "shortName": "bluedogtags"
+  },
+  {
+    "category": "Traps",
+    "displayName": "Homemade Landmine",
+    "id": null,
+    "image": "",
+    "shortName": "trap.landmine"
+  },
+  {
+    "category": "Weapon",
+    "displayName": "Burst Module",
+    "id": null,
+    "image": "",
+    "shortName": "weapon.mod.burstmodule"
+  },
+  {
+    "category": "Electrical",
+    "displayName": "Electric Furnace",
+    "id": null,
+    "image": "",
+    "shortName": "electric.furnace"
+  },
+  {
+    "category": "Electrical",
+    "displayName": "Industrial Combiner",
+    "id": null,
+    "image": "",
+    "shortName": "industrial.combiner"
+  },
+  {
+    "category": "Electrical",
+    "displayName": "Industrial Conveyor",
+    "id": null,
+    "image": "",
+    "shortName": "industrial.conveyor"
+  },
+  {
+    "category": "Electrical",
+    "displayName": "Industrial Crafter",
+    "id": null,
+    "image": "",
+    "shortName": "industrial.crafter"
+  },
+  {
+    "category": "Electrical",
+    "displayName": "Industrial Splitter",
+    "id": null,
+    "image": "",
+    "shortName": "industrial.splitter"
+  },
+  {
+    "category": "Electrical",
+    "displayName": "Pipe Tool",
+    "id": null,
+    "image": "",
+    "shortName": "pipetool"
+  },
+  {
+    "category": "Electrical",
+    "displayName": "Storage Adaptor",
+    "id": null,
+    "image": "",
+    "shortName": "storageadaptor"
   },
   {
     "category": "Attire",

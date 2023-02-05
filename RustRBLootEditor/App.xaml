@@ -39,7 +39,7 @@
                 </Trigger>
             </Style.Triggers>
         </Style>
-        
+
         <Style TargetType="{x:Type Grid}" x:Key="inventoryItemGridStyle">
             <Setter Property="Background" Value="#33BDBDBD" />
             <Setter Property="Width" Value="75" />
@@ -55,47 +55,71 @@
             </Style.Triggers>
         </Style>
         
+        <SolidColorBrush x:Key="BrushOrange" Color="#ff5e3a"/>
+        <SolidColorBrush x:Key="BrushGrey" Color="#f2f2f0"/>
+
+        <Style x:Key="LinkButton" TargetType="Button">
+            <Setter Property="FontStyle" Value="Italic"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <TextBlock><ContentPresenter /></TextBlock>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Foreground" Value="{StaticResource BrushOrange}" />
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="true">
+                    <Setter Property="Foreground" Value="{StaticResource BrushGrey}" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style TargetType="Expander" x:Key="inventoryItemExpanderStyle">
+            <Setter Property="Padding" Value="0" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="IsExpanded" Value="True" />
+            <Setter Property="Margin" Value="0,0,0,20" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Expander" x:Name="exp">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Name="ContentRow" Height="0"/>
+                            </Grid.RowDefinitions>
+                            <Border Name="border" Grid.Row="0" Background="{TemplateBinding Background}" BorderThickness="0" CornerRadius="0" >
+                                <Grid Background="#33BDBDBD">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="0" />
+                                    </Grid.ColumnDefinitions>
+                                    <!--<ToggleButton x:Name="tb" FontFamily="Marlett" FontSize="9.75" Height="5" Grid.Column="1" 
+                                                                                                  IsChecked="{Binding Path=IsExpanded,Mode=TwoWay,RelativeSource={RelativeSource TemplatedParent}}" />-->
+                                    <ContentPresenter x:Name="HeaderContent" Grid.Column="0" Margin="0" ContentSource="Header" RecognizesAccessKey="True" />
+                                </Grid>
+                            </Border>
+                            <Border x:Name="Content" Grid.Row="1" BorderThickness="0" CornerRadius="0" >
+                                <ContentPresenter Margin="0,4" />
+                            </Border>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsExpanded" Value="True">
+                                <Setter TargetName="ContentRow" Property="Height" Value="{Binding ElementName=Content,Path=Height}" />
+                                <!--<Setter Property="Content" TargetName="tb" Value="t"></Setter>-->
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
         <Style x:Key="ItemsGroupItem" TargetType="{x:Type GroupItem}">
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate>
-                        <Expander Padding="0" BorderThickness="0" Header="{Binding Name}" IsExpanded="True" Margin="0,0,0,20">
-                            <Expander.Style>
-                                <Style TargetType="Expander">
-                                    <Setter Property="Template">
-                                        <Setter.Value>
-                                            <ControlTemplate TargetType="Expander" x:Name="exp">
-                                                <Grid>
-                                                    <Grid.RowDefinitions>
-                                                        <RowDefinition Height="Auto"/>
-                                                        <RowDefinition Name="ContentRow" Height="0"/>
-                                                    </Grid.RowDefinitions>
-                                                    <Border Name="border" Grid.Row="0" Background="{TemplateBinding Background}" BorderThickness="0" CornerRadius="0" >
-                                                        <Grid Background="#33BDBDBD">
-                                                            <Grid.ColumnDefinitions>
-                                                                <ColumnDefinition Width="*" />
-                                                                <ColumnDefinition Width="0" />
-                                                            </Grid.ColumnDefinitions>
-                                                            <!--<ToggleButton x:Name="tb" FontFamily="Marlett" FontSize="9.75" Height="5" Grid.Column="1" 
-                                                                                                  IsChecked="{Binding Path=IsExpanded,Mode=TwoWay,RelativeSource={RelativeSource TemplatedParent}}" />-->
-                                                            <ContentPresenter x:Name="HeaderContent" Grid.Column="0" Margin="0" ContentSource="Header" RecognizesAccessKey="True" />
-                                                        </Grid>
-                                                    </Border>
-                                                    <Border x:Name="Content" Grid.Row="1" BorderThickness="0" CornerRadius="0" >
-                                                        <ContentPresenter Margin="0,4" />
-                                                    </Border>
-                                                </Grid>
-                                                <ControlTemplate.Triggers>
-                                                    <Trigger Property="IsExpanded" Value="True">
-                                                        <Setter TargetName="ContentRow" Property="Height" Value="{Binding ElementName=Content,Path=Height}" />
-                                                        <!--<Setter Property="Content" TargetName="tb" Value="t"></Setter>-->
-                                                    </Trigger>
-                                                </ControlTemplate.Triggers>
-                                            </ControlTemplate>
-                                        </Setter.Value>
-                                    </Setter>
-                                </Style>
-                            </Expander.Style>
+                        <Expander Style="{StaticResource inventoryItemExpanderStyle}" Header="{Binding Name}">
                             <Expander.HeaderTemplate>
                                 <DataTemplate>
                                     <Grid  Margin="0,0,0,3" HorizontalAlignment="{Binding Path=HorizontalAlignment, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ContentPresenter}}, Mode=OneWayToSource}" >

@@ -43,6 +43,30 @@ namespace RustRBLootEditor.ViewModels
             set { SetProperty(ref _LootItemEditorOn, value); }
         }
 
+        private string _SelectedEditGroup;
+        public string SelectedEditGroup
+        {
+            get { return _SelectedEditGroup; }
+            set { SetProperty(ref _SelectedEditGroup, value); }
+        }
+
+        private LootItem _TempBulkEditItem;
+        public LootItem TempBulkEditItem
+        {
+            get { return _TempBulkEditItem; }
+            set { SetProperty(ref _TempBulkEditItem, value); }
+        }
+
+        private bool _BulkLootItemEditorOn;
+        public bool BulkLootItemEditorOn
+        {
+            get { return _BulkLootItemEditorOn; }
+            set { SetProperty(ref _BulkLootItemEditorOn, value); }
+        }
+
+        public DelegateCommand ApplyBulkCommand { get; set; }
+        public DelegateCommand CancelBulkCommand { get; set; }
+
         private RustItem _SelectedEditGameItem;
         public RustItem SelectedEditGameItem
         {
@@ -90,6 +114,9 @@ namespace RustRBLootEditor.ViewModels
             //Common.DownloadImages(AllItems.Items.ToList(), "Assets\\RustItems\\");
 
             Status = "No file loaded...";
+
+            ApplyBulkCommand = new DelegateCommand(ApplyBulk);
+            CancelBulkCommand = new DelegateCommand(CancelBulk);
         }
 
         public void LoadFile(string filepath)
@@ -183,6 +210,41 @@ namespace RustRBLootEditor.ViewModels
         public void HideLootItemEditor()
         {
             LootItemEditorOn = false;
+        }
+        public void ShowBulkLootItemEditor(string group)
+        {
+            SelectedEditGroup = group;
+            TempBulkEditItem = new LootItem() { category = group};
+            BulkLootItemEditorOn = true;
+        }
+        public void HideBulkLootItemEditor()
+        {
+            BulkLootItemEditorOn = false;
+        }
+        private void ApplyBulk()
+        {
+            MessageBoxResult messageBoxResult = MessageBox.Show("Are you sure you would like to overwrite values for all items in "+ TempBulkEditItem.category + "?", "Bulk Edit Confirmation", System.Windows.MessageBoxButton.YesNo);
+            if (messageBoxResult == MessageBoxResult.Yes)
+            {
+                var groupItems = lootTableFile.LootItems.Where(s => s.category == TempBulkEditItem.category);
+
+                foreach (var item in groupItems)
+                {
+                    item.amount = TempBulkEditItem.amount;
+                    item.amountMin = TempBulkEditItem.amountMin;
+                    item.probability = TempBulkEditItem.probability;
+                    item.stacksize = TempBulkEditItem.stacksize;
+                }
+
+                TempBulkEditItem = new LootItem();
+
+                BulkLootItemEditorOn = false;
+            }
+        }
+        private void CancelBulk()
+        {
+            TempBulkEditItem = new LootItem();
+            BulkLootItemEditorOn = false;
         }
         public void ShowGameItemEditor(RustItem item)
         {

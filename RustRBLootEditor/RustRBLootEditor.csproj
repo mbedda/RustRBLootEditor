@@ -7,9 +7,9 @@
     <UseWPF>true</UseWPF>
     <PackageIcon></PackageIcon>
     <ApplicationIcon>hazmat_xQg_icon.ico</ApplicationIcon>
-    <FileVersion>1.3.3.0</FileVersion>
-    <AssemblyVersion>1.3.3.0</AssemblyVersion>
-    <Version>$(VersionPrefix)1.3.3.0</Version>
+    <FileVersion>1.3.4.0</FileVersion>
+    <AssemblyVersion>1.3.4.0</AssemblyVersion>
+    <Version>$(VersionPrefix)1.3.4.0</Version>
     <Authors>beee</Authors>
     <PackageProjectUrl>https://github.com/mbedda/RustRBLootEditor</PackageProjectUrl>
     <RepositoryUrl>https://github.com/mbedda/RustRBLootEditor.git</RepositoryUrl>
@@ -92,6 +92,7 @@
     <None Remove="Assets\RustItems\blood.png" />
     <None Remove="Assets\RustItems\blue.berry.png" />
     <None Remove="Assets\RustItems\blueberries.png" />
+    <None Remove="Assets\RustItems\bluedogtags.png" />
     <None Remove="Assets\RustItems\blueprintbase.png" />
     <None Remove="Assets\RustItems\bone.armor.suit.png" />
     <None Remove="Assets\RustItems\bone.club.png" />
@@ -186,6 +187,7 @@
     <None Remove="Assets\RustItems\diving.mask.png" />
     <None Remove="Assets\RustItems\diving.tank.png" />
     <None Remove="Assets\RustItems\diving.wetsuit.png" />
+    <None Remove="Assets\RustItems\dogtagneutral.png" />
     <None Remove="Assets\RustItems\door.closer.png" />
     <None Remove="Assets\RustItems\door.double.hinged.metal.png" />
     <None Remove="Assets\RustItems\door.double.hinged.toptier.png" />
@@ -218,6 +220,7 @@
     <None Remove="Assets\RustItems\electric.doorcontroller.png" />
     <None Remove="Assets\RustItems\electric.flasherlight.png" />
     <None Remove="Assets\RustItems\electric.fuelgenerator.small.png" />
+    <None Remove="Assets\RustItems\electric.furnace.png" />
     <None Remove="Assets\RustItems\electric.generator.small.png" />
     <None Remove="Assets\RustItems\electric.hbhfsensor.png" />
     <None Remove="Assets\RustItems\electric.heater.png" />
@@ -394,6 +397,10 @@
     <None Remove="Assets\RustItems\humanmeat.raw.png" />
     <None Remove="Assets\RustItems\humanmeat.spoiled.png" />
     <None Remove="Assets\RustItems\icepick.salvaged.png" />
+    <None Remove="Assets\RustItems\industrial.combiner.png" />
+    <None Remove="Assets\RustItems\industrial.conveyor.png" />
+    <None Remove="Assets\RustItems\industrial.crafter.png" />
+    <None Remove="Assets\RustItems\industrial.splitter.png" />
     <None Remove="Assets\RustItems\industrial.wall.light.green.png" />
     <None Remove="Assets\RustItems\industrial.wall.light.png" />
     <None Remove="Assets\RustItems\industrial.wall.light.red.png" />
@@ -486,6 +493,7 @@
     <None Remove="Assets\RustItems\photoframe.portrait.png" />
     <None Remove="Assets\RustItems\piano.png" />
     <None Remove="Assets\RustItems\pickaxe.png" />
+    <None Remove="Assets\RustItems\pipetool.png" />
     <None Remove="Assets\RustItems\pistol.eoka.png" />
     <None Remove="Assets\RustItems\pistol.m92.png" />
     <None Remove="Assets\RustItems\pistol.nailgun.png" />
@@ -514,6 +522,7 @@
     <None Remove="Assets\RustItems\radiationresisttea.png" />
     <None Remove="Assets\RustItems\radiationresisttea.pure.png" />
     <None Remove="Assets\RustItems\red.berry.png" />
+    <None Remove="Assets\RustItems\reddogtags.png" />
     <None Remove="Assets\RustItems\research.table.png" />
     <None Remove="Assets\RustItems\researchpaper.png" />
     <None Remove="Assets\RustItems\rf.detonator.png" />
@@ -663,6 +672,7 @@
     <None Remove="Assets\RustItems\stonehatchet.png" />
     <None Remove="Assets\RustItems\stones.png" />
     <None Remove="Assets\RustItems\storage.monitor.png" />
+    <None Remove="Assets\RustItems\storageadaptor.png" />
     <None Remove="Assets\RustItems\strobelight.png" />
     <None Remove="Assets\RustItems\submarine.torpedo.straight.png" />
     <None Remove="Assets\RustItems\submarineduo.png" />
@@ -694,6 +704,7 @@
     <None Remove="Assets\RustItems\torch.torch.skull.png" />
     <None Remove="Assets\RustItems\trap.bear.png" />
     <None Remove="Assets\RustItems\trap.landmine.png" />
+    <None Remove="Assets\RustItems\trophy.png" />
     <None Remove="Assets\RustItems\tshirt.long.png" />
     <None Remove="Assets\RustItems\tshirt.png" />
     <None Remove="Assets\RustItems\tunalight.png" />
@@ -746,6 +757,7 @@
     <None Remove="Assets\RustItems\waterjug.png" />
     <None Remove="Assets\RustItems\waterpump.png" />
     <None Remove="Assets\RustItems\weapon.mod.8x.scope.png" />
+    <None Remove="Assets\RustItems\weapon.mod.burstmodule.png" />
     <None Remove="Assets\RustItems\weapon.mod.extendedmags.png" />
     <None Remove="Assets\RustItems\weapon.mod.flashlight.png" />
     <None Remove="Assets\RustItems\weapon.mod.holosight.png" />
@@ -803,7 +815,16 @@
     <Content Include="Assets\RustItems\attire.egg.suit.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\RustItems\bluedogtags.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\RustItems\chair.icethrone.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\dogtagneutral.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\electric.furnace.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\RustItems\gingerbreadsuit.png">
@@ -815,13 +836,40 @@
     <Content Include="Assets\RustItems\hmlmg.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\RustItems\industrial.combiner.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\industrial.conveyor.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\industrial.crafter.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\industrial.splitter.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\RustItems\metal.facemask.icemask.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\RustItems\metal.plate.torso.icevest.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\RustItems\pipetool.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\RustItems\pistol.prototype17.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\reddogtags.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\storageadaptor.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\trophy.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\weapon.mod.burstmodule.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="hazmat_xQg_icon.ico" />

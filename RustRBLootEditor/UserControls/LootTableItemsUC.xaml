@@ -5,13 +5,37 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:UI="clr-namespace:RustRBLootEditor.UI" xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
              mc:Ignorable="d" Loaded="UserControl_Loaded"
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="450" d:DesignWidth="800" x:Name="lootTableItemsUC">
     <UserControl.Resources>
         <CollectionViewSource x:Key="ListBoxItems" Source="{Binding MainViewModel.LootTableFile.LootItems}">
             <CollectionViewSource.GroupDescriptions>
                 <PropertyGroupDescription PropertyName="category" />
             </CollectionViewSource.GroupDescriptions>
         </CollectionViewSource>
+
+        <Style x:Key="LootItemsGroupItem" TargetType="{x:Type GroupItem}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Expander Style="{StaticResource inventoryItemExpanderStyle}" Header="{Binding Name}">
+                            <Expander.HeaderTemplate>
+                                <DataTemplate>
+                                    <Grid  Margin="0,0,0,3" HorizontalAlignment="{Binding Path=HorizontalAlignment, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ContentPresenter}}, Mode=OneWayToSource}" >
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition />
+                                            <ColumnDefinition  Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock FontWeight="Bold" Margin="10,7,5,2" FontSize="14" Text="{Binding Converter={StaticResource CaseConverterToUpper}}" Foreground="White" />
+                                        <Button HorizontalAlignment="Right" Grid.Column="1" Style="{StaticResource LinkButton}" Command="{Binding DataContext.UpdateBulkCommand, ElementName=lootTableItemsUC}" CommandParameter="{Binding}" Margin="0,8,10,0">Bulk Edit</Button>
+                                    </Grid>
+                                </DataTemplate>
+                            </Expander.HeaderTemplate>
+                            <ItemsPresenter/>
+                        </Expander>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
     </UserControl.Resources>
     <Grid>
         <Grid.RowDefinitions>
@@ -38,7 +62,7 @@
                 </ItemsPanelTemplate>
             </ListBox.ItemsPanel>
             <ListBox.GroupStyle>
-                <GroupStyle ContainerStyle="{StaticResource ItemsGroupItem}">
+                <GroupStyle ContainerStyle="{StaticResource LootItemsGroupItem}">
                     <GroupStyle.Panel>
                         <ItemsPanelTemplate>
                             <VirtualizingStackPanel Orientation="Vertical" />

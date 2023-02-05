@@ -88,9 +88,79 @@
                             <TextBox Text="{Binding SelectedEditItem.amount, UpdateSourceTrigger=PropertyChanged}" FontSize="14" FontFamily="Lato Bold" />
                         </StackPanel>
                     </Grid>
-                    <StackPanel>
+                    <StackPanel Margin="0,0,0,10">
                         <TextBlock Text="Skin" FontFamily="Lato" FontSize="14" Foreground="White" FontStyle="Italic" Margin="0,0,0,5"/>
                         <TextBox Text="{Binding SelectedEditItem.skin, UpdateSourceTrigger=PropertyChanged}" FontSize="14" FontFamily="Lato Bold" />
+                    </StackPanel>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="10"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel>
+                            <TextBlock Text="Probability (0.0-1.0)" FontFamily="Lato" FontSize="14" Foreground="White" FontStyle="Italic" Margin="0,0,0,5"/>
+                            <TextBox Text="{Binding SelectedEditItem.probability, UpdateSourceTrigger=PropertyChanged, StringFormat=N2}" FontSize="14" FontFamily="Lato Bold" />
+                        </StackPanel>
+                        <StackPanel Grid.Column="2">
+                            <TextBlock Text="Stack Size" FontFamily="Lato" FontSize="14" Foreground="White" FontStyle="Italic" Margin="0,0,0,5"/>
+                            <TextBox Text="{Binding SelectedEditItem.stacksize, UpdateSourceTrigger=PropertyChanged}" FontSize="14" FontFamily="Lato Bold" />
+                        </StackPanel>
+                    </Grid>
+                </StackPanel>
+            </Grid>
+        </Grid>
+        <Grid Grid.RowSpan="10" Grid.ColumnSpan="10" Visibility="{Binding BulkLootItemEditorOn, Converter={StaticResource BooleanToVisibilityConverter}}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.ColumnSpan="10" Background="#66000000"></Grid>
+            <Grid Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Stretch" Background="#FF564D4D">
+                <StackPanel Margin="10">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel>
+                            <TextBlock Text="{Binding TempBulkEditItem.category}" FontFamily="Lato Bold" FontSize="16" Margin="0,0,0,10" Foreground="#9bcf3e" TextWrapping="Wrap" />
+                        </StackPanel>
+                    </Grid>
+                    <Grid Margin="0,0,0,10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="10"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel>
+                            <TextBlock Text="Amount Min" FontFamily="Lato" FontSize="14" Foreground="White" FontStyle="Italic" Margin="0,0,0,5"/>
+                            <TextBox Text="{Binding TempBulkEditItem.amountMin, UpdateSourceTrigger=PropertyChanged}" FontSize="14" FontFamily="Lato Bold" />
+                        </StackPanel>
+                        <StackPanel Grid.Column="2">
+                            <TextBlock Text="Amount Max" FontFamily="Lato" FontSize="14" Foreground="White" FontStyle="Italic" Margin="0,0,0,5"/>
+                            <TextBox Text="{Binding TempBulkEditItem.amount, UpdateSourceTrigger=PropertyChanged}" FontSize="14" FontFamily="Lato Bold" />
+                        </StackPanel>
+                    </Grid>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="10"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel>
+                            <TextBlock Text="Probability (0.0-1.0)" FontFamily="Lato" FontSize="14" Foreground="White" FontStyle="Italic" Margin="0,0,0,5"/>
+                            <TextBox Text="{Binding TempBulkEditItem.probability, UpdateSourceTrigger=PropertyChanged, StringFormat=N2}" FontSize="14" FontFamily="Lato Bold" />
+                        </StackPanel>
+                        <StackPanel Grid.Column="2">
+                            <TextBlock Text="Stack Size" FontFamily="Lato" FontSize="14" Foreground="White" FontStyle="Italic" Margin="0,0,0,5"/>
+                            <TextBox Text="{Binding TempBulkEditItem.stacksize, UpdateSourceTrigger=PropertyChanged}" FontSize="14" FontFamily="Lato Bold" />
+                        </StackPanel>
+                    </Grid>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                        <Button Grid.Column="2" Content="Apply" HorizontalAlignment="Right" Margin="0,10,10,0" Padding="10,5" Command="{Binding ApplyBulkCommand}"/>
+                        <Button Grid.Column="2" Content="Cancel" HorizontalAlignment="Right" Margin="0,10,0,0" Padding="10,5" Command="{Binding CancelBulkCommand}"/>
                     </StackPanel>
                 </StackPanel>
             </Grid>

@@ -17,10 +17,17 @@ namespace RustRBLootEditor.ViewModels
             get { return _MainViewModel; }
             set { SetProperty(ref _MainViewModel, value); }
         }
+        public DelegateCommand<string> UpdateBulkCommand { get; set; }
 
         public LootTableItemsUCViewModel(MainViewModel mainViewModel)
         {
             MainViewModel = mainViewModel;
+            UpdateBulkCommand = new DelegateCommand<string>(UpdateBulk);
+        }
+
+        private void UpdateBulk(string group)
+        {
+            MainViewModel.ShowBulkLootItemEditor(group);
         }
 
         public void ItemRightClick(LootItem item)

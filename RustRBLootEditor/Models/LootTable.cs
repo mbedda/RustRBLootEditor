@@ -32,6 +32,8 @@ namespace RustRBLootEditor.Models
             amount = 0;
             amountMin = 0;
             category = "Misc";
+            probability = 1.0f;
+            stacksize = -1;
         }
 
         private string _shortname;
@@ -60,6 +62,20 @@ namespace RustRBLootEditor.Models
         {
             get { return _amountMin; }
             set { SetProperty(ref _amountMin, value); }
+        }
+
+        private float _probability;
+        public float probability
+        {
+            get { return _probability; }
+            set { SetProperty(ref _probability, value); }
+        }
+
+        private long _stacksize;
+        public long stacksize
+        {
+            get { return _stacksize; }
+            set { SetProperty(ref _stacksize, value); }
         }
 
         [IgnoreDataMember]
