@@ -172,21 +172,20 @@ namespace RustRBLootEditor.ViewModels
             {
                 var tmpitem = lootTableFile.LootItems.FirstOrDefault(s => s.shortname == rustItem.shortName);
 
-                if (tmpitem == null)
+                if (tmpitem != null)
                 {
-                    LootTableFile.LootItems.Add(new LootItem()
-                    {
-                        shortname = rustItem.shortName,
-                        displayName = rustItem.displayName,
-                        category = rustItem.category
-                    });
+                    MessageBoxResult messageBoxResult = MessageBox.Show("Loot table already contains this item. Are you sure you would like to add?", "Duplicate Notice", System.Windows.MessageBoxButton.YesNo);
+                    if (messageBoxResult == MessageBoxResult.No) return;
+                }
 
-                    UpdateStatus();
-                }
-                else
+                LootTableFile.LootItems.Add(new LootItem()
                 {
-                    MessageBox.Show("Loot table already contains this item.", "Duplicate Item");
-                }
+                    shortname = rustItem.shortName,
+                    displayName = rustItem.displayName,
+                    category = rustItem.category
+                });
+
+                UpdateStatus();
             }
         }
 
@@ -214,7 +213,7 @@ namespace RustRBLootEditor.ViewModels
         public void ShowBulkLootItemEditor(string group)
         {
             SelectedEditGroup = group;
-            TempBulkEditItem = new LootItem() { category = group};
+            TempBulkEditItem = new LootItem() { category = group };
             BulkLootItemEditorOn = true;
         }
         public void HideBulkLootItemEditor()
@@ -223,7 +222,7 @@ namespace RustRBLootEditor.ViewModels
         }
         private void ApplyBulk()
         {
-            MessageBoxResult messageBoxResult = MessageBox.Show("Are you sure you would like to overwrite values for all items in "+ TempBulkEditItem.category + "?", "Bulk Edit Confirmation", System.Windows.MessageBoxButton.YesNo);
+            MessageBoxResult messageBoxResult = MessageBox.Show("Are you sure you would like to overwrite values for all items in " + TempBulkEditItem.category + "?", "Bulk Edit Confirmation", System.Windows.MessageBoxButton.YesNo);
             if (messageBoxResult == MessageBoxResult.Yes)
             {
                 var groupItems = lootTableFile.LootItems.Where(s => s.category == TempBulkEditItem.category);

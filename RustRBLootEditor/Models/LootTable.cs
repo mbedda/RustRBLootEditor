@@ -43,6 +43,13 @@ namespace RustRBLootEditor.Models
             set { SetProperty(ref _shortname, value); }
         }
 
+        private string _name;
+        public string name
+        {
+            get { return _name; }
+            set { SetProperty(ref _name, value); }
+        }
+
         private long _amount;
         public long amount
         {

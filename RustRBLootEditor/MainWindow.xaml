@@ -88,10 +88,21 @@
                             <TextBox Text="{Binding SelectedEditItem.amount, UpdateSourceTrigger=PropertyChanged}" FontSize="14" FontFamily="Lato Bold" />
                         </StackPanel>
                     </Grid>
-                    <StackPanel Margin="0,0,0,10">
-                        <TextBlock Text="Skin" FontFamily="Lato" FontSize="14" Foreground="White" FontStyle="Italic" Margin="0,0,0,5"/>
-                        <TextBox Text="{Binding SelectedEditItem.skin, UpdateSourceTrigger=PropertyChanged}" FontSize="14" FontFamily="Lato Bold" />
-                    </StackPanel>
+                    <Grid Margin="0,0,0,10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="10"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel>
+                            <TextBlock Text="Name (For Custom Items)" FontFamily="Lato" FontSize="14" Foreground="White" FontStyle="Italic" Margin="0,0,0,5"/>
+                            <TextBox Text="{Binding SelectedEditItem.name, UpdateSourceTrigger=PropertyChanged}" FontSize="14" FontFamily="Lato Bold" />
+                        </StackPanel>
+                        <StackPanel Grid.Column="2">
+                            <TextBlock Text="Skin" FontFamily="Lato" FontSize="14" Foreground="White" FontStyle="Italic" Margin="0,0,0,5"/>
+                            <TextBox Text="{Binding SelectedEditItem.skin, UpdateSourceTrigger=PropertyChanged}" FontSize="14" FontFamily="Lato Bold" />
+                        </StackPanel>
+                    </Grid>
                     <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*"/>
