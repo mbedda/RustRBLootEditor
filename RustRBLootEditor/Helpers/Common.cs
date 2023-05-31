@@ -9,11 +9,50 @@ using System.Runtime.Serialization.Json;
 using System.Text;
 using System.Windows;
 using System.Windows.Media;
+using Newtonsoft.Json;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace RustRBLootEditor.Helpers
 {
     public static class Common
     {
+        private static readonly JsonSerializerOptions _options =
+        new() { DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull };
+
+        public static bool SaveJsonNewton<T>(T theobject, string filePath)
+        {
+            try
+            {
+                Directory.CreateDirectory(Path.GetDirectoryName(filePath));
+
+                using (FileStream fs = new FileStream(filePath, FileMode.Create, FileAccess.ReadWrite))
+                {
+                    using (StreamWriter sw = new StreamWriter(fs))
+                    {
+                        using (MemoryStream ms = new MemoryStream())
+                        {
+                            var options = new JsonSerializerOptions(_options)
+                            {
+                                WriteIndented = true
+                            };
+                            var jsonString = JsonConvert.SerializeObject(theobject, Formatting.Indented);
+                            sw.Write(jsonString);
+                        }
+                    }
+
+                    fs.Flush();
+                    fs.Close();
+                }
+
+                return true;
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
+        }
+
         public static bool SaveJson<T>(T theobject, string filePath)
         {
             try
@@ -29,7 +68,7 @@ namespace RustRBLootEditor.Helpers
                         using (MemoryStream ms = new MemoryStream())
                         {
                             DataContractJsonSerializer serializer = new DataContractJsonSerializer
-                            (typeof(T));
+                            (typeof(T), new DataContractJsonSerializerSettings() { UseSimpleDictionaryFormat = true });
                             serializer.WriteObject(ms, theobject);
                             Encoding enc = Encoding.UTF8;
                             sw.Write(enc.GetString(ms.ToArray()));
@@ -71,6 +110,7 @@ namespace RustRBLootEditor.Helpers
                     using (var ms = new MemoryStream(Encoding.Unicode.GetBytes(filetext)))
                     {
                         DataContractJsonSerializerSettings settings = new DataContractJsonSerializerSettings();
+                        settings.UseSimpleDictionaryFormat = true;
                         var deserializer = new DataContractJsonSerializer(typeof(T), settings);
                         result = (T)deserializer.ReadObject(ms);
                     }
@@ -101,6 +141,7 @@ namespace RustRBLootEditor.Helpers
                     using (var ms = new MemoryStream(Encoding.Unicode.GetBytes(filetext)))
                     {
                         DataContractJsonSerializerSettings settings = new DataContractJsonSerializerSettings();
+                        settings.UseSimpleDictionaryFormat = true;
                         var deserializer = new DataContractJsonSerializer(typeof(T), settings);
                         result = (T)deserializer.ReadObject(ms);
                     }

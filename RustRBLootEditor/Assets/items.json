@@ -1739,8 +1739,8 @@
     "category": "Food",
     "displayName": "Chocolate Bar",
     "id": "363467698",
-    "image": "https:\/\/rustlabs.com\/img\/items180\/chocholate.png",
-    "shortName": "chocholate"
+    "image": "",
+    "shortName": "chocolate"
   },
   {
     "category": "Food",
@@ -4011,6 +4011,13 @@
     "shortName": "rustige_egg_e"
   },
   {
+  "category": "Misc",
+    "displayName": "rustige_egg_f",
+    "id": null,
+    "image": "",
+    "shortName": "rustige_egg_f"
+  },
+  {
     "category": "Attire",
     "displayName": "attire.nesthat",
     "id": null,
@@ -4739,6 +4746,13 @@
     "shortName": "woodtea.pure"
   },
   {
+      "category": "Food",
+    "displayName": "Super Serum",
+    "id": null,
+    "image": "",
+    "shortName": "supertea"
+  },
+  {
     "category": "Electrical",
     "displayName": "Hose Tool",
     "id": null,
@@ -5201,6 +5215,13 @@
     "shortName": "chair.icethrone"
   },
   {
+    "category": "Items",
+    "displayName": "Drone",
+    "id": null,
+    "image": "",
+    "shortName": "drone"
+  },
+  {
     "category": "Attire",
     "displayName": "Ice Metal Chest Plate",
     "id": null,
@@ -5346,6 +5367,83 @@
     "id": null,
     "image": "",
     "shortName": "storageadaptor"
+  },
+  {
+    "category": "Electrical",
+    "displayName": "PTZ CCTV Camera",
+    "id": null,
+    "image": "",
+    "shortName": "ptz.cctv.camera"
+  },
+  { 
+    "category": "Attire",
+    "displayName": "NVGM Scientist Suit",
+    "id": null,
+    "image": "",
+    "shortName": "hazmatsuit_scientist_nvgm"
+  },
+  {
+    "category": "Resources",
+    "displayName": "Blue ID Tag",
+    "id": null,
+    "image": "",
+    "shortName": "blueidtag"
+  },
+  {
+   "category": "Resources",
+    "displayName": "Gray ID Tag",
+    "id": null,
+    "image": "",
+    "shortName": "grayidtag"
+  },
+  {
+   "category": "Resources",
+    "displayName": "Green ID Tag",
+    "id": null,
+    "image": "",
+    "shortName": "greenidtag"
+  },
+  {
+   "category": "Resources",
+    "displayName": "Orange ID Tag",
+    "id": null,
+    "image": "",
+    "shortName": "orangeidtag"
+  },
+  {
+   "category": "Resources",
+    "displayName": "Pink ID Tag",
+    "id": null,
+    "image": "",
+    "shortName": "pinkidtag"
+  },
+  {
+   "category": "Resources",
+    "displayName": "Purple ID Tag",
+    "id": null,
+    "image": "",
+    "shortName": "purpleidtag"
+  },
+  {
+   "category": "Resources",
+    "displayName": "Red ID Tag",
+    "id": null,
+    "image": "",
+    "shortName": "redidtag"
+  },
+  {
+   "category": "Resources",
+    "displayName": "White ID Tag",
+    "id": null,
+    "image": "",
+    "shortName": "whiteidtag"
+  },
+  {
+   "category": "Resources",
+    "displayName": "Yellow ID Tag",
+    "id": null,
+    "image": "",
+    "shortName": "yellowidtag"
   },
   {
     "category": "Attire",

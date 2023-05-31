@@ -151,7 +151,7 @@ namespace RustRBLootEditor.ViewModels
 
         public void Save(string filepath)
         {
-            Common.SaveJson(LootTableFile.LootItems, filepath);
+            Common.SaveJsonNewton(LootTableFile.LootItems, filepath);
         }
 
         public void UpdateStatus()

@@ -85,7 +85,7 @@ namespace RustRBLootEditor
 
         private void SaveGameItems_Click(object sender, RoutedEventArgs e)
         {
-            Common.SaveJson(viewModel.AllItems.Items, "Assets\\items.json");
+            Common.SaveJsonNewton(viewModel.AllItems.Items, "Assets\\items.json");
         }
 
         private void Border_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
