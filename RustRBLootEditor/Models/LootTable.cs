@@ -16,6 +16,11 @@ namespace RustRBLootEditor.Models
             LootItems = new ObservableCollection<LootItem>();
         }
 
+        internal void DoSort()
+        {
+            LootItems = new ObservableCollection<LootItem>(LootItems.OrderBy(x => x.displayName));
+        }
+
         private ObservableCollection<LootItem> lootItems;
         public ObservableCollection<LootItem> LootItems
         {

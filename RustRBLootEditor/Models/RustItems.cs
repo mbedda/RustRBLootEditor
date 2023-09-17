@@ -40,7 +40,7 @@ namespace RustRBLootEditor.Models
 
             if (File.Exists(jsonpath))
             {
-                Items = new ObservableCollection<RustItem>(Common.LoadJson<List<RustItem>>(jsonpath));
+                Items = new ObservableCollection<RustItem>(Common.LoadJson<List<RustItem>>(jsonpath).OrderBy(x => x.displayName));
             }
 
             //Items = new ObservableCollection<RustItem>(Common.LoadJsonResource<List<RustItem>>("RustRBLootEditor.Assets.items.json"));

@@ -143,7 +143,9 @@ namespace RustRBLootEditor.ViewModels
                     }
                 }
 
-                LootTableFile.LootItems = new ObservableCollection<LootItem>(tmpLootItems);
+                LootTableFile.LootItems.Clear();
+                LootTableFile.LootItems.AddRange(tmpLootItems);
+                LootTableFile.DoSort();
             }
 
             UpdateStatus();
@@ -184,6 +186,7 @@ namespace RustRBLootEditor.ViewModels
                     displayName = rustItem.displayName,
                     category = rustItem.category
                 });
+                LootTableFile.DoSort();
 
                 UpdateStatus();
             }
