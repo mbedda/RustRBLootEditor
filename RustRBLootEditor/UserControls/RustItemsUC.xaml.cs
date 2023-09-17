@@ -17,6 +17,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using RustRBLootEditor.Helpers;
+using System.Diagnostics;
+using System.Timers;
 
 namespace RustRBLootEditor.UserControls
 {
@@ -30,6 +32,8 @@ namespace RustRBLootEditor.UserControls
         public RustItemsUC()
         {
             InitializeComponent();
+            t = new Timer(200);
+            t.Elapsed += T_Elapsed;
         }
 
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
@@ -66,22 +70,25 @@ namespace RustRBLootEditor.UserControls
             viewModel.ItemRightClick(rustItem);
         }
 
+        Timer t = null;
         private void filtertxt_PreviewKeyUp(object sender, KeyEventArgs e)
         {
-            ICollectionView itemsViewOriginal = (CollectionView)CollectionViewSource.GetDefaultView(AllItemsListbox.ItemsSource);
+            t.Stop();
+            t.Start();
+        }
 
-            if(itemsViewOriginal != null)
+        private void T_Elapsed(object? sender, ElapsedEventArgs e)
+        {
+            t.Stop();
+            Dispatcher.Invoke(() =>
             {
-                itemsViewOriginal.Filter = ((o) =>
+                CollectionViewSource.GetDefaultView(AllItemsListbox.ItemsSource).Filter = (o) =>
                 {
                     if (String.IsNullOrEmpty(filtertxt.Text)) return true;
-                    else
-                    {
-                        if (((RustItem)o).displayName.ToLower().Contains(filtertxt.Text.Trim().ToLower())) return true;
-                        else return false;
-                    }
-                });
-            }
+                    RustItem item = (RustItem)o;
+                    return (item.displayName.ToLower() + item.shortName.ToLower()).Contains(filtertxt.Text.Trim().ToLower());
+                };
+            });
         }
 
         private void Grid_PreviewMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
