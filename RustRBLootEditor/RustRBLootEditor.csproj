@@ -7,9 +7,9 @@
     <UseWPF>true</UseWPF>
     <PackageIcon></PackageIcon>
     <ApplicationIcon>hazmat_xQg_icon.ico</ApplicationIcon>
-    <FileVersion>1.3.7.0</FileVersion>
-    <AssemblyVersion>1.3.7.0</AssemblyVersion>
-    <Version>$(VersionPrefix)1.3.7.0</Version>
+    <FileVersion>1.3.9.0</FileVersion>
+    <AssemblyVersion>1.3.9.0</AssemblyVersion>
+    <Version>$(VersionPrefix)1.3.9.0</Version>
     <Authors>beee</Authors>
     <PackageProjectUrl>https://github.com/mbedda/RustRBLootEditor</PackageProjectUrl>
     <RepositoryUrl>https://github.com/mbedda/RustRBLootEditor.git</RepositoryUrl>
@@ -38,6 +38,7 @@
     <None Remove="Assets\RustItems\ammo.rocket.hv.png" />
     <None Remove="Assets\RustItems\ammo.rocket.mlrs.png" />
     <None Remove="Assets\RustItems\ammo.rocket.sam.png" />
+    <None Remove="Assets\RustItems\ammo.rocket.seeker.png" />
     <None Remove="Assets\RustItems\ammo.rocket.smoke.png" />
     <None Remove="Assets\RustItems\ammo.shotgun.fire.png" />
     <None Remove="Assets\RustItems\ammo.shotgun.png" />
@@ -184,6 +185,9 @@
     <None Remove="Assets\RustItems\discoball.png" />
     <None Remove="Assets\RustItems\discofloor.largetiles.png" />
     <None Remove="Assets\RustItems\discofloor.png" />
+    <None Remove="Assets\RustItems\diverhatchet.png" />
+    <None Remove="Assets\RustItems\diverpickaxe.png" />
+    <None Remove="Assets\RustItems\divertorch.png" />
     <None Remove="Assets\RustItems\diving.fins.png" />
     <None Remove="Assets\RustItems\diving.mask.png" />
     <None Remove="Assets\RustItems\diving.tank.png" />
@@ -341,7 +345,12 @@
     <None Remove="Assets\RustItems\grub.png" />
     <None Remove="Assets\RustItems\gun.water.png" />
     <None Remove="Assets\RustItems\gunpowder.png" />
+    <None Remove="Assets\RustItems\gunrack.horizontal.png" />
+    <None Remove="Assets\RustItems\gunrack_stand.png" />
+    <None Remove="Assets\RustItems\gunrack_tall.horizontal.png" />
+    <None Remove="Assets\RustItems\gunrack_wide.horizontal.png" />
     <None Remove="Assets\RustItems\guntrap.png" />
+    <None Remove="Assets\RustItems\hab.armor.png" />
     <None Remove="Assets\RustItems\habrepair.png" />
     <None Remove="Assets\RustItems\halloween.candy.png" />
     <None Remove="Assets\RustItems\halloween.lootbag.large.png" />
@@ -366,6 +375,7 @@
     <None Remove="Assets\RustItems\hat.wolf.png" />
     <None Remove="Assets\RustItems\hatchet.png" />
     <None Remove="Assets\RustItems\hazmatsuit.arcticsuit.png" />
+    <None Remove="Assets\RustItems\hazmatsuit.diver.png" />
     <None Remove="Assets\RustItems\hazmatsuit.lumberjack.png" />
     <None Remove="Assets\RustItems\hazmatsuit.nomadsuit.png" />
     <None Remove="Assets\RustItems\hazmatsuit.png" />
@@ -383,6 +393,7 @@
     <None Remove="Assets\RustItems\hitchtroughcombo.png" />
     <None Remove="Assets\RustItems\hmlmg.png" />
     <None Remove="Assets\RustItems\hobobarrel.png" />
+    <None Remove="Assets\RustItems\homingmissile.launcher.png" />
     <None Remove="Assets\RustItems\hoodie.png" />
     <None Remove="Assets\RustItems\horse.armor.roadsign.png" />
     <None Remove="Assets\RustItems\horse.armor.wood.png" />
@@ -491,6 +502,7 @@
     <None Remove="Assets\RustItems\pants.png" />
     <None Remove="Assets\RustItems\pants.shorts.png" />
     <None Remove="Assets\RustItems\paper.png" />
+    <None Remove="Assets\RustItems\parachute.png" />
     <None Remove="Assets\RustItems\partyhat.png" />
     <None Remove="Assets\RustItems\photo.png" />
     <None Remove="Assets\RustItems\photoframe.landscape.png" />
@@ -536,6 +548,7 @@
     <None Remove="Assets\RustItems\researchpaper.png" />
     <None Remove="Assets\RustItems\rf.detonator.png" />
     <None Remove="Assets\RustItems\rf_pager.png" />
+    <None Remove="Assets\RustItems\rifle.ak.diver.png" />
     <None Remove="Assets\RustItems\rifle.ak.ice.png" />
     <None Remove="Assets\RustItems\rifle.ak.png" />
     <None Remove="Assets\RustItems\rifle.bolt.png" />
@@ -778,6 +791,8 @@
     <None Remove="Assets\RustItems\weapon.mod.silencer.png" />
     <None Remove="Assets\RustItems\weapon.mod.simplesight.png" />
     <None Remove="Assets\RustItems\weapon.mod.small.scope.png" />
+    <None Remove="Assets\RustItems\weaponrack.doublelight.png" />
+    <None Remove="Assets\RustItems\weaponrack.light.png" />
     <None Remove="Assets\RustItems\white.berry.png" />
     <None Remove="Assets\RustItems\whiteidtag.png" />
     <None Remove="Assets\RustItems\wiretool.png" />
@@ -825,6 +840,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Assets\RustItems\ammo.rocket.seeker.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\RustItems\attire.egg.suit.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -835,6 +853,15 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\RustItems\chair.icethrone.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\diverhatchet.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\diverpickaxe.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\divertorch.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\RustItems\dogtagneutral.png">
@@ -852,13 +879,34 @@
     <Content Include="Assets\RustItems\greenidtag.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\RustItems\gunrack.horizontal.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\gunrack_stand.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\gunrack_tall.horizontal.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\gunrack_wide.horizontal.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\hab.armor.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\RustItems\hat.rabbitmask.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\hazmatsuit.diver.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\RustItems\hazmatsuit_scientist_nvgm.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\RustItems\hmlmg.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\homingmissile.launcher.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\RustItems\industrial.combiner.png">
@@ -882,6 +930,9 @@
     <Content Include="Assets\RustItems\orangeidtag.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\RustItems\parachute.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\RustItems\pinkidtag.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -903,6 +954,9 @@
     <Content Include="Assets\RustItems\redidtag.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\RustItems\rifle.ak.diver.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\RustItems\rustige_egg_f.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -916,6 +970,12 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\RustItems\weapon.mod.burstmodule.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\weaponrack.doublelight.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\weaponrack.light.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\RustItems\whiteidtag.png">

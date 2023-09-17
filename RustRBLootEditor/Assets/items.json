@@ -4011,7 +4011,7 @@
     "shortName": "rustige_egg_e"
   },
   {
-  "category": "Misc",
+    "category": "Misc",
     "displayName": "rustige_egg_f",
     "id": null,
     "image": "",
@@ -4746,7 +4746,7 @@
     "shortName": "woodtea.pure"
   },
   {
-      "category": "Food",
+    "category": "Food",
     "displayName": "Super Serum",
     "id": null,
     "image": "",
@@ -5375,7 +5375,7 @@
     "image": "",
     "shortName": "ptz.cctv.camera"
   },
-  { 
+  {
     "category": "Attire",
     "displayName": "NVGM Scientist Suit",
     "id": null,
@@ -5390,56 +5390,56 @@
     "shortName": "blueidtag"
   },
   {
-   "category": "Resources",
+    "category": "Resources",
     "displayName": "Gray ID Tag",
     "id": null,
     "image": "",
     "shortName": "grayidtag"
   },
   {
-   "category": "Resources",
+    "category": "Resources",
     "displayName": "Green ID Tag",
     "id": null,
     "image": "",
     "shortName": "greenidtag"
   },
   {
-   "category": "Resources",
+    "category": "Resources",
     "displayName": "Orange ID Tag",
     "id": null,
     "image": "",
     "shortName": "orangeidtag"
   },
   {
-   "category": "Resources",
+    "category": "Resources",
     "displayName": "Pink ID Tag",
     "id": null,
     "image": "",
     "shortName": "pinkidtag"
   },
   {
-   "category": "Resources",
+    "category": "Resources",
     "displayName": "Purple ID Tag",
     "id": null,
     "image": "",
     "shortName": "purpleidtag"
   },
   {
-   "category": "Resources",
+    "category": "Resources",
     "displayName": "Red ID Tag",
     "id": null,
     "image": "",
     "shortName": "redidtag"
   },
   {
-   "category": "Resources",
+    "category": "Resources",
     "displayName": "White ID Tag",
     "id": null,
     "image": "",
     "shortName": "whiteidtag"
   },
   {
-   "category": "Resources",
+    "category": "Resources",
     "displayName": "Yellow ID Tag",
     "id": null,
     "image": "",
@@ -5451,5 +5451,110 @@
     "id": null,
     "image": "https:\/\/rustlabs.com\/img\/items180\/metal.facemask.hockey.png",
     "shortName": "metal.facemask.hockey"
+  },
+  {
+    "category": "Attire",
+    "displayName": "Abyss Divers Suit",
+    "id": null,
+    "image": "",
+    "shortName": "hazmatsuit.diver"
+  },
+  {
+    "category": "Tool",
+    "displayName": "Abyss Torch",
+    "id": null,
+    "image": "",
+    "shortName": "divertorch"
+  },
+  {
+    "category": "Tool",
+    "displayName": "Abyss Metal Pickaxe",
+    "id": null,
+    "image": "",
+    "shortName": "diverpickaxe"
+  },
+  {
+    "category": "Tool",
+    "displayName": "Abyss Metal Hatchet",
+    "id": null,
+    "image": "",
+    "shortName": "diverhatchet"
+  },
+  {
+    "category": "Weapon",
+    "displayName": "Abyss Assault Rifle",
+    "id": null,
+    "image": "",
+    "shortName": "rifle.ak.diver"
+  },
+  {
+    "category": "Weapon",
+    "displayName": "Homing Missile Launcher",
+    "id": null,
+    "image": "",
+    "shortName": "homingmissile.launcher"
+  },
+  {
+    "category": "Ammunition",
+    "displayName": "Homing Missile",
+    "id": null,
+    "image": "",
+    "shortName": "ammo.rocket.seeker"
+  },
+  {
+    "category": "Attire",
+    "displayName": "Parachute",
+    "id": null,
+    "image": "",
+    "shortName": "parachute"
+  },
+  {
+    "category": "Items",
+    "displayName": "Hot Air Balloon Armor",
+    "id": null,
+    "image": "",
+    "shortName": "hab.armor"
+  },
+  {
+    "category": "Items",
+    "displayName": "Horizontal Wall-mounted Weapon Rack",
+    "id": null,
+    "image": "",
+    "shortName": "gunrack.horizontal"
+  },
+  {
+    "category": "Items",
+    "displayName": "Tall Wall-mounted Weapon Rack",
+    "id": null,
+    "image": "",
+    "shortName": "gunrack_tall.horizontal"
+  },
+  {
+    "category": "Items",
+    "displayName": "Weapon Rack Stand",
+    "id": null,
+    "image": "",
+    "shortName": "gunrack_stand"
+  },
+  {
+    "category": "Items",
+    "displayName": "Wide Wall-mounted Weapon Rack",
+    "id": null,
+    "image": "",
+    "shortName": "gunrack_wide.horizontal"
+  },
+  {
+    "category": "Electrical",
+    "displayName": "Weapon Rack Double Light",
+    "id": null,
+    "image": "",
+    "shortName": "weaponrack.doublelight"
+  },
+  {
+    "category": "Electrical",
+    "displayName": "Weapon Rack Light",
+    "id": null,
+    "image": "",
+    "shortName": "weaponrack.light"
   }
 ]
