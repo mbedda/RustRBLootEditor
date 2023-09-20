@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RustRBLootEditor" xmlns:converters="clr-namespace:RustRBLootEditor.Converters"
-        mc:Ignorable="d" Loaded="Window_Loaded"
+        mc:Ignorable="d" Loaded="Window_Loaded" x:Name="RBMainWindow"
         Title="RB Loot Editor" Height="600" Width="1080" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.Background>
@@ -25,6 +25,8 @@
             <Border HorizontalAlignment="Left" Margin="10" MouseDown="Border_MouseDown" Cursor="Hand">
                 <Border.ContextMenu>
                     <ContextMenu>
+                        <MenuItem IsCheckable="True" IsChecked="True" Click="ConfirmDeletion_Click" Header="Confirm Item Deletion"/>
+                        <Separator/>
                         <MenuItem Header="Change Background" Click="ChangeBGMenuItem_Click"/>
                     </ContextMenu>
                 </Border.ContextMenu>

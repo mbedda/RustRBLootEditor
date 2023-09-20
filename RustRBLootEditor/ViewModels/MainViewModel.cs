@@ -102,8 +102,17 @@ namespace RustRBLootEditor.ViewModels
             set { SetProperty(ref bgName, value); }
         }
 
+        private bool confirmDeletion;
+        public bool ConfirmDeletion
+        {
+            get { return confirmDeletion; }
+            set { SetProperty(ref confirmDeletion, value); }
+        }
+
         public MainViewModel()
         {
+            ConfirmDeletion = true;
+
             if (AllItems == null)
                 AllItems = new RustItems();
 
@@ -196,8 +205,15 @@ namespace RustRBLootEditor.ViewModels
         {
             if (lootTableFile != null && lootTableFile.LootItems != null)
             {
-                MessageBoxResult messageBoxResult = MessageBox.Show("Are you sure you would like to delete this item from the Loot Table?", "Delete Confirmation", System.Windows.MessageBoxButton.YesNo);
-                if (messageBoxResult == MessageBoxResult.Yes)
+                if (ConfirmDeletion)
+                {
+                    MessageBoxResult messageBoxResult = MessageBox.Show("Are you sure you would like to delete this item from the Loot Table?\n\nClick on gear icon then uncheck \"Confirm Item Deletion\" to not show this again.", "Delete Confirmation", System.Windows.MessageBoxButton.YesNo);
+                    if (messageBoxResult == MessageBoxResult.Yes)
+                    {
+                        lootTableFile.LootItems.Remove(lootItem);
+                    }
+                }
+                else
                 {
                     lootTableFile.LootItems.Remove(lootItem);
                 }

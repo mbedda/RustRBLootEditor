@@ -119,5 +119,10 @@ namespace RustRBLootEditor
                 LoadBG();
             }
         }
+
+        private void ConfirmDeletion_Click(object sender, RoutedEventArgs e)
+        {
+            viewModel.ConfirmDeletion = (sender as MenuItem).IsChecked;
+        }
     }
 }
