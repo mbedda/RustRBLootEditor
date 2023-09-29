@@ -62,8 +62,8 @@ namespace RustRBLootEditor.Models
             set { SetProperty(ref _amount, value); }
         }
 
-        private long _skin;
-        public long skin
+        private ulong _skin;
+        public ulong skin
         {
             get { return _skin; }
             set { SetProperty(ref _skin, value); }

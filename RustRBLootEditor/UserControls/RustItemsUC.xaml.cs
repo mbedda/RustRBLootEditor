@@ -60,7 +60,18 @@ namespace RustRBLootEditor.UserControls
 
         private void Grid_PreviewMouseRightButtonUp(object sender, MouseButtonEventArgs e)
         {
-            Common.GetChildOfType<RustLoadingUC>((sender as Grid)).BeginStoryboard((sender as Grid).DataContext);
+            if (AllItemsListbox.SelectedItems.Count < 2)
+            {
+                Common.GetChildOfType<RustLoadingUC>((sender as Grid)).BeginStoryboard((sender as Grid).DataContext);
+                //viewModel.ItemRightClick((sender as Grid).DataContext as RustItem);
+            }
+            else
+            {
+                for (int i = 0; i < AllItemsListbox.SelectedItems.Count; i++)
+                {
+                    viewModel.ItemRightClick(AllItemsListbox.SelectedItems[i] as RustItem);
+                }
+            }
         }
 
         private void rustLoadingUC_Animation_Completed(object sender, EventArgs e)

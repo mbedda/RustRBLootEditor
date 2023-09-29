@@ -12,6 +12,7 @@ using System.Windows.Media;
 using Newtonsoft.Json;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using System.Threading.Tasks;
 
 namespace RustRBLootEditor.Helpers
 {
@@ -53,6 +54,16 @@ namespace RustRBLootEditor.Helpers
             }
         }
 
+        public static T DeserializeJSONString<T>(string json)
+        {
+            var instance = Activator.CreateInstance<T>();
+            using (var ms = new MemoryStream(Encoding.Unicode.GetBytes(json)))
+            {
+                var serializer = new DataContractJsonSerializer(instance.GetType());
+                return (T)serializer.ReadObject(ms);
+            }
+        }
+
         public static bool SaveJson<T>(T theobject, string filePath)
         {
             try
@@ -87,7 +98,7 @@ namespace RustRBLootEditor.Helpers
             }
         }
 
-        public static T LoadJson<T>(string filePath)
+        public static async Task<T> LoadJsonAsync<T>(string filePath)
         {
             T result;
             if (!System.IO.File.Exists(filePath))
@@ -99,7 +110,7 @@ namespace RustRBLootEditor.Helpers
             {
                 using (StreamReader sr = new StreamReader(fs))
                 {
-                    string filetext = sr.ReadToEnd();
+                    string filetext = await sr.ReadToEndAsync();
 
                     if (filetext.StartsWith("#"))
                     {

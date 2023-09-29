@@ -11,7 +11,9 @@
         <Converters:RelativeUriFromShortnameConverter x:Key="RelativeUriFromShortnameConverter"/>
         <Converters:FormatNumberConverter x:Key="FormatNumberConverter"/>
         <Converters:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
-        
+        <Converters:RelativeUriFromLootItemConverter x:Key="RelativeUriFromLootItemConverter"/>
+        <Converters:RelativeUriFromLootItemMultiConverter x:Key="RelativeUriFromLootItemMultiConverter"/>
+
         <Style TargetType="{x:Type TextBlock}">
             <Setter Property="FontFamily" Value="Lato Bold"/>
         </Style>
@@ -28,7 +30,7 @@
 
         <Style TargetType="{x:Type ListBoxItem}" x:Key="inventoryItemStyle">
             <Setter Property="Background" Value="Transparent" />
-            <Setter Property="Focusable" Value="False" />
+            <!--<Setter Property="Focusable" Value="False" />-->
             <Setter Property="BorderThickness" Value="0" />
             <Setter Property="Margin" Value="0" />
             <Setter Property="Padding" Value="0" />

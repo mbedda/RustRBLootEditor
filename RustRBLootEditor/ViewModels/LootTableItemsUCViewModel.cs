@@ -30,12 +30,12 @@ namespace RustRBLootEditor.ViewModels
             MainViewModel.ShowBulkLootItemEditor(group);
         }
 
-        public void ItemRightClick(LootItem item)
+        public void RemoveLootTableItem(LootItem item)
         {
             MainViewModel.RemoveLootTableItem(item);
         }
 
-        public void ItemLeftClick(LootItem lootItem)
+        public void ShowLootItemEditor(LootItem lootItem)
         {
             MainViewModel.ShowLootItemEditor(lootItem);
         }

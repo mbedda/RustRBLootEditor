@@ -18,7 +18,6 @@ namespace RustRBLootEditor.Models
         public RustItems()
         {
             Items = new ObservableCollection<RustItem>(); 
-            Load();
         }
 
         private ObservableCollection<RustItem> _Items;
@@ -33,14 +32,16 @@ namespace RustRBLootEditor.Models
             return Items.FirstOrDefault(s => s.shortName == shortname);
         }
 
-        public void Load()
+        public async Task Load()
         {
             string debugpath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             string jsonpath = Path.Combine(debugpath, "Assets", "items.json");
 
             if (File.Exists(jsonpath))
             {
-                Items = new ObservableCollection<RustItem>(Common.LoadJson<List<RustItem>>(jsonpath).OrderBy(x => x.displayName));
+                List<RustItem> items = await Common.LoadJsonAsync<List<RustItem>>(jsonpath);
+
+                Items = new ObservableCollection<RustItem>(items.OrderBy(x => x.displayName));
             }
 
             //Items = new ObservableCollection<RustItem>(Common.LoadJsonResource<List<RustItem>>("RustRBLootEditor.Assets.items.json"));

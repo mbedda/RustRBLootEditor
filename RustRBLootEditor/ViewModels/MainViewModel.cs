@@ -1,11 +1,15 @@
-﻿using Prism.Commands;
+﻿using Microsoft.Win32;
+using Prism.Commands;
 using Prism.Mvvm;
 using RustRBLootEditor.Helpers;
 using RustRBLootEditor.Models;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
+using System.Net;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -102,17 +106,20 @@ namespace RustRBLootEditor.ViewModels
             set { SetProperty(ref bgName, value); }
         }
 
-        private bool confirmDeletion;
-        public bool ConfirmDeletion
+        private bool loadingModal;
+        public bool LoadingModal
         {
-            get { return confirmDeletion; }
-            set { SetProperty(ref confirmDeletion, value); }
+            get { return loadingModal; }
+            set { SetProperty(ref loadingModal, value); }
         }
+
+        public Dictionary<ulong, string> SkinsUrls { get; set; }
+
+        public string SteamPath { get; set; }
 
         public MainViewModel()
         {
-            ConfirmDeletion = true;
-
+            LoadingModal = true;
             if (AllItems == null)
                 AllItems = new RustItems();
 
@@ -126,19 +133,57 @@ namespace RustRBLootEditor.ViewModels
 
             ApplyBulkCommand = new DelegateCommand(ApplyBulk);
             CancelBulkCommand = new DelegateCommand(CancelBulk);
+
+            GetSteamPath();
         }
 
-        public void LoadFile(string filepath)
+        public async Task LoadGameItems()
+        {
+            if(AllItems != null)
+                await AllItems.Load();
+
+            LoadingModal = false;
+        }
+
+        public void GetSteamPath()
+        {
+            SteamPath = "";
+            RegistryKey key = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Wow6432Node\Valve\Steam");
+
+            if (key != null)
+            {
+                SteamPath = key.GetValue("InstallPath").ToString();
+                key.Close();
+            }
+            else
+            {
+                key = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Valve\Steam");
+
+                if (key != null)
+                {
+                    SteamPath = key.GetValue("InstallPath").ToString();
+                    key.Close();
+                }
+            }
+        }
+
+        public async Task LoadFile(string filepath)
         {
             LootTableFile = new LootTableFile();
 
-            List<LootItem> tmpLootItems = Common.LoadJson<List<LootItem>>(filepath);
+            List<LootItem> tmpLootItems = await Common.LoadJsonAsync<List<LootItem>>(filepath);
 
             if (LootTableFile.LootItems != null)
             {
+                List<ulong> skins = new List<ulong>();
+
                 foreach (var item in tmpLootItems)
                 {
                     RustItem tmpItem = AllItems.GetRustItem(item.shortname);
+
+                    if(item.skin > 0)
+                        if(!skins.Contains(item.skin))
+                            skins.Add(item.skin);
 
                     if (tmpItem != null)
                     {
@@ -151,6 +196,8 @@ namespace RustRBLootEditor.ViewModels
                         item.displayName = item.shortname;
                     }
                 }
+
+                await GetSteamSkins(skins);
 
                 LootTableFile.LootItems.Clear();
                 LootTableFile.LootItems.AddRange(tmpLootItems);
@@ -185,7 +232,7 @@ namespace RustRBLootEditor.ViewModels
 
                 if (tmpitem != null)
                 {
-                    MessageBoxResult messageBoxResult = MessageBox.Show("Loot table already contains this item. Are you sure you would like to add?", "Duplicate Notice", System.Windows.MessageBoxButton.YesNo);
+                    MessageBoxResult messageBoxResult = MessageBox.Show($"Loot table already contains the item \"{tmpitem.displayName}\". Are you sure you would like to add?", "Duplicate Notice", System.Windows.MessageBoxButton.YesNo);
                     if (messageBoxResult == MessageBoxResult.No) return;
                 }
 
@@ -193,7 +240,9 @@ namespace RustRBLootEditor.ViewModels
                 {
                     shortname = rustItem.shortName,
                     displayName = rustItem.displayName,
-                    category = rustItem.category
+                    category = rustItem.category,
+                    amountMin = 1,
+                    amount = 1
                 });
                 LootTableFile.DoSort();
 
@@ -205,29 +254,30 @@ namespace RustRBLootEditor.ViewModels
         {
             if (lootTableFile != null && lootTableFile.LootItems != null)
             {
-                if (ConfirmDeletion)
-                {
-                    MessageBoxResult messageBoxResult = MessageBox.Show("Are you sure you would like to delete this item from the Loot Table?\n\nClick on gear icon then uncheck \"Confirm Item Deletion\" to not show this again.", "Delete Confirmation", System.Windows.MessageBoxButton.YesNo);
-                    if (messageBoxResult == MessageBoxResult.Yes)
-                    {
-                        lootTableFile.LootItems.Remove(lootItem);
-                    }
-                }
-                else
-                {
-                    lootTableFile.LootItems.Remove(lootItem);
-                }
+                lootTableFile.LootItems.Remove(lootItem);
             }
         }
 
+        ulong SelectedItemOriginalSkin = 0;
+
         public void ShowLootItemEditor(LootItem lootItem)
         {
+            SelectedItemOriginalSkin = lootItem.skin;
             SelectedEditItem = lootItem;
             LootItemEditorOn = true;
         }
-        public void HideLootItemEditor()
+        public async void HideLootItemEditor()
         {
             LootItemEditorOn = false;
+
+            if (SelectedEditItem.skin != SelectedItemOriginalSkin && SelectedEditItem.skin > 0)
+            {
+                await GetSteamSkins(new List<ulong>() { SelectedEditItem.skin });
+
+                ulong skin = SelectedEditItem.skin;
+                SelectedEditItem.skin = 0;
+                SelectedEditItem.skin = skin;
+            }
         }
         public void ShowBulkLootItemEditor(string group)
         {
@@ -272,6 +322,71 @@ namespace RustRBLootEditor.ViewModels
         public void HideGameItemEditor()
         {
             GameItemEditorOn = false;
+        }
+
+        public async Task<bool> GetSteamSkins(List<ulong> skinlist)
+        {
+            if (skinlist.Count == 0)
+                return false;
+
+            string exepath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+            string temppath = Path.Combine(exepath, "Assets", "temp");
+
+            foreach (var skin in skinlist.ToList())
+            {
+                var fileName = Path.Combine(temppath, $"{skin}.jpg");
+
+                if (File.Exists(fileName))
+                    skinlist.Remove(skin);
+            }
+
+            if (skinlist.Count == 0)
+                return false;
+
+            var publishedFileDetails = await SteamApi.GetPublishedFileDetailsAsync(skinlist);
+
+            if (SkinsUrls == null)
+                SkinsUrls = new Dictionary<ulong, string>();
+
+            if (publishedFileDetails != null && publishedFileDetails.SteamResponse != null && publishedFileDetails.SteamResponse.Publishedfiledetails != null)
+            {
+                foreach (var file in publishedFileDetails.SteamResponse.Publishedfiledetails)
+                {
+                    if (file.PreviewUrl != null && !string.IsNullOrEmpty(file.PreviewUrl.AbsoluteUri) && !SkinsUrls.ContainsKey(ulong.Parse(file.Publishedfileid)))
+                    {
+                        SkinsUrls.Add(ulong.Parse(file.Publishedfileid), file.PreviewUrl.AbsoluteUri);
+                    }
+                }
+            }
+
+            return DownloadSkins();
+        }
+
+        public bool DownloadSkins()
+        {
+            bool changeOccurred = false;
+            string exepath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+            string temppath = Path.Combine(exepath, "Assets", "temp");
+
+            Directory.CreateDirectory(temppath);
+
+            foreach (var skinurl in SkinsUrls)
+            {
+                var fileName = Path.Combine(temppath, $"{skinurl.Key}.jpg");
+
+                if (!File.Exists(fileName))
+                {
+                    using (WebClient client = new WebClient())
+                    {
+                        var address = skinurl.Value;
+
+                        client.DownloadFile(address, fileName);
+                        changeOccurred = true;
+                    }
+                }
+            }
+
+            return changeOccurred;
         }
     }
 }

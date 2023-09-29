@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RustRBLootEditor" xmlns:converters="clr-namespace:RustRBLootEditor.Converters"
         mc:Ignorable="d" Loaded="Window_Loaded" x:Name="RBMainWindow"
-        Title="RB Loot Editor" Height="600" Width="1080" WindowStartupLocation="CenterScreen">
+        Title="RB Loot Editor" Height="800" Width="1400" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.Background>
             <ImageBrush x:Name="MainGridBrush" Stretch="UniformToFill"/>
@@ -25,8 +25,6 @@
             <Border HorizontalAlignment="Left" Margin="10" MouseDown="Border_MouseDown" Cursor="Hand">
                 <Border.ContextMenu>
                     <ContextMenu>
-                        <MenuItem IsCheckable="True" IsChecked="True" Click="ConfirmDeletion_Click" Header="Confirm Item Deletion"/>
-                        <Separator/>
                         <MenuItem Header="Change Background" Click="ChangeBGMenuItem_Click"/>
                     </ContextMenu>
                 </Border.ContextMenu>
@@ -71,9 +69,23 @@
                             <TextBlock Text="{Binding SelectedEditItem.displayName}" FontFamily="Lato Bold" FontSize="16" Margin="0,0,0,10" Foreground="#9bcf3e" TextWrapping="Wrap" />
                             <TextBlock Text="{Binding SelectedEditItem.shortname}" FontFamily="Lato Bold" FontSize="16" Margin="0,0,0,10" Foreground="White" TextWrapping="Wrap" />
                         </StackPanel>
-                        <Image Grid.Column="1" Source="{Binding SelectedEditItem.shortname, Converter={StaticResource RelativeUriFromShortnameConverter}, ConverterParameter='Assets\\RustItems'}" 
-                           Width="75" Height="75"
-                           HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,0,0,10"></Image>
+                        <Image HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5">
+                            <Image.Source>
+                                <MultiBinding Converter="{StaticResource RelativeUriFromLootItemMultiConverter}" ConverterParameter="Assets\\RustItems">
+                                    <Binding Path="skin" UpdateSourceTrigger="PropertyChanged" />
+                                    <Binding Path="." />
+                                </MultiBinding>
+                            </Image.Source>
+                        </Image>
+                        <Image Width="75" Height="75"
+                           HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,0,0,10">
+                            <Image.Source>
+                                <MultiBinding Converter="{StaticResource RelativeUriFromLootItemMultiConverter}" ConverterParameter="Assets\\RustItems">
+                                    <Binding Path="SelectedEditItem.skin" UpdateSourceTrigger="PropertyChanged" />
+                                    <Binding Path="SelectedEditItem" />
+                                </MultiBinding>
+                            </Image.Source>
+                        </Image>
                     </Grid>
                     <Grid Margin="0,0,0,10">
                         <Grid.ColumnDefinitions>
@@ -211,8 +223,8 @@
                 </StackPanel>
             </Grid>
         </Grid>
-
-
-        
+        <Grid Grid.RowSpan="5" Background="#B2000000" Visibility="{Binding LoadingModal, Converter={StaticResource BooleanToVisibilityConverter}}">
+            <TextBlock Foreground="White" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center">Loading Game Items...</TextBlock>
+        </Grid>
     </Grid>
 </Window>

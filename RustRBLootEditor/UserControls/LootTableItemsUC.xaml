@@ -54,7 +54,7 @@
             <TextBox x:Name="filtertxt" Grid.Column="2" PreviewKeyUp="filtertxt_PreviewKeyUp"/>
         </Grid>
         <ListBox x:Name="LootTableItemsListbox" Grid.Row="1" ItemsSource="{Binding Source={StaticResource ListBoxItems}}" ItemContainerStyle="{StaticResource inventoryItemStyle}"
-                     SelectionMode="Extended" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
+                     SelectionMode="Extended" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" PreviewKeyDown="LootTableItemsListbox_PreviewKeyDown"
                      Margin="10" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Background="{x:Null}" BorderThickness="3" BorderBrush="#33000000">
             <ListBox.ItemsPanel>
                 <ItemsPanelTemplate>
@@ -72,7 +72,7 @@
             </ListBox.GroupStyle>
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <Grid Style="{StaticResource inventoryItemGridStyle}" PreviewMouseLeftButtonUp="Grid_PreviewMouseLeftButtonUp" PreviewMouseRightButtonUp="Grid_PreviewMouseRightButtonUp">
+                    <Grid Style="{StaticResource inventoryItemGridStyle}" MouseDown="LootItem_MouseDown">
                         <Grid.ToolTip>
                             <ToolTip Background="#1b6798" Placement="Top" ToolTipService.InitialShowDelay="0">
                                 <StackPanel>
@@ -80,9 +80,24 @@
                                 </StackPanel>
                             </ToolTip>
                         </Grid.ToolTip>
+                        <Grid.ContextMenu>
+                            <ContextMenu>
+                                <MenuItem Header="Edit" Click="EditLootItem_Click" CommandParameter="{Binding}" />
+                                <Separator />
+                                <MenuItem Header="Delete" Click="DeleteLootItem_Click" CommandParameter="{Binding}"/>
+                            </ContextMenu>
+                        </Grid.ContextMenu>
                         <Grid>
+                            <Image HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5">
+                                <Image.Source>
+                                    <MultiBinding Converter="{StaticResource RelativeUriFromLootItemMultiConverter}" ConverterParameter="Assets\\RustItems">
+                                        <Binding Path="skin" UpdateSourceTrigger="PropertyChanged" />
+                                        <Binding Path="." />
+                                    </MultiBinding>
+                                </Image.Source>
+                            </Image>
                             <!--<Image Source="{Binding shortname, Converter={StaticResource UriFromShortnameConverter}}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5"></Image>-->
-                            <Image Source="{Binding shortname, Converter={StaticResource RelativeUriFromShortnameConverter}, ConverterParameter='Assets\\RustItems'}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5"></Image>
+                            <!--<Image Source="{Binding shortname, Converter={StaticResource RelativeUriFromShortnameConverter}, ConverterParameter='Assets\\RustItems'}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5"></Image>-->
                             <TextBlock Margin="0,0,5,5" ToolTip="{Binding Path=shortname}" Foreground="White" FontWeight="Bold"
                                        TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Bottom" HorizontalAlignment="Right">
                                     x<Run Text="{Binding amountMin, Converter={StaticResource FormatNumberConverter}}"/>-<Run Text="{Binding amount, Converter={StaticResource FormatNumberConverter}}"/>

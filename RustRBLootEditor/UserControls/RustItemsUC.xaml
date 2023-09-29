@@ -41,7 +41,7 @@
                 <GroupStyle ContainerStyle="{StaticResource ItemsGroupItem}">
                     <GroupStyle.Panel>
                         <ItemsPanelTemplate>
-                            <VirtualizingStackPanel Orientation="Vertical" VirtualizationMode="Recycling" VirtualizingPanel.IsVirtualizing="True" />
+                            <VirtualizingStackPanel Orientation="Vertical" VirtualizingPanel.IsVirtualizingWhenGrouping="True" VirtualizingPanel.IsVirtualizing="True" />
                         </ItemsPanelTemplate>
                     </GroupStyle.Panel>
                 </GroupStyle>
@@ -58,7 +58,7 @@
                         </Grid.ToolTip>
                         <Grid>
                             <!--<Image Source="{Binding image}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5"></Image>-->
-                            <Image Source="{Binding shortName, Converter={StaticResource RelativeUriFromShortnameConverter}, ConverterParameter='Assets\\RustItems'}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5"></Image>
+                            <Image Source="{Binding shortName, Converter={StaticResource RelativeUriFromShortnameConverter}, ConverterParameter='Assets\\RustItems', IsAsync=true}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5"></Image>
                             <TextBlock Margin="0,0,5,5" Visibility="Hidden" Text="{Binding displayName}" Foreground="White" FontWeight="Bold" FontSize="11"
                                        TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Bottom" HorizontalAlignment="Right"></TextBlock>
                         </Grid>

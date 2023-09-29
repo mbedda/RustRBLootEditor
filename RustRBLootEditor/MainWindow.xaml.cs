@@ -49,6 +49,7 @@ namespace RustRBLootEditor
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             LoadBG();
+            viewModel.LoadGameItems();
         }
 
         private void ImportFile_Click(object sender, RoutedEventArgs e)
@@ -118,11 +119,6 @@ namespace RustRBLootEditor
                 File.Copy(openFileDlg.FileName, imagepath, true);
                 LoadBG();
             }
-        }
-
-        private void ConfirmDeletion_Click(object sender, RoutedEventArgs e)
-        {
-            viewModel.ConfirmDeletion = (sender as MenuItem).IsChecked;
         }
     }
 }

@@ -4,6 +4,7 @@ using RustRBLootEditor.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -62,7 +63,7 @@ namespace RustRBLootEditor.UserControls
         {
             LootItem lootItem = (sender as LootItem);
 
-            viewModel.ItemRightClick(lootItem);
+            viewModel.RemoveLootTableItem(lootItem);
         }
 
         private void filtertxt_PreviewKeyUp(object sender, KeyEventArgs e)
@@ -85,7 +86,70 @@ namespace RustRBLootEditor.UserControls
 
         private void Grid_PreviewMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            viewModel.ItemLeftClick((sender as Grid).DataContext as LootItem);
+            viewModel.ShowLootItemEditor((sender as Grid).DataContext as LootItem);
+        }
+
+        private void LootItem_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == MouseButton.Left && e.ClickCount == 2)
+			{
+				LootItem item = (LootItem)((Grid)sender).DataContext;
+
+                viewModel.ShowLootItemEditor(item);
+			}
+        }
+
+        private void EditLootItem_Click(object sender, RoutedEventArgs e)
+        {
+            LootItem item = (LootItem)((MenuItem)sender).CommandParameter;
+            viewModel.ShowLootItemEditor(item);
+        }
+
+        private void DeleteLootItem_Click(object sender, RoutedEventArgs e)
+        {
+            if(LootTableItemsListbox.SelectedItems.Count < 2)
+            {
+                MessageBoxResult messageBoxResult = MessageBox.Show("Are you sure you would like to delete selected item?", "Delete Confirmation", System.Windows.MessageBoxButton.YesNo);
+                if (messageBoxResult == MessageBoxResult.Yes)
+                {
+                    LootItem item = (LootItem)((MenuItem)sender).CommandParameter;
+
+                    viewModel.RemoveLootTableItem(item);
+                }
+            }
+            else
+            {
+                MessageBoxResult messageBoxResult = MessageBox.Show("Are you sure you would like to delete selected items?", "Delete Confirmation", System.Windows.MessageBoxButton.YesNo);
+                if (messageBoxResult == MessageBoxResult.Yes)
+                {
+                    for (int i = LootTableItemsListbox.SelectedItems.Count - 1; i >= 0; i--)
+                    {
+                        LootItem item = (LootItem)LootTableItemsListbox.SelectedItems[i];
+
+                        viewModel.RemoveLootTableItem(item);
+                    }
+                }
+            }
+        }
+
+        private void LootTableItemsListbox_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Delete)
+            {
+                if (LootTableItemsListbox.SelectedItems.Count > 0)
+                {
+                    MessageBoxResult messageBoxResult = MessageBox.Show("Are you sure you would like to delete selected items?", "Delete Confirmation", System.Windows.MessageBoxButton.YesNo);
+                    if (messageBoxResult == MessageBoxResult.Yes)
+                    {
+                        for (int i = LootTableItemsListbox.SelectedItems.Count - 1; i >= 0; i--)
+                        {
+                            LootItem item = (LootItem)LootTableItemsListbox.SelectedItems[i];
+
+                            viewModel.RemoveLootTableItem(item);
+                        }
+                    }
+                }
+            }
         }
     }
 }
