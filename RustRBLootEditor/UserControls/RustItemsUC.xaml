@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:UI="clr-namespace:RustRBLootEditor.UI" xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+             xmlns:UI="clr-namespace:RustRBLootEditor.UI" xmlns:i="http://schemas.microsoft.com/xaml/behaviors" xmlns:controls="clr-namespace:WpfToolkit.Controls;assembly=VirtualizingWrapPanel"
              mc:Ignorable="d" Loaded="UserControl_Loaded"
              d:DesignHeight="450" d:DesignWidth="800">
     <UserControl.Resources>
@@ -27,21 +27,21 @@
             <TextBlock Grid.ColumnSpan="2" FontWeight="Bold" Foreground="White" FontFamily="Lato Bold" VerticalAlignment="Center">
                 GAME ITEMS <Run Text="    Right click to add" FontFamily="Lato Light Italic"/>
             </TextBlock>
-            <TextBox x:Name="filtertxt" Grid.Column="2" PreviewKeyUp="filtertxt_PreviewKeyUp"/>
+            <TextBox x:Name="filtertxt" Grid.Column="2" TextChanged="filtertxt_TextChanged"/>
         </Grid>
         <ListBox x:Name="AllItemsListbox" ItemsSource="{Binding Source={StaticResource ListBoxItems}}" Grid.Row="1" ItemContainerStyle="{StaticResource inventoryItemStyle}"
                  SelectionMode="Extended" Margin="10,10,10,10" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Background="Transparent" 
-                 BorderThickness="3" BorderBrush="#33000000" Grid.ColumnSpan="2">
+                 BorderThickness="3" BorderBrush="#33000000" Grid.ColumnSpan="2" VirtualizingPanel.IsVirtualizing='True' VirtualizingPanel.IsVirtualizingWhenGrouping='True' VirtualizingPanel.ScrollUnit='Pixel'>
             <ListBox.ItemsPanel>
                 <ItemsPanelTemplate>
-                    <WrapPanel IsItemsHost="True" />
+                    <controls:VirtualizingWrapPanel IsItemsHost="True" />
                 </ItemsPanelTemplate>
             </ListBox.ItemsPanel>
             <ListBox.GroupStyle>
                 <GroupStyle ContainerStyle="{StaticResource ItemsGroupItem}">
                     <GroupStyle.Panel>
                         <ItemsPanelTemplate>
-                            <VirtualizingStackPanel Orientation="Vertical" VirtualizingPanel.IsVirtualizingWhenGrouping="True" VirtualizingPanel.IsVirtualizing="True" />
+                            <VirtualizingStackPanel Orientation="Vertical" />
                         </ItemsPanelTemplate>
                     </GroupStyle.Panel>
                 </GroupStyle>

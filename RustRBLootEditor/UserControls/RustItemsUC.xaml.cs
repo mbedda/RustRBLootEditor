@@ -82,7 +82,8 @@ namespace RustRBLootEditor.UserControls
         }
 
         Timer t = null;
-        private void filtertxt_PreviewKeyUp(object sender, KeyEventArgs e)
+
+        private void filtertxt_TextChanged(object sender, TextChangedEventArgs e)
         {
             t.Stop();
             t.Start();

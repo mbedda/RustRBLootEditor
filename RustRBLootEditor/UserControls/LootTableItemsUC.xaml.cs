@@ -8,6 +8,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Timers;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -30,6 +31,8 @@ namespace RustRBLootEditor.UserControls
         public LootTableItemsUC()
         {
             InitializeComponent();
+            t = new Timer(200);
+            t.Elapsed += T_Elapsed;
         }
 
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
@@ -66,22 +69,26 @@ namespace RustRBLootEditor.UserControls
             viewModel.RemoveLootTableItem(lootItem);
         }
 
-        private void filtertxt_PreviewKeyUp(object sender, KeyEventArgs e)
+        Timer t = null;
+        private void filtertxt_TextChanged(object sender, TextChangedEventArgs e)
         {
-            ICollectionView itemsViewOriginal = (CollectionView)CollectionViewSource.GetDefaultView(LootTableItemsListbox.ItemsSource);
+            t.Stop();
+            t.Start();
+        }
 
-            if(itemsViewOriginal != null)
+        private void T_Elapsed(object? sender, ElapsedEventArgs e)
+        {
+            t.Stop();
+
+            Dispatcher.Invoke(() =>
             {
-                itemsViewOriginal.Filter = ((o) =>
+                CollectionViewSource.GetDefaultView(LootTableItemsListbox.ItemsSource).Filter = (o) =>
                 {
                     if (String.IsNullOrEmpty(filtertxt.Text)) return true;
-                    else
-                    {
-                        if (((LootItem)o).displayName.ToLower().Contains(filtertxt.Text.Trim().ToLower())) return true;
-                        else return false;
-                    }
-                });
-            }
+                    LootItem item = (LootItem)o;
+                    return (item.displayName.ToLower() + item.shortname.ToLower()).Contains(filtertxt.Text.Trim().ToLower());
+                };
+            });
         }
 
         private void Grid_PreviewMouseLeftButtonUp(object sender, MouseButtonEventArgs e)

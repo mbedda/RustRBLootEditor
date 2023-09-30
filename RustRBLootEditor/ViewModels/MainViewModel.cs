@@ -255,6 +255,8 @@ namespace RustRBLootEditor.ViewModels
             if (lootTableFile != null && lootTableFile.LootItems != null)
             {
                 lootTableFile.LootItems.Remove(lootItem);
+
+                UpdateStatus();
             }
         }
 
