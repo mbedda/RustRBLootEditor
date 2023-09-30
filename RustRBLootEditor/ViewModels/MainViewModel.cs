@@ -14,6 +14,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Data;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace RustRBLootEditor.ViewModels
 {
@@ -113,6 +114,13 @@ namespace RustRBLootEditor.ViewModels
             set { SetProperty(ref loadingModal, value); }
         }
 
+        private string loadingText;
+        public string LoadingText
+        {
+            get { return loadingText; }
+            set { SetProperty(ref loadingText, value); }
+        }
+
         public Dictionary<ulong, string> SkinsUrls { get; set; }
 
         public string SteamPath { get; set; }
@@ -139,10 +147,12 @@ namespace RustRBLootEditor.ViewModels
 
         public async Task LoadGameItems()
         {
-            if(AllItems != null)
+            ShowLoading("Loading Game Files...");
+            
+            if (AllItems != null)
                 await AllItems.Load();
 
-            LoadingModal = false;
+            HideLoading();
         }
 
         public void GetSteamPath()
@@ -169,6 +179,7 @@ namespace RustRBLootEditor.ViewModels
 
         public async Task LoadFile(string filepath)
         {
+            ShowLoading("Loading Loot File...");
             LootTableFile = new LootTableFile();
 
             List<LootItem> tmpLootItems = await Common.LoadJsonAsync<List<LootItem>>(filepath);
@@ -205,11 +216,23 @@ namespace RustRBLootEditor.ViewModels
             }
 
             UpdateStatus();
+            HideLoading();
         }
 
         public void Save(string filepath)
         {
             Common.SaveJsonNewton(LootTableFile.LootItems, filepath);
+        }
+
+        public void ShowLoading(string text)
+        {
+            LoadingModal = true;
+            LoadingText = text;
+        }
+
+        public void HideLoading()
+        {
+            LoadingModal = false;
         }
 
         public void UpdateStatus()
@@ -345,6 +368,8 @@ namespace RustRBLootEditor.ViewModels
             if (skinlist.Count == 0)
                 return false;
 
+            ShowLoading("Fetching Skins...");
+
             var publishedFileDetails = await SteamApi.GetPublishedFileDetailsAsync(skinlist);
 
             if (SkinsUrls == null)
@@ -366,6 +391,7 @@ namespace RustRBLootEditor.ViewModels
 
         public bool DownloadSkins()
         {
+            ShowLoading("Downloading Skins...");
             bool changeOccurred = false;
             string exepath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             string temppath = Path.Combine(exepath, "Assets", "temp");
@@ -387,6 +413,8 @@ namespace RustRBLootEditor.ViewModels
                     }
                 }
             }
+
+            HideLoading();
 
             return changeOccurred;
         }
