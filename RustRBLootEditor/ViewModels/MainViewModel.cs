@@ -48,11 +48,11 @@ namespace RustRBLootEditor.ViewModels
             set { SetProperty(ref _LootItemEditorOn, value); }
         }
 
-        private string _SelectedEditGroup;
-        public string SelectedEditGroup
+        private List<LootItem> _SelectedBulkEditItems;
+        public List<LootItem> SelectedBulkEditItems
         {
-            get { return _SelectedEditGroup; }
-            set { SetProperty(ref _SelectedEditGroup, value); }
+            get { return _SelectedBulkEditItems; }
+            set { SetProperty(ref _SelectedBulkEditItems, value); }
         }
 
         private LootItem _TempBulkEditItem;
@@ -62,6 +62,13 @@ namespace RustRBLootEditor.ViewModels
             set { SetProperty(ref _TempBulkEditItem, value); }
         }
 
+        private BulkTargetFields _TempBulkTargetFields;
+        public BulkTargetFields TempBulkTargetFields
+        {
+            get { return _TempBulkTargetFields; }
+            set { SetProperty(ref _TempBulkTargetFields, value); }
+        }
+
         private bool _BulkLootItemEditorOn;
         public bool BulkLootItemEditorOn
         {
@@ -69,8 +76,25 @@ namespace RustRBLootEditor.ViewModels
             set { SetProperty(ref _BulkLootItemEditorOn, value); }
         }
 
+        private float _MultiplierValue;
+        public float MultiplierValue
+        {
+            get { return _MultiplierValue; }
+            set { SetProperty(ref _MultiplierValue, value); }
+        }
+
         public DelegateCommand ApplyBulkCommand { get; set; }
         public DelegateCommand CancelBulkCommand { get; set; }
+
+        private bool _BulkLootMultiplierOn;
+        public bool BulkLootMultiplierOn
+        {
+            get { return _BulkLootMultiplierOn; }
+            set { SetProperty(ref _BulkLootMultiplierOn, value); }
+        }
+
+        public DelegateCommand ApplyMultiplierCommand { get; set; }
+        public DelegateCommand CancelMultiplierCommand { get; set; }
 
         private RustItem _SelectedEditGameItem;
         public RustItem SelectedEditGameItem
@@ -141,6 +165,9 @@ namespace RustRBLootEditor.ViewModels
 
             ApplyBulkCommand = new DelegateCommand(ApplyBulk);
             CancelBulkCommand = new DelegateCommand(CancelBulk);
+
+            ApplyMultiplierCommand = new DelegateCommand(ApplyMultiplier);
+            CancelMultiplierCommand = new DelegateCommand(CancelMultiplier);
 
             GetSteamPath();
         }
@@ -291,6 +318,7 @@ namespace RustRBLootEditor.ViewModels
             SelectedEditItem = lootItem;
             LootItemEditorOn = true;
         }
+
         public async void HideLootItemEditor()
         {
             LootItemEditorOn = false;
@@ -304,10 +332,12 @@ namespace RustRBLootEditor.ViewModels
                 SelectedEditItem.skin = skin;
             }
         }
-        public void ShowBulkLootItemEditor(string group)
+
+        public void ShowBulkLootItemEditor(List<LootItem> lootItems)
         {
-            SelectedEditGroup = group;
-            TempBulkEditItem = new LootItem() { category = group };
+            SelectedBulkEditItems = lootItems;
+            TempBulkEditItem = new LootItem();
+            TempBulkTargetFields = new BulkTargetFields();
             BulkLootItemEditorOn = true;
         }
         public void HideBulkLootItemEditor()
@@ -316,29 +346,80 @@ namespace RustRBLootEditor.ViewModels
         }
         private void ApplyBulk()
         {
-            MessageBoxResult messageBoxResult = MessageBox.Show("Are you sure you would like to overwrite values for all items in " + TempBulkEditItem.category + "?", "Bulk Edit Confirmation", System.Windows.MessageBoxButton.YesNo);
+            MessageBoxResult messageBoxResult = MessageBox.Show($"Are you sure you would like to overwrite values for all {SelectedBulkEditItems.Count} items?", "Bulk Edit Confirmation", System.Windows.MessageBoxButton.YesNo);
             if (messageBoxResult == MessageBoxResult.Yes)
             {
-                var groupItems = lootTableFile.LootItems.Where(s => s.category == TempBulkEditItem.category);
-
-                foreach (var item in groupItems)
+                foreach (var item in SelectedBulkEditItems)
                 {
-                    item.amount = TempBulkEditItem.amount;
-                    item.amountMin = TempBulkEditItem.amountMin;
-                    item.probability = TempBulkEditItem.probability;
-                    item.stacksize = TempBulkEditItem.stacksize;
+                    if(TempBulkTargetFields.amount)
+                        item.amount = TempBulkEditItem.amount;
+
+                    if(TempBulkTargetFields.amountMin)
+                        item.amountMin = TempBulkEditItem.amountMin;
+
+                    if(TempBulkTargetFields.probability)
+                        item.probability = TempBulkEditItem.probability;
+
+                    if(TempBulkTargetFields.stacksize)
+                        item.stacksize = TempBulkEditItem.stacksize;
                 }
 
+                SelectedBulkEditItems = new List<LootItem>();
                 TempBulkEditItem = new LootItem();
+                TempBulkTargetFields = new BulkTargetFields();
 
                 BulkLootItemEditorOn = false;
             }
         }
         private void CancelBulk()
         {
+            SelectedBulkEditItems = new List<LootItem>();
             TempBulkEditItem = new LootItem();
             BulkLootItemEditorOn = false;
         }
+
+        public void ShowBulkLootItemMultiplier(List<LootItem> lootItems)
+        {
+            MultiplierValue = 1;
+            SelectedBulkEditItems = lootItems;
+            TempBulkTargetFields = new BulkTargetFields();
+            BulkLootMultiplierOn = true;
+        }
+        public void HideBulkLootItemMultiplier()
+        {
+            MultiplierValue = 1;
+            BulkLootMultiplierOn = false;
+        }
+        private void ApplyMultiplier()
+        {
+            MessageBoxResult messageBoxResult = MessageBox.Show($"Are you sure you would like to apply {MultiplierValue}x on all {SelectedBulkEditItems.Count} items?", "Bulk Multiply Confirmation", System.Windows.MessageBoxButton.YesNo);
+            if (messageBoxResult == MessageBoxResult.Yes)
+            {
+                foreach (var item in SelectedBulkEditItems)
+                {
+                    if (TempBulkTargetFields.amount)
+                        item.amount = (int)Math.Round(item.amount * MultiplierValue);
+
+                    if (TempBulkTargetFields.amountMin)
+                        item.amountMin = (int)Math.Round(item.amountMin * MultiplierValue);
+
+                    if (TempBulkTargetFields.stacksize)
+                        item.stacksize = (int)Math.Round(item.stacksize * MultiplierValue);
+                }
+
+                SelectedBulkEditItems = new List<LootItem>();
+                TempBulkTargetFields = new BulkTargetFields();
+
+                BulkLootMultiplierOn = false;
+            }
+        }
+        private void CancelMultiplier()
+        {
+            MultiplierValue = 1;
+            SelectedBulkEditItems = new List<LootItem>();
+            BulkLootMultiplierOn = false;
+        }
+
         public void ShowGameItemEditor(RustItem item)
         {
             SelectedEditGameItem = item;

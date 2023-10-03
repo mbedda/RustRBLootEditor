@@ -108,8 +108,23 @@ namespace RustRBLootEditor.UserControls
 
         private void EditLootItem_Click(object sender, RoutedEventArgs e)
         {
-            LootItem item = (LootItem)((MenuItem)sender).CommandParameter;
-            viewModel.ShowLootItemEditor(item);
+            if (LootTableItemsListbox.SelectedItems.Count < 2)
+            {
+                LootItem item = (LootItem)((MenuItem)sender).CommandParameter;
+                viewModel.ShowLootItemEditor(item);
+            }
+            else
+            {
+                viewModel.ShowBulkLootItemEditor(LootTableItemsListbox.SelectedItems.Cast<LootItem>().ToList() as List<LootItem>);
+            }
+        }
+
+        private void MultiplyLootItem_Click(object sender, RoutedEventArgs e)
+        {
+            if (LootTableItemsListbox.SelectedItems.Count > 0)
+            {
+                viewModel.ShowBulkLootItemMultiplier(LootTableItemsListbox.SelectedItems.Cast<LootItem>().ToList() as List<LootItem>);
+            }
         }
 
         private void DeleteLootItem_Click(object sender, RoutedEventArgs e)

@@ -27,7 +27,7 @@ namespace RustRBLootEditor.ViewModels
 
         private void UpdateBulk(string group)
         {
-            MainViewModel.ShowBulkLootItemEditor(group);
+            MainViewModel.ShowBulkLootItemEditor(MainViewModel.LootTableFile.LootItems.Where(s => s.category == group).ToList());
         }
 
         public void RemoveLootTableItem(LootItem item)
@@ -38,6 +38,16 @@ namespace RustRBLootEditor.ViewModels
         public void ShowLootItemEditor(LootItem lootItem)
         {
             MainViewModel.ShowLootItemEditor(lootItem);
+        }
+
+        public void ShowBulkLootItemEditor(List<LootItem> lootItems)
+        {
+            MainViewModel.ShowBulkLootItemEditor(lootItems);
+        }
+
+        public void ShowBulkLootItemMultiplier(List<LootItem> lootItems)
+        {
+            MainViewModel.ShowBulkLootItemMultiplier(lootItems);
         }
     }
 }

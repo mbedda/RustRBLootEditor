@@ -56,6 +56,21 @@
                 </DataTrigger>
             </Style.Triggers>
         </Style>
+
+        <Style TargetType="{x:Type Grid}" x:Key="inventoryItemGridStyleGreen">
+            <Setter Property="Background" Value="#33BDBDBD" />
+            <Setter Property="Width" Value="75" />
+            <Setter Property="Height" Value="75" />
+            <Setter Property="Margin" Value="2" />
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding RelativeSource={RelativeSource AncestorType=ListBoxItem}, Path=IsMouseOver}" Value="True">
+                    <Setter Property="Background" Value="#33BDBDBD" />
+                    <Setter Property="Margin" Value="1"/>
+                    <Setter Property="Width" Value="77" />
+                    <Setter Property="Height" Value="77" />
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
         
         <SolidColorBrush x:Key="BrushOrange" Color="#ff5e3a"/>
         <SolidColorBrush x:Key="BrushGrey" Color="#f2f2f0"/>

@@ -4,9 +4,10 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:UI="clr-namespace:RustRBLootEditor.UI" xmlns:i="http://schemas.microsoft.com/xaml/behaviors" xmlns:controls="clr-namespace:WpfToolkit.Controls;assembly=VirtualizingWrapPanel"
-             mc:Ignorable="d" Loaded="UserControl_Loaded"
+             mc:Ignorable="d" Loaded="UserControl_Loaded" xmlns:Converters="clr-namespace:RustRBLootEditor.Converters"
              d:DesignHeight="450" d:DesignWidth="800" x:Name="lootTableItemsUC">
     <UserControl.Resources>
+        <Converters:ProbabilityCheckConverter x:Key="ProbabilityCheckConverter"/>
         <CollectionViewSource x:Key="ListBoxItems" Source="{Binding MainViewModel.LootTableFile.LootItems}">
             <CollectionViewSource.GroupDescriptions>
                 <PropertyGroupDescription PropertyName="category" />
@@ -26,7 +27,7 @@
                                             <ColumnDefinition  Width="Auto"/>
                                         </Grid.ColumnDefinitions>
                                         <TextBlock FontWeight="Bold" Margin="10,7,5,2" FontSize="14" Text="{Binding Converter={StaticResource CaseConverterToUpper}}" Foreground="White" />
-                                        <Button HorizontalAlignment="Right" Grid.Column="1" Style="{StaticResource LinkButton}" Command="{Binding DataContext.UpdateBulkCommand, ElementName=lootTableItemsUC}" CommandParameter="{Binding}" Margin="0,8,10,0">Bulk Edit</Button>
+                                        <Button Visibility="Collapsed" HorizontalAlignment="Right" Grid.Column="1" Style="{StaticResource LinkButton}" Command="{Binding DataContext.UpdateBulkCommand, ElementName=lootTableItemsUC}" CommandParameter="{Binding}" Margin="0,8,10,0">Bulk Edit</Button>
                                     </Grid>
                                 </DataTemplate>
                             </Expander.HeaderTemplate>
@@ -49,7 +50,7 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <TextBlock Grid.ColumnSpan="2" FontWeight="Bold" Foreground="White" FontFamily="Lato Bold" VerticalAlignment="Center">
-                LOOT TABLE <Run Text="{Binding MainViewModel.Filename}" Foreground="#9bcf3e"/> <Run Text="    Right click to delete" FontFamily="Lato Light Italic"/>
+                LOOT TABLE <Run Text="{Binding MainViewModel.Filename}" Foreground="#9bcf3e"/><!--<LineBreak/><Run Text="{Binding MainViewModel.LootTableFile.LootItems, Converter={StaticResource ProbabilityCheckConverter}}" FontFamily="Lato Light Italic"/>-->
             </TextBlock>
             <TextBox x:Name="filtertxt" Grid.Column="2" TextChanged="filtertxt_TextChanged"/>
         </Grid>
@@ -73,7 +74,23 @@
             </ListBox.GroupStyle>
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <Grid Style="{StaticResource inventoryItemGridStyle}" MouseDown="LootItem_MouseDown">
+                    <Grid MouseDown="LootItem_MouseDown">
+                        <Grid.Style>
+                            <Style TargetType="{x:Type Grid}" BasedOn="{StaticResource inventoryItemGridStyleGreen}">
+                                <Setter Property="Background" Value="#33FFBE0C" />
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding probability}" Value="1">
+                                        <Setter Property="Background" Value="#3334FF66" />
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding probability}" Value="0">
+                                        <Setter Property="Background" Value="#33e31e31" />
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding amount}" Value="0">
+                                        <Setter Property="Background" Value="#33e31e31" />
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Grid.Style>
                         <Grid.ToolTip>
                             <ToolTip Background="#1b6798" Placement="Top" ToolTipService.InitialShowDelay="0">
                                 <StackPanel>
@@ -83,9 +100,10 @@
                         </Grid.ToolTip>
                         <Grid.ContextMenu>
                             <ContextMenu>
-                                <MenuItem Header="Edit" Click="EditLootItem_Click" CommandParameter="{Binding}" />
+                                <MenuItem Header="Edit items" Click="EditLootItem_Click" CommandParameter="{Binding}" />
+                                <MenuItem Header="Multiply Values" Click="MultiplyLootItem_Click" CommandParameter="{Binding}" />
                                 <Separator />
-                                <MenuItem Header="Delete" Click="DeleteLootItem_Click" CommandParameter="{Binding}"/>
+                                <MenuItem Header="Delete items" Click="DeleteLootItem_Click" CommandParameter="{Binding}"/>
                             </ContextMenu>
                         </Grid.ContextMenu>
                         <Grid>
@@ -101,9 +119,58 @@
                             <!--<Image Source="{Binding shortname, Converter={StaticResource RelativeUriFromShortnameConverter}, ConverterParameter='Assets\\RustItems'}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5"></Image>-->
                             <TextBlock Margin="0,0,5,5" ToolTip="{Binding Path=shortname}" Foreground="White" FontWeight="Bold"
                                        TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Bottom" HorizontalAlignment="Right">
+                                <TextBlock.Style>
+                                    <Style TargetType="{x:Type TextBlock}">
+                                        <Setter Property="Visibility" Value="Visible" />
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding probability}" Value="0">
+                                                <Setter Property="Visibility" Value="Collapsed" />
+                                            </DataTrigger>
+                                            <DataTrigger Binding="{Binding amount}" Value="0">
+                                                <Setter Property="Visibility" Value="Collapsed" />
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </TextBlock.Style>
                                     x<Run Text="{Binding amountMin, Converter={StaticResource FormatNumberConverter}}"/>-<Run Text="{Binding amount, Converter={StaticResource FormatNumberConverter}}"/>
                             </TextBlock>
                         </Grid>
+                        <TextBlock Margin="5" ToolTip="{Binding Path=shortname}" Foreground="White" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center">
+                            <TextBlock.Style>
+                                <Style TargetType="{x:Type TextBlock}">
+                                    <Setter Property="Visibility" Value="Collapsed" />
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding probability}" Value="0">
+                                            <Setter Property="Visibility" Value="Visible" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding amount}" Value="0">
+                                            <Setter Property="Visibility" Value="Visible" />
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </TextBlock.Style>
+                            DISABLED
+                        </TextBlock>
+                        <Border VerticalAlignment="Top" HorizontalAlignment="Left" BorderThickness="1" BorderBrush="Gray">
+                            <Border.Style>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="Visibility" Value="Visible" />
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding probability}" Value="1">
+                                            <Setter Property="Visibility" Value="Collapsed" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding probability}" Value="0">
+                                            <Setter Property="Visibility" Value="Collapsed" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding amount}" Value="0">
+                                            <Setter Property="Visibility" Value="Collapsed" />
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Border.Style>
+                            <TextBlock Margin="2,1" ToolTip="Probability" Text="{Binding probability}" Foreground="White" FontWeight="Bold"
+                                                           TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Bottom" HorizontalAlignment="Center" />
+                        </Border>
                         <UI:RustLoadingUC x:Name="rustLoadingUC" Animation_Completed="rustLoadingUC_Animation_Completed"/>
                     </Grid>
                 </DataTemplate>

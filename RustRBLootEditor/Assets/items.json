@@ -5556,5 +5556,12 @@
     "id": null,
     "image": "",
     "shortName": "weaponrack.light"
+  },
+  {
+    "category": "Items",
+    "displayName": "Clan Table",
+    "id": null,
+    "image": "",
+    "shortName": "clantable"
   }
 ]

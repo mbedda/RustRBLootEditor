@@ -148,6 +148,7 @@
     <None Remove="Assets\RustItems\chicken.spoiled.png" />
     <None Remove="Assets\RustItems\chineselantern.png" />
     <None Remove="Assets\RustItems\chocolate.png" />
+    <None Remove="Assets\RustItems\clantable.png" />
     <None Remove="Assets\RustItems\clatter.helmet.png" />
     <None Remove="Assets\RustItems\clone.black.berry.png" />
     <None Remove="Assets\RustItems\clone.blue.berry.png" />
@@ -851,6 +852,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\RustItems\chair.icethrone.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\clantable.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\RustItems\diverhatchet.png">
