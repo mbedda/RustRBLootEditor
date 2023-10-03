@@ -77,16 +77,16 @@
                     <Grid MouseDown="LootItem_MouseDown">
                         <Grid.Style>
                             <Style TargetType="{x:Type Grid}" BasedOn="{StaticResource inventoryItemGridStyleGreen}">
-                                <Setter Property="Background" Value="#33FFBE0C" />
+                                <Setter Property="Background" Value="#33ffee00" />
                                 <Style.Triggers>
                                     <DataTrigger Binding="{Binding probability}" Value="1">
                                         <Setter Property="Background" Value="#3334FF66" />
                                     </DataTrigger>
                                     <DataTrigger Binding="{Binding probability}" Value="0">
-                                        <Setter Property="Background" Value="#33e31e31" />
+                                        <Setter Property="Background" Value="#33ff0000" />
                                     </DataTrigger>
                                     <DataTrigger Binding="{Binding amount}" Value="0">
-                                        <Setter Property="Background" Value="#33e31e31" />
+                                        <Setter Property="Background" Value="#33ff0000" />
                                     </DataTrigger>
                                 </Style.Triggers>
                             </Style>
