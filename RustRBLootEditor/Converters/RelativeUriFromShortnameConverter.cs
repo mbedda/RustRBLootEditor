@@ -14,16 +14,24 @@ namespace RustRBLootEditor.Converters
 {
     public class RelativeUriFromShortnameConverter : IValueConverter
     {
+        public static Dictionary<string, Uri> pathsCache = new Dictionary<string, Uri>();
+
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            if (value != null)
+            var shortname = value as string;
+
+            if (shortname != null)
             {
+                Uri result;
+
+                if(pathsCache.TryGetValue(shortname, out result)) return result;
+
                 string partialpath = "";
 
                 if (parameter != null && parameter.ToString() != null) { partialpath = parameter.ToString(); }
 
                 string debugpath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-                string imagepath = Path.Combine(debugpath, partialpath, value.ToString());
+                string imagepath = Path.Combine(debugpath, partialpath, shortname);
 
                 if (!imagepath.EndsWith(".png") && !imagepath.EndsWith(".jpg") && !imagepath.EndsWith(".jpeg"))
                 {
@@ -32,11 +40,21 @@ namespace RustRBLootEditor.Converters
 
                 if (File.Exists(imagepath))
                 {
-                    return new Uri(imagepath, UriKind.RelativeOrAbsolute);
+                    result = new Uri(imagepath, UriKind.RelativeOrAbsolute);
+
+                    if (!pathsCache.ContainsKey(shortname))
+                        pathsCache.Add(shortname, result);
+
+                    return result;
                 }
                 else
                 {
-                    return new Uri("/RustRBLootEditor;component/Assets/unavailable.png", UriKind.Relative);
+                    result = new Uri("/RustRBLootEditor;component/Assets/unavailable.png", UriKind.Relative);
+
+                    if (!pathsCache.ContainsKey(shortname))
+                        pathsCache.Add(shortname, result);
+
+                    return result;
                 }
             }
             else
