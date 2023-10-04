@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:RustRBLootEditor" xmlns:converters="clr-namespace:RustRBLootEditor.Converters"
+        xmlns:local="clr-namespace:RustRBLootEditor" xmlns:converters="clr-namespace:RustRBLootEditor.Converters" xmlns:c="clr-namespace:RustRBLootEditor.Validations"
         mc:Ignorable="d" Loaded="Window_Loaded" x:Name="RBMainWindow"
         Title="RB Loot Editor" Height="800" Width="1400" WindowStartupLocation="CenterScreen">
     <Grid>
@@ -128,11 +128,27 @@
                         </Grid.ColumnDefinitions>
                         <StackPanel>
                             <TextBlock Text="Amount Min" FontFamily="Lato" FontSize="14" Foreground="White" FontStyle="Italic" Margin="0,0,0,5"/>
-                            <TextBox Text="{Binding SelectedEditItem.amountMin, UpdateSourceTrigger=PropertyChanged}" FontSize="14" FontFamily="Lato Bold" />
+                            <TextBox FontSize="14" FontFamily="Lato Bold">
+                                <TextBox.Text>
+                                    <Binding Path="SelectedEditItem.amountMin" UpdateSourceTrigger="PropertyChanged">
+                                        <Binding.ValidationRules>
+                                            <c:AmountMinRule Min="0" />
+                                        </Binding.ValidationRules>
+                                    </Binding>
+                                </TextBox.Text>
+                            </TextBox>
                         </StackPanel>
                         <StackPanel Grid.Column="2">
                             <TextBlock Text="Amount Max" FontFamily="Lato" FontSize="14" Foreground="White" FontStyle="Italic" Margin="0,0,0,5"/>
-                            <TextBox Text="{Binding SelectedEditItem.amount, UpdateSourceTrigger=PropertyChanged}" FontSize="14" FontFamily="Lato Bold" />
+                            <TextBox FontSize="14" FontFamily="Lato Bold">
+                                <TextBox.Text>
+                                    <Binding Path="SelectedEditItem.amount" UpdateSourceTrigger="PropertyChanged">
+                                        <Binding.ValidationRules>
+                                            <c:AmountMinRule Min="0" />
+                                        </Binding.ValidationRules>
+                                    </Binding>
+                                </TextBox.Text>
+                            </TextBox>
                         </StackPanel>
                     </Grid>
                     <Grid Margin="0,0,0,10">
@@ -158,7 +174,15 @@
                         </Grid.ColumnDefinitions>
                         <StackPanel>
                             <TextBlock Text="Probability (0.0-1.0)" FontFamily="Lato" FontSize="14" Foreground="White" FontStyle="Italic" Margin="0,0,0,5"/>
-                            <TextBox Text="{Binding SelectedEditItem.probability, UpdateSourceTrigger=PropertyChanged, StringFormat=N2}" FontSize="14" FontFamily="Lato Bold" />
+                            <TextBox FontSize="14" FontFamily="Lato Bold">
+                                <TextBox.Text>
+                                    <Binding Path="SelectedEditItem.probability" UpdateSourceTrigger="PropertyChanged" StringFormat="N2" Delay="1000">
+                                        <Binding.ValidationRules>
+                                            <c:ProbabilityRangeRule Min="0" Max="1"/>
+                                        </Binding.ValidationRules>
+                                    </Binding>
+                                </TextBox.Text>
+                            </TextBox>
                         </StackPanel>
                         <StackPanel Grid.Column="2">
                             <TextBlock Text="Stack Size" FontFamily="Lato" FontSize="14" Foreground="White" FontStyle="Italic" Margin="0,0,0,5"/>
@@ -198,13 +222,29 @@
                             <CheckBox IsChecked="{Binding TempBulkTargetFields.amountMin}" FontFamily="Lato" FontSize="14" Foreground="White" FontStyle="Italic" Margin="0,0,0,5">
                                 <Run>Amount Min</Run>
                             </CheckBox>
-                            <TextBox Text="{Binding TempBulkEditItem.amountMin, UpdateSourceTrigger=PropertyChanged}" FontSize="14" FontFamily="Lato Bold" />
+                            <TextBox FontSize="14" FontFamily="Lato Bold">
+                                <TextBox.Text>
+                                    <Binding Path="TempBulkEditItem.amountMin" UpdateSourceTrigger="PropertyChanged">
+                                        <Binding.ValidationRules>
+                                            <c:AmountMinRule Min="0" />
+                                        </Binding.ValidationRules>
+                                    </Binding>
+                                </TextBox.Text>
+                            </TextBox>
                         </StackPanel>
                         <StackPanel Grid.Column="2">
                             <CheckBox IsChecked="{Binding TempBulkTargetFields.amount}" FontFamily="Lato" FontSize="14" Foreground="White" FontStyle="Italic" Margin="0,0,0,5">
                                 <Run>Amount Max</Run>
                             </CheckBox>
-                            <TextBox Text="{Binding TempBulkEditItem.amount, UpdateSourceTrigger=PropertyChanged}" FontSize="14" FontFamily="Lato Bold" />
+                            <TextBox FontSize="14" FontFamily="Lato Bold">
+                                <TextBox.Text>
+                                    <Binding Path="TempBulkEditItem.amount" UpdateSourceTrigger="PropertyChanged">
+                                        <Binding.ValidationRules>
+                                            <c:AmountMinRule Min="0" />
+                                        </Binding.ValidationRules>
+                                    </Binding>
+                                </TextBox.Text>
+                            </TextBox>
                         </StackPanel>
                     </Grid>
                     <Grid>
@@ -217,7 +257,15 @@
                             <CheckBox IsChecked="{Binding TempBulkTargetFields.probability}" FontFamily="Lato" FontSize="14" Foreground="White" FontStyle="Italic" Margin="0,0,0,5">
                                 <Run>Probability (0.0-1.0)</Run>
                             </CheckBox>
-                            <TextBox Text="{Binding TempBulkEditItem.probability, UpdateSourceTrigger=PropertyChanged, StringFormat=N2}" FontSize="14" FontFamily="Lato Bold" />
+                            <TextBox FontSize="14" FontFamily="Lato Bold">
+                                <TextBox.Text>
+                                    <Binding Path="TempBulkEditItem.probability" UpdateSourceTrigger="PropertyChanged" StringFormat="N2" Delay="1000">
+                                        <Binding.ValidationRules>
+                                            <c:ProbabilityRangeRule Min="0" Max="1"/>
+                                        </Binding.ValidationRules>
+                                    </Binding>
+                                </TextBox.Text>
+                            </TextBox>
                         </StackPanel>
                         <StackPanel Grid.Column="2">
                             <CheckBox IsChecked="{Binding TempBulkTargetFields.stacksize}" FontFamily="Lato" FontSize="14" Foreground="White" FontStyle="Italic" Margin="0,0,0,5">

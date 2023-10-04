@@ -323,6 +323,12 @@ namespace RustRBLootEditor.ViewModels
         {
             LootItemEditorOn = false;
 
+            if (SelectedEditItem.amountMin > SelectedEditItem.amount)
+                SelectedEditItem.amountMin = SelectedEditItem.amount;
+
+            if (SelectedEditItem.stacksize < -1)
+                SelectedEditItem.stacksize = -1;
+
             if (SelectedEditItem.skin != SelectedItemOriginalSkin && SelectedEditItem.skin > 0)
             {
                 await GetSteamSkins(new List<ulong>() { SelectedEditItem.skin });
@@ -351,17 +357,17 @@ namespace RustRBLootEditor.ViewModels
             {
                 foreach (var item in SelectedBulkEditItems)
                 {
-                    if(TempBulkTargetFields.amount)
+                    if (TempBulkTargetFields.amount)
                         item.amount = TempBulkEditItem.amount;
 
-                    if(TempBulkTargetFields.amountMin)
-                        item.amountMin = TempBulkEditItem.amountMin;
+                    if (TempBulkTargetFields.amountMin)
+                        item.amountMin = (TempBulkEditItem.amountMin > item.amount) ? item.amount : TempBulkEditItem.amountMin;
 
-                    if(TempBulkTargetFields.probability)
+                    if (TempBulkTargetFields.probability)
                         item.probability = TempBulkEditItem.probability;
 
                     if(TempBulkTargetFields.stacksize)
-                        item.stacksize = TempBulkEditItem.stacksize;
+                        item.stacksize = (TempBulkEditItem.stacksize < -1) ? -1 : TempBulkEditItem.stacksize;
                 }
 
                 SelectedBulkEditItems = new List<LootItem>();
@@ -398,13 +404,25 @@ namespace RustRBLootEditor.ViewModels
                 foreach (var item in SelectedBulkEditItems)
                 {
                     if (TempBulkTargetFields.amount)
+                    {
                         item.amount = (int)Math.Round(item.amount * MultiplierValue);
+                    }
 
                     if (TempBulkTargetFields.amountMin)
+                    {
                         item.amountMin = (int)Math.Round(item.amountMin * MultiplierValue);
+                        
+                        if(item.amountMin > item.amount)
+                            item.amountMin = item.amount;
+                    }
 
                     if (TempBulkTargetFields.stacksize)
+                    {
                         item.stacksize = (int)Math.Round(item.stacksize * MultiplierValue);
+
+                        if(item.stacksize < -1)
+                            item.stacksize = -1;
+                    }
                 }
 
                 SelectedBulkEditItems = new List<LootItem>();
