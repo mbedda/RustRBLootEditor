@@ -34,14 +34,14 @@
                  BorderThickness="3" BorderBrush="#33000000" Grid.ColumnSpan="2" VirtualizingPanel.IsVirtualizing='True' VirtualizingPanel.IsVirtualizingWhenGrouping='True' VirtualizingPanel.ScrollUnit='Pixel'>
             <ListBox.ItemsPanel>
                 <ItemsPanelTemplate>
-                    <controls:VirtualizingWrapPanel IsItemsHost="True" />
+                    <WrapPanel />
                 </ItemsPanelTemplate>
             </ListBox.ItemsPanel>
             <ListBox.GroupStyle>
                 <GroupStyle ContainerStyle="{StaticResource ItemsGroupItem}">
                     <GroupStyle.Panel>
                         <ItemsPanelTemplate>
-                            <VirtualizingStackPanel Orientation="Vertical" />
+                            <WrapPanel />
                         </ItemsPanelTemplate>
                     </GroupStyle.Panel>
                 </GroupStyle>
@@ -58,7 +58,7 @@
                         </Grid.ToolTip>
                         <Grid>
                             <!--<Image Source="{Binding image}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5"></Image>-->
-                            <Image Source="{Binding shortName, Converter={StaticResource RelativeUriFromShortnameConverter}, ConverterParameter='Assets\\RustItems', IsAsync=true}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5"></Image>
+                            <Image Source="{Binding Source}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5"></Image>
                             <TextBlock Margin="0,0,5,5" Visibility="Hidden" Text="{Binding displayName}" Foreground="White" FontWeight="Bold" FontSize="11"
                                        TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Bottom" HorizontalAlignment="Right"></TextBlock>
                         </Grid>

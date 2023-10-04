@@ -8,7 +8,7 @@
         <Converters:CaseConverter x:Key="CaseConverterToLower" Case="Lower"/>
         <Converters:UriFromShortnameConverter x:Key="UriFromShortnameConverter"/>
         <Converters:LocalUriFromShortnameConverter x:Key="LocalUriFromShortnameConverter"/>
-        <Converters:RelativeUriFromShortnameConverter x:Key="RelativeUriFromShortnameConverter"/>
+        <!--<Converters:RelativeUriFromShortnameConverter x:Key="RelativeUriFromShortnameConverter"/>-->
         <Converters:FormatNumberConverter x:Key="FormatNumberConverter"/>
         <Converters:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
         <Converters:RelativeUriFromLootItemConverter x:Key="RelativeUriFromLootItemConverter"/>

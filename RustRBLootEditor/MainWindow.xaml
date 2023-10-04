@@ -353,7 +353,7 @@
                             <TextBlock Text="{Binding SelectedEditGameItem.displayName}" FontFamily="Lato Bold" FontSize="16" Margin="0,0,0,10" Foreground="#9bcf3e" TextWrapping="Wrap" />
                             <TextBlock Text="{Binding SelectedEditGameItem.shortName}" FontFamily="Lato Bold" FontSize="16" Margin="0,0,0,10" Foreground="White" TextWrapping="Wrap" />
                         </StackPanel>
-                        <Image Grid.Column="1" Source="{Binding SelectedEditGameItem.shortName, Converter={StaticResource RelativeUriFromShortnameConverter}, ConverterParameter='Assets\\RustItems'}" 
+                        <Image Grid.Column="1" Source="{Binding SelectedEditGameItem.Source}" 
                            Width="75" Height="75"
                            HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,0,0,10"></Image>
                     </Grid>

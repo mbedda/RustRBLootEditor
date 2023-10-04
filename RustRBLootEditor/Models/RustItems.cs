@@ -1,15 +1,20 @@
 ﻿using HtmlAgilityPack;
+using Newtonsoft.Json.Linq;
 using Prism.Mvvm;
 using RustRBLootEditor.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Drawing.Imaging;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
 
 namespace RustRBLootEditor.Models
 {
@@ -107,6 +112,42 @@ namespace RustRBLootEditor.Models
         {
             get { return _category; }
             set { SetProperty(ref _category, value); }
+        }
+
+        BitmapSource _src = null;
+        static readonly BitmapImage noImage = new BitmapImage(new Uri("/RustRBLootEditor;component/Assets/unavailable.png", UriKind.Relative));
+        public ImageSource Source
+        {
+            get
+            {
+                if (_src is null && File.Exists($"F:\\Games\\steamapps\\common\\Rust\\Bundles\\items\\{shortName}.png"))
+                {
+                    using FileStream fs = new FileStream($"F:\\Games\\steamapps\\common\\Rust\\Bundles\\items\\{shortName}.png", FileMode.Open);
+                    using Image source = new Bitmap(fs);
+                    using Image destination = new Bitmap(64, 64);
+
+                    using (var g = Graphics.FromImage(destination))
+                    {
+                        g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBilinear;
+                        g.DrawImage(source, new Rectangle(0, 0, 64, 64), new Rectangle(0, 0, (int)source.Width, (int)source.Height), GraphicsUnit.Pixel);
+                    }
+                    var stream = new MemoryStream();
+                    destination.Save(stream, ImageFormat.Png);
+
+                    var image = new BitmapImage();
+                    image.BeginInit();
+                    image.StreamSource = stream;
+                    image.EndInit();
+
+                    var i = image.Clone();
+                    i.Freeze();
+
+                    _src = i;
+                }
+                else if (_src is null)
+                    _src = noImage;
+                return _src;
+            }
         }
     }
 }
