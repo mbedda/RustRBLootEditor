@@ -201,19 +201,6 @@ namespace RustRBLootEditor.Helpers
             return null;
         }
 
-        public static void DownloadImages(List<RustItem> items, string saveLoc)
-        {
-            Directory.CreateDirectory(saveLoc);
-            foreach (var item in items)
-            {
-                using (WebClient client = new WebClient())
-                {
-                    client.DownloadFileAsync(item.image, saveLoc + "\\" + item.shortName + ".png");
-                }
-            }
-        }
-
-
         public static bool ResourceExists(string resourcePath)
         {
             var assembly = Assembly.GetExecutingAssembly();

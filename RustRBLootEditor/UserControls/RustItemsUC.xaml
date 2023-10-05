@@ -25,7 +25,7 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <TextBlock Grid.ColumnSpan="2" FontWeight="Bold" Foreground="White" FontFamily="Lato Bold" VerticalAlignment="Center">
-                GAME ITEMS <Run Text="    Right click to add" FontFamily="Lato Light Italic"/>
+                GAME ITEMS (<Run Text="{Binding MainViewModel.AllItems.Items.Count, Mode=OneWay}" Foreground="#9bcf3e" />) <Run Text="    Right click to add" FontFamily="Lato Light Italic"/>
             </TextBlock>
             <TextBox x:Name="filtertxt" Grid.Column="2" TextChanged="filtertxt_TextChanged"/>
         </Grid>
@@ -58,8 +58,9 @@
                             </ToolTip>
                         </Grid.ToolTip>
                         <Grid>
+                            <Image Source="{Binding ImageSource, IsAsync=true}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5"></Image>
                             <!--<Image Source="{Binding image}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5"></Image>-->
-                            <Image Source="{Binding shortName, Converter={StaticResource RelativeUriFromShortnameConverter}, ConverterParameter='Assets\\RustItems', IsAsync=true}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5"></Image>
+                            <!--<Image Source="{Binding shortName, Converter={StaticResource RelativeUriFromShortnameConverter}, ConverterParameter='Assets\\RustItems', IsAsync=true}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5"></Image>-->
                             <TextBlock Margin="0,0,5,5" Visibility="Hidden" Text="{Binding displayName}" Foreground="White" FontWeight="Bold" FontSize="11"
                                        TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Bottom" HorizontalAlignment="Right"></TextBlock>
                         </Grid>

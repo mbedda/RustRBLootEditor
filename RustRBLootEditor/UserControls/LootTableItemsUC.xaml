@@ -50,7 +50,7 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <TextBlock Grid.ColumnSpan="2" FontWeight="Bold" Foreground="White" FontFamily="Lato Bold" VerticalAlignment="Center">
-                LOOT TABLE <Run Text="{Binding MainViewModel.Filename}" Foreground="#9bcf3e"/><!--<LineBreak/><Run Text="{Binding MainViewModel.LootTableFile.LootItems, Converter={StaticResource ProbabilityCheckConverter}}" FontFamily="Lato Light Italic"/>-->
+                LOOT TABLE <Run Text="{Binding MainViewModel.Filename}" Foreground="#9bcf3e"/><Run Text="    Right click to edit, delete, or multiply amounts" FontFamily="Lato Light Italic"/>
             </TextBlock>
             <TextBox x:Name="filtertxt" Grid.Column="2" TextChanged="filtertxt_TextChanged"/>
         </Grid>

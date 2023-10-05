@@ -6,10 +6,13 @@ using RustRBLootEditor.Models;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Drawing;
+using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
 using System.Net;
 using System.Reflection;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -157,6 +160,8 @@ namespace RustRBLootEditor.ViewModels
 
             LootTableFile = new LootTableFile();
 
+            GetSteamPath();
+
             BgName = "rust-bg.jpg";
 
             //Common.DownloadImages(AllItems.Items.ToList(), "Assets\\RustItems\\");
@@ -168,16 +173,14 @@ namespace RustRBLootEditor.ViewModels
 
             ApplyMultiplierCommand = new DelegateCommand(ApplyMultiplier);
             CancelMultiplierCommand = new DelegateCommand(CancelMultiplier);
-
-            GetSteamPath();
         }
 
         public async Task LoadGameItems()
         {
             ShowLoading("Loading Game Files...");
-            
+
             if (AllItems != null)
-                await AllItems.Load();
+                await AllItems.Load(SteamPath);
 
             HideLoading();
         }
@@ -219,8 +222,8 @@ namespace RustRBLootEditor.ViewModels
                 {
                     RustItem tmpItem = AllItems.GetRustItem(item.shortname);
 
-                    if(item.skin > 0)
-                        if(!skins.Contains(item.skin))
+                    if (item.skin > 0)
+                        if (!skins.Contains(item.skin))
                             skins.Add(item.skin);
 
                     if (tmpItem != null)
@@ -366,7 +369,7 @@ namespace RustRBLootEditor.ViewModels
                     if (TempBulkTargetFields.probability)
                         item.probability = TempBulkEditItem.probability;
 
-                    if(TempBulkTargetFields.stacksize)
+                    if (TempBulkTargetFields.stacksize)
                         item.stacksize = (TempBulkEditItem.stacksize < -1) ? -1 : TempBulkEditItem.stacksize;
                 }
 
@@ -411,8 +414,8 @@ namespace RustRBLootEditor.ViewModels
                     if (TempBulkTargetFields.amountMin)
                     {
                         item.amountMin = (int)Math.Round(item.amountMin * MultiplierValue);
-                        
-                        if(item.amountMin > item.amount)
+
+                        if (item.amountMin > item.amount)
                             item.amountMin = item.amount;
                     }
 
@@ -420,7 +423,7 @@ namespace RustRBLootEditor.ViewModels
                     {
                         item.stacksize = (int)Math.Round(item.stacksize * MultiplierValue);
 
-                        if(item.stacksize < -1)
+                        if (item.stacksize < -1)
                             item.stacksize = -1;
                     }
                 }
