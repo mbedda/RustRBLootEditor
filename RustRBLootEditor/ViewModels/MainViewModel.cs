@@ -6,13 +6,10 @@ using RustRBLootEditor.Models;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Drawing;
-using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
 using System.Net;
 using System.Reflection;
-using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -320,6 +317,11 @@ namespace RustRBLootEditor.ViewModels
             SelectedItemOriginalSkin = lootItem.skin;
             SelectedEditItem = lootItem;
             LootItemEditorOn = true;
+
+            if (!ValidateStackSize(SelectedEditItem))
+            {
+                MessageBox.Show("This item amount is more than 10x its stack size, it is recommended to set a higher stack size or set it to -1.", "Stack Size Warning");
+            }
         }
 
         public async void HideLootItemEditor()
@@ -519,6 +521,26 @@ namespace RustRBLootEditor.ViewModels
             HideLoading();
 
             return changeOccurred;
+        }
+
+        public bool ValidateProbability()
+        {
+            if (LootTableFile == null || LootTableFile.LootItems == null || LootTableFile.LootItems.Count == 0) return true;
+
+            int highPropCount = LootTableFile.LootItems.Where(s => s.probability >= 0.9f && s.amount > 0).Count();
+
+            float ratio = (float)highPropCount / (float)LootTableFile.LootItems.Count;
+
+            return ratio >= 0.8 ? true : false;
+        }
+
+        public bool ValidateStackSize(LootItem item)
+        {
+            if(item == null) return true;
+
+            float ratio = (float)item.amount / (float)item.stacksize;
+
+            return ratio < 10.0 ? true : false;
         }
     }
 }

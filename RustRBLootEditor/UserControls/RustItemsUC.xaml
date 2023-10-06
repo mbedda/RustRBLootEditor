@@ -25,7 +25,7 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <TextBlock Grid.ColumnSpan="2" FontWeight="Bold" Foreground="White" FontFamily="Lato Bold" VerticalAlignment="Center">
-                GAME ITEMS (<Run Text="{Binding MainViewModel.AllItems.Items.Count, Mode=OneWay}" Foreground="#9bcf3e" />) <Run Text="    Right click to add" FontFamily="Lato Light Italic"/>
+                GAME ITEMS <Run Text="{Binding MainViewModel.AllItems.Items.Count, Mode=OneWay, StringFormat=(0)}" Foreground="#9bcf3e" /> <Run Text="    Right click to add" FontFamily="Lato Light Italic"/>
             </TextBlock>
             <TextBox x:Name="filtertxt" Grid.Column="2" TextChanged="filtertxt_TextChanged"/>
         </Grid>

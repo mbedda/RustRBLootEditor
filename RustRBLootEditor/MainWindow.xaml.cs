@@ -1,11 +1,14 @@
 ﻿using Microsoft.Win32;
 using RustRBLootEditor.Helpers;
+using RustRBLootEditor.Models;
 using RustRBLootEditor.ViewModels;
 using System;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Interop;
 using System.Windows.Media.Imaging;
 
 namespace RustRBLootEditor
@@ -67,6 +70,9 @@ namespace RustRBLootEditor
 
         private void ExportFile_Click(object sender, RoutedEventArgs e)
         {
+            if(!viewModel.ValidateProbability())
+                MessageBox.Show("This loot table has more than 80% of its items with probability less than 0.9 or amount of 0, this may cause raid bases to not spawn enough items.", "Probability Warning");
+
             SaveFileDialog saveFileDialog = new SaveFileDialog();
             saveFileDialog.Filter = "JSON file (*.json)|*.json";
 

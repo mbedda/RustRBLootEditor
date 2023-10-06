@@ -86,7 +86,7 @@ namespace RustRBLootEditor.UserControls
                 {
                     if (String.IsNullOrEmpty(filtertxt.Text)) return true;
                     LootItem item = (LootItem)o;
-                    return (item.displayName.ToLower() + item.shortname.ToLower()).Contains(filtertxt.Text.Trim().ToLower());
+                    return (item.displayName.ToLower() + item.shortname.ToLower() + item.category.ToLower()).Contains(filtertxt.Text.Trim().ToLower());
                 };
             });
         }

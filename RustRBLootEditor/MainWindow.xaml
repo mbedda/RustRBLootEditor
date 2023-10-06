@@ -185,7 +185,7 @@
                             </TextBox>
                         </StackPanel>
                         <StackPanel Grid.Column="2">
-                            <TextBlock Text="Stack Size" FontFamily="Lato" FontSize="14" Foreground="White" FontStyle="Italic" Margin="0,0,0,5"/>
+                            <TextBlock Text="Stack Size (default = -1)" FontFamily="Lato" FontSize="14" Foreground="White" FontStyle="Italic" Margin="0,0,0,5"/>
                             <TextBox Text="{Binding SelectedEditItem.stacksize, UpdateSourceTrigger=PropertyChanged}" FontSize="14" FontFamily="Lato Bold" />
                         </StackPanel>
                     </Grid>
@@ -269,7 +269,7 @@
                         </StackPanel>
                         <StackPanel Grid.Column="2">
                             <CheckBox IsChecked="{Binding TempBulkTargetFields.stacksize}" FontFamily="Lato" FontSize="14" Foreground="White" FontStyle="Italic" Margin="0,0,0,5">
-                                <Run>Stack Size</Run>
+                                <Run>Stack Size (default = -1)</Run>
                             </CheckBox>
                             <TextBox Text="{Binding TempBulkEditItem.stacksize, UpdateSourceTrigger=PropertyChanged}" FontSize="14" FontFamily="Lato Bold" />
                         </StackPanel>
