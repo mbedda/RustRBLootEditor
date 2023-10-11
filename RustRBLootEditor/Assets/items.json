@@ -3960,16 +3960,6 @@
     "category": "Items"
   },
   {
-    "displayName": "Weapon Rack Double Light",
-    "shortName": "weaponrack.doublelight",
-    "category": "Electrical"
-  },
-  {
-    "displayName": "Weapon Rack Light",
-    "shortName": "weaponrack.light",
-    "category": "Electrical"
-  },
-  {
     "displayName": "Clan Table",
     "shortName": "clantable",
     "category": "Items"

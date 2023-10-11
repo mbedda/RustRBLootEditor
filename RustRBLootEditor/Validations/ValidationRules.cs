@@ -24,7 +24,7 @@ namespace RustRBLootEditor.Validations
             try
             {
                 if (((string)value).Length > 0)
-                    probability = float.Parse((String)value);
+                    probability = float.Parse((String)value, System.Globalization.NumberStyles.Any, cultureInfo);
             }
             catch (Exception e)
             {
