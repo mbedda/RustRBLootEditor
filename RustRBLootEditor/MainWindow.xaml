@@ -102,6 +102,8 @@
                                 </TextBlock.Style>
                             </TextBlock>
                         </StackPanel>
+                        <Image Width="75" Height="75" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,0,0,10" 
+                               Source="/RustRBLootEditor;component/Assets/blueprintbase.png" Visibility="{Binding SelectedEditItem.blueprint, Converter={StaticResource BooleanToVisibilityConverter}}"/>
                         <Image HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5">
                             <Image.Source>
                                 <MultiBinding Converter="{StaticResource RelativeUriFromLootItemMultiConverter}" ConverterParameter="Assets\\RustItems">
@@ -166,7 +168,7 @@
                             <TextBox Text="{Binding SelectedEditItem.skin, UpdateSourceTrigger=PropertyChanged}" FontSize="14" FontFamily="Lato Bold" />
                         </StackPanel>
                     </Grid>
-                    <Grid>
+                    <Grid Margin="0,0,0,10">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="10"/>
@@ -187,6 +189,18 @@
                         <StackPanel Grid.Column="2">
                             <TextBlock Text="Stack Size (default = -1)" FontFamily="Lato" FontSize="14" Foreground="White" FontStyle="Italic" Margin="0,0,0,5"/>
                             <TextBox Text="{Binding SelectedEditItem.stacksize, UpdateSourceTrigger=PropertyChanged}" FontSize="14" FontFamily="Lato Bold" />
+                        </StackPanel>
+                    </Grid>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="10"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel>
+                            <CheckBox IsChecked="{Binding SelectedEditItem.blueprint, UpdateSourceTrigger=PropertyChanged}" FontFamily="Lato" FontSize="14" Foreground="White" FontStyle="Italic" Margin="0,0,0,5">
+                                <Run>Is Blueprint?</Run>
+                            </CheckBox>
                         </StackPanel>
                     </Grid>
                 </StackPanel>

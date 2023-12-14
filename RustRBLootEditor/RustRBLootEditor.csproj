@@ -7,9 +7,9 @@
     <UseWPF>true</UseWPF>
     <PackageIcon></PackageIcon>
     <ApplicationIcon>hazmat_xQg_icon.ico</ApplicationIcon>
-    <FileVersion>1.4.4.0</FileVersion>
-    <AssemblyVersion>1.4.4.0</AssemblyVersion>
-    <Version>$(VersionPrefix)1.4.4.0</Version>
+    <FileVersion>1.4.5.0</FileVersion>
+    <AssemblyVersion>1.4.5.0</AssemblyVersion>
+    <Version>$(VersionPrefix)1.4.5.0</Version>
     <Authors>beee</Authors>
     <PackageProjectUrl>https://github.com/mbedda/RustRBLootEditor</PackageProjectUrl>
     <RepositoryUrl>https://github.com/mbedda/RustRBLootEditor.git</RepositoryUrl>
@@ -17,6 +17,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\blueprintbase.png" />
     <None Remove="Assets\items.json" />
     <None Remove="Assets\rust-bg.jpg" />
     <None Remove="Assets\RustItems\abovegroundpool.png" />
@@ -839,6 +840,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Assets\blueprintbase.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\RustItems\ammo.rocket.seeker.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

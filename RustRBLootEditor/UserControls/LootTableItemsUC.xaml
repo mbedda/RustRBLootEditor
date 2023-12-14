@@ -108,6 +108,7 @@
                             </ContextMenu>
                         </Grid.ContextMenu>
                         <Grid>
+                            <Image Source="/RustRBLootEditor;component/Assets/blueprintbase.png" Visibility="{Binding blueprint, Converter={StaticResource BooleanToVisibilityConverter}}"/>
                             <Image HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5">
                                 <Image.Source>
                                     <MultiBinding Converter="{StaticResource RelativeUriFromLootItemMultiConverter}" ConverterParameter="Assets\\RustItems">

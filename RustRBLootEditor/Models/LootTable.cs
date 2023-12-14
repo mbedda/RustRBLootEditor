@@ -62,6 +62,13 @@ namespace RustRBLootEditor.Models
             set { SetProperty(ref _amount, value); }
         }
 
+        private bool _blueprint;
+        public bool blueprint
+        {
+            get { return _blueprint; }
+            set { SetProperty(ref _blueprint, value); }
+        }
+
         private ulong _skin;
         public ulong skin
         {
