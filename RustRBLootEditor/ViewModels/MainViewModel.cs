@@ -211,7 +211,7 @@ namespace RustRBLootEditor.ViewModels
 
             List<LootItem> tmpLootItems = await Common.LoadJsonAsync<List<LootItem>>(filepath);
 
-            if (LootTableFile.LootItems != null)
+            if (tmpLootItems != null)
             {
                 List<ulong> skins = new List<ulong>();
 
