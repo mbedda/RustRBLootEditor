@@ -105,6 +105,8 @@
                                 <MenuItem Header="Multiply Values" Click="MultiplyLootItem_Click" CommandParameter="{Binding}" />
                                 <Separator />
                                 <MenuItem Header="Delete items" Click="DeleteLootItem_Click" CommandParameter="{Binding}"/>
+                                <Separator />
+                                <MenuItem Header="Delete disabled only" Click="DeleteDisabledLootItem_Click" CommandParameter="{Binding}"/>
                             </ContextMenu>
                         </Grid.ContextMenu>
                         <Grid>

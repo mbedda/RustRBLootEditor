@@ -70,14 +70,42 @@ namespace RustRBLootEditor
 
         private void ExportFile_Click(object sender, RoutedEventArgs e)
         {
-            if(!viewModel.ValidateProbability())
+            Button button = sender as Button;
+            ContextMenu contextMenu = button.ContextMenu;
+            contextMenu.PlacementTarget = button;
+            contextMenu.Placement = System.Windows.Controls.Primitives.PlacementMode.Bottom;
+            contextMenu.IsOpen = true;
+        }
+
+
+        private void ExportFileEN_Click(object sender, RoutedEventArgs e)
+        {
+            if (!viewModel.ValidateProbability())
                 MessageBox.Show("This loot table has more than 80% of its items with probability less than 0.9 or amount of 0, this may cause raid bases to not spawn enough items.", "Probability Warning");
 
             SaveFileDialog saveFileDialog = new SaveFileDialog();
             saveFileDialog.Filter = "JSON file (*.json)|*.json";
 
             if (saveFileDialog.ShowDialog() == true)
-                viewModel.Save(saveFileDialog.FileName);
+            {
+                viewModel.Filename = "(" + System.IO.Path.GetFileName(saveFileDialog.FileName.Trim()) + ")";
+                viewModel.Save(saveFileDialog.FileName, "EN");
+            }
+        }
+
+        private void ExportFileRU_Click(object sender, RoutedEventArgs e)
+        {
+            if (!viewModel.ValidateProbability())
+                MessageBox.Show("This loot table has more than 80% of its items with probability less than 0.9 or amount of 0, this may cause raid bases to not spawn enough items.", "Probability Warning");
+
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "JSON file (*.json)|*.json";
+
+            if (saveFileDialog.ShowDialog() == true)
+            {
+                viewModel.Filename = "(" + System.IO.Path.GetFileName(saveFileDialog.FileName.Trim()) + ")";
+                viewModel.Save(saveFileDialog.FileName, "RU");
+            }
         }
 
         private void LootItemEdit_PreviewMouseLeftButtonUp(object sender, System.Windows.Input.MouseButtonEventArgs e)

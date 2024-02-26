@@ -67,10 +67,7 @@ namespace RustRBLootEditor.UserControls
             }
             else
             {
-                for (int i = 0; i < AllItemsListbox.SelectedItems.Count; i++)
-                {
-                    viewModel.ItemRightClick(AllItemsListbox.SelectedItems[i] as RustItem);
-                }
+                viewModel.BulkItemsRightClick(AllItemsListbox.SelectedItems.Cast<RustItem>().ToList());
             }
         }
 

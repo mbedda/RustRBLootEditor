@@ -35,7 +35,14 @@
             <StackPanel Orientation="Horizontal" Grid.Column="2">
                 <Button x:Name="SaveGameItems" Grid.Column="2" Content="Save Game Items" HorizontalAlignment="Right" Margin="0,10,10,10" Padding="10,5" Click="SaveGameItems_Click" Visibility="Collapsed"/>
                 <Button x:Name="ImportFile" Grid.Column="2" Content="Load" HorizontalAlignment="Right" Margin="0,10,10,10" Padding="10,5" Click="ImportFile_Click"/>
-                <Button x:Name="ExportFile" Grid.Column="2" Content="Save" HorizontalAlignment="Right" Margin="0,10,10,10" Padding="10,5" Click="ExportFile_Click"/>
+                <Button x:Name="ExportFile" Grid.Column="2" Content="Save" HorizontalAlignment="Right" Margin="0,10,10,10" Padding="10,5" Click="ExportFile_Click">
+                    <Button.ContextMenu>
+                        <ContextMenu>
+                            <MenuItem Header="EN" Click="ExportFileEN_Click"/>
+                            <MenuItem Header="RU" Click="ExportFileRU_Click"/>
+                        </ContextMenu>
+                    </Button.ContextMenu>
+                </Button>
             </StackPanel>
         </Grid>
         <Grid Grid.Row="2" Background="#4C222222">

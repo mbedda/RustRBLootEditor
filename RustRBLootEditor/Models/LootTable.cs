@@ -1,4 +1,6 @@
-﻿using Prism.Mvvm;
+﻿using Newtonsoft.Json;
+using Prism.Mvvm;
+using RustRBLootEditor.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -55,13 +57,6 @@ namespace RustRBLootEditor.Models
             set { SetProperty(ref _name, value); }
         }
 
-        private long _amount;
-        public long amount
-        {
-            get { return _amount; }
-            set { SetProperty(ref _amount, value); }
-        }
-
         private bool _blueprint;
         public bool blueprint
         {
@@ -74,6 +69,13 @@ namespace RustRBLootEditor.Models
         {
             get { return _skin; }
             set { SetProperty(ref _skin, value); }
+        }
+
+        private long _amount;
+        public long amount
+        {
+            get { return _amount; }
+            set { SetProperty(ref _amount, value); }
         }
 
         private long _amountMin;

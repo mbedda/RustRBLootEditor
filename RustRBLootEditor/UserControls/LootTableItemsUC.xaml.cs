@@ -129,7 +129,7 @@ namespace RustRBLootEditor.UserControls
 
         private void DeleteLootItem_Click(object sender, RoutedEventArgs e)
         {
-            if(LootTableItemsListbox.SelectedItems.Count < 2)
+            if (LootTableItemsListbox.SelectedItems.Count < 2)
             {
                 MessageBoxResult messageBoxResult = MessageBox.Show("Are you sure you would like to delete selected item?", "Delete Confirmation", System.Windows.MessageBoxButton.YesNo);
                 if (messageBoxResult == MessageBoxResult.Yes)
@@ -150,6 +150,21 @@ namespace RustRBLootEditor.UserControls
 
                         viewModel.RemoveLootTableItem(item);
                     }
+                }
+            }
+        }
+
+        private void DeleteDisabledLootItem_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult messageBoxResult = MessageBox.Show("Are you sure you would like to delete disabled items from selected set?", "Delete Confirmation", System.Windows.MessageBoxButton.YesNo);
+            if (messageBoxResult == MessageBoxResult.Yes)
+            {
+                for (int i = LootTableItemsListbox.SelectedItems.Count - 1; i >= 0; i--)
+                {
+                    LootItem item = (LootItem)LootTableItemsListbox.SelectedItems[i];
+                    
+                    if(item.amount <= 0 || item.probability <= 0)
+                        viewModel.RemoveLootTableItem(item);
                 }
             }
         }

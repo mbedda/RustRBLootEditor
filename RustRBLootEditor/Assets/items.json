@@ -2,3966 +2,5317 @@
   {
     "displayName": "Wolf Headdress",
     "shortName": "hat.wolf",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Fogger-3000",
     "shortName": "fogmachine",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "Strobe Light",
     "shortName": "strobelight",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "40mm Shotgun Round",
     "shortName": "ammo.grenadelauncher.buckshot",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "ImageSource": null
   },
   {
     "displayName": "40mm HE Grenade",
     "shortName": "ammo.grenadelauncher.he",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "ImageSource": null
   },
   {
     "displayName": "40mm Smoke Grenade",
     "shortName": "ammo.grenadelauncher.smoke",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "ImageSource": null
   },
   {
     "displayName": "High Velocity Arrow",
     "shortName": "arrow.hv",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "ImageSource": null
   },
   {
     "displayName": "Wooden Arrow",
     "shortName": "arrow.wooden",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "ImageSource": null
   },
   {
     "displayName": "Bone Arrow",
     "shortName": "arrow.bone",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "ImageSource": null
   },
   {
     "displayName": "Fire Arrow",
     "shortName": "arrow.fire",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "ImageSource": null
   },
   {
     "displayName": "Handmade Shell",
     "shortName": "ammo.handmade.shell",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "ImageSource": null
   },
   {
     "displayName": "Nailgun Nails",
     "shortName": "ammo.nailgun.nails",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "ImageSource": null
   },
   {
     "displayName": "Pistol Bullet",
     "shortName": "ammo.pistol",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "ImageSource": null
   },
   {
     "displayName": "Incendiary Pistol Bullet",
     "shortName": "ammo.pistol.fire",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "ImageSource": null
   },
   {
     "displayName": "HV Pistol Ammo",
     "shortName": "ammo.pistol.hv",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "ImageSource": null
   },
   {
     "displayName": "5.56 Rifle Ammo",
     "shortName": "ammo.rifle",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "ImageSource": null
   },
   {
     "displayName": "Explosive 5.56 Rifle Ammo",
     "shortName": "ammo.rifle.explosive",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "ImageSource": null
   },
   {
     "displayName": "Incendiary 5.56 Rifle Ammo",
     "shortName": "ammo.rifle.incendiary",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "ImageSource": null
   },
   {
     "displayName": "HV 5.56 Rifle Ammo",
     "shortName": "ammo.rifle.hv",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "ImageSource": null
   },
   {
     "displayName": "Rocket",
     "shortName": "ammo.rocket.basic",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "ImageSource": null
   },
   {
     "displayName": "Incendiary Rocket",
     "shortName": "ammo.rocket.fire",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "ImageSource": null
   },
   {
     "displayName": "High Velocity Rocket",
     "shortName": "ammo.rocket.hv",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "ImageSource": null
   },
   {
     "displayName": "Smoke Rocket WIP!!!!",
     "shortName": "ammo.rocket.smoke",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "ImageSource": null
   },
   {
     "displayName": "12 Gauge Buckshot",
     "shortName": "ammo.shotgun",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "ImageSource": null
   },
   {
     "displayName": "12 Gauge Incendiary Shell",
     "shortName": "ammo.shotgun.fire",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "ImageSource": null
   },
   {
     "displayName": "12 Gauge Slug",
     "shortName": "ammo.shotgun.slug",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "ImageSource": null
   },
   {
     "displayName": "Sheet Metal Double Door",
     "shortName": "door.double.hinged.metal",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "Armored Double Door",
     "shortName": "door.double.hinged.toptier",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "Wood Double Door",
     "shortName": "door.double.hinged.wood",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "Sheet Metal Door",
     "shortName": "door.hinged.metal",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "Armored Door",
     "shortName": "door.hinged.toptier",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "Wooden Door",
     "shortName": "door.hinged.wood",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "Floor grill",
     "shortName": "floor.grill",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "Ladder Hatch",
     "shortName": "floor.ladder.hatch",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "High External Stone Gate",
     "shortName": "gates.external.high.stone",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "High External Wooden Gate",
     "shortName": "gates.external.high.wood",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "Wooden Ladder",
     "shortName": "ladder.wooden.wall",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "High External Stone Wall",
     "shortName": "wall.external.high.stone",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "High External Wooden Wall",
     "shortName": "wall.external.high",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "Prison Cell Gate",
     "shortName": "wall.frame.cell.gate",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "Prison Cell Wall",
     "shortName": "wall.frame.cell",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "Chainlink Fence Gate",
     "shortName": "wall.frame.fence.gate",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "Chainlink Fence",
     "shortName": "wall.frame.fence",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "Garage Door",
     "shortName": "wall.frame.garagedoor",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "Netting",
     "shortName": "wall.frame.netting",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "Shop Front",
     "shortName": "wall.frame.shopfront",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "Metal Shop Front",
     "shortName": "wall.frame.shopfront.metal",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "Metal Window Bars",
     "shortName": "wall.window.bars.metal",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "Reinforced Window Bars",
     "shortName": "wall.window.bars.toptier",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "Wooden Window Bars",
     "shortName": "wall.window.bars.wood",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "Metal horizontal embrasure",
     "shortName": "shutter.metal.embrasure.a",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "Metal Vertical embrasure",
     "shortName": "shutter.metal.embrasure.b",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "Reinforced Glass Window",
     "shortName": "wall.window.glass.reinforced",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "Wood Shutters",
     "shortName": "shutter.wood.a",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "Watch Tower",
     "shortName": "watchtower.wood",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "Diving Fins",
     "shortName": "diving.fins",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Diving Mask",
     "shortName": "diving.mask",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Diving Tank",
     "shortName": "diving.tank",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Wetsuit",
     "shortName": "diving.wetsuit",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Frog Boots",
     "shortName": "boots.frog",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "A Barrel Costume",
     "shortName": "barrelcostume",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Crate Costume",
     "shortName": "cratecostume",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Burlap Gloves",
     "shortName": "burlap.gloves.new",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Leather Gloves",
     "shortName": "burlap.gloves",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Roadsign Gloves",
     "shortName": "roadsign.gloves",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Tactical Gloves",
     "shortName": "tactical.gloves",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Mummy Suit",
     "shortName": "halloween.mummysuit",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Scarecrow Suit",
     "shortName": "scarecrow.suit",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Scarecrow Wrap",
     "shortName": "scarecrowhead",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Hide Halterneck",
     "shortName": "attire.hide.helterneck",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Beenie Hat",
     "shortName": "hat.beenie",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Boonie Hat",
     "shortName": "hat.boonie",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Bucket Helmet",
     "shortName": "bucket.helmet",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Burlap Headwrap",
     "shortName": "burlap.headwrap",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Candle Hat",
     "shortName": "hat.candle",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Baseball Cap",
     "shortName": "hat.cap",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Clatter Helmet",
     "shortName": "clatter.helmet",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Coffee Can Helmet",
     "shortName": "coffeecan.helmet",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Bone Helmet",
     "shortName": "deer.skull.mask",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Heavy Plate Helmet",
     "shortName": "heavy.plate.helmet",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Miners Hat",
     "shortName": "hat.miner",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Party Hat",
     "shortName": "partyhat",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Riot Helmet",
     "shortName": "riot.helmet",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Wood Armor Helmet",
     "shortName": "wood.armor.helmet",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Hoodie",
     "shortName": "hoodie",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Bone Armor",
     "shortName": "bone.armor.suit",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Heavy Plate Jacket",
     "shortName": "heavy.plate.jacket",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Snow Jacket",
     "shortName": "jacket.snow",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Jacket",
     "shortName": "jacket",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Wood Chestplate",
     "shortName": "wood.armor.jacket",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Improvised Balaclava",
     "shortName": "mask.balaclava",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Bandana Mask",
     "shortName": "mask.bandana",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Metal Facemask",
     "shortName": "metal.facemask",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Burlap Trousers",
     "shortName": "burlap.trousers",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Heavy Plate Pants",
     "shortName": "heavy.plate.pants",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Hide Pants",
     "shortName": "attire.hide.pants",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Road Sign Kilt",
     "shortName": "roadsign.kilt",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Shorts",
     "shortName": "pants.shorts",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Wood Armor Pants",
     "shortName": "wood.armor.pants",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Pants",
     "shortName": "pants",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Hide Poncho",
     "shortName": "attire.hide.poncho",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Burlap Shirt",
     "shortName": "burlap.shirt",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Shirt",
     "shortName": "shirt.collared",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Hide Vest",
     "shortName": "attire.hide.vest",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Tank Top",
     "shortName": "shirt.tanktop",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Boots",
     "shortName": "shoes.boots",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Burlap Shoes",
     "shortName": "burlap.shoes",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Hide Boots",
     "shortName": "attire.hide.boots",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Hide Skirt",
     "shortName": "attire.hide.skirt",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Hazmat Suit",
     "shortName": "hazmatsuit",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Scientist Suit",
     "shortName": "hazmatsuit_scientist",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Scientist Suit Peacekeeper",
     "shortName": "hazmatsuit_scientist_peacekeeper",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Heavy Scientist Suit",
     "shortName": "scientistsuit_heavy",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Longsleeve T-Shirt",
     "shortName": "tshirt.long",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "T-Shirt",
     "shortName": "tshirt",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Metal Chest Plate",
     "shortName": "metal.plate.torso",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Road Sign Jacket",
     "shortName": "roadsign.jacket",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Bleach",
     "shortName": "bleach",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "Duct Tape",
     "shortName": "ducttape",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "Electric Fuse",
     "shortName": "fuse",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "Gears",
     "shortName": "gears",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "Glue",
     "shortName": "glue",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "Metal Blade",
     "shortName": "metalblade",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "Metal Pipe",
     "shortName": "metalpipe",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "Empty Propane Tank",
     "shortName": "propanetank",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "Road Signs",
     "shortName": "roadsigns",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "Rope",
     "shortName": "rope",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "Sewing Kit",
     "shortName": "sewingkit",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "Sheet Metal",
     "shortName": "sheetmetal",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "Metal Spring",
     "shortName": "metalspring",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "Sticks",
     "shortName": "sticks",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "Tarp",
     "shortName": "tarp",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "Tech Trash",
     "shortName": "techparts",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "Rifle Body",
     "shortName": "riflebody",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "Semi Automatic Body",
     "shortName": "semibody",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "SMG Body",
     "shortName": "smgbody",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "Concrete Barricade",
     "shortName": "barricade.concrete",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "Metal Barricade",
     "shortName": "barricade.metal",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "Sandbag Barricade",
     "shortName": "barricade.sandbags",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "Stone Barricade",
     "shortName": "barricade.stone",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "Wooden Barricade",
     "shortName": "barricade.wood",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "Barbed Wooden Barricade",
     "shortName": "barricade.woodwire",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "Barbeque",
     "shortName": "bbq",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Snap Trap",
     "shortName": "trap.bear",
-    "category": "Traps"
+    "category": "Traps",
+    "ImageSource": null
   },
   {
     "displayName": "Bed",
     "shortName": "bed",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Camp Fire",
     "shortName": "campfire",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Ceiling Light",
     "shortName": "ceilinglight",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "Chair",
     "shortName": "chair",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Drop Box",
     "shortName": "dropbox",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Stone Fireplace",
     "shortName": "fireplace.stone",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Wooden Floor Spikes",
     "shortName": "spikes.floor",
-    "category": "Traps"
+    "category": "Traps",
+    "ImageSource": null
   },
   {
     "displayName": "Fridge",
     "shortName": "fridge",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Large Furnace",
     "shortName": "furnace.large",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Furnace",
     "shortName": "furnace",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Hitch & Trough",
     "shortName": "hitchtroughcombo",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Hab Repair",
     "shortName": "habrepair",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "Jack O Lantern Angry",
     "shortName": "jackolantern.angry",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Jack O Lantern Happy",
     "shortName": "jackolantern.happy",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Lantern",
     "shortName": "lantern",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Twitch Rivals Trophy",
     "shortName": "trophy",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Large Wood Box",
     "shortName": "box.wooden.large",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Water Barrel",
     "shortName": "water.barrel",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Locker",
     "shortName": "locker",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Mail Box",
     "shortName": "mailbox",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Pump Jack",
     "shortName": "mining.pumpjack",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "Small Oil Refinery",
     "shortName": "small.oil.refinery",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Large Planter Box",
     "shortName": "planter.large",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Small Planter Box",
     "shortName": "planter.small",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Audio Alarm",
     "shortName": "electric.audioalarm",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "Large Rechargable Battery",
     "shortName": "electric.battery.rechargable.large",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "Medium Rechargable Battery",
     "shortName": "electric.battery.rechargable.medium",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "Small Rechargable Battery",
     "shortName": "electric.battery.rechargable.small",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "Counter",
     "shortName": "electric.counter",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "HBHF Sensor",
     "shortName": "electric.hbhfsensor",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "Laser Detector",
     "shortName": "electric.laserdetector",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "Pressure Pad",
     "shortName": "electric.pressurepad",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "Door Controller",
     "shortName": "electric.doorcontroller",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "AND Switch",
     "shortName": "electric.andswitch",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "Blocker",
     "shortName": "electric.blocker",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "Electrical Branch",
     "shortName": "electrical.branch",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "Root Combiner",
     "shortName": "electrical.combiner",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "Memory Cell",
     "shortName": "electrical.memorycell",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "OR Switch",
     "shortName": "electric.orswitch",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "RAND Switch",
     "shortName": "electric.random.switch",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "RF Broadcaster",
     "shortName": "electric.rf.broadcaster",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "RF Receiver",
     "shortName": "electric.rf.receiver",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "XOR Switch",
     "shortName": "electric.xorswitch",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "Small Generator",
     "shortName": "electric.fuelgenerator.small",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "Test Generator",
     "shortName": "electric.generator.small",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "Large Solar Panel",
     "shortName": "electric.solarpanel.large",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "Flasher Light",
     "shortName": "electric.flasherlight",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "Simple Light",
     "shortName": "electric.simplelight",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "Siren Light",
     "shortName": "electric.sirenlight",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "Switch",
     "shortName": "electric.switch",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "Splitter",
     "shortName": "electric.splitter",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "Tesla Coil",
     "shortName": "electric.teslacoil",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "Timer",
     "shortName": "electric.timer",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "Cable Tunnel",
     "shortName": "electric.cabletunnel",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "Mining Quarry",
     "shortName": "mining.quarry",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "Reactive Target",
     "shortName": "target.reactive",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "Repair Bench",
     "shortName": "box.repair.bench",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Research Table",
     "shortName": "research.table",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Rug Bear Skin",
     "shortName": "rug.bear",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Rug",
     "shortName": "rug",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Search Light",
     "shortName": "searchlight",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "Salvaged Shelves",
     "shortName": "shelves",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Large Banner Hanging",
     "shortName": "sign.hanging.banner.large",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Two Sided Hanging Sign",
     "shortName": "sign.hanging",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Two Sided Ornate Hanging Sign",
     "shortName": "sign.hanging.ornate",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Landscape Picture Frame",
     "shortName": "sign.pictureframe.landscape",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Portrait Picture Frame",
     "shortName": "sign.pictureframe.portrait",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Tall Picture Frame",
     "shortName": "sign.pictureframe.tall",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "XL Picture Frame",
     "shortName": "sign.pictureframe.xl",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "XXL Picture Frame",
     "shortName": "sign.pictureframe.xxl",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Large Banner on pole",
     "shortName": "sign.pole.banner.large",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Double Sign Post",
     "shortName": "sign.post.double",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Single Sign Post",
     "shortName": "sign.post.single",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "One Sided Town Sign Post",
     "shortName": "sign.post.town",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Two Sided Town Sign Post",
     "shortName": "sign.post.town.roof",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Huge Wooden Sign",
     "shortName": "sign.wooden.huge",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Large Wooden Sign",
     "shortName": "sign.wooden.large",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Wooden Sign",
     "shortName": "sign.wooden.medium",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Small Wooden Sign",
     "shortName": "sign.wooden.small",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Shotgun Trap",
     "shortName": "guntrap",
-    "category": "Traps"
+    "category": "Traps",
+    "ImageSource": null
   },
   {
     "displayName": "Sleeping Bag",
     "shortName": "sleepingbag",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Small Stash",
     "shortName": "stash.small",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Spinning wheel",
     "shortName": "spinner.wheel",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Survival Fish Trap",
     "shortName": "fishtrap.small",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Table",
     "shortName": "table",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Work Bench Level 1",
     "shortName": "workbench1",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Work Bench Level 2",
     "shortName": "workbench2",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Work Bench Level 3",
     "shortName": "workbench3",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Tool Cupboard",
     "shortName": "cupboard.tool",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "Tuna Can Lamp",
     "shortName": "tunalight",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Vending Machine",
     "shortName": "vending.machine",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Large Water Catcher",
     "shortName": "water.catcher.large",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "Small Water Catcher",
     "shortName": "water.catcher.small",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "Water Purifier",
     "shortName": "water.purifier",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Wind Turbine",
     "shortName": "generator.wind.scrap",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "Wood Storage Box",
     "shortName": "box.wooden",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Apple",
     "shortName": "apple",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Rotten Apple",
     "shortName": "apple.spoiled",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Black Raspberries",
     "shortName": "black.raspberries",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Blueberries",
     "shortName": "blueberries",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Bota Bag",
     "shortName": "botabag",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Cactus Flesh",
     "shortName": "cactusflesh",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Can of Beans",
     "shortName": "can.beans",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Can of Tuna",
     "shortName": "can.tuna",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Chocolate Bar",
     "shortName": "chocolate",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Cooked Fish",
     "shortName": "fish.cooked",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Raw Fish",
     "shortName": "fish.raw",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Minnows",
     "shortName": "fish.minnows",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Small Trout",
     "shortName": "fish.troutsmall",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Granola Bar",
     "shortName": "granolabar",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Burnt Chicken",
     "shortName": "chicken.burned",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Cooked Chicken",
     "shortName": "chicken.cooked",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Raw Chicken Breast",
     "shortName": "chicken.raw",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Spoiled Chicken",
     "shortName": "chicken.spoiled",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Burnt Deer Meat",
     "shortName": "deermeat.burned",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Cooked Deer Meat",
     "shortName": "deermeat.cooked",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Raw Deer Meat",
     "shortName": "deermeat.raw",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Burnt Horse Meat",
     "shortName": "horsemeat.burned",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Cooked Horse Meat",
     "shortName": "horsemeat.cooked",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Raw Horse Meat",
     "shortName": "horsemeat.raw",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Burnt Human Meat",
     "shortName": "humanmeat.burned",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Cooked Human Meat",
     "shortName": "humanmeat.cooked",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Raw Human Meat",
     "shortName": "humanmeat.raw",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Spoiled Human Meat",
     "shortName": "humanmeat.spoiled",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Burnt Bear Meat",
     "shortName": "bearmeat.burned",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Cooked Bear Meat",
     "shortName": "bearmeat.cooked",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Raw Bear Meat",
     "shortName": "bearmeat",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Burnt Wolf Meat",
     "shortName": "wolfmeat.burned",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Cooked Wolf Meat",
     "shortName": "wolfmeat.cooked",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Raw Wolf Meat",
     "shortName": "wolfmeat.raw",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Spoiled Wolf Meat",
     "shortName": "wolfmeat.spoiled",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Burnt Pork",
     "shortName": "meat.pork.burned",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Cooked Pork",
     "shortName": "meat.pork.cooked",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Raw Pork",
     "shortName": "meat.boar",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Mushroom",
     "shortName": "mushroom",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Pickles",
     "shortName": "jar.pickle",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Small Water Bottle",
     "shortName": "smallwaterbottle",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Water Jug",
     "shortName": "waterjug",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Shovel Bass",
     "shortName": "fun.bass",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "Cowbell",
     "shortName": "fun.cowbell",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "Junkyard Drum Kit",
     "shortName": "drumkit",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "Pan Flute",
     "shortName": "fun.flute",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "Acoustic Guitar",
     "shortName": "fun.guitar",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "Jerry Can Guitar",
     "shortName": "fun.jerrycanguitar",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "Wheelbarrow Piano",
     "shortName": "piano",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "Canbourine",
     "shortName": "fun.tambourine",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "Plumber's Trumpet",
     "shortName": "fun.trumpet",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "Sousaphone",
     "shortName": "fun.tuba",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "Xlyobone",
     "shortName": "xylophone",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "Door Key",
     "shortName": "door.key",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "Key Lock",
     "shortName": "lock.key",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "Code Lock",
     "shortName": "lock.code",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "Blueprint",
     "shortName": "blueprintbase",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "Chinese Lantern",
     "shortName": "chineselantern",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Dragon Door Knocker",
     "shortName": "dragondoorknocker",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Dragon Mask",
     "shortName": "hat.dragonmask",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Chippy Arcade Game",
     "shortName": "arcade.machine.chippy",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Door Closer",
     "shortName": "door.closer",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "Bunny Ears",
     "shortName": "attire.bunnyears",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Bunny Onesie",
     "shortName": "attire.bunny.onesie",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Easter Door Wreath",
     "shortName": "easterdoorwreath",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Egg Basket",
     "shortName": "easterbasket",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "Rustigé Egg - Red",
     "shortName": "rustige_egg_a",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "Rustigé Egg - Blue",
     "shortName": "rustige_egg_b",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "Bronze Egg",
     "shortName": "easter.bronzeegg",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "Gold Egg",
     "shortName": "easter.goldegg",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "Painted Egg",
     "shortName": "easter.paintedeggs",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "Silver Egg",
     "shortName": "easter.silveregg",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "Halloween Candy",
     "shortName": "halloween.candy",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "Large Candle Set",
     "shortName": "largecandles",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "Small Candle Set",
     "shortName": "smallcandles",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "Coffin",
     "shortName": "coffin.storage",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "Cursed Cauldron",
     "shortName": "cursedcauldron",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "Gravestone",
     "shortName": "gravestone",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "Wooden Cross",
     "shortName": "woodcross",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "Graveyard Fence",
     "shortName": "wall.graveyard.fence",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "Large Loot Bag",
     "shortName": "halloween.lootbag.large",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "Medium Loot Bag",
     "shortName": "halloween.lootbag.medium",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "Small Loot Bag",
     "shortName": "halloween.lootbag.small",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "Pumpkin Bucket",
     "shortName": "pumpkinbasket",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "Scarecrow",
     "shortName": "scarecrow",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Skull Door Knocker",
     "shortName": "skulldoorknocker",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Skull Fire Pit",
     "shortName": "skull_fire_pit",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Spider Webs",
     "shortName": "spiderweb",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "Spooky Speaker",
     "shortName": "spookyspeaker",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "Surgeon Scrubs",
     "shortName": "halloween.surgeonsuit",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Note",
     "shortName": "note",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "Human Skull",
     "shortName": "skull.human",
-    "category": "Resources"
+    "category": "Resources",
+    "ImageSource": null
   },
   {
     "displayName": "Candy Cane Club",
     "shortName": "candycaneclub",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Christmas Lights",
     "shortName": "xmas.lightstring",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Festive Doorway Garland",
     "shortName": "xmas.door.garland",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Candy Cane",
     "shortName": "candycane",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Giant Candy Decor",
     "shortName": "giantcandycanedecor",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "Giant Lollipop Decor",
     "shortName": "giantlollipops",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "Pookie Bear",
     "shortName": "pookie.bear",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Coal :(",
     "shortName": "coal",
-    "category": "Resources"
+    "category": "Resources",
+    "ImageSource": null
   },
   {
     "displayName": "Large Present",
     "shortName": "xmas.present.large",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "Medium Present",
     "shortName": "xmas.present.medium",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "Small Present",
     "shortName": "xmas.present.small",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "Snow Machine",
     "shortName": "snowmachine",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "Snowball",
     "shortName": "snowball",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Snowman",
     "shortName": "snowman",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "SUPER Stocking",
     "shortName": "stocking.large",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Small Stocking",
     "shortName": "stocking.small",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Reindeer Antlers",
     "shortName": "attire.reindeer.headband",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Santa Hat",
     "shortName": "santahat",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Festive Window Garland",
     "shortName": "xmas.window.garland",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Christmas Door Wreath",
     "shortName": "xmasdoorwreath",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Decorative Baubels",
     "shortName": "xmas.decoration.baubels",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "Decorative Plastic Candy Canes",
     "shortName": "xmas.decoration.candycanes",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "Decorative Gingerbread Men",
     "shortName": "xmas.decoration.gingerbreadmen",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "Tree Lights",
     "shortName": "xmas.decoration.lights",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "Decorative Pinecones",
     "shortName": "xmas.decoration.pinecone",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "Star Tree Topper",
     "shortName": "xmas.decoration.star",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "Decorative Tinsel",
     "shortName": "xmas.decoration.tinsel",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "Christmas Tree",
     "shortName": "xmas.tree",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Auto Turret",
     "shortName": "autoturret",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "Flame Turret",
     "shortName": "flameturret",
-    "category": "Traps"
+    "category": "Traps",
+    "ImageSource": null
   },
   {
     "displayName": "Glowing Eyes",
     "shortName": "gloweyes",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "SAM Ammo",
     "shortName": "ammo.rocket.sam",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "ImageSource": null
   },
   {
     "displayName": "SAM Site",
     "shortName": "samsite",
-    "category": "Traps"
+    "category": "Traps",
+    "ImageSource": null
   },
   {
     "displayName": "Corn",
     "shortName": "corn",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Corn Clone",
     "shortName": "clone.corn",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Corn Seed",
     "shortName": "seed.corn",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Hemp Clone",
     "shortName": "clone.hemp",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Hemp Seed",
     "shortName": "seed.hemp",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Pumpkin",
     "shortName": "pumpkin",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Pumpkin Plant Clone",
     "shortName": "clone.pumpkin",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Pumpkin Seed",
     "shortName": "seed.pumpkin",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Animal Fat",
     "shortName": "fat.animal",
-    "category": "Resources"
+    "category": "Resources",
+    "ImageSource": null
   },
   {
     "displayName": "Battery - Small",
     "shortName": "battery.small",
-    "category": "Resources"
+    "category": "Resources",
+    "ImageSource": null
   },
   {
     "displayName": "Blood",
     "shortName": "blood",
-    "category": "Medical"
+    "category": "Medical",
+    "ImageSource": null
   },
   {
     "displayName": "Bone Fragments",
     "shortName": "bone.fragments",
-    "category": "Resources"
+    "category": "Resources",
+    "ImageSource": null
   },
   {
     "displayName": "CCTV Camera",
     "shortName": "cctv.camera",
-    "category": "Resources"
+    "category": "Resources",
+    "ImageSource": null
   },
   {
     "displayName": "Charcoal",
     "shortName": "charcoal",
-    "category": "Resources"
+    "category": "Resources",
+    "ImageSource": null
   },
   {
     "displayName": "Cloth",
     "shortName": "cloth",
-    "category": "Resources"
+    "category": "Resources",
+    "ImageSource": null
   },
   {
     "displayName": "Crude Oil",
     "shortName": "crude.oil",
-    "category": "Resources"
+    "category": "Resources",
+    "ImageSource": null
   },
   {
     "displayName": "Diesel Fuel",
     "shortName": "diesel_barrel",
-    "category": "Resources"
+    "category": "Resources",
+    "ImageSource": null
   },
   {
     "displayName": "Empty Can Of Beans",
     "shortName": "can.beans.empty",
-    "category": "Resources"
+    "category": "Resources",
+    "ImageSource": null
   },
   {
     "displayName": "Empty Tuna Can",
     "shortName": "can.tuna.empty",
-    "category": "Resources"
+    "category": "Resources",
+    "ImageSource": null
   },
   {
     "displayName": "Explosives",
     "shortName": "explosives",
-    "category": "Resources"
+    "category": "Resources",
+    "ImageSource": null
   },
   {
     "displayName": "Gun Powder",
     "shortName": "gunpowder",
-    "category": "Resources"
+    "category": "Resources",
+    "ImageSource": null
   },
   {
     "displayName": "High Quality Metal Ore",
     "shortName": "hq.metal.ore",
-    "category": "Resources"
+    "category": "Resources",
+    "ImageSource": null
   },
   {
     "displayName": "High Quality Metal",
     "shortName": "metal.refined",
-    "category": "Resources"
+    "category": "Resources",
+    "ImageSource": null
   },
   {
     "displayName": "Leather",
     "shortName": "leather",
-    "category": "Resources"
+    "category": "Resources",
+    "ImageSource": null
   },
   {
     "displayName": "Low Grade Fuel",
     "shortName": "lowgradefuel",
-    "category": "Resources"
+    "category": "Resources",
+    "ImageSource": null
   },
   {
     "displayName": "Metal Fragments",
     "shortName": "metal.fragments",
-    "category": "Resources"
+    "category": "Resources",
+    "ImageSource": null
   },
   {
     "displayName": "Metal Ore",
     "shortName": "metal.ore",
-    "category": "Resources"
+    "category": "Resources",
+    "ImageSource": null
   },
   {
     "displayName": "Paper",
     "shortName": "paper",
-    "category": "Resources"
+    "category": "Resources",
+    "ImageSource": null
   },
   {
     "displayName": "Research Paper",
     "shortName": "researchpaper",
-    "category": "Resources"
+    "category": "Resources",
+    "ImageSource": null
   },
   {
     "displayName": "Scrap",
     "shortName": "scrap",
-    "category": "Resources"
+    "category": "Resources",
+    "ImageSource": null
   },
   {
     "displayName": "Stones",
     "shortName": "stones",
-    "category": "Resources"
+    "category": "Resources",
+    "ImageSource": null
   },
   {
     "displayName": "Sulfur Ore",
     "shortName": "sulfur.ore",
-    "category": "Resources"
+    "category": "Resources",
+    "ImageSource": null
   },
   {
     "displayName": "Sulfur",
     "shortName": "sulfur",
-    "category": "Resources"
+    "category": "Resources",
+    "ImageSource": null
   },
   {
     "displayName": "Targeting Computer",
     "shortName": "targeting.computer",
-    "category": "Resources"
+    "category": "Resources",
+    "ImageSource": null
   },
   {
     "displayName": "Wolf Skull",
     "shortName": "skull.wolf",
-    "category": "Resources"
+    "category": "Resources",
+    "ImageSource": null
   },
   {
     "displayName": "Wood",
     "shortName": "wood",
-    "category": "Resources"
+    "category": "Resources",
+    "ImageSource": null
   },
   {
     "displayName": "Anti-Radiation Pills",
     "shortName": "antiradpills",
-    "category": "Medical"
+    "category": "Medical",
+    "ImageSource": null
   },
   {
     "displayName": "Binoculars",
     "shortName": "tool.binoculars",
-    "category": "Tool"
+    "category": "Tool",
+    "ImageSource": null
   },
   {
     "displayName": "Timed Explosive Charge",
     "shortName": "explosive.timed",
-    "category": "Tool"
+    "category": "Tool",
+    "ImageSource": null
   },
   {
     "displayName": "Camera",
     "shortName": "tool.camera",
-    "category": "Tool"
+    "category": "Tool",
+    "ImageSource": null
   },
   {
     "displayName": "RF Transmitter",
     "shortName": "rf.detonator",
-    "category": "Tool"
+    "category": "Tool",
+    "ImageSource": null
   },
   {
     "displayName": "Handmade Fishing Rod",
     "shortName": "fishingrod.handmade",
-    "category": "Tool"
+    "category": "Tool",
+    "ImageSource": null
   },
   {
     "displayName": "Flare",
     "shortName": "flare",
-    "category": "Tool"
+    "category": "Tool",
+    "ImageSource": null
   },
   {
     "displayName": "Flashlight",
     "shortName": "flashlight.held",
-    "category": "Tool"
+    "category": "Tool",
+    "ImageSource": null
   },
   {
     "displayName": "Geiger Counter",
     "shortName": "geiger.counter",
-    "category": "Tool"
+    "category": "Tool",
+    "ImageSource": null
   },
   {
     "displayName": "Jackhammer",
     "shortName": "jackhammer",
-    "category": "Tool"
+    "category": "Tool",
+    "ImageSource": null
   },
   {
     "displayName": "Blue Keycard",
     "shortName": "keycard_blue",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "Green Keycard",
     "shortName": "keycard_green",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "Red Keycard",
     "shortName": "keycard_red",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "Large Medkit",
     "shortName": "largemedkit",
-    "category": "Medical"
+    "category": "Medical",
+    "ImageSource": null
   },
   {
     "displayName": "Paper Map",
     "shortName": "map",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Medical Syringe",
     "shortName": "syringe.medical",
-    "category": "Medical"
+    "category": "Medical",
+    "ImageSource": null
   },
   {
     "displayName": "RF Pager",
     "shortName": "rf_pager",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "Building Plan",
     "shortName": "building.planner",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "Smoke Grenade",
     "shortName": "grenade.smoke",
-    "category": "Tool"
+    "category": "Tool",
+    "ImageSource": null
   },
   {
     "displayName": "Supply Signal",
     "shortName": "supply.signal",
-    "category": "Tool"
+    "category": "Tool",
+    "ImageSource": null
   },
   {
     "displayName": "Survey Charge",
     "shortName": "surveycharge",
-    "category": "Tool"
+    "category": "Tool",
+    "ImageSource": null
   },
   {
     "displayName": "Wire Tool",
     "shortName": "wiretool",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "16x Zoom Scope",
     "shortName": "weapon.mod.8x.scope",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Weapon flashlight",
     "shortName": "weapon.mod.flashlight",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Holosight",
     "shortName": "weapon.mod.holosight",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Weapon Lasersight",
     "shortName": "weapon.mod.lasersight",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Muzzle Boost",
     "shortName": "weapon.mod.muzzleboost",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Muzzle Brake",
     "shortName": "weapon.mod.muzzlebrake",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Simple Handmade Sight",
     "shortName": "weapon.mod.simplesight",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Silencer",
     "shortName": "weapon.mod.silencer",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "8x Zoom Scope",
     "shortName": "weapon.mod.small.scope",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Assault Rifle",
     "shortName": "rifle.ak",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Bandage",
     "shortName": "bandage",
-    "category": "Medical"
+    "category": "Medical",
+    "ImageSource": null
   },
   {
     "displayName": "Beancan Grenade",
     "shortName": "grenade.beancan",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Bolt Action Rifle",
     "shortName": "rifle.bolt",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Bone Club",
     "shortName": "bone.club",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Bone Knife",
     "shortName": "knife.bone",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Hunting Bow",
     "shortName": "bow.hunting",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Birthday Cake",
     "shortName": "cakefiveyear",
-    "category": "Tool"
+    "category": "Tool",
+    "ImageSource": null
   },
   {
     "displayName": "Chainsaw",
     "shortName": "chainsaw",
-    "category": "Tool"
+    "category": "Tool",
+    "ImageSource": null
   },
   {
     "displayName": "Salvaged Cleaver",
     "shortName": "salvaged.cleaver",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Compound Bow",
     "shortName": "bow.compound",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Crossbow",
     "shortName": "crossbow",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Double Barrel Shotgun",
     "shortName": "shotgun.double",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Eoka Pistol",
     "shortName": "pistol.eoka",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "F1 Grenade",
     "shortName": "grenade.f1",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Flame Thrower",
     "shortName": "flamethrower",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Multiple Grenade Launcher",
     "shortName": "multiplegrenadelauncher",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Butcher Knife",
     "shortName": "knife.butcher",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Pitchfork",
     "shortName": "pitchfork",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Sickle",
     "shortName": "sickle",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "Hammer",
     "shortName": "hammer",
-    "category": "Tool"
+    "category": "Tool",
+    "ImageSource": null
   },
   {
     "displayName": "Hatchet",
     "shortName": "hatchet",
-    "category": "Tool"
+    "category": "Tool",
+    "ImageSource": null
   },
   {
     "displayName": "Combat Knife",
     "shortName": "knife.combat",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "L96 Rifle",
     "shortName": "rifle.l96",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "LR-300 Assault Rifle",
     "shortName": "rifle.lr300",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "M249",
     "shortName": "lmg.m249",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "M39 Rifle",
     "shortName": "rifle.m39",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "M92 Pistol",
     "shortName": "pistol.m92",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Mace",
     "shortName": "mace",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Machete",
     "shortName": "machete",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "MP5A4",
     "shortName": "smg.mp5",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Nailgun",
     "shortName": "pistol.nailgun",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Pickaxe",
     "shortName": "pickaxe",
-    "category": "Tool"
+    "category": "Tool",
+    "ImageSource": null
   },
   {
     "displayName": "Waterpipe Shotgun",
     "shortName": "shotgun.waterpipe",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Python Revolver",
     "shortName": "pistol.python",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Revolver",
     "shortName": "pistol.revolver",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Rock",
     "shortName": "rock",
-    "category": "Tool"
+    "category": "Tool",
+    "ImageSource": null
   },
   {
     "displayName": "Rocket Launcher",
     "shortName": "rocket.launcher",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Salvaged Axe",
     "shortName": "axe.salvaged",
-    "category": "Tool"
+    "category": "Tool",
+    "ImageSource": null
   },
   {
     "displayName": "Salvaged Hammer",
     "shortName": "hammer.salvaged",
-    "category": "Tool"
+    "category": "Tool",
+    "ImageSource": null
   },
   {
     "displayName": "Salvaged Icepick",
     "shortName": "icepick.salvaged",
-    "category": "Tool"
+    "category": "Tool",
+    "ImageSource": null
   },
   {
     "displayName": "Satchel Charge",
     "shortName": "explosive.satchel",
-    "category": "Tool"
+    "category": "Tool",
+    "ImageSource": null
   },
   {
     "displayName": "Pump Shotgun",
     "shortName": "shotgun.pump",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Semi-Automatic Pistol",
     "shortName": "pistol.semiauto",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Semi-Automatic Rifle",
     "shortName": "rifle.semiauto",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Custom SMG",
     "shortName": "smg.2",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Spas-12 Shotgun",
     "shortName": "shotgun.spas12",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Stone Hatchet",
     "shortName": "stonehatchet",
-    "category": "Tool"
+    "category": "Tool",
+    "ImageSource": null
   },
   {
     "displayName": "Stone Pickaxe",
     "shortName": "stone.pickaxe",
-    "category": "Tool"
+    "category": "Tool",
+    "ImageSource": null
   },
   {
     "displayName": "Stone Spear",
     "shortName": "spear.stone",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Longsword",
     "shortName": "longsword",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Salvaged Sword",
     "shortName": "salvaged.sword",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Thompson",
     "shortName": "smg.thompson",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Garry's Mod Toolgun",
     "shortName": "toolgun",
-    "category": "Tool"
+    "category": "Tool",
+    "ImageSource": null
   },
   {
     "displayName": "Torch",
     "shortName": "torch",
-    "category": "Tool"
+    "category": "Tool",
+    "ImageSource": null
   },
   {
     "displayName": "Water Bucket",
     "shortName": "bucket.water",
-    "category": "Tool"
+    "category": "Tool",
+    "ImageSource": null
   },
   {
     "displayName": "Wooden Spear",
     "shortName": "spear.wooden",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Roadsign Horse Armor",
     "shortName": "horse.armor.roadsign",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Wooden Horse Armor",
     "shortName": "horse.armor.wood",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Saddle bag",
     "shortName": "horse.saddlebag",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "High Quality Horse Shoes",
     "shortName": "horse.shoes.advanced",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Basic Horse Shoes",
     "shortName": "horse.shoes.basic",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Kayak",
     "shortName": "kayak",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "MLRS Aiming Module",
     "shortName": "aiming.module.mlrs",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "MLRS Rocket",
     "shortName": "ammo.rocket.mlrs",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "ImageSource": null
   },
   {
     "displayName": "Speargun Spear",
     "shortName": "speargun.spear",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "ImageSource": null
   },
   {
     "displayName": "Torpedo",
     "shortName": "submarine.torpedo.straight",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "ImageSource": null
   },
   {
     "displayName": "Floor Triangle Grill",
     "shortName": "floor.triangle.grill",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "Floor Triangle Ladder Hatch",
     "shortName": "floor.triangle.ladder.hatch",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "Ghost Costume",
     "shortName": "ghostsheet",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Night Vision Goggles",
     "shortName": "nightvisiongoggles",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Ninja Suit",
     "shortName": "attire.ninja.suit",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Bandit Guard Gear",
     "shortName": "attire.banditguard",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Low Quality Carburetor",
     "shortName": "carburetor1",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "Medium Quality Carburetor",
     "shortName": "carburetor2",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "High Quality Carburetor",
     "shortName": "carburetor3",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "Low Quality Crankshaft",
     "shortName": "crankshaft1",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "Medium Quality Crankshaft",
     "shortName": "crankshaft2",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "High Quality Crankshaft",
     "shortName": "crankshaft3",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "Low Quality Pistons",
     "shortName": "piston1",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "Medium Quality Pistons",
     "shortName": "piston2",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "High Quality Pistons",
     "shortName": "piston3",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "Low Quality Spark Plugs",
     "shortName": "sparkplug1",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "Medium Quality Spark Plugs",
     "shortName": "sparkplug2",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "High Quality Spark Plugs",
     "shortName": "sparkplug3",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "Low Quality Valves",
     "shortName": "valve1",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "Medium Quality Valves",
     "shortName": "valve2",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "High Quality Valves",
     "shortName": "valve3",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "Wooden Barricade Cover",
     "shortName": "barricade.wood.cover",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "Composter",
     "shortName": "composter",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "computerstation",
     "shortName": "computerstation",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "elevator",
     "shortName": "elevator",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "Blue Boomer",
     "shortName": "firework.boomer.blue",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "Champagne Boomer",
     "shortName": "firework.boomer.champagne",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "Green Boomer",
     "shortName": "firework.boomer.green",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "Orange Boomer",
     "shortName": "firework.boomer.orange",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "Red Boomer",
     "shortName": "firework.boomer.red",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "Violet Boomer",
     "shortName": "firework.boomer.violet",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "Blue Roman Candle",
     "shortName": "firework.romancandle.blue",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "Green Roman Candle",
     "shortName": "firework.romancandle.green",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "Red Roman Candle",
     "shortName": "firework.romancandle.red",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "Violet Roman Candle",
     "shortName": "firework.romancandle.violet",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "White Volcano Firework",
     "shortName": "firework.volcano",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "Red Volcano Firework",
     "shortName": "firework.volcano.red",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "Violet Volcano Firework",
     "shortName": "firework.volcano.violet",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "Frankenstein Table",
     "shortName": "frankensteintable",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Mixing Table",
     "shortName": "mixingtable",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "modularcarlift",
     "shortName": "modularcarlift",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "smart.alarm",
     "shortName": "smart.alarm",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "smart.switch",
     "shortName": "smart.switch",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "storage.monitor",
     "shortName": "storage.monitor",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "electric.button",
     "shortName": "electric.button",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "electric.heater",
     "shortName": "electric.heater",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "fluid.combiner",
     "shortName": "fluid.combiner",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "fluid.splitter",
     "shortName": "fluid.splitter",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "fluid.switch",
     "shortName": "fluid.switch",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "electric.igniter",
     "shortName": "electric.igniter",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "powered.water.purifier",
     "shortName": "powered.water.purifier",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "electric.sprinkler",
     "shortName": "electric.sprinkler",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "waterpump",
     "shortName": "waterpump",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "Secret Lab Chair",
     "shortName": "secretlabchair",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "sofa",
     "shortName": "sofa",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Grub",
     "shortName": "grub",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Worm",
     "shortName": "worm",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Anchovy",
     "shortName": "fish.anchovy",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Catfish",
     "shortName": "fish.catfish",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Herring",
     "shortName": "fish.herring",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Orange Roughy",
     "shortName": "fish.orangeroughy",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Salmon",
     "shortName": "fish.salmon",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Sardine",
     "shortName": "fish.sardine",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Small Shark",
     "shortName": "fish.smallshark",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Yellow Perch",
     "shortName": "fish.yellowperch",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Car Key",
     "shortName": "car.key",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "newyeargong",
     "shortName": "newyeargong",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "hat.oxmask",
     "shortName": "hat.oxmask",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "hat.ratmask",
     "shortName": "hat.ratmask",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "lunar.firecrackers",
     "shortName": "lunar.firecrackers",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "hat.bunnyhat",
     "shortName": "hat.bunnyhat",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "rustige_egg_c",
     "shortName": "rustige_egg_c",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "rustige_egg_d",
     "shortName": "rustige_egg_d",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "rustige_egg_e",
     "shortName": "rustige_egg_e",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "rustige_egg_f",
     "shortName": "rustige_egg_f",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "attire.nesthat",
     "shortName": "attire.nesthat",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Carvable Pumpkin",
     "shortName": "carvable.pumpkin",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Light Frankenstein Head",
     "shortName": "frankensteins.monster.01.head",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Light Frankenstein Legs",
     "shortName": "frankensteins.monster.01.legs",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Light Frankenstein Torso",
     "shortName": "frankensteins.monster.01.torso",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Medium Frankenstein Head",
     "shortName": "frankensteins.monster.02.head",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Medium Frankenstein Legs",
     "shortName": "frankensteins.monster.02.legs",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Medium Frankenstein Torso",
     "shortName": "frankensteins.monster.02.torso",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Heavy Frankenstein Head",
     "shortName": "frankensteins.monster.03.head",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Heavy Frankenstein Legs",
     "shortName": "frankensteins.monster.03.legs",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Heavy Frankenstein Torso",
     "shortName": "frankensteins.monster.03.torso",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "skullspikes.candles",
     "shortName": "skullspikes.candles",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "skullspikes.pumpkin",
     "shortName": "skullspikes.pumpkin",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "skullspikes",
     "shortName": "skullspikes",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "skull.trophy.jar",
     "shortName": "skull.trophy.jar",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "skull.trophy.jar2",
     "shortName": "skull.trophy.jar2",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "skull.trophy.table",
     "shortName": "skull.trophy.table",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "skull.trophy",
     "shortName": "skull.trophy",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "Card Movember Moustache",
     "shortName": "movembermoustachecard",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Movember Moustache",
     "shortName": "movembermoustache",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "abovegroundpool",
     "shortName": "abovegroundpool",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "beachchair",
     "shortName": "beachchair",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "beachparasol",
     "shortName": "beachparasol",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "beachtable",
     "shortName": "beachtable",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "beachtowel",
     "shortName": "beachtowel",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "boogieboard",
     "shortName": "boogieboard",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "innertube",
     "shortName": "innertube",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "innertube.horse",
     "shortName": "innertube.horse",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "innertube.unicorn",
     "shortName": "innertube.unicorn",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "tool.instant_camera",
     "shortName": "tool.instant_camera",
-    "category": "Tool"
+    "category": "Tool",
+    "ImageSource": null
   },
   {
     "displayName": "paddlingpool",
     "shortName": "paddlingpool",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "photo",
     "shortName": "photo",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "photoframe.landscape",
     "shortName": "photoframe.landscape",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "photoframe.large",
     "shortName": "photoframe.large",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "photoframe.portrait",
     "shortName": "photoframe.portrait",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Sunglasses",
     "shortName": "sunglasses",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "gun.water",
     "shortName": "gun.water",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "pistol.water",
     "shortName": "pistol.water",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Twitch Sunglasses",
     "shortName": "twitchsunglasses",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Twitch Headset",
     "shortName": "twitch.headset",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "hobobarrel",
     "shortName": "hobobarrel",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Industrial Door",
     "shortName": "door.hinged.industrial.a",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "Short Ice Wall",
     "shortName": "wall.ice.wall",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "High Ice wall",
     "shortName": "wall.external.high.ice",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "sign.neon.125x125",
     "shortName": "sign.neon.125x125",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "sign.neon.125x215.animated",
     "shortName": "sign.neon.125x215.animated",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "sign.neon.125x215",
     "shortName": "sign.neon.125x215",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "sign.neon.xl.animated",
     "shortName": "sign.neon.xl.animated",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "sign.neon.xl",
     "shortName": "sign.neon.xl",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "xmas.lightstring.advanced",
     "shortName": "xmas.lightstring.advanced",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "sled.xmas",
     "shortName": "sled.xmas",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "sled",
     "shortName": "sled",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "snowballgun",
     "shortName": "snowballgun",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Santa Beard",
     "shortName": "santabeard",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "wrappedgift",
     "shortName": "wrappedgift",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "wrappingpaper",
     "shortName": "wrappingpaper",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "Captain's Log",
     "shortName": "captainslog",
-    "category": "Misc"
+    "category": "Misc",
+    "ImageSource": null
   },
   {
     "displayName": "fishing.tackle",
     "shortName": "fishing.tackle",
-    "category": "Tool"
+    "category": "Tool",
+    "ImageSource": null
   },
   {
     "displayName": "Vodka Bottle",
     "shortName": "bottle.vodka",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Black Berry",
     "shortName": "black.berry",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Black Berry Clone",
     "shortName": "clone.black.berry",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Black Berry Seed",
     "shortName": "seed.black.berry",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Blue Berry",
     "shortName": "blue.berry",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Blue Berry Clone",
     "shortName": "clone.blue.berry",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Blue Berry Seed",
     "shortName": "seed.blue.berry",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Green Berry",
     "shortName": "green.berry",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Green Berry Clone",
     "shortName": "clone.green.berry",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Green Berry Seed",
     "shortName": "seed.green.berry",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Red Berry",
     "shortName": "red.berry",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Red Berry Clone",
     "shortName": "clone.red.berry",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Red Berry Seed",
     "shortName": "seed.red.berry",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "White Berry",
     "shortName": "white.berry",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "White Berry Clone",
     "shortName": "clone.white.berry",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "White Berry Seed",
     "shortName": "seed.white.berry",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Yellow Berry",
     "shortName": "yellow.berry",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Yellow Berry Clone",
     "shortName": "clone.yellow.berry",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Yellow Berry Seed",
     "shortName": "seed.yellow.berry",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Potato",
     "shortName": "potato",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Potato Clone",
     "shortName": "clone.potato",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Potato Seed",
     "shortName": "seed.potato",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "fertilizer",
     "shortName": "fertilizer",
-    "category": "Resources"
+    "category": "Resources",
+    "ImageSource": null
   },
   {
     "displayName": "horsedung",
     "shortName": "horsedung",
-    "category": "Resources"
+    "category": "Resources",
+    "ImageSource": null
   },
   {
     "displayName": "plantfiber",
     "shortName": "plantfiber",
-    "category": "Resources"
+    "category": "Resources",
+    "ImageSource": null
   },
   {
     "displayName": "Adv. Healing Tea",
     "shortName": "healingtea.advanced",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Basic Healing Tea",
     "shortName": "healingtea",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Pure Healing Tea",
     "shortName": "healingtea.pure",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Adv. Max Health Tea",
     "shortName": "maxhealthtea.advanced",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Basic Max Health Tea",
     "shortName": "maxhealthtea",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Pure Max Health Tea",
     "shortName": "maxhealthtea.pure",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Adv. Ore Tea",
     "shortName": "oretea.advanced",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Basic Ore Tea",
     "shortName": "oretea",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Pure Ore Tea",
     "shortName": "oretea.pure",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Adv. Radiation Removal Tea",
     "shortName": "radiationremovetea.advanced",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Radiation Removal Tea",
     "shortName": "radiationremovetea",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Pure Radiation Removal Tea",
     "shortName": "radiationremovetea.pure",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Adv. Radiation Resist Tea",
     "shortName": "radiationresisttea.advanced",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Radiation Resist Tea",
     "shortName": "radiationresisttea",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "radiationresisttea.pure",
     "shortName": "radiationresisttea.pure",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Adv. Scrap Tea",
     "shortName": "scraptea.advanced",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Basic Scrap Tea",
     "shortName": "scraptea",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Pure Scrap Tea",
     "shortName": "scraptea.pure",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Adv. Wood Tea",
     "shortName": "woodtea.advanced",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Basic Wood Tea",
     "shortName": "woodtea",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Pure Wood Tea",
     "shortName": "woodtea.pure",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Super Serum",
     "shortName": "supertea",
-    "category": "Food"
+    "category": "Food",
+    "ImageSource": null
   },
   {
     "displayName": "Hose Tool",
     "shortName": "hosetool",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "vehicle.1mod.cockpit",
     "shortName": "vehicle.1mod.cockpit",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "vehicle.1mod.cockpit.armored",
     "shortName": "vehicle.1mod.cockpit.armored",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "vehicle.1mod.cockpit.with.engine",
     "shortName": "vehicle.1mod.cockpit.with.engine",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "vehicle.1mod.engine",
     "shortName": "vehicle.1mod.engine",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "vehicle.1mod.flatbed",
     "shortName": "vehicle.1mod.flatbed",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "vehicle.1mod.passengers.armored",
     "shortName": "vehicle.1mod.passengers.armored",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "vehicle.1mod.rear.seats",
     "shortName": "vehicle.1mod.rear.seats",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "vehicle.1mod.storage",
     "shortName": "vehicle.1mod.storage",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "vehicle.1mod.taxi",
     "shortName": "vehicle.1mod.taxi",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "vehicle.2mod.camper",
     "shortName": "vehicle.2mod.camper",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "vehicle.2mod.flatbed",
     "shortName": "vehicle.2mod.flatbed",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "vehicle.2mod.fuel.tank",
     "shortName": "vehicle.2mod.fuel.tank",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "vehicle.2mod.passengers",
     "shortName": "vehicle.2mod.passengers",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "boombox",
     "shortName": "boombox",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "fun.boomboxportable",
     "shortName": "fun.boomboxportable",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "cassette",
     "shortName": "cassette",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "cassette.medium",
     "shortName": "cassette.medium",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "cassette.short",
     "shortName": "cassette.short",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "fun.casetterecorder",
     "shortName": "fun.casetterecorder",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "discoball",
     "shortName": "discoball",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "discofloor",
     "shortName": "discofloor",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "discofloor.largetiles",
     "shortName": "discofloor.largetiles",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "connected.speaker",
     "shortName": "connected.speaker",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "laserlight",
     "shortName": "laserlight",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "megaphone",
     "shortName": "megaphone",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "microphonestand",
     "shortName": "microphonestand",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "mobilephone",
     "shortName": "mobilephone",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "soundlight",
     "shortName": "soundlight",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "telephone",
     "shortName": "telephone",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "Paddle",
     "shortName": "paddle",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "speargun",
     "shortName": "speargun",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Horse Saddle",
     "shortName": "horse.saddle",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Nomad Outfit",
     "shortName": "hazmatsuit.nomadsuit",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "sofa.pattern",
     "shortName": "sofa.pattern",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Factory Door",
     "shortName": "factorydoor",
-    "category": "Construction"
+    "category": "Construction",
+    "ImageSource": null
   },
   {
     "displayName": "industrial.wall.light.green",
     "shortName": "industrial.wall.light.green",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "industrial.wall.light",
     "shortName": "industrial.wall.light",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "industrial.wall.light.red",
     "shortName": "industrial.wall.light.red",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "firework.boomer.pattern",
     "shortName": "firework.boomer.pattern",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "xmas.advent",
     "shortName": "xmas.advent",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "xmas.double.door.garland",
     "shortName": "xmas.double.door.garland",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Snowman Helmet",
     "shortName": "attire.snowman.helmet",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "skylantern",
     "shortName": "skylantern",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "skylantern.skylantern.green",
     "shortName": "skylantern.skylantern.green",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "skylantern.skylantern.orange",
     "shortName": "skylantern.skylantern.orange",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "skylantern.skylantern.purple",
     "shortName": "skylantern.skylantern.purple",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "skylantern.skylantern.red",
     "shortName": "skylantern.skylantern.red",
-    "category": "Fun"
+    "category": "Fun",
+    "ImageSource": null
   },
   {
     "displayName": "Tiger Mask",
     "shortName": "hat.tigermask",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Arctic Suit",
     "shortName": "hazmatsuit.arcticsuit",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Arctic Scientist Suit",
     "shortName": "hazmatsuit_scientist_arctic",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Spray Can",
     "shortName": "spraycan",
-    "category": "Tool"
+    "category": "Tool",
+    "ImageSource": null
   },
   {
     "displayName": "Assault Rifle - ICE",
     "shortName": "rifle.ak.ice",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Lumberjack Suit",
     "shortName": "hazmatsuit.lumberjack",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Extended Magazine",
     "shortName": "weapon.mod.extendedmags",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Flashbang",
     "shortName": "grenade.flashbang",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Molotov Cocktail",
     "shortName": "grenade.molotov",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Lumberjack Hatchet",
     "shortName": "lumberjack.hatchet",
-    "category": "Tool"
+    "category": "Tool",
+    "ImageSource": null
   },
   {
     "displayName": "Lumberjack Pickaxe",
     "shortName": "lumberjack.pickaxe",
-    "category": "Tool"
+    "category": "Tool",
+    "ImageSource": null
   },
   {
     "displayName": "Concrete Hatchet",
     "shortName": "concretehatchet",
-    "category": "Tool"
+    "category": "Tool",
+    "ImageSource": null
   },
   {
     "displayName": "Concrete Pickaxe",
     "shortName": "concretepickaxe",
-    "category": "Tool"
+    "category": "Tool",
+    "ImageSource": null
   },
   {
     "displayName": "Baseball Bat",
     "shortName": "mace.baseballbat",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Cultist Deer Torch",
     "shortName": "torch.torch.skull",
-    "category": "Tool"
+    "category": "Tool",
+    "ImageSource": null
   },
   {
     "displayName": "Prototype 17",
     "shortName": "pistol.prototype17",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "HMLMG",
     "shortName": "hmlmg",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Ice Throne",
     "shortName": "chair.icethrone",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Drone",
     "shortName": "drone",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Ice Metal Chest Plate",
     "shortName": "metal.plate.torso.icevest",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Ice Metal Facemask",
     "shortName": "metal.facemask.icemask",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Gingerbread Suit",
     "shortName": "gingerbreadsuit",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Egg Suit",
     "shortName": "attire.egg.suit",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Blue Jumpsuit",
     "shortName": "jumpsuit.suit.blue",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Jumpsuit",
     "shortName": "jumpsuit.suit",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Rabbit Mask",
     "shortName": "hat.rabbitmask",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Lumberjack Hoodie",
     "shortName": "lumberjack hoodie",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Gas Mask",
     "shortName": "hat.gas.mask",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Dog Tag",
     "shortName": "dogtagneutral",
-    "category": "Resources"
+    "category": "Resources",
+    "ImageSource": null
   },
   {
     "displayName": "Red Dog Tags",
     "shortName": "reddogtags",
-    "category": "Resources"
+    "category": "Resources",
+    "ImageSource": null
   },
   {
     "displayName": "Blue Dog Tags",
     "shortName": "bluedogtags",
-    "category": "Resources"
+    "category": "Resources",
+    "ImageSource": null
   },
   {
     "displayName": "Homemade Landmine",
     "shortName": "trap.landmine",
-    "category": "Traps"
+    "category": "Traps",
+    "ImageSource": null
   },
   {
     "displayName": "Burst Module",
     "shortName": "weapon.mod.burstmodule",
-    "category": "Component"
+    "category": "Component",
+    "ImageSource": null
   },
   {
     "displayName": "Electric Furnace",
     "shortName": "electric.furnace",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "Industrial Combiner",
     "shortName": "industrial.combiner",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "Industrial Conveyor",
     "shortName": "industrial.conveyor",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "Industrial Crafter",
     "shortName": "industrial.crafter",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "Industrial Splitter",
     "shortName": "industrial.splitter",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "Pipe Tool",
     "shortName": "pipetool",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "Storage Adaptor",
     "shortName": "storageadaptor",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "PTZ CCTV Camera",
     "shortName": "ptz.cctv.camera",
-    "category": "Electrical"
+    "category": "Electrical",
+    "ImageSource": null
   },
   {
     "displayName": "NVGM Scientist Suit",
     "shortName": "hazmatsuit_scientist_nvgm",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Blue ID Tag",
     "shortName": "blueidtag",
-    "category": "Resources"
+    "category": "Resources",
+    "ImageSource": null
   },
   {
     "displayName": "Gray ID Tag",
     "shortName": "grayidtag",
-    "category": "Resources"
+    "category": "Resources",
+    "ImageSource": null
   },
   {
     "displayName": "Green ID Tag",
     "shortName": "greenidtag",
-    "category": "Resources"
+    "category": "Resources",
+    "ImageSource": null
   },
   {
     "displayName": "Orange ID Tag",
     "shortName": "orangeidtag",
-    "category": "Resources"
+    "category": "Resources",
+    "ImageSource": null
   },
   {
     "displayName": "Pink ID Tag",
     "shortName": "pinkidtag",
-    "category": "Resources"
+    "category": "Resources",
+    "ImageSource": null
   },
   {
     "displayName": "Purple ID Tag",
     "shortName": "purpleidtag",
-    "category": "Resources"
+    "category": "Resources",
+    "ImageSource": null
   },
   {
     "displayName": "Red ID Tag",
     "shortName": "redidtag",
-    "category": "Resources"
+    "category": "Resources",
+    "ImageSource": null
   },
   {
     "displayName": "White ID Tag",
     "shortName": "whiteidtag",
-    "category": "Resources"
+    "category": "Resources",
+    "ImageSource": null
   },
   {
     "displayName": "Yellow ID Tag",
     "shortName": "yellowidtag",
-    "category": "Resources"
+    "category": "Resources",
+    "ImageSource": null
   },
   {
     "displayName": "Hockey Mask",
     "shortName": "metal.facemask.hockey",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Abyss Divers Suit",
     "shortName": "hazmatsuit.diver",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Abyss Torch",
     "shortName": "divertorch",
-    "category": "Tool"
+    "category": "Tool",
+    "ImageSource": null
   },
   {
     "displayName": "Abyss Metal Pickaxe",
     "shortName": "diverpickaxe",
-    "category": "Tool"
+    "category": "Tool",
+    "ImageSource": null
   },
   {
     "displayName": "Abyss Metal Hatchet",
     "shortName": "diverhatchet",
-    "category": "Tool"
+    "category": "Tool",
+    "ImageSource": null
   },
   {
     "displayName": "Abyss Assault Rifle",
     "shortName": "rifle.ak.diver",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Homing Missile Launcher",
     "shortName": "homingmissile.launcher",
-    "category": "Weapon"
+    "category": "Weapon",
+    "ImageSource": null
   },
   {
     "displayName": "Homing Missile",
     "shortName": "ammo.rocket.seeker",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "ImageSource": null
   },
   {
     "displayName": "Parachute",
     "shortName": "parachute",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Hot Air Balloon Armor",
     "shortName": "hab.armor",
-    "category": "Attire"
+    "category": "Attire",
+    "ImageSource": null
   },
   {
     "displayName": "Horizontal Wall-mounted Weapon Rack",
     "shortName": "gunrack.horizontal",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Tall Wall-mounted Weapon Rack",
     "shortName": "gunrack_tall.horizontal",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Weapon Rack Stand",
     "shortName": "gunrack_stand",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Wide Wall-mounted Weapon Rack",
     "shortName": "gunrack_wide.horizontal",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
   },
   {
     "displayName": "Clan Table",
     "shortName": "clantable",
-    "category": "Items"
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Bath Tub Planter",
+    "shortName": "bathtub.planter",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Card Table",
+    "shortName": "cardtable",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Chinese Lantern White",
+    "shortName": "chineselanternwhite",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Confetti Cannon",
+    "shortName": "confetticannon",
+    "category": "Fun",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Wooden Frontier Bar Doors",
+    "shortName": "door.double.hinged.bardoors",
+    "category": "Construction",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Dracula Cape",
+    "shortName": "draculacape",
+    "category": "Attire",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Dracula Mask",
+    "shortName": "draculamask",
+    "category": "Attire",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Fish Trophy",
+    "shortName": "fishtrophy",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Frontier Mirror Large",
+    "shortName": "frontiermirror.large",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Frontier Mirror Medium",
+    "shortName": "frontiermirror.medium",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Frontier Mirror Small",
+    "shortName": "frontiermirror.small",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Frontier Mirror Standing",
+    "shortName": "frontiermirror.standing",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Gold Frame large",
+    "shortName": "goldframe.large",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Gold Frame Medium",
+    "shortName": "goldframe.medium",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Gold Frame Small",
+    "shortName": "goldframe.small",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Gold Frame Standing",
+    "shortName": "goldframe.standing",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Gold Mirror large",
+    "shortName": "goldmirror.large",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Gold Mirror Medium",
+    "shortName": "goldmirror.medium",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Gold Mirror Small",
+    "shortName": "goldmirror.small",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Gold Mirror Standing",
+    "shortName": "goldmirror.standing",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Frontier Bolts Single Item Rack",
+    "shortName": "gunrack.single.1.horizontal",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Frontier Horseshoe Single Item Rack",
+    "shortName": "gunrack.single.2.horizontal",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Frontier Horns Single Item Rack",
+    "shortName": "gunrack.single.3.horizontal",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Space Suit",
+    "shortName": "hazmatsuit.spacesuit",
+    "category": "Attire",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Twitch Rivals Hazmat Suit",
+    "shortName": "hazmatsuittwitch",
+    "category": "Attire",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Hazmat Youtooz",
+    "shortName": "hazmatyoutooz",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Heavy Scientist Youtooz",
+    "shortName": "heavyscientistyoutooz",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Large Hunting Trophy",
+    "shortName": "huntingtrophylarge",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Small Hunting Trophy",
+    "shortName": "huntingtrophysmall",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Skinning Knife",
+    "shortName": "knife.skinning",
+    "category": "Weapon",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Large Backpack",
+    "shortName": "largebackpack",
+    "category": "Attire",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Legacy bow",
+    "shortName": "legacy bow",
+    "category": "Weapon",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Legacy Wood Shelter",
+    "shortName": "legacy.shelter.wood",
+    "category": "Construction",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Legacy Furnace",
+    "shortName": "legacyfurnace",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Light-Up Frame Large",
+    "shortName": "lightup.large",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Light-Up Frame Medium",
+    "shortName": "lightupframe.medium",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Light-Up Frame Small",
+    "shortName": "lightupframe.small",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Light-Up Frame Standing",
+    "shortName": "lightupframe.standing",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Light-Up Mirror Large",
+    "shortName": "lightupmirror.large",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Light-Up Mirror Medium",
+    "shortName": "lightupmirror.medium",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Light-Up Mirror Small",
+    "shortName": "lightupmirror.small",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Light-Up Mirror Standing",
+    "shortName": "lightupmirror.standing",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Metal Detector",
+    "shortName": "metal.detector",
+    "category": "Tool",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Minecart Planter",
+    "shortName": "minecart.planter",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Pinata",
+    "shortName": "pinata",
+    "category": "Fun",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Rail Road Planter",
+    "shortName": "rail.road.planter",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Dragon Rocket Launcher",
+    "shortName": "rocket.launcher.dragon",
+    "category": "Weapon",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Rocking Chair",
+    "shortName": "rockingchair",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Teal",
+    "shortName": "rockingchair.rockingchair2",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Green",
+    "shortName": "rockingchair.rockingchair3",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Rowboat",
+    "shortName": "rowboat",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Scrap Frame large",
+    "shortName": "scrapframe.large",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Scrap Frame Medium",
+    "shortName": "scrapframe.medium",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Scrap Frame Small",
+    "shortName": "scrapframe.small",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Scrap Frame Standing",
+    "shortName": "scrapframe.standing",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Scrap Mirror Large",
+    "shortName": "scrapmirror.large",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Scrap Mirror Medium",
+    "shortName": "scrapmirror.medium",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Scrap Mirror Small",
+    "shortName": "scrapmirror.small",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Scrap Mirror Standing",
+    "shortName": "scrapmirror.standing",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "M4 Shotgun",
+    "shortName": "shotgun.m4",
+    "category": "Weapon",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Shovel",
+    "shortName": "shovel",
+    "category": "Tool",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Skull",
+    "shortName": "skull",
+    "category": "Tool",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Small Backpack",
+    "shortName": "smallbackpack",
+    "category": "Attire",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Chinese new year spear",
+    "shortName": "spear.cny",
+    "category": "Weapon",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Unused Storage Barrel Vertical",
+    "shortName": "storage_barrel_a",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Storage Barrel Vertical",
+    "shortName": "storage_barrel_b",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Storage Barrel Horizontal",
+    "shortName": "storage_barrel_c",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Sunglasses",
+    "shortName": "sunglasses02black",
+    "category": "Attire",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Sunglasses",
+    "shortName": "sunglasses02camo",
+    "category": "Attire",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Sunglasses",
+    "shortName": "sunglasses02red",
+    "category": "Attire",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Sunglasses",
+    "shortName": "sunglasses03black",
+    "category": "Attire",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Sunglasses",
+    "shortName": "sunglasses03chrome",
+    "category": "Attire",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Sunglasses",
+    "shortName": "sunglasses03gold",
+    "category": "Attire",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Torch Holder",
+    "shortName": "torchholder",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Twitch Rivals Trophy 2023",
+    "shortName": "trophy2023",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Tugboat",
+    "shortName": "tugboat",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Twitch Rivals Desk",
+    "shortName": "twitchrivals2023desk",
+    "category": "Electrical",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Two-Way Mirror",
+    "shortName": "twowaymirror.window",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Vampire Stake",
+    "shortName": "vampire.stake",
+    "category": "Weapon",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Wanted Poster",
+    "shortName": "wantedposter",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Wanted Poster 2",
+    "shortName": "wantedposter.wantedposter2",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Wanted Poster 3",
+    "shortName": "wantedposter.wantedposter3",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Wanted Poster 4",
+    "shortName": "wantedposter.wantedposter4",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Weapon Rack Double Light",
+    "shortName": "weaponrack.doublelight",
+    "category": "Electrical",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Weapon Rack Light",
+    "shortName": "weaponrack.light",
+    "category": "Electrical",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Wood Frame Large",
+    "shortName": "woodframe.large",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Wood Frame Medium",
+    "shortName": "woodframe.medium",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Wood Frame Small",
+    "shortName": "woodframe.small",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Wood Frame Standing",
+    "shortName": "woodframe.standing",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Wood Mirror Large",
+    "shortName": "woodmirror.large",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Wood Mirror Medium",
+    "shortName": "woodmirror.medium",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Wood Mirror Small",
+    "shortName": "woodmirror.small",
+    "category": "Items",
+    "ImageSource": null
+  },
+  {
+    "displayName": "Wood Mirror Standing",
+    "shortName": "woodmirror.standing",
+    "category": "Items",
+    "ImageSource": null
   }
 ]

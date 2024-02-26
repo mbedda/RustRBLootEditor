@@ -28,6 +28,11 @@ namespace RustRBLootEditor.ViewModels
             MainViewModel.AddLootTableItem(item);
         }
 
+        public void BulkItemsRightClick(List<RustItem> items)
+        {
+            MainViewModel.AddBulkLootTableItems(items);
+        }
+
         public void ItemLeftClick(RustItem item)
         {
             MainViewModel.ShowGameItemEditor(item);

@@ -4,6 +4,7 @@ using Prism.Mvvm;
 using RustRBLootEditor.Helpers;
 using RustRBLootEditor.Models;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
@@ -145,6 +146,8 @@ namespace RustRBLootEditor.ViewModels
             set { SetProperty(ref loadingText, value); }
         }
 
+        public static bool IsEn = true;
+
         public Dictionary<ulong, string> SkinsUrls { get; set; }
 
         public string SteamPath { get; set; }
@@ -209,7 +212,19 @@ namespace RustRBLootEditor.ViewModels
             ShowLoading("Loading Loot File...");
             LootTableFile = new LootTableFile();
 
-            List<LootItem> tmpLootItems = await Common.LoadJsonAsync<List<LootItem>>(filepath);
+            Hashtable ru_hashtable = new Hashtable();
+
+            ru_hashtable.Add("краткое_название", "shortname");
+            ru_hashtable.Add("имя", "name");
+            ru_hashtable.Add("чертёж", "blueprint");
+            ru_hashtable.Add("скин", "skin");
+            ru_hashtable.Add("количество", "amount");
+            ru_hashtable.Add("мин_количество", "amountMin");
+            ru_hashtable.Add("вероятность", "probability");
+            ru_hashtable.Add("размер_стека", "stacksize");
+
+
+            List<LootItem> tmpLootItems = await Common.LoadJsonAsync<List<LootItem>>(filepath, ru_hashtable);
 
             if (tmpLootItems != null)
             {
@@ -246,9 +261,25 @@ namespace RustRBLootEditor.ViewModels
             HideLoading();
         }
 
-        public void Save(string filepath)
+        public void Save(string filepath, string lang = "EN")
         {
-            Common.SaveJsonNewton(LootTableFile.LootItems, filepath);
+            Hashtable langReplace = null;
+
+            if (lang == "RU")
+            {
+                langReplace = new Hashtable();
+
+                langReplace.Add("shortname", "краткое_название");
+                langReplace.Add("name", "имя");
+                langReplace.Add("blueprint", "чертёж");
+                langReplace.Add("skin", "скин");
+                langReplace.Add("amount", "количество");
+                langReplace.Add("amountMin", "мин_количество");
+                langReplace.Add("probability", "вероятность");
+                langReplace.Add("stacksize", "размер_стека");
+            }
+
+            Common.SaveJsonNewton(LootTableFile.LootItems, filepath, langReplace);
         }
 
         public void ShowLoading(string text)
@@ -297,6 +328,50 @@ namespace RustRBLootEditor.ViewModels
                 LootTableFile.DoSort();
 
                 UpdateStatus();
+            }
+        }
+
+        public void AddBulkLootTableItems(List<RustItem> rustItems)
+        {
+            bool duplicateWarningShown = false;
+            bool allowDuplicate = false;
+
+            if (lootTableFile != null && lootTableFile.LootItems != null)
+            {
+                foreach (RustItem rustItem in rustItems)
+                {
+                    var tmpitem = lootTableFile.LootItems.FirstOrDefault(s => s.shortname == rustItem.shortName);
+
+                    if (tmpitem != null && !duplicateWarningShown)
+                    {
+                        MessageBoxResult messageBoxResult = MessageBox.Show($"Loot table already contains one or more of the selected items. Are you sure you would like to add duplicate items?", "Duplicate Notice", System.Windows.MessageBoxButton.YesNo);
+                        if (messageBoxResult == MessageBoxResult.No)
+                        {
+                            duplicateWarningShown = true;
+                            allowDuplicate = false;
+                            continue;
+                        }
+                        else
+                        {
+                            duplicateWarningShown = true;
+                            allowDuplicate = true;
+                        }
+                    }
+
+                    if (tmpitem != null && !allowDuplicate) continue;
+
+                    LootTableFile.LootItems.Add(new LootItem()
+                    {
+                        shortname = rustItem.shortName,
+                        displayName = rustItem.displayName,
+                        category = rustItem.category,
+                        amountMin = 1,
+                        amount = 1
+                    });
+                    LootTableFile.DoSort();
+
+                    UpdateStatus();
+                }
             }
         }
 
@@ -536,7 +611,7 @@ namespace RustRBLootEditor.ViewModels
 
         public bool ValidateStackSize(LootItem item)
         {
-            if(item == null) return true;
+            if (item == null) return true;
 
             float ratio = (float)item.amount / (float)item.stacksize;
 
