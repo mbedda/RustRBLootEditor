@@ -5314,5 +5314,11 @@
     "shortName": "woodmirror.standing",
     "category": "Items",
     "ImageSource": null
+  },
+  {
+    "displayName": "Chicken Costume",
+    "shortName": "chicken.costume",
+    "category": "Attire",
+    "ImageSource": null
   }
 ]
