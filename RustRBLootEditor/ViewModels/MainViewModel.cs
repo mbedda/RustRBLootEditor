@@ -153,9 +153,11 @@ namespace RustRBLootEditor.ViewModels
         public Dictionary<ulong, string> SkinsUrls { get; set; }
 
         public string SteamPath { get; set; }
+        public string ExePath { get; set; }
 
         public MainViewModel()
         {
+            ExePath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             LoadingModal = true;
             if (AllItems == null)
                 AllItems = new RustItems();
@@ -356,7 +358,7 @@ namespace RustRBLootEditor.ViewModels
                     amountMin = 1,
                     amount = 1
                 });
-                LootTableFile.DoSort();
+                //LootTableFile.DoSort();
 
                 UpdateStatus();
             }
@@ -369,6 +371,7 @@ namespace RustRBLootEditor.ViewModels
 
             if (lootTableFile != null && lootTableFile.LootItems != null)
             {
+                bool addedItems = false;
                 foreach (RustItem rustItem in rustItems)
                 {
                     var tmpitem = lootTableFile.LootItems.FirstOrDefault(s => s.shortname == rustItem.shortName);
@@ -399,7 +402,12 @@ namespace RustRBLootEditor.ViewModels
                         amountMin = 1,
                         amount = 1
                     });
-                    LootTableFile.DoSort();
+                    addedItems = true;
+                }
+
+                if(addedItems)
+                {
+                    //LootTableFile.DoSort();
 
                     UpdateStatus();
                 }
@@ -564,8 +572,7 @@ namespace RustRBLootEditor.ViewModels
             if (skinlist.Count == 0)
                 return false;
 
-            string exepath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            string temppath = Path.Combine(exepath, "Assets", "temp");
+            string temppath = Path.Combine(ExePath, "Assets", "temp");
 
             foreach (var skin in skinlist.ToList())
             {
@@ -603,8 +610,7 @@ namespace RustRBLootEditor.ViewModels
         {
             ShowLoading("Downloading Skins...");
             bool changeOccurred = false;
-            string exepath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            string temppath = Path.Combine(exepath, "Assets", "temp");
+            string temppath = Path.Combine(ExePath, "Assets", "temp");
 
             Directory.CreateDirectory(temppath);
 

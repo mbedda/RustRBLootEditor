@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Threading;
 using System.Globalization;
+using System.Windows.Threading;
 
 namespace RustRBLootEditor
 {
@@ -24,6 +25,11 @@ namespace RustRBLootEditor
         public MainWindow GetMainWindow()
         {
             return ((MainWindow)System.Windows.Application.Current.MainWindow);
+        }
+
+        void App_DispatcherUnhandledException(object sender, DispatcherUnhandledExceptionEventArgs e)
+        {
+            MessageBox.Show(e.Exception.ToString(), "Exception");
         }
     }
 }
