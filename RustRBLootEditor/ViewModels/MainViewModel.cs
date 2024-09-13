@@ -245,19 +245,19 @@ namespace RustRBLootEditor.ViewModels
             ShowLoading("Loading Loot File...");
             LootTableFile = new LootTableFile();
 
-            Hashtable ru_hashtable = new Hashtable();
+            Dictionary<string, string> ru_dict = new();
 
-            ru_hashtable.Add("краткое_название", "shortname");
-            ru_hashtable.Add("имя", "name");
-            ru_hashtable.Add("чертёж", "blueprint");
-            ru_hashtable.Add("скин", "skin");
-            ru_hashtable.Add("количество", "amount");
-            ru_hashtable.Add("мин_количество", "amountMin");
-            ru_hashtable.Add("вероятность", "probability");
-            ru_hashtable.Add("размер_стека", "stacksize");
+            ru_dict.Add("\"краткое_название\"", "\"shortname\"");
+            ru_dict.Add("\"имя\"", "\"name\"");
+            ru_dict.Add("\"чертёж\"", "\"blueprint\"");
+            ru_dict.Add("\"скин\"", "\"skin\"");
+            ru_dict.Add("\"количество\"", "\"amount\"");
+            ru_dict.Add("\"мин_количество\"", "\"amountMin\"");
+            ru_dict.Add("\"вероятность\"", "\"probability\"");
+            ru_dict.Add("\"размер_стека\"", "\"stacksize\"");
 
 
-            List<LootItem> tmpLootItems = await Common.LoadJsonAsync<List<LootItem>>(filepath, ru_hashtable);
+            List<LootItem> tmpLootItems = await Common.LoadJsonAsync<List<LootItem>>(filepath, ru_dict);
 
             if (tmpLootItems != null)
             {
@@ -296,20 +296,20 @@ namespace RustRBLootEditor.ViewModels
 
         public void Save(string filepath, string lang = "EN")
         {
-            Hashtable langReplace = null;
+            Dictionary<string, string> langReplace = null;
 
             if (lang == "RU")
             {
-                langReplace = new Hashtable();
+                langReplace = new();
 
-                langReplace.Add("shortname", "краткое_название");
-                langReplace.Add("name", "имя");
-                langReplace.Add("blueprint", "чертёж");
-                langReplace.Add("skin", "скин");
-                langReplace.Add("amount", "количество");
-                langReplace.Add("amountMin", "мин_количество");
-                langReplace.Add("probability", "вероятность");
-                langReplace.Add("stacksize", "размер_стека");
+                langReplace.Add("\"shortname\"", "\"краткое_название\"");
+                langReplace.Add("\"name\"", "\"имя\"");
+                langReplace.Add("\"blueprint\"", "\"чертёж\"");
+                langReplace.Add("\"skin\"", "\"скин\"");
+                langReplace.Add("\"amount\"", "\"количество\"");
+                langReplace.Add("\"amountMin\"", "\"мин_количество\"");
+                langReplace.Add("\"probability\"", "\"вероятность\"");
+                langReplace.Add("\"stacksize\"", "\"размер_стека\"");
             }
 
             Common.SaveJsonNewton(LootTableFile.LootItems, filepath, langReplace);

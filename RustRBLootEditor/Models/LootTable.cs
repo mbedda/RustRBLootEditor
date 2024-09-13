@@ -1,13 +1,8 @@
 ﻿using Newtonsoft.Json;
 using Prism.Mvvm;
-using RustRBLootEditor.ViewModels;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Runtime.Serialization;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RustRBLootEditor.Models
 {
@@ -44,6 +39,7 @@ namespace RustRBLootEditor.Models
         }
 
         private string _shortname;
+        [JsonProperty(Order = 0)]
         public string shortname
         {
             get { return _shortname; }
@@ -51,6 +47,7 @@ namespace RustRBLootEditor.Models
         }
 
         private string _name;
+        [JsonProperty(Order = 1)]
         public string name
         {
             get { return _name; }
@@ -58,6 +55,7 @@ namespace RustRBLootEditor.Models
         }
 
         private bool _blueprint;
+        [JsonProperty(Order = 2)]
         public bool blueprint
         {
             get { return _blueprint; }
@@ -65,6 +63,7 @@ namespace RustRBLootEditor.Models
         }
 
         private ulong _skin;
+        [JsonProperty(Order = 3)]
         public ulong skin
         {
             get { return _skin; }
@@ -72,6 +71,7 @@ namespace RustRBLootEditor.Models
         }
 
         private long _amount;
+        [JsonProperty(Order = 4)]
         public long amount
         {
             get { return _amount; }
@@ -79,6 +79,7 @@ namespace RustRBLootEditor.Models
         }
 
         private long _amountMin;
+        [JsonProperty(Order = 5)]
         public long amountMin
         {
             get { return _amountMin; }
@@ -86,6 +87,7 @@ namespace RustRBLootEditor.Models
         }
 
         private float _probability;
+        [JsonProperty(Order = 6)]
         public float probability
         {
             get { return _probability; }
@@ -93,6 +95,7 @@ namespace RustRBLootEditor.Models
         }
 
         private long _stacksize;
+        [JsonProperty(Order = 7)]
         public long stacksize
         {
             get { return _stacksize; }

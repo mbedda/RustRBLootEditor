@@ -1,8 +1,6 @@
-﻿using RustRBLootEditor.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Net;
 using System.Reflection;
 using System.Resources;
 using System.Runtime.Serialization.Json;
@@ -13,7 +11,6 @@ using Newtonsoft.Json;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
-using System.Collections;
 
 namespace RustRBLootEditor.Helpers
 {
@@ -22,7 +19,7 @@ namespace RustRBLootEditor.Helpers
         private static readonly JsonSerializerOptions _options =
         new() { DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull };
 
-        public static bool SaveJsonNewton<T>(T theobject, string filePath, Hashtable langReplace = null)
+        public static bool SaveJsonNewton<T>(T theobject, string filePath, Dictionary<string, string> langReplace = null)
         {
             try
             {
@@ -42,7 +39,7 @@ namespace RustRBLootEditor.Helpers
 
                             if (langReplace != null)
                             {
-                                foreach (DictionaryEntry replace in langReplace)
+                                foreach (var replace in langReplace)
                                     jsonString = jsonString.Replace((string)replace.Key, (string)replace.Value);
                             }
 
@@ -106,7 +103,7 @@ namespace RustRBLootEditor.Helpers
             }
         }
 
-        public static async Task<T> LoadJsonAsync<T>(string filePath, Hashtable langReplace = null)
+        public static async Task<T> LoadJsonAsync<T>(string filePath, Dictionary<string, string> langReplace = null)
         {
             T result;
             if (!System.IO.File.Exists(filePath))
@@ -128,7 +125,7 @@ namespace RustRBLootEditor.Helpers
 
                     if(langReplace != null)
                     {
-                        foreach (DictionaryEntry replace in langReplace)
+                        foreach (var replace in langReplace)
                             filetext = filetext.Replace((string)replace.Key, (string)replace.Value);
                     }
 
