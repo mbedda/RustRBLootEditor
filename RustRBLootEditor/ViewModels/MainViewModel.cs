@@ -196,7 +196,7 @@ namespace RustRBLootEditor.ViewModels
 
             if (key != null)
             {
-                SteamPath = key.GetValue("InstallPath").ToString();
+                SteamPath = key.GetValue("InstallPath")?.ToString();
                 key.Close();
             }
             else
@@ -205,12 +205,15 @@ namespace RustRBLootEditor.ViewModels
 
                 if (key != null)
                 {
-                    SteamPath = key.GetValue("InstallPath").ToString();
+                    SteamPath = key.GetValue("InstallPath")?.ToString();
                     key.Close();
                 }
             }
-            if (SteamPath == "")
+            if (string.IsNullOrEmpty(SteamPath))
+            {
+                SteamPath = "";
                 return;
+            }
 
             string libfoldersPath = Path.Combine(SteamPath, "steamapps", "libraryfolders.vdf");
             string driveRegex = @"[A-Z]:\\";
