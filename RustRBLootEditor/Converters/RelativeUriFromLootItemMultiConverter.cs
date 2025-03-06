@@ -1,14 +1,9 @@
-﻿using RustRBLootEditor.Helpers;
-using RustRBLootEditor.Models;
+﻿using RustRBLootEditor.Models;
 using RustRBLootEditor.ViewModels;
 using System;
-using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Data;
 using System.Windows.Media.Imaging;
@@ -17,7 +12,7 @@ namespace RustRBLootEditor.Converters
 {
     public class RelativeUriFromLootItemMultiConverter : IMultiValueConverter
     {
-        public object Convert(object[] values, Type targetType, object parameter, CultureInfo culture)
+        public object? Convert(object[] values, Type targetType, object parameter, CultureInfo culture)
         {
             if(values.Length < 2) return DependencyProperty.UnsetValue;
 
@@ -55,7 +50,7 @@ namespace RustRBLootEditor.Converters
 
                 if (parameter != null && parameter.ToString() != null) { partialpath = parameter.ToString(); }
 
-                string imagepath = Path.Combine(vm.ExePath, partialpath, item.shortname.ToString());
+                string imagepath = Path.Combine(vm.ExePath, partialpath, item.shortname);
 
                 if (!imagepath.EndsWith(".png") && !imagepath.EndsWith(".jpg") && !imagepath.EndsWith(".jpeg"))
                 {

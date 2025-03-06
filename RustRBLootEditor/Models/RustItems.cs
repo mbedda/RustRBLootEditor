@@ -1,5 +1,4 @@
-﻿using HtmlAgilityPack;
-using Prism.Mvvm;
+﻿using Prism.Mvvm;
 using RustRBLootEditor.Helpers;
 using System;
 using System.Collections.Generic;
@@ -9,12 +8,11 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-using System.Runtime.Serialization;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Security.Cryptography.X509Certificates;
+using System.Text.Json.Serialization;
+using System.Runtime.Serialization;
 
 namespace RustRBLootEditor.Models
 {
@@ -37,48 +35,55 @@ namespace RustRBLootEditor.Models
             return Items.FirstOrDefault(s => s.shortName == shortname);
         }
 
-        public async Task Load(string steampath)
+        public async Task Load(string steamPath)
         {
-            string debugpath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            string jsonpath = Path.Combine(debugpath, "Assets", "items.json");
+            string appPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+            string jsonPath = Path.Combine(appPath, "Assets", "items.json");
 
-            List<RustItem> items = new List<RustItem>();
+            List<RustItem> items = new();
 
-            if (File.Exists(jsonpath))
-            {
-                items = await Common.LoadJsonAsync<List<RustItem>>(jsonpath);
-            }
+            if (File.Exists(jsonPath))
+                items = await Common.LoadJsonAsync<List<RustItem>>(jsonPath);
 
-            await FetchNewItems(steampath, items);
+            await FetchNewItems(appPath, jsonPath, steamPath, items);
 
-            await LoadImages(steampath, items);
+            await LoadImages(appPath, steamPath, items);
 
             Items = new ObservableCollection<RustItem>(items.OrderBy(x => x.displayName));
         }
 
-        public async Task FetchNewItems(string steampath, List<RustItem> currentItems)
+        private readonly List<string> _blacklistedItems = new()
         {
-            if (string.IsNullOrEmpty(steampath)) return;
+            "ammo.snowballgun", "spraycandecal", "workcart", "wagon", "trike", "snowmobiletomaha", "submarinesolo", "snowmobile", "scraptransportheli.repair",
+            "motorbike_sidecar", "motorbike", "mlrs", "minihelicopter.repair", "locomotive", "habrepair", "submarineduo", "blueprintbase",
+            "bicycle", "attackhelicopter", "vehicle.chassis.2mod", "vehicle.chassis.3mod", "vehicle.chassis.4mod", "weaponrack.doublelight", "weaponrack.light"
+        };
 
-            string itemsDirectory = Path.Combine(steampath, "steamapps\\common\\Rust\\Bundles\\items");
+        private async Task FetchNewItems(string appPath, string jsonPath, string steamPath, List<RustItem> currentItems)
+        {
+            if (string.IsNullOrEmpty(steamPath)) return;
+
+            string itemsDirectory = Path.Combine(steamPath, "steamapps\\common\\Rust\\Bundles\\items");
 
             if (!Directory.Exists(itemsDirectory)) return;
 
-            List<string> itemfiles = Directory.EnumerateFiles(itemsDirectory, "*.png").ToList();
+            var itemFiles = Directory.EnumerateFiles(itemsDirectory, "*.png");
 
-            bool NewItemsFound = false;
+            bool newItemsFound = false;
 
-            foreach (var item in itemfiles.ToList())
+            foreach (var item in itemFiles)
             {
-                string shortname = Path.GetFileName(item).Replace(".png", "");
+                string shortname = Path.GetFileNameWithoutExtension(item);
+                
+                if(_blacklistedItems.Contains(shortname)) continue;
 
-                if (File.Exists(item.Replace(".png", ".json")) && !currentItems.Any(s => s.shortName == shortname))
+                if (!currentItems.Any(s => s.shortName == shortname) && File.Exists(item.Replace(".png", ".json")))
                 {
                     BundleItem bundleItem = await Common.LoadJsonAsync<BundleItem>(item.Replace(".png", ".json"));
 
-                    if (string.IsNullOrEmpty(bundleItem.Name) || (!bundleItem.isWearable && !bundleItem.isUsable && !bundleItem.isHoldable) || bundleItem.ItemType == "Liquid") continue;
-
-                    await ResizeAndSaveImageFromSteam(shortname, steampath);
+                    if (string.IsNullOrEmpty(bundleItem.Name) || bundleItem.ItemType == "Liquid") continue;
+                    
+                    await ResizeAndSaveImageFromSteam(appPath, shortname, steamPath);
 
                     currentItems.Add(new RustItem()
                     {
@@ -87,65 +92,61 @@ namespace RustRBLootEditor.Models
                         displayName = bundleItem.Name
                     });
 
-                    NewItemsFound = true;
+                    newItemsFound = true;
                 }
             }
 
-            if (NewItemsFound)
+            if (newItemsFound)
             {
-                string debugpath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-                string jsonpath = Path.Combine(debugpath, "Assets", "items.json");
-
-                Common.SaveJsonNewton(currentItems, jsonpath);
+                Common.SaveJsonNewton(currentItems, jsonPath);
             }
         }
 
-        public async Task ResizeAndSaveImageFromSteam(string shortname, string steampath)
+        private async Task ResizeAndSaveImageFromSteam(string appPath, string shortname, string steamPath)
         {
-            string debugpath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            string itempath = Path.Combine(debugpath, "Assets", "RustItems", $"{shortname}.png");
+            string itempath = Path.Combine(appPath, "Assets", "RustItems", $"{shortname}.png");
             if (File.Exists(itempath)) return;
 
-            string itemSteamPath = Path.Combine(steampath, $"steamapps\\common\\Rust\\Bundles\\items\\{shortname}.png");
+            string itemSteamPath = Path.Combine(steamPath, $"steamapps\\common\\Rust\\Bundles\\items\\{shortname}.png");
             if (!File.Exists(itemSteamPath)) return;
 
-            using FileStream fs = new FileStream(itemSteamPath, FileMode.Open);
-            using System.Drawing.Image source = new Bitmap(fs);
-            using System.Drawing.Image destination = new Bitmap(180, 180);
+            await using FileStream fs = new FileStream(itemSteamPath, FileMode.Open);
+            using Image source = new Bitmap(fs);
+            using Image destination = new Bitmap(100, 100);
 
             using (var g = Graphics.FromImage(destination))
             {
                 g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBilinear;
-                g.DrawImage(source, new Rectangle(0, 0, 180, 180), new Rectangle(0, 0, (int)source.Width, (int)source.Height), GraphicsUnit.Pixel);
+                g.DrawImage(source, new Rectangle(0, 0, destination.Width, destination.Height), new Rectangle(0, 0, source.Width, source.Height), GraphicsUnit.Pixel);
             }
-            var stream = new MemoryStream();
             destination.Save(itempath, ImageFormat.Png);
         }
 
-        public async Task LoadImages(string steampath, List<RustItem> currentItems)
+        private async Task LoadImages(string appPath, string steampath, List<RustItem> currentItems)
         {
             foreach (var item in currentItems)
             {
-                BitmapSource _src = null;
-                string debugpath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-                string itemImagePath = Path.Combine(debugpath, "Assets", "RustItems", $"{item.shortName}.png");
+                string itemImagePath = Path.Combine(appPath, "Assets", "RustItems", $"{item.shortName}.png");
 
-                BitmapImage noImage = new BitmapImage(new Uri("/RustRBLootEditor;component/Assets/unavailable.png", UriKind.Relative));
+                BitmapImage? noImage = new BitmapImage(new Uri("/RustRBLootEditor;component/Assets/unavailable.png", UriKind.Relative));
 
                 if (!File.Exists(itemImagePath))
                 {
-                    await ResizeAndSaveImageFromSteam(item.shortName, steampath);
+                    await ResizeAndSaveImageFromSteam(appPath, item.shortName, steampath);
                 }
 
                 if (File.Exists(itemImagePath))
                 {
                     item.ImageSource = await Task.Run(() =>
                     {
-                        using (var fileStream = new FileStream(
-                            itemImagePath, FileMode.Open, FileAccess.Read))
+                        var fileStream = new FileStream(itemImagePath, FileMode.Open, FileAccess.Read);
+                        try
                         {
-                            return BitmapFrame.Create(
-                                fileStream, BitmapCreateOptions.None, BitmapCacheOption.OnLoad);
+                            return BitmapFrame.Create(fileStream, BitmapCreateOptions.None, BitmapCacheOption.OnLoad);
+                        }
+                        finally
+                        {
+                            fileStream.Dispose();
                         }
                     });
                 }
@@ -180,6 +181,7 @@ namespace RustRBLootEditor.Models
             set { SetProperty(ref _category, value); }
         }
 
-        public ImageSource ImageSource { get; set; } 
+        [IgnoreDataMember]
+        public ImageSource? ImageSource { get; set; } 
     }
 }
