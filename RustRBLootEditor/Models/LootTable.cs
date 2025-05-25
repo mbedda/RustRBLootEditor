@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using Prism.Mvvm;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Runtime.Serialization;
@@ -38,8 +39,16 @@ namespace RustRBLootEditor.Models
             stacksize = -1;
         }
 
+        private ArmorSlots _slots;
+        [JsonProperty(Order = 0, PropertyName = "armor module slots", NullValueHandling = NullValueHandling.Ignore)]
+        public ArmorSlots slots
+        {
+            get { return _slots; }
+            set { SetProperty(ref _slots, value); }
+        }
+
         private string _shortname;
-        [JsonProperty(Order = 0)]
+        [JsonProperty(Order = 1)]
         public string shortname
         {
             get { return _shortname; }
@@ -47,7 +56,7 @@ namespace RustRBLootEditor.Models
         }
 
         private string _name;
-        [JsonProperty(Order = 1)]
+        [JsonProperty(Order = 2)]
         public string name
         {
             get { return _name; }
@@ -55,7 +64,7 @@ namespace RustRBLootEditor.Models
         }
 
         private bool _blueprint;
-        [JsonProperty(Order = 2)]
+        [JsonProperty(Order = 3)]
         public bool blueprint
         {
             get { return _blueprint; }
@@ -63,7 +72,7 @@ namespace RustRBLootEditor.Models
         }
 
         private ulong _skin;
-        [JsonProperty(Order = 3)]
+        [JsonProperty(Order = 4)]
         public ulong skin
         {
             get { return _skin; }
@@ -71,7 +80,7 @@ namespace RustRBLootEditor.Models
         }
 
         private long _amount;
-        [JsonProperty(Order = 4)]
+        [JsonProperty(Order = 5)]
         public long amount
         {
             get { return _amount; }
@@ -79,7 +88,7 @@ namespace RustRBLootEditor.Models
         }
 
         private long _amountMin;
-        [JsonProperty(Order = 5)]
+        [JsonProperty(Order = 6)]
         public long amountMin
         {
             get { return _amountMin; }
@@ -87,7 +96,7 @@ namespace RustRBLootEditor.Models
         }
 
         private float _probability;
-        [JsonProperty(Order = 6)]
+        [JsonProperty(Order = 7)]
         public float probability
         {
             get { return _probability; }
@@ -95,7 +104,7 @@ namespace RustRBLootEditor.Models
         }
 
         private long _stacksize;
-        [JsonProperty(Order = 7)]
+        [JsonProperty(Order = 8)]
         public long stacksize
         {
             get { return _stacksize; }
@@ -112,13 +121,37 @@ namespace RustRBLootEditor.Models
         }
 
         [IgnoreDataMember]
-        private string _displayName; 
+        private string _displayName;
         [IgnoreDataMember]
         public string displayName
         {
             get { return _displayName; }
             set { SetProperty(ref _displayName, value); }
         }
-    }
 
+        public class ArmorSlots : BindableBase
+        {
+            public ArmorSlots()
+            {
+                min = 1;
+                max = 1;
+            }
+
+            private int _min;
+            [JsonProperty(Order = 1)]
+            public int min
+            {
+                get { return _min; }
+                set { SetProperty(ref _min, value); }
+            }
+
+            private int _max;
+            [JsonProperty(Order = 2)]
+            public int max
+            {
+                get { return _max; }
+                set { SetProperty(ref _max, value); }
+            }
+        }
+    }
 }

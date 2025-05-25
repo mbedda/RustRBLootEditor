@@ -49,6 +49,8 @@ namespace RustRBLootEditor.Models
 
             await LoadImages(appPath, steamPath, items);
 
+            await CheckForArmorSlotsSupport(items);
+
             Items = new ObservableCollection<RustItem>(items.OrderBy(x => x.displayName));
         }
 
@@ -56,7 +58,8 @@ namespace RustRBLootEditor.Models
         {
             "ammo.snowballgun", "spraycandecal", "workcart", "wagon", "trike", "snowmobiletomaha", "submarinesolo", "snowmobile", "scraptransportheli.repair",
             "motorbike_sidecar", "motorbike", "mlrs", "minihelicopter.repair", "locomotive", "habrepair", "submarineduo", "blueprintbase",
-            "bicycle", "attackhelicopter", "vehicle.chassis.2mod", "vehicle.chassis.3mod", "vehicle.chassis.4mod", "weaponrack.doublelight", "weaponrack.light"
+            "bicycle", "attackhelicopter", "vehicle.chassis.2mod", "vehicle.chassis.3mod", "vehicle.chassis.4mod", "weaponrack.doublelight", "weaponrack.light",
+            "oubreak_scientist"
         };
 
         private async Task FetchNewItems(string appPath, string jsonPath, string steamPath, List<RustItem> currentItems)
@@ -156,6 +159,52 @@ namespace RustRBLootEditor.Models
                 }
             }
         }
+
+
+
+        private async Task CheckForArmorSlotsSupport(List<RustItem> currentItems)
+        {
+            foreach (var item in currentItems)
+            {
+                if(ArmorSlotsCompatabileItems.TryGetValue(item.shortName, out RustItem.ArmorSlots armorSlots))
+                    item.Slots = armorSlots;
+                else
+                    item.Slots = null;
+            }
+        }
+
+        [IgnoreDataMember]
+        public static readonly Dictionary<string, RustItem.ArmorSlots> ArmorSlotsCompatabileItems = new()
+        {
+            { "cocoknight.armor.pants", new(1, 3) },
+            { "cocoknight.armor.torso", new(1, 3) },
+            { "metal.facemask.hockey", new(1, 1) },
+            { "bucket.helmet", new(1, 3) },
+            { "coffeecan.helmet", new(1, 1) },
+            { "deer.skull.mask", new(1, 1) },
+            { "knightsarmour.helmet", new(1, 1) },
+            { "riot.helmet", new(2, 3) },
+            { "bone.armor.suit", new(1, 3) },
+            { "jacket", new(1, 3) },
+            { "wood.armor.jacket", new(1, 3) },
+            { "metal.facemask", new(1, 1) },
+            { "metal.facemask.icemask", new(1, 1) },
+            { "knightsarmour.skirt", new(1, 3) },
+            { "roadsign.kilt", new(1, 3) },
+            { "wood.armor.pants", new(1, 3) },
+            { "attire.hide.poncho", new(1, 3) },
+            { "hazmatsuit.arcticsuit", new(1, 3) },
+            { "hazmatsuit.diver", new(1, 3) },
+            { "hazmatsuit.frontier", new(1, 3) },
+            { "hazmatsuit", new(1, 3) },
+            { "hazmatsuit.lumberjack", new(1, 3) },
+            { "hazmatsuit.nomadsuit", new(1, 3) },
+            { "hazmatsuit.spacesuit", new(1, 3) },
+            { "knighttorso.armour", new(1, 3) },
+            { "metal.plate.torso", new(1, 3) },
+            { "metal.plate.torso.icevest", new(1, 3) },
+            { "roadsign.jacket", new(1, 3) }
+        };
     }
 
     public class RustItem : BindableBase
@@ -182,6 +231,22 @@ namespace RustRBLootEditor.Models
         }
 
         [IgnoreDataMember]
-        public ImageSource? ImageSource { get; set; } 
+        public ImageSource? ImageSource { get; set; }
+
+
+        [IgnoreDataMember]
+        public ArmorSlots Slots { get; set; }
+
+        public class ArmorSlots
+        {
+            public ArmorSlots(int min = 1, int max = 1)
+            {
+                this.min = min;
+                this.max = max;
+            }
+
+            public int min { get; set; }
+            public int max { get; set; }
+        }
     }
 }

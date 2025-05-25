@@ -19,6 +19,49 @@ namespace RustRBLootEditor.Helpers
         private static readonly JsonSerializerOptions _options =
         new() { DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull };
 
+
+        public static async Task<T> LoadJsonNewton<T>(string filePath, Dictionary<string, string> langReplace = null)
+        {
+            T result;
+            if (!System.IO.File.Exists(filePath))
+            {
+                return default(T);
+            }
+
+            using (FileStream fs = new FileStream(filePath, FileMode.Open, FileAccess.ReadWrite))
+            {
+                using (StreamReader sr = new StreamReader(fs))
+                {
+                    string filetext = await sr.ReadToEndAsync();
+
+                    if (filetext.StartsWith("#"))
+                    {
+                        int firstlineindex = filetext.IndexOf(System.Environment.NewLine);
+                        filetext = filetext.Substring(firstlineindex + System.Environment.NewLine.Length);
+                    }
+
+                    if (langReplace != null)
+                    {
+                        foreach (var replace in langReplace)
+                            filetext = filetext.Replace((string)replace.Key, (string)replace.Value);
+                    }
+
+                    try
+                    {
+                        result = JsonConvert.DeserializeObject<T>(filetext);
+                    }
+                    catch
+                    {
+                        result = default(T);
+                    }
+                }
+
+                fs.Close();
+            }
+
+            return result;
+        }
+
         public static bool SaveJsonNewton<T>(T theobject, string filePath, Dictionary<string, string> langReplace = null)
         {
             try

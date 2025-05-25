@@ -7,9 +7,9 @@
     <UseWPF>true</UseWPF>
     <PackageIcon></PackageIcon>
     <ApplicationIcon>hazmat_xQg_icon.ico</ApplicationIcon>
-    <FileVersion>1.5.0.0</FileVersion>
-    <AssemblyVersion>1.5.0.0</AssemblyVersion>
-    <Version>$(VersionPrefix)1.4.10.0</Version>
+    <FileVersion>1.5.1.0</FileVersion>
+    <AssemblyVersion>1.5.1.0</AssemblyVersion>
+    <Version>$(VersionPrefix)1.5.1.0</Version>
     <Authors>beee</Authors>
     <PackageProjectUrl>https://github.com/mbedda/RustRBLootEditor</PackageProjectUrl>
     <RepositoryUrl>https://github.com/mbedda/RustRBLootEditor.git</RepositoryUrl>
@@ -20,12 +20,360 @@
     <None Remove="Assets\blueprintbase.png" />
     <None Remove="Assets\items.json" />
     <None Remove="Assets\rust-bg.jpg" />
+    <None Remove="Assets\RustItems\bamboo.barrel.png" />
+    <None Remove="Assets\RustItems\bearmeat.spoiled.png" />
+    <None Remove="Assets\RustItems\beehive.png" />
+    <None Remove="Assets\RustItems\bigcatmeat.cooked.png" />
+    <None Remove="Assets\RustItems\bigcatmeat.png" />
+    <None Remove="Assets\RustItems\bigcatmeat.spoiled.png" />
+    <None Remove="Assets\RustItems\blowpipe.png" />
+    <None Remove="Assets\RustItems\boomerang.png" />
+    <None Remove="Assets\RustItems\bread.loaf.png" />
+    <None Remove="Assets\RustItems\chickencoop.png" />
+    <None Remove="Assets\RustItems\clone.orchid.png" />
+    <None Remove="Assets\RustItems\clone.rose.png" />
+    <None Remove="Assets\RustItems\clone.sunflower.png" />
+    <None Remove="Assets\RustItems\clone.wheat.png" />
+    <None Remove="Assets\RustItems\clothing.mod.armorinsert_asbestos.png" />
+    <None Remove="Assets\RustItems\clothing.mod.armorinsert_lead.png" />
+    <None Remove="Assets\RustItems\clothing.mod.armorinsert_metal.png" />
+    <None Remove="Assets\RustItems\clothing.mod.armorinsert_wood.png" />
+    <None Remove="Assets\RustItems\cocoknight.armor.gloves.png" />
+    <None Remove="Assets\RustItems\cocoknight.armor.helmet.png" />
+    <None Remove="Assets\RustItems\cocoknight.armor.pants.png" />
+    <None Remove="Assets\RustItems\cocoknight.armor.torso.png" />
+    <None Remove="Assets\RustItems\cookingworkbench.png" />
+    <None Remove="Assets\RustItems\coolingtea.png" />
+    <None Remove="Assets\RustItems\craftingtea_quality.png" />
+    <None Remove="Assets\RustItems\crocodilemeat.cooked.png" />
+    <None Remove="Assets\RustItems\crocodilemeat.png" />
+    <None Remove="Assets\RustItems\crocodilemeat.spoiled.png" />
+    <None Remove="Assets\RustItems\dart.incapacitate.png" />
+    <None Remove="Assets\RustItems\dart.radiation.png" />
+    <None Remove="Assets\RustItems\dart.scatter.png" />
+    <None Remove="Assets\RustItems\dart.wood.png" />
+    <None Remove="Assets\RustItems\deermeat.spoiled.png" />
+    <None Remove="Assets\RustItems\discord.trophy.png" />
+    <None Remove="Assets\RustItems\egg.png" />
+    <None Remove="Assets\RustItems\fish.spoiled.png" />
+    <None Remove="Assets\RustItems\gates.external.high.adobe.png" />
+    <None Remove="Assets\RustItems\gates.external.high.frontier.png" />
+    <None Remove="Assets\RustItems\grenade.bee.png" />
+    <None Remove="Assets\RustItems\half.bamboo.shelves.png" />
+    <None Remove="Assets\RustItems\harvestingtea.png" />
+    <None Remove="Assets\RustItems\honey.png" />
+    <None Remove="Assets\RustItems\honeycomb.png" />
+    <None Remove="Assets\RustItems\hopper.png" />
+    <None Remove="Assets\RustItems\horse.costume.png" />
+    <None Remove="Assets\RustItems\horsemeat.spoiled.png" />
+    <None Remove="Assets\RustItems\iotable.png" />
+    <None Remove="Assets\RustItems\jungle.rock.png" />
+    <None Remove="Assets\RustItems\knife.bone.obsidian.png" />
+    <None Remove="Assets\RustItems\nucleus.png" />
+    <None Remove="Assets\RustItems\orchid.png" />
+    <None Remove="Assets\RustItems\outbreak.sprayer.png" />
+    <None Remove="Assets\RustItems\pie.apple.png" />
+    <None Remove="Assets\RustItems\pie.bear.png" />
+    <None Remove="Assets\RustItems\pie.bigcat.png" />
+    <None Remove="Assets\RustItems\pie.chicken.png" />
+    <None Remove="Assets\RustItems\pie.crocodile.png" />
+    <None Remove="Assets\RustItems\pie.fish.png" />
+    <None Remove="Assets\RustItems\pie.hunters.png" />
+    <None Remove="Assets\RustItems\pie.pork.png" />
+    <None Remove="Assets\RustItems\pie.pumpkin.png" />
+    <None Remove="Assets\RustItems\pie.survivors.png" />
+    <None Remove="Assets\RustItems\planter.triangle.png" />
+    <None Remove="Assets\RustItems\plantpot.single.png" />
+    <None Remove="Assets\RustItems\porkmeat.spoiled.png" />
+    <None Remove="Assets\RustItems\rifle.ak.jungle.png" />
+    <None Remove="Assets\RustItems\rose.png" />
+    <None Remove="Assets\RustItems\rustige_egg_g.png" />
+    <None Remove="Assets\RustItems\salvaged.bamboo.shelves.png" />
+    <None Remove="Assets\RustItems\seed.orchid.png" />
+    <None Remove="Assets\RustItems\seed.rose.png" />
+    <None Remove="Assets\RustItems\seed.sunflower.png" />
+    <None Remove="Assets\RustItems\seed.wheat.png" />
+    <None Remove="Assets\RustItems\single.shallow.wall.shelves.png" />
+    <None Remove="Assets\RustItems\snakemeat.cooked.png" />
+    <None Remove="Assets\RustItems\snakemeat.png" />
+    <None Remove="Assets\RustItems\snakemeat.spoiled.png" />
+    <None Remove="Assets\RustItems\sunflower.png" />
+    <None Remove="Assets\RustItems\sunken.knife.png" />
+    <None Remove="Assets\RustItems\triangle.rail.road.planter.png" />
+    <None Remove="Assets\RustItems\venom.snake.png" />
+    <None Remove="Assets\RustItems\wall.external.high.adobe.png" />
+    <None Remove="Assets\RustItems\wall.external.high.frontier.png" />
+    <None Remove="Assets\RustItems\warmingtea.png" />
+    <None Remove="Assets\RustItems\wheat.png" />
+    <None Remove="Assets\RustItems\wicker.barrel.png" />
+    <None Remove="Assets\RustItems\woodarmor.gloves.png" />
     <None Remove="Assets\settings.png" />
     <None Remove="Assets\unavailable.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="Assets\blueprintbase.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\bamboo.barrel.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\bearmeat.spoiled.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\beehive.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\bigcatmeat.cooked.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\bigcatmeat.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\bigcatmeat.spoiled.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\blowpipe.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\boomerang.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\bread.loaf.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\chickencoop.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\clone.orchid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\clone.rose.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\clone.sunflower.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\clone.wheat.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\clothing.mod.armorinsert_asbestos.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\clothing.mod.armorinsert_lead.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\clothing.mod.armorinsert_metal.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\clothing.mod.armorinsert_wood.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\cocoknight.armor.gloves.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\cocoknight.armor.helmet.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\cocoknight.armor.pants.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\cocoknight.armor.torso.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\cookingworkbench.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\coolingtea.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\craftingtea_quality.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\crocodilemeat.cooked.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\crocodilemeat.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\crocodilemeat.spoiled.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\dart.incapacitate.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\dart.radiation.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\dart.scatter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\dart.wood.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\deermeat.spoiled.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\discord.trophy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\egg.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\fish.spoiled.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\gates.external.high.adobe.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\gates.external.high.frontier.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\grenade.bee.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\half.bamboo.shelves.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\harvestingtea.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\honey.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\honeycomb.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\hopper.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\horse.costume.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\horsemeat.spoiled.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\iotable.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\jungle.rock.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\knife.bone.obsidian.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\nucleus.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\orchid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\outbreak.sprayer.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\pie.apple.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\pie.bear.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\pie.bigcat.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\pie.chicken.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\pie.crocodile.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\pie.fish.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\pie.hunters.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\pie.pork.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\pie.pumpkin.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\pie.survivors.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\planter.triangle.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\plantpot.single.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\porkmeat.spoiled.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\rifle.ak.jungle.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\rose.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\rustige_egg_g.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\salvaged.bamboo.shelves.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\seed.orchid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\seed.rose.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\seed.sunflower.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\seed.wheat.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\single.shallow.wall.shelves.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\snakemeat.cooked.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\snakemeat.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\snakemeat.spoiled.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\sunflower.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\sunken.knife.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\triangle.rail.road.planter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\venom.snake.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\wall.external.high.adobe.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\wall.external.high.frontier.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\warmingtea.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\wheat.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\wicker.barrel.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\woodarmor.gloves.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="hazmat_xQg_icon.ico" />

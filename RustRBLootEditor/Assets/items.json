@@ -4718,5 +4718,440 @@
     "displayName": "Yellow ID Tag",
     "shortName": "yellowidtag",
     "category": "Resources"
+  },
+  {
+    "displayName": "Bamboo Barrel",
+    "shortName": "bamboo.barrel",
+    "category": "Items"
+  },
+  {
+    "displayName": "Spoiled Bear Meat",
+    "shortName": "bearmeat.spoiled",
+    "category": "Food"
+  },
+  {
+    "displayName": "Beehive",
+    "shortName": "beehive",
+    "category": "Construction"
+  },
+  {
+    "displayName": "Cooked Big Cat Meat",
+    "shortName": "bigcatmeat.cooked",
+    "category": "Food"
+  },
+  {
+    "displayName": "Raw Big Cat Meat",
+    "shortName": "bigcatmeat",
+    "category": "Food"
+  },
+  {
+    "displayName": "Spoiled Big Cat Meat",
+    "shortName": "bigcatmeat.spoiled",
+    "category": "Food"
+  },
+  {
+    "displayName": "Blow Pipe",
+    "shortName": "blowpipe",
+    "category": "Weapon"
+  },
+  {
+    "displayName": "Boomerang",
+    "shortName": "boomerang",
+    "category": "Weapon"
+  },
+  {
+    "displayName": "Bread Loaf",
+    "shortName": "bread.loaf",
+    "category": "Food"
+  },
+  {
+    "displayName": "Chicken Coop",
+    "shortName": "chickencoop",
+    "category": "Items"
+  },
+  {
+    "displayName": "Orchid Clone",
+    "shortName": "clone.orchid",
+    "category": "Food"
+  },
+  {
+    "displayName": "Rose Clone",
+    "shortName": "clone.rose",
+    "category": "Food"
+  },
+  {
+    "displayName": "Sunflower Clone",
+    "shortName": "clone.sunflower",
+    "category": "Food"
+  },
+  {
+    "displayName": "Wheat Clone",
+    "shortName": "clone.wheat",
+    "category": "Food"
+  },
+  {
+    "displayName": "Asbestos Armor Insert",
+    "shortName": "clothing.mod.armorinsert_asbestos",
+    "category": "Items"
+  },
+  {
+    "displayName": "Lead Armor Insert",
+    "shortName": "clothing.mod.armorinsert_lead",
+    "category": "Items"
+  },
+  {
+    "displayName": "Metal Armor Insert",
+    "shortName": "clothing.mod.armorinsert_metal",
+    "category": "Items"
+  },
+  {
+    "displayName": "Wooden Armor Insert",
+    "shortName": "clothing.mod.armorinsert_wood",
+    "category": "Items"
+  },
+  {
+    "displayName": "Coconut Armor Gloves",
+    "shortName": "cocoknight.armor.gloves",
+    "category": "Attire"
+  },
+  {
+    "displayName": "Coconut Armor Helmet",
+    "shortName": "cocoknight.armor.helmet",
+    "category": "Attire"
+  },
+  {
+    "displayName": "Coconut Armor Pants",
+    "shortName": "cocoknight.armor.pants",
+    "category": "Attire"
+  },
+  {
+    "displayName": "Coconut Armor Chestplate",
+    "shortName": "cocoknight.armor.torso",
+    "category": "Attire"
+  },
+  {
+    "displayName": "Cooking Workbench",
+    "shortName": "cookingworkbench",
+    "category": "Items"
+  },
+  {
+    "displayName": "Cooling Tea",
+    "shortName": "coolingtea",
+    "category": "Food"
+  },
+  {
+    "displayName": "Crafting Quality Tea",
+    "shortName": "craftingtea_quality",
+    "category": "Food"
+  },
+  {
+    "displayName": "Cooked Crocodile Meat",
+    "shortName": "crocodilemeat.cooked",
+    "category": "Food"
+  },
+  {
+    "displayName": "Raw Crocodile Meat",
+    "shortName": "crocodilemeat",
+    "category": "Food"
+  },
+  {
+    "displayName": "Spoiled Crocodile Meat",
+    "shortName": "crocodilemeat.spoiled",
+    "category": "Food"
+  },
+  {
+    "displayName": "Incapacitate Dart",
+    "shortName": "dart.incapacitate",
+    "category": "Ammunition"
+  },
+  {
+    "displayName": "Radiation Dart",
+    "shortName": "dart.radiation",
+    "category": "Ammunition"
+  },
+  {
+    "displayName": "Scatter Dart",
+    "shortName": "dart.scatter",
+    "category": "Ammunition"
+  },
+  {
+    "displayName": "Wood Dart",
+    "shortName": "dart.wood",
+    "category": "Ammunition"
+  },
+  {
+    "displayName": "Spoiled Deer Meat",
+    "shortName": "deermeat.spoiled",
+    "category": "Food"
+  },
+  {
+    "displayName": "Discord Trophy",
+    "shortName": "discord.trophy",
+    "category": "Items"
+  },
+  {
+    "displayName": "Egg",
+    "shortName": "egg",
+    "category": "Food"
+  },
+  {
+    "displayName": "Spoiled Fish Meat",
+    "shortName": "fish.spoiled",
+    "category": "Food"
+  },
+  {
+    "displayName": "High External Adobe Gate",
+    "shortName": "gates.external.high.adobe",
+    "category": "Construction"
+  },
+  {
+    "displayName": "High External Frontier Gate",
+    "shortName": "gates.external.high.frontier",
+    "category": "Construction"
+  },
+  {
+    "displayName": "Bee Grenade",
+    "shortName": "grenade.bee",
+    "category": "Weapon"
+  },
+  {
+    "displayName": "Half Height Bamboo Shelves",
+    "shortName": "half.bamboo.shelves",
+    "category": "Items"
+  },
+  {
+    "displayName": "Harvesting Tea",
+    "shortName": "harvestingtea",
+    "category": "Food"
+  },
+  {
+    "displayName": "Jar of Honey",
+    "shortName": "honey",
+    "category": "Food"
+  },
+  {
+    "displayName": "Honeycomb",
+    "shortName": "honeycomb",
+    "category": "Food"
+  },
+  {
+    "displayName": "Hopper",
+    "shortName": "hopper",
+    "category": "Electrical"
+  },
+  {
+    "displayName": "Horse Costume",
+    "shortName": "horse.costume",
+    "category": "Attire"
+  },
+  {
+    "displayName": "Spoiled Horse Meat",
+    "shortName": "horsemeat.spoiled",
+    "category": "Food"
+  },
+  {
+    "displayName": "Engineering Workbench",
+    "shortName": "iotable",
+    "category": "Items"
+  },
+  {
+    "displayName": "Jungle Rock",
+    "shortName": "jungle.rock",
+    "category": "Tool"
+  },
+  {
+    "displayName": "Obsidian Bone Knife",
+    "shortName": "knife.bone.obsidian",
+    "category": "Weapon"
+  },
+  {
+    "displayName": "Beehive Nucleus",
+    "shortName": "nucleus",
+    "category": "Resources"
+  },
+  {
+    "displayName": "Orchid",
+    "shortName": "orchid",
+    "category": "Food"
+  },
+  {
+    "displayName": "Outbreak Sprayer",
+    "shortName": "outbreak.sprayer",
+    "category": "Tool"
+  },
+  {
+    "displayName": "Apple Pie",
+    "shortName": "pie.apple",
+    "category": "Food"
+  },
+  {
+    "displayName": "Bear Pie",
+    "shortName": "pie.bear",
+    "category": "Food"
+  },
+  {
+    "displayName": "Big Cat Pie",
+    "shortName": "pie.bigcat",
+    "category": "Food"
+  },
+  {
+    "displayName": "Chicken Pie",
+    "shortName": "pie.chicken",
+    "category": "Food"
+  },
+  {
+    "displayName": "Crocodile Pie",
+    "shortName": "pie.crocodile",
+    "category": "Food"
+  },
+  {
+    "displayName": "Fish Pie",
+    "shortName": "pie.fish",
+    "category": "Food"
+  },
+  {
+    "displayName": "Hunters Pie",
+    "shortName": "pie.hunters",
+    "category": "Food"
+  },
+  {
+    "displayName": "Pork Pie",
+    "shortName": "pie.pork",
+    "category": "Food"
+  },
+  {
+    "displayName": "Pumpkin Pie",
+    "shortName": "pie.pumpkin",
+    "category": "Food"
+  },
+  {
+    "displayName": "Survivor's Pie",
+    "shortName": "pie.survivors",
+    "category": "Food"
+  },
+  {
+    "displayName": "Triangle Planter Box",
+    "shortName": "planter.triangle",
+    "category": "Items"
+  },
+  {
+    "displayName": "Single Plant Pot",
+    "shortName": "plantpot.single",
+    "category": "Items"
+  },
+  {
+    "displayName": "Spoiled Pork Meat",
+    "shortName": "porkmeat.spoiled",
+    "category": "Food"
+  },
+  {
+    "displayName": "Jungle Relic Assault Rifle",
+    "shortName": "rifle.ak.jungle",
+    "category": "Weapon"
+  },
+  {
+    "displayName": "Rose",
+    "shortName": "rose",
+    "category": "Food"
+  },
+  {
+    "displayName": "Rustigé Egg - Cerulean",
+    "shortName": "rustige_egg_g",
+    "category": "Misc"
+  },
+  {
+    "displayName": "Bamboo Salvaged Shelves",
+    "shortName": "salvaged.bamboo.shelves",
+    "category": "Items"
+  },
+  {
+    "displayName": "Orchid Seed",
+    "shortName": "seed.orchid",
+    "category": "Food"
+  },
+  {
+    "displayName": "Rose Seed",
+    "shortName": "seed.rose",
+    "category": "Food"
+  },
+  {
+    "displayName": "Sunflower Seed",
+    "shortName": "seed.sunflower",
+    "category": "Food"
+  },
+  {
+    "displayName": "Wheat Seed",
+    "shortName": "seed.wheat",
+    "category": "Food"
+  },
+  {
+    "displayName": "Single Shallow Wall Shelves",
+    "shortName": "single.shallow.wall.shelves",
+    "category": "Items"
+  },
+  {
+    "displayName": "Cooked Snake Meat",
+    "shortName": "snakemeat.cooked",
+    "category": "Food"
+  },
+  {
+    "displayName": "Raw Snake Meat",
+    "shortName": "snakemeat",
+    "category": "Food"
+  },
+  {
+    "displayName": "Spoiled Snake Meat",
+    "shortName": "snakemeat.spoiled",
+    "category": "Food"
+  },
+  {
+    "displayName": "Sunflower",
+    "shortName": "sunflower",
+    "category": "Food"
+  },
+  {
+    "displayName": "Sunken Combat Knife",
+    "shortName": "sunken.knife",
+    "category": "Weapon"
+  },
+  {
+    "displayName": "Triangle Rail Road Planter",
+    "shortName": "triangle.rail.road.planter",
+    "category": "Items"
+  },
+  {
+    "displayName": "Snake Venom",
+    "shortName": "venom.snake",
+    "category": "Items"
+  },
+  {
+    "displayName": "High External Adobe Wall",
+    "shortName": "wall.external.high.adobe",
+    "category": "Construction"
+  },
+  {
+    "displayName": "High External Frontier Wall",
+    "shortName": "wall.external.high.frontier",
+    "category": "Construction"
+  },
+  {
+    "displayName": "Warming Tea",
+    "shortName": "warmingtea",
+    "category": "Food"
+  },
+  {
+    "displayName": "Wheat",
+    "shortName": "wheat",
+    "category": "Food"
+  },
+  {
+    "displayName": "Wicker Barrel",
+    "shortName": "wicker.barrel",
+    "category": "Items"
+  },
+  {
+    "displayName": "Wood Armor Gloves",
+    "shortName": "woodarmor.gloves",
+    "category": "Attire"
   }
 ]

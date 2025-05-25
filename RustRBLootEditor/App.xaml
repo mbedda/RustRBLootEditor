@@ -13,6 +13,7 @@
         <Converters:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
         <Converters:RelativeUriFromLootItemConverter x:Key="RelativeUriFromLootItemConverter"/>
         <Converters:RelativeUriFromLootItemMultiConverter x:Key="RelativeUriFromLootItemMultiConverter"/>
+        <Converters:VisibleIfNotNullConverter x:Key="VisibleIfNotNullConverter"/>
 
         <Style TargetType="{x:Type TextBlock}">
             <Setter Property="FontFamily" Value="Lato Bold"/>

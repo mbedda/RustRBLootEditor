@@ -210,6 +210,40 @@
                             </CheckBox>
                         </StackPanel>
                     </Grid>
+                    <Grid Margin="0,10,0,10" Background="#FF363030" Visibility="{Binding SelectedEditItem.slots, Converter={StaticResource VisibleIfNotNullConverter}}">
+                        <TextBlock Text="Armor Slots" FontFamily="Lato" FontSize="14" Foreground="White" FontWeight="Bold" FontStyle="Italic" HorizontalAlignment="Left" Margin="10,10,0,0"/>
+                        <Grid Margin="10,35,10,10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="10"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel>
+                                <TextBlock Text="Min" FontFamily="Lato" FontSize="14" Foreground="White" FontStyle="Italic" Margin="0,0,0,5"/>
+                                <TextBox FontSize="14" FontFamily="Lato Bold">
+                                    <TextBox.Text>
+                                        <Binding Path="SelectedEditItem.slots.min" UpdateSourceTrigger="PropertyChanged">
+                                            <Binding.ValidationRules>
+                                                <c:AmountMinRule Min="0" />
+                                            </Binding.ValidationRules>
+                                        </Binding>
+                                    </TextBox.Text>
+                                </TextBox>
+                            </StackPanel>
+                            <StackPanel Grid.Column="2">
+                                <TextBlock Text="Max" FontFamily="Lato" FontSize="14" Foreground="White" FontStyle="Italic" Margin="0,0,0,5"/>
+                                <TextBox FontSize="14" FontFamily="Lato Bold">
+                                    <TextBox.Text>
+                                        <Binding Path="SelectedEditItem.slots.max" UpdateSourceTrigger="PropertyChanged">
+                                            <Binding.ValidationRules>
+                                                <c:AmountMinRule Min="0" />
+                                            </Binding.ValidationRules>
+                                        </Binding>
+                                    </TextBox.Text>
+                                </TextBox>
+                            </StackPanel>
+                        </Grid>
+                    </Grid>
                 </StackPanel>
             </Grid>
         </Grid>

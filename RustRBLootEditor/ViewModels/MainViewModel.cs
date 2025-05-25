@@ -4,20 +4,15 @@ using Prism.Mvvm;
 using RustRBLootEditor.Helpers;
 using RustRBLootEditor.Models;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Net;
 using System.Reflection;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Data;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace RustRBLootEditor.ViewModels
 {
@@ -250,6 +245,7 @@ namespace RustRBLootEditor.ViewModels
 
             Dictionary<string, string> ru_dict = new();
 
+            ru_dict.Add("\"Слоты модулей брони\"", "\"armor module slots\"");
             ru_dict.Add("\"краткое_название\"", "\"shortname\"");
             ru_dict.Add("\"имя\"", "\"name\"");
             ru_dict.Add("\"чертёж\"", "\"blueprint\"");
@@ -258,9 +254,11 @@ namespace RustRBLootEditor.ViewModels
             ru_dict.Add("\"мин_количество\"", "\"amountMin\"");
             ru_dict.Add("\"вероятность\"", "\"probability\"");
             ru_dict.Add("\"размер_стека\"", "\"stacksize\"");
+            ru_dict.Add("\"мин\"", "\"min\"");
+            ru_dict.Add("\"макс\"", "\"max\"");
 
 
-            List<LootItem> tmpLootItems = await Common.LoadJsonAsync<List<LootItem>>(filepath, ru_dict);
+            List<LootItem> tmpLootItems = await Common.LoadJsonNewton<List<LootItem>>(filepath, ru_dict);
 
             if (tmpLootItems != null)
             {
@@ -284,6 +282,9 @@ namespace RustRBLootEditor.ViewModels
                         item.category = "Misc";
                         item.displayName = item.shortname;
                     }
+
+                    if (item.slots == null && tmpItem.Slots != null)
+                        item.slots = new() { min = tmpItem.Slots.min, max = tmpItem.Slots.max };
                 }
 
                 await GetSteamSkins(skins);
@@ -305,6 +306,7 @@ namespace RustRBLootEditor.ViewModels
             {
                 langReplace = new();
 
+                langReplace.Add("\"armor module slots\"", "\"Слоты модулей брони\"");
                 langReplace.Add("\"shortname\"", "\"краткое_название\"");
                 langReplace.Add("\"name\"", "\"имя\"");
                 langReplace.Add("\"blueprint\"", "\"чертёж\"");
@@ -313,6 +315,8 @@ namespace RustRBLootEditor.ViewModels
                 langReplace.Add("\"amountMin\"", "\"мин_количество\"");
                 langReplace.Add("\"probability\"", "\"вероятность\"");
                 langReplace.Add("\"stacksize\"", "\"размер_стека\"");
+                langReplace.Add("\"min\"", "\"мин\"");
+                langReplace.Add("\"max\"", "\"макс\"");
             }
 
             Common.SaveJsonNewton(LootTableFile.LootItems, filepath, langReplace);
@@ -359,8 +363,10 @@ namespace RustRBLootEditor.ViewModels
                     displayName = rustItem.displayName,
                     category = rustItem.category,
                     amountMin = 1,
-                    amount = 1
+                    amount = 1,
+                    slots = rustItem.Slots != null ? new() { min = rustItem.Slots.min, max = rustItem.Slots.max } : null
                 });
+
                 //LootTableFile.DoSort();
 
                 UpdateStatus();
@@ -403,7 +409,8 @@ namespace RustRBLootEditor.ViewModels
                         displayName = rustItem.displayName,
                         category = rustItem.category,
                         amountMin = 1,
-                        amount = 1
+                        amount = 1,
+                        slots = rustItem.Slots != null ? new() { min = rustItem.Slots.min, max = rustItem.Slots.max } : null
                     });
                     addedItems = true;
                 }
