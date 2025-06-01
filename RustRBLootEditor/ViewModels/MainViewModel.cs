@@ -276,15 +276,15 @@ namespace RustRBLootEditor.ViewModels
                     {
                         item.category = tmpItem.category;
                         item.displayName = tmpItem.displayName;
+
+                        if (item.slots == null && tmpItem.Slots != null)
+                            item.slots = new() { min = tmpItem.Slots.min, max = tmpItem.Slots.max };
                     }
                     else
                     {
                         item.category = "Misc";
                         item.displayName = item.shortname;
                     }
-
-                    if (item.slots == null && tmpItem.Slots != null)
-                        item.slots = new() { min = tmpItem.Slots.min, max = tmpItem.Slots.max };
                 }
 
                 await GetSteamSkins(skins);
