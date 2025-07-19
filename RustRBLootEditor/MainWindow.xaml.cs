@@ -154,5 +154,15 @@ namespace RustRBLootEditor
                 LoadBG();
             }
         }
+
+        private void RBMainWindow_Initialized(object sender, EventArgs e)
+        {
+            if (Width > SystemParameters.MaximizedPrimaryScreenWidth || Height > SystemParameters.MaximizedPrimaryScreenHeight)
+            {
+                Width = SystemParameters.MaximizedPrimaryScreenWidth;
+                Height = SystemParameters.MaximizedPrimaryScreenHeight;
+                WindowState = WindowState.Maximized;
+            }
+        }
     }
 }
