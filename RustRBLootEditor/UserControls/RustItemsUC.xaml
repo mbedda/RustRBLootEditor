@@ -63,6 +63,9 @@
                             <!--<Image Source="{Binding shortName, Converter={StaticResource RelativeUriFromShortnameConverter}, ConverterParameter='Assets\\RustItems', IsAsync=true}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5"></Image>-->
                             <TextBlock Margin="0,0,5,5" Visibility="Hidden" Text="{Binding displayName}" Foreground="White" FontWeight="Bold" FontSize="11"
                                        TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Bottom" HorizontalAlignment="Right"></TextBlock>
+                            <Grid Margin="2" Background="#B2C11E1E" VerticalAlignment="Top" HorizontalAlignment="Left" Visibility="{Binding isDLC, Converter={StaticResource BooleanToVisibilityConverter}}">
+                                <TextBlock Margin="3,3" Text="DLC" Foreground="White" FontWeight="Bold" FontSize="12" TextWrapping="Wrap"></TextBlock>
+                            </Grid>
                         </Grid>
                         <UI:RustLoadingUC x:Name="rustLoadingUC" Animation_Completed="rustLoadingUC_Animation_Completed"/>
                     </Grid>

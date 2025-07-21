@@ -43,5 +43,23 @@ namespace RustRBLootEditor.Helpers
                 return null;
             }
         }
+
+        public static async Task<RustDLCResponse> GetDLCs()
+        {
+            try
+            {
+                var response = await client.GetAsync("https://api.rusthelp.com/v1/facepunch/skins");
+
+                var responseString = await response.Content.ReadAsStringAsync();
+
+                RustDLCResponse result = Common.DeserializeJSONString<RustDLCResponse>(responseString);
+
+                return result;
+            }
+            catch (HttpRequestException)
+            {
+                return null;
+            }
+        }
     }
 }

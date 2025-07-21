@@ -13,6 +13,7 @@ using System.Reflection;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Documents;
 
 namespace RustRBLootEditor.ViewModels
 {
@@ -176,6 +177,11 @@ namespace RustRBLootEditor.ViewModels
 
         public async Task LoadGameItems()
         {
+            ShowLoading("Fetching DLCs...");
+
+            if (AllItems != null)
+                await AllItems.GetRustDLCs();
+
             ShowLoading("Loading Game Files...");
 
             if (AllItems != null)
@@ -276,6 +282,7 @@ namespace RustRBLootEditor.ViewModels
                     {
                         item.category = tmpItem.category;
                         item.displayName = tmpItem.displayName;
+                        item.isDLC = tmpItem.isDLC;
 
                         if (item.slots == null && tmpItem.Slots != null)
                             item.slots = new() { min = tmpItem.Slots.min, max = tmpItem.Slots.max };
@@ -362,6 +369,7 @@ namespace RustRBLootEditor.ViewModels
                     shortname = rustItem.shortName,
                     displayName = rustItem.displayName,
                     category = rustItem.category,
+                    isDLC = rustItem.isDLC,
                     amountMin = 1,
                     amount = 1,
                     slots = rustItem.Slots != null ? new() { min = rustItem.Slots.min, max = rustItem.Slots.max } : null
@@ -408,6 +416,7 @@ namespace RustRBLootEditor.ViewModels
                         shortname = rustItem.shortName,
                         displayName = rustItem.displayName,
                         category = rustItem.category,
+                        isDLC = rustItem.isDLC,
                         amountMin = 1,
                         amount = 1,
                         slots = rustItem.Slots != null ? new() { min = rustItem.Slots.min, max = rustItem.Slots.max } : null
@@ -615,6 +624,7 @@ namespace RustRBLootEditor.ViewModels
 
             return DownloadSkins();
         }
+
 
         public bool DownloadSkins()
         {

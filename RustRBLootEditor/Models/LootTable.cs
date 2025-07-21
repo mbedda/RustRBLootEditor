@@ -129,6 +129,15 @@ namespace RustRBLootEditor.Models
             set { SetProperty(ref _displayName, value); }
         }
 
+        [IgnoreDataMember]
+        private bool _isDLC;
+        [IgnoreDataMember]
+        public bool isDLC
+        {
+            get { return _isDLC; }
+            set { SetProperty(ref _isDLC, value); }
+        }
+
         public class ArmorSlots : BindableBase
         {
             public ArmorSlots()

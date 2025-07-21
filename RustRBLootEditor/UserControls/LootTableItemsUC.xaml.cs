@@ -169,6 +169,68 @@ namespace RustRBLootEditor.UserControls
             }
         }
 
+        private void DeleteDLCLootItem_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult messageBoxResult = MessageBox.Show("Are you sure you would like to delete DLC items from selected set?", "Delete Confirmation", System.Windows.MessageBoxButton.YesNo);
+            if (messageBoxResult == MessageBoxResult.Yes)
+            {
+                for (int i = LootTableItemsListbox.SelectedItems.Count - 1; i >= 0; i--)
+                {
+                    LootItem item = (LootItem)LootTableItemsListbox.SelectedItems[i];
+
+                    if (item.isDLC)
+                        viewModel.RemoveLootTableItem(item);
+                }
+            }
+        }
+
+        private void DeleteDLCSkinLootItem_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult messageBoxResult = MessageBox.Show("Are you sure you would like to delete items with prohibited skins from selected set?", "Delete Confirmation", System.Windows.MessageBoxButton.YesNo);
+            if (messageBoxResult == MessageBoxResult.Yes)
+            {
+                for (int i = LootTableItemsListbox.SelectedItems.Count - 1; i >= 0; i--)
+                {
+                    LootItem item = (LootItem)LootTableItemsListbox.SelectedItems[i];
+
+                    if(viewModel.MainViewModel.AllItems.DLCsData.ProhibitedSkins.Contains(item.skin))
+                        viewModel.RemoveLootTableItem(item);
+                }
+            }
+        }
+
+
+
+        private void DeleteAllDLCLootItem_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult messageBoxResult = MessageBox.Show("Are you sure you would like to delete all DLC items?", "Delete Confirmation", System.Windows.MessageBoxButton.YesNo);
+            if (messageBoxResult == MessageBoxResult.Yes)
+            {
+                for (int i = viewModel.MainViewModel.LootTableFile.LootItems.Count - 1; i >= 0; i--)
+                {
+                    LootItem item = viewModel.MainViewModel.LootTableFile.LootItems[i];
+
+                    if (item.isDLC)
+                        viewModel.RemoveLootTableItem(item);
+                }
+            }
+        }
+
+        private void DeleteAllDLCSkinLootItem_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult messageBoxResult = MessageBox.Show("Are you sure you would like to delete all items with prohibited skins?", "Delete Confirmation", System.Windows.MessageBoxButton.YesNo);
+            if (messageBoxResult == MessageBoxResult.Yes)
+            {
+                for (int i = viewModel.MainViewModel.LootTableFile.LootItems.Count - 1; i >= 0; i--)
+                {
+                    LootItem item = viewModel.MainViewModel.LootTableFile.LootItems[i];
+
+                    if (viewModel.MainViewModel.AllItems.DLCsData.ProhibitedSkins.Contains(item.skin))
+                        viewModel.RemoveLootTableItem(item);
+                }
+            }
+        }
+
         private void LootTableItemsListbox_PreviewKeyDown(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.Delete)

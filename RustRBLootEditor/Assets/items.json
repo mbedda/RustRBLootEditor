@@ -4905,11 +4905,6 @@
     "category": "Construction"
   },
   {
-    "displayName": "High External Frontier Gate",
-    "shortName": "gates.external.high.frontier",
-    "category": "Construction"
-  },
-  {
     "displayName": "Bee Grenade",
     "shortName": "grenade.bee",
     "category": "Weapon"
@@ -5130,11 +5125,6 @@
     "category": "Construction"
   },
   {
-    "displayName": "High External Frontier Wall",
-    "shortName": "wall.external.high.frontier",
-    "category": "Construction"
-  },
-  {
     "displayName": "Warming Tea",
     "shortName": "warmingtea",
     "category": "Food"
@@ -5153,5 +5143,125 @@
     "displayName": "Wood Armor Gloves",
     "shortName": "woodarmor.gloves",
     "category": "Attire"
+  },
+  {
+    "displayName": "Abyss Horizontal Storage Tank",
+    "shortName": "abyss.barrel.horizontal",
+    "category": "Items"
+  },
+  {
+    "displayName": "Abyss Vertical Storage Tank",
+    "shortName": "abyss.barrel.vertical",
+    "category": "Items"
+  },
+  {
+    "displayName": "Advanced Cooling Tea",
+    "shortName": "advancedcoolingtea",
+    "category": "Food"
+  },
+  {
+    "displayName": "Advanced Crafting Quality Tea",
+    "shortName": "advancedcraftingtea_quality",
+    "category": "Food"
+  },
+  {
+    "displayName": "Advanced Warming Tea",
+    "shortName": "advancedwarmingtea",
+    "category": "Food"
+  },
+  {
+    "displayName": "Advanced Harvesting Tea",
+    "shortName": "advanceharvestingtea",
+    "category": "Food"
+  },
+  {
+    "displayName": "Bee Catapult Bomb",
+    "shortName": "catapult.ammo.bee",
+    "category": "Ammunition"
+  },
+  {
+    "displayName": "Command Block",
+    "shortName": "command.block",
+    "category": "Electrical"
+  },
+  {
+    "displayName": "Documents",
+    "shortName": "documents",
+    "category": "Tool"
+  },
+  {
+    "displayName": "High External Legacy Gate",
+    "shortName": "gates.external.high.legacy",
+    "category": "Construction"
+  },
+  {
+    "displayName": "Blue Industrial Wall Light",
+    "shortName": "industrial.wall.light.blue",
+    "category": "Electrical"
+  },
+  {
+    "displayName": "Pure Cooling Tea",
+    "shortName": "purecoolingtea",
+    "category": "Food"
+  },
+  {
+    "displayName": "Pure Crafting Quality Tea",
+    "shortName": "purecraftingtea_quality",
+    "category": "Food"
+  },
+  {
+    "displayName": "Pure Harvesting Tea",
+    "shortName": "pureharvestingtea",
+    "category": "Food"
+  },
+  {
+    "displayName": "Pure Warming Tea",
+    "shortName": "purewarmingtea",
+    "category": "Food"
+  },
+  {
+    "displayName": "Spoiled Produce",
+    "shortName": "spoiled.produce",
+    "category": "Food"
+  },
+  {
+    "displayName": "High External Legacy Wall",
+    "shortName": "wall.external.high.legacy",
+    "category": "Construction"
+  },
+  {
+    "displayName": "Wallpaper Ceiling",
+    "shortName": "wallpaper.ceiling",
+    "category": "Items"
+  },
+  {
+    "displayName": "Wallpaper Flooring",
+    "shortName": "wallpaper.flooring",
+    "category": "Items"
+  },
+  {
+    "displayName": "Wallpaper Tool",
+    "shortName": "wallpaper.tool",
+    "category": "Tool"
+  },
+  {
+    "displayName": "Wallpaper Wall",
+    "shortName": "wallpaper.wall",
+    "category": "Tool"
+  },
+  {
+    "displayName": "Oil Filter Silencer",
+    "shortName": "weapon.mod.oilfiltersilencer",
+    "category": "Weapon"
+  },
+  {
+    "displayName": "Soda Can Silencer",
+    "shortName": "weapon.mod.sodacansilencer",
+    "category": "Weapon"
+  },
+  {
+    "displayName": "Targeting Attachment",
+    "shortName": "weapon.mod.targetingattachment",
+    "category": "Weapon"
   }
 ]

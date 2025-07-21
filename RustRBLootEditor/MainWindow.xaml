@@ -67,6 +67,12 @@
             <Grid Grid.ColumnSpan="10" Background="#66000000" PreviewMouseLeftButtonUp="LootItemEdit_PreviewMouseLeftButtonUp"></Grid>
             <Grid Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Stretch" Background="#FF564D4D">
                 <StackPanel Margin="10">
+                    <Grid Margin="2" Background="#B2C11E1E" VerticalAlignment="Top" HorizontalAlignment="Center" Visibility="{Binding SelectedEditItem.isDLC, Converter={StaticResource BooleanToVisibilityConverter}}">
+                        <TextBlock Margin="3,3" Text="This DLC item is against TOS to include in loot tables" Foreground="White" FontWeight="Bold" FontSize="14" TextWrapping="Wrap"></TextBlock>
+                    </Grid>
+                    <Grid Margin="2" Background="#B2C11E1E" VerticalAlignment="Top" HorizontalAlignment="Center" Visibility="{Binding SelectedEditItem.skin, Converter={StaticResource IsMarketSkinConverter}}">
+                        <TextBlock Margin="3,3" Text="This skin is against TOS to include in loot tables" Foreground="White" FontWeight="Bold" FontSize="14" TextWrapping="Wrap"></TextBlock>
+                    </Grid>
                     <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*"/>

@@ -62,7 +62,7 @@ namespace RustRBLootEditor.Helpers
             return result;
         }
 
-        public static bool SaveJsonNewton<T>(T theobject, string filePath, Dictionary<string, string> langReplace = null)
+        public static bool SaveJsonNewton<T>(T theobject, string filePath, Dictionary<string, string> langReplace = null, bool WriteIndented = true)
         {
             try
             {
@@ -76,9 +76,9 @@ namespace RustRBLootEditor.Helpers
                         {
                             var options = new JsonSerializerOptions(_options)
                             {
-                                WriteIndented = true
+                                WriteIndented = WriteIndented
                             };
-                            var jsonString = JsonConvert.SerializeObject(theobject, Formatting.Indented);
+                            var jsonString = JsonConvert.SerializeObject(theobject, WriteIndented ? Formatting.Indented : Formatting.None);
 
                             if (langReplace != null)
                             {

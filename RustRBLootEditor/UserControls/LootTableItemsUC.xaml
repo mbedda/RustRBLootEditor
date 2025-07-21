@@ -59,6 +59,12 @@
                      Margin="10" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Background="{x:Null}" BorderThickness="3" BorderBrush="#33000000"
                      VirtualizingPanel.IsVirtualizing='True' VirtualizingPanel.IsVirtualizingWhenGrouping='True' VirtualizingPanel.ScrollUnit='Pixel'
                      VirtualizingPanel.CacheLengthUnit="Item" VirtualizingPanel.CacheLength="1000">
+            <ListBox.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Delete all DLC items" Click="DeleteAllDLCLootItem_Click" CommandParameter="{Binding}"/>
+                    <MenuItem Header="Delete all prohibited skins" Click="DeleteAllDLCSkinLootItem_Click" CommandParameter="{Binding}"/>
+                </ContextMenu>
+            </ListBox.ContextMenu>
             <ListBox.ItemsPanel>
                 <ItemsPanelTemplate>
                     <controls:VirtualizingWrapPanel IsItemsHost="True" />
@@ -107,6 +113,8 @@
                                 <MenuItem Header="Delete items" Click="DeleteLootItem_Click" CommandParameter="{Binding}"/>
                                 <Separator />
                                 <MenuItem Header="Delete disabled only" Click="DeleteDisabledLootItem_Click" CommandParameter="{Binding}"/>
+                                <MenuItem Header="Delete DLC items" Click="DeleteDLCLootItem_Click" CommandParameter="{Binding}"/>
+                                <MenuItem Header="Delete prohibited skins" Click="DeleteDLCSkinLootItem_Click" CommandParameter="{Binding}"/>
                             </ContextMenu>
                         </Grid.ContextMenu>
                         <Grid>
@@ -155,6 +163,12 @@
                             </TextBlock.Style>
                             DISABLED
                         </TextBlock>
+                        <Grid Margin="2" Background="#B2C11E1E" VerticalAlignment="Top" HorizontalAlignment="Right" Visibility="{Binding isDLC, Converter={StaticResource BooleanToVisibilityConverter}}">
+                            <TextBlock Margin="3,3" Text="!" Foreground="White" FontWeight="Bold" FontSize="14" TextWrapping="Wrap"></TextBlock>
+                        </Grid>
+                        <Grid Margin="2" Background="#B2C11E1E" VerticalAlignment="Top" HorizontalAlignment="Right" Visibility="{Binding skin, Converter={StaticResource IsMarketSkinConverter}}">
+                            <TextBlock Margin="3,3" Text="!" Foreground="White" FontWeight="Bold" FontSize="14" TextWrapping="Wrap"></TextBlock>
+                        </Grid>
                         <Border VerticalAlignment="Top" HorizontalAlignment="Left" BorderThickness="1" BorderBrush="Gray">
                             <Border.Style>
                                 <Style TargetType="{x:Type Border}">
