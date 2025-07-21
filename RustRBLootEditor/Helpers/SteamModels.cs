@@ -283,10 +283,10 @@ namespace RustRBLootEditor.Helpers
         public string name { get; set; }
 
         [DataMember(Name = "workshopId")]
-        public ulong workshopId { get; set; }
+        public ulong? workshopId { get; set; }
 
         [DataMember(Name = "itemDefinitionId")]
-        public string itemDefinitionId { get; set; }
+        public string? itemDefinitionId { get; set; }
 
         [DataMember(Name = "itemShortName")]
         public string itemShortName { get; set; }

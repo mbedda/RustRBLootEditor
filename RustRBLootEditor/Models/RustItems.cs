@@ -46,7 +46,9 @@ namespace RustRBLootEditor.Models
 
             DateTime dt = File.GetLastWriteTime(dlcsPath);
 
-            if ((DateTime.Now - dt).TotalMinutes > 30 || !File.Exists(dlcsPath))
+            bool testAPI = false;
+
+            if (testAPI || (DateTime.Now - dt).TotalMinutes > 30 || !File.Exists(dlcsPath))
             {
                 var dlcs = await SteamApi.GetDLCs();
 
@@ -62,35 +64,40 @@ namespace RustRBLootEditor.Models
 
             foreach (var dlc in DLCsData.Data)
             {
-                if (dlc.workshopId == 0 && !string.IsNullOrEmpty(dlc.itemShortName) && !DLCsData.DLCItems.Contains(dlc.itemShortName) && !_notDLCs.Contains(dlc.itemShortName))
+                if ((!dlc.workshopId.HasValue || dlc.workshopId == 0) 
+                    && !string.IsNullOrEmpty(dlc.itemShortName) 
+                    && !DLCsData.DLCItems.Contains(dlc.itemShortName) && !_notDLCs.Contains(dlc.itemShortName))
                 {
                     DLCsData.DLCItems.Add(dlc.itemShortName);
                 }
-                else if (dlc.workshopId != 0 && !DLCsData.ProhibitedSkins.Contains(dlc.workshopId))
+                else if (dlc.workshopId.HasValue && dlc.workshopId != 0 && !DLCsData.ProhibitedSkins.Contains(dlc.workshopId.Value))
                 {
-                    DLCsData.ProhibitedSkins.Add(dlc.workshopId);
+                    DLCsData.ProhibitedSkins.Add(dlc.workshopId.Value);
                 }
             }
 
 
             //for testing
             //
-            //List<string> notInFPList = new List<string>();
-            //foreach (var carbonDLC in _carbonDLCShortnames)
-            //{
-            //    if (!DLCsData.DLCItems.Contains(carbonDLC))
-            //    {
-            //        notInFPList.Add(carbonDLC);
-            //    }
-            //}
-            //List<string> notInCarbonList = new List<string>();
-            //foreach (var fpDLC in DLCsData.DLCItems)
-            //{
-            //    if (!_carbonDLCShortnames.Contains(fpDLC))
-            //    {
-            //        notInCarbonList.Add(fpDLC);
-            //    }
-            //}
+            if(testAPI)
+            {
+                List<string> notInFPList = new List<string>();
+                foreach (var carbonDLC in _carbonDLCShortnames)
+                {
+                    if (!DLCsData.DLCItems.Contains(carbonDLC))
+                    {
+                        notInFPList.Add(carbonDLC);
+                    }
+                }
+                List<string> notInCarbonList = new List<string>();
+                foreach (var fpDLC in DLCsData.DLCItems)
+                {
+                    if (!_carbonDLCShortnames.Contains(fpDLC))
+                    {
+                        notInCarbonList.Add(fpDLC);
+                    }
+                }
+            }
             //DLCsData.DLCItems = _carbonDLCShortnames;
 
             return true;
@@ -145,7 +152,7 @@ namespace RustRBLootEditor.Models
             "discord.trophy", "fogmachine", "strobelight", "snowmobiletomaha", "gates.external.high.adobe", "gates.external.high.legacy", "wall.external.high.adobe", "wall.external.high.legacy", "cocoknight.armor.gloves",
             "cocoknight.armor.helmet", "cocoknight.armor.pants", "cocoknight.armor.torso", "boots.frog", "draculacape", "draculamask", "frankensteinmask", "mummymask", "metal.facemask.hockey",
             "clatter.helmet", "knightsarmour.helmet", "hat.wellipets", "metal.facemask.icemask", "attire.ninja.suit", "knightsarmour.skirt", "hazmatsuit.arcticsuit", "hazmatsuit.diver", "hazmatsuit.frontier",
-            "hazmatsuit.lumberjack", "hazmatsuit.nomadsuit", "hazmatsuit.spacesuit", "hazmatsuittwitch", "knighttorso.armour", "metal.plate.torso.icevest", "barricade.medieval", "chair.icethrone", "firework.boomer.blue",
+            "hazmatsuit.lumberjack", "hazmatsuit.nomadsuit", "hazmatsuit.spacesuit", "knighttorso.armour", "metal.plate.torso.icevest", "barricade.medieval", "chair.icethrone", "firework.boomer.blue",
             "firework.boomer.champagne", "firework.boomer.green", "firework.boomer.orange", "firework.boomer.pattern", "firework.boomer.red", "firework.boomer.violet", "firework.romancandle.blue", "firework.romancandle.green", "firework.romancandle.red",
             "firework.romancandle.violet", "firework.volcano", "firework.volcano.red", "firework.volcano.violet", "half.bamboo.shelves", "hazmat.plushy", "jackolantern.angry", "jackolantern.happy", "abyss.barrel.horizontal",
             "abyss.barrel.vertical", "wicker.barrel", "bamboo.barrel", "medieval.box.wooden.large", "legacyfurnace", "wall.frame.lunar2025_a", "wall.frame.lunar2025_b", "wall.frame.lunar2025_c", "sculpture.ice",
