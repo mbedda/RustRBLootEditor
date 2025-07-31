@@ -61,6 +61,8 @@
                      VirtualizingPanel.CacheLengthUnit="Item" VirtualizingPanel.CacheLength="1000">
             <ListBox.ContextMenu>
                 <ContextMenu>
+                    <MenuItem Header="Set all prohibited skins to 0" Click="ResetAllDLCSkinLootItem_Click" CommandParameter="{Binding}"/>
+                    <Separator />
                     <MenuItem Header="Delete all DLC items" Click="DeleteAllDLCLootItem_Click" CommandParameter="{Binding}"/>
                     <MenuItem Header="Delete all prohibited skins" Click="DeleteAllDLCSkinLootItem_Click" CommandParameter="{Binding}"/>
                 </ContextMenu>
@@ -109,6 +111,8 @@
                             <ContextMenu>
                                 <MenuItem Header="Edit items" Click="EditLootItem_Click" CommandParameter="{Binding}" />
                                 <MenuItem Header="Multiply Values" Click="MultiplyLootItem_Click" CommandParameter="{Binding}" />
+                                <Separator />
+                                <MenuItem Header="Set prohibited skins to 0" Click="ResetDLCSkinLootItem_Click" CommandParameter="{Binding}"/>
                                 <Separator />
                                 <MenuItem Header="Delete items" Click="DeleteLootItem_Click" CommandParameter="{Binding}"/>
                                 <Separator />

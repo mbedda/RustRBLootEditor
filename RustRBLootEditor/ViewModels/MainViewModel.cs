@@ -674,5 +674,20 @@ namespace RustRBLootEditor.ViewModels
 
             return ratio < 10.0 ? true : false;
         }
+
+        public bool ValidateDLCsFree()
+        {
+            if (LootTableFile == null || LootTableFile.LootItems == null) return true;
+
+            foreach (var item in LootTableFile.LootItems)
+            {
+                if (item.isDLC || AllItems.DLCsData.ProhibitedSkins.Contains(item.skin))
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
     }
 }

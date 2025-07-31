@@ -76,9 +76,6 @@ namespace RustRBLootEditor.Models
                 }
             }
 
-
-            //for testing
-            //
             if(testAPI)
             {
                 List<string> notInFPList = new List<string>();
@@ -98,7 +95,9 @@ namespace RustRBLootEditor.Models
                     }
                 }
             }
-            //DLCsData.DLCItems = _carbonDLCShortnames;
+
+            if(DLCsData.DLCItems == null || DLCsData.DLCItems.Count == 0 || DLCsData.DLCItems.Count < _carbonDLCShortnames.Count)
+                DLCsData.DLCItems = _carbonDLCShortnames;
 
             return true;
         }

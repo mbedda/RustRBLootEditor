@@ -80,21 +80,19 @@ namespace RustRBLootEditor
 
         private void ExportFileEN_Click(object sender, RoutedEventArgs e)
         {
-            if (!viewModel.ValidateProbability())
-                MessageBox.Show("This loot table has more than 80% of its items with probability less than 0.9 or amount of 0, this may cause raid bases to not spawn enough items.", "Probability Warning");
-
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.Filter = "JSON file (*.json)|*.json";
-
-            if (saveFileDialog.ShowDialog() == true)
-            {
-                viewModel.Filename = "(" + System.IO.Path.GetFileName(saveFileDialog.FileName.Trim()) + ")";
-                viewModel.Save(saveFileDialog.FileName, "EN");
-            }
+            ExportLootTable("EN");
         }
 
         private void ExportFileRU_Click(object sender, RoutedEventArgs e)
         {
+            ExportLootTable("RU");
+        }
+
+        private void ExportLootTable(string lang = "EN")
+        {
+            if (!viewModel.ValidateDLCsFree())
+                MessageBox.Show("This loot table has paid content that might be against Facepunch's TOS (https://facepunch.com/legal/servers).", "DLC Warning");
+
             if (!viewModel.ValidateProbability())
                 MessageBox.Show("This loot table has more than 80% of its items with probability less than 0.9 or amount of 0, this may cause raid bases to not spawn enough items.", "Probability Warning");
 
@@ -104,7 +102,7 @@ namespace RustRBLootEditor
             if (saveFileDialog.ShowDialog() == true)
             {
                 viewModel.Filename = "(" + System.IO.Path.GetFileName(saveFileDialog.FileName.Trim()) + ")";
-                viewModel.Save(saveFileDialog.FileName, "RU");
+                viewModel.Save(saveFileDialog.FileName, lang);
             }
         }
 
