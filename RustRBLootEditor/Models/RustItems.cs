@@ -96,7 +96,7 @@ namespace RustRBLootEditor.Models
                 }
             }
 
-            if(DLCsData.DLCItems == null || DLCsData.DLCItems.Count == 0 || DLCsData.DLCItems.Count < _carbonDLCShortnames.Count)
+            //if(DLCsData.DLCItems == null || DLCsData.DLCItems.Count == 0 || DLCsData.DLCItems.Count < _carbonDLCShortnames.Count)
                 DLCsData.DLCItems = _carbonDLCShortnames;
 
             return true;
@@ -177,7 +177,7 @@ namespace RustRBLootEditor.Models
             "discoball", "discofloor", "discofloor.largetiles", "connected.speaker", "laserlight", "megaphone", "microphonestand", "mobilephone", "soundlight",
             "rifle.ak.diver", "rifle.ak.ice", "rifle.ak.jungle", "rifle.ak.med", "blunderbuss", "knife.bone.obsidian", "spear.cny", "diverhatchet", "diverpickaxe",
             "divertorch", "frontier_hatchet", "mace.baseballbat", "torch.torch.skull", "skull", "sunken.knife", "legacy bow", "jungle.rock", "rocket.launcher.dragon",
-            "toolgun"
+            "toolgun", "hazmatsuit.pilot", "pilot.hazmat.box.wooden", "lock.code.a.pilot", "chair.ejector.seat", "pistol.semiauto.a.m15"
         };
 
 
