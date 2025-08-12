@@ -294,7 +294,11 @@ namespace RustRBLootEditor.ViewModels
                     }
                 }
 
-                await GetSteamSkins(skins);
+                try
+                {
+                    await GetSteamSkins(skins);
+                }
+                catch { }
 
                 LootTableFile.LootItems.Clear();
                 LootTableFile.LootItems.AddRange(tmpLootItems);
@@ -469,7 +473,11 @@ namespace RustRBLootEditor.ViewModels
 
             if (SelectedEditItem.skin != SelectedItemOriginalSkin && SelectedEditItem.skin > 0)
             {
-                await GetSteamSkins(new List<ulong>() { SelectedEditItem.skin });
+                try
+                {
+                    await GetSteamSkins(new List<ulong>() { SelectedEditItem.skin });
+                }
+                catch { }
 
                 ulong skin = SelectedEditItem.skin;
                 SelectedEditItem.skin = 0;
@@ -644,8 +652,12 @@ namespace RustRBLootEditor.ViewModels
                     {
                         var address = skinurl.Value;
 
-                        client.DownloadFile(address, fileName);
-                        changeOccurred = true;
+                        try
+                        {
+                            client.DownloadFile(address, fileName);
+                            changeOccurred = true;
+                        }
+                        catch { }
                     }
                 }
             }
