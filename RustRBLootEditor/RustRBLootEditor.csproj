@@ -7,9 +7,9 @@
     <UseWPF>true</UseWPF>
     <PackageIcon></PackageIcon>
     <ApplicationIcon>hazmat_xQg_icon.ico</ApplicationIcon>
-    <FileVersion>1.6.4.0</FileVersion>
-    <AssemblyVersion>1.6.4.0</AssemblyVersion>
-    <Version>$(VersionPrefix)1.6.4.0</Version>
+    <FileVersion>1.6.5.0</FileVersion>
+    <AssemblyVersion>1.6.5.0</AssemblyVersion>
+    <Version>$(VersionPrefix)1.6.5.0</Version>
     <Authors>beee</Authors>
     <PackageProjectUrl>https://github.com/mbedda/RustRBLootEditor</PackageProjectUrl>
     <RepositoryUrl>https://github.com/mbedda/RustRBLootEditor.git</RepositoryUrl>

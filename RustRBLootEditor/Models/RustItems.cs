@@ -96,7 +96,7 @@ namespace RustRBLootEditor.Models
                 }
             }
 
-            //if(DLCsData.DLCItems == null || DLCsData.DLCItems.Count == 0 || DLCsData.DLCItems.Count < _carbonDLCShortnames.Count)
+            if (DLCsData.DLCItems == null || DLCsData.DLCItems.Count == 0 || DLCsData.DLCItems.Count < _carbonDLCShortnames.Count)
                 DLCsData.DLCItems = _carbonDLCShortnames;
 
             return true;
