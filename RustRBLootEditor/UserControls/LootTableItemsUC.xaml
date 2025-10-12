@@ -58,7 +58,7 @@
                      SelectionMode="Extended" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" PreviewKeyDown="LootTableItemsListbox_PreviewKeyDown"
                      Margin="10" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Background="{x:Null}" BorderThickness="3" BorderBrush="#33000000"
                      VirtualizingPanel.IsVirtualizing='True' VirtualizingPanel.IsVirtualizingWhenGrouping='True' VirtualizingPanel.ScrollUnit='Pixel'
-                     VirtualizingPanel.CacheLengthUnit="Item" VirtualizingPanel.CacheLength="1000">
+                     VirtualizingPanel.CacheLengthUnit="Item" VirtualizingPanel.CacheLength="1">
             <ListBox.ContextMenu>
                 <ContextMenu>
                     <MenuItem Header="Set all prohibited skins to 0" Click="ResetAllDLCSkinLootItem_Click" CommandParameter="{Binding}"/>

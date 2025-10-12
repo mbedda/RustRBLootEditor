@@ -30,9 +30,9 @@
             <TextBox x:Name="filtertxt" Grid.Column="2" TextChanged="filtertxt_TextChanged"/>
         </Grid>
         <ListBox x:Name="AllItemsListbox" ItemsSource="{Binding Source={StaticResource ListBoxItems}}" Grid.Row="1" ItemContainerStyle="{StaticResource inventoryItemStyle}"
-                 SelectionMode="Extended" Margin="10,10,10,10" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Background="Transparent" BorderThickness="3" 
+                 SelectionMode="Extended" Margin="10,10,10,10" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Background="{x:Null}" BorderThickness="3" 
                  BorderBrush="#33000000" Grid.ColumnSpan="2" VirtualizingPanel.IsVirtualizing='True' VirtualizingPanel.IsVirtualizingWhenGrouping='True' VirtualizingPanel.VirtualizationMode="Recycling"
-                 VirtualizingPanel.ScrollUnit='Pixel' VirtualizingPanel.CacheLengthUnit="Item" VirtualizingPanel.CacheLength="1000">
+                 VirtualizingPanel.ScrollUnit='Pixel' VirtualizingPanel.CacheLengthUnit="Item" VirtualizingPanel.CacheLength="1">
             <ListBox.ItemsPanel>
                 <ItemsPanelTemplate>
                     <controls:VirtualizingWrapPanel IsItemsHost="True" />

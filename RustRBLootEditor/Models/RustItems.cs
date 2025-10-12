@@ -261,14 +261,15 @@ namespace RustRBLootEditor.Models
                 {
                     item.ImageSource = await Task.Run(() =>
                     {
-                        var fileStream = new FileStream(itemImagePath, FileMode.Open, FileAccess.Read);
-                        try
+                        using (var fileStream = new FileStream(itemImagePath, FileMode.Open, FileAccess.Read, FileShare.Read))
                         {
-                            return BitmapFrame.Create(fileStream, BitmapCreateOptions.None, BitmapCacheOption.OnLoad);
-                        }
-                        finally
-                        {
-                            fileStream.Dispose();
+                            var frame = BitmapFrame.Create(
+                                fileStream,
+                                BitmapCreateOptions.None,
+                                BitmapCacheOption.OnLoad);
+
+                            frame.Freeze();
+                            return frame;
                         }
                     });
                 }
