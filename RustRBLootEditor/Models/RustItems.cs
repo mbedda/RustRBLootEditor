@@ -55,7 +55,7 @@ namespace RustRBLootEditor.Models
                 if (dlcs != null && dlcs.meta.statusCode == 200 && dlcs.data != null && dlcs.data.Count > 0)
                 {
                     DLCsData.Data = new List<RustDLCData>(dlcs.data);
-                    Common.SaveJsonNewton(dlcs.data, dlcsPath, null, false);
+                    await Common.SaveJsonNewtonAsync(dlcs.data, dlcsPath, null, false);
                 }
             }
 
@@ -220,7 +220,7 @@ namespace RustRBLootEditor.Models
 
             if (newItemsFound)
             {
-                Common.SaveJsonNewton(currentItems, jsonPath);
+                await Common.SaveJsonNewtonAsync(currentItems, jsonPath);
             }
         }
 

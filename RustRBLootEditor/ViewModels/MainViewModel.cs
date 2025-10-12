@@ -175,6 +175,11 @@ namespace RustRBLootEditor.ViewModels
             CancelMultiplierCommand = new DelegateCommand(CancelMultiplier);
         }
 
+        public async Task InitializeAsync()
+        {
+            await LoadGameItems();
+        }
+
         public async Task LoadGameItems()
         {
             ShowLoading("Fetching DLCs...");
@@ -244,7 +249,7 @@ namespace RustRBLootEditor.ViewModels
             }
         }
 
-        public async Task LoadFile(string filepath)
+        public async Task LoadFileAsync(string filepath)
         {
             ShowLoading("Loading Loot File...");
             LootTableFile = new LootTableFile();
@@ -309,7 +314,7 @@ namespace RustRBLootEditor.ViewModels
             HideLoading();
         }
 
-        public void Save(string filepath, string lang = "EN")
+        public async Task SaveAsync(string filepath, string lang = "EN")
         {
             Dictionary<string, string> langReplace = null;
 
@@ -330,7 +335,7 @@ namespace RustRBLootEditor.ViewModels
                 langReplace.Add("\"max\"", "\"макс\"");
             }
 
-            Common.SaveJsonNewton(LootTableFile.LootItems, filepath, langReplace);
+            await Common.SaveJsonNewtonAsync(LootTableFile.LootItems, filepath, langReplace);
         }
 
         public void ShowLoading(string text)

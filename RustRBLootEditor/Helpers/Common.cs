@@ -62,7 +62,7 @@ namespace RustRBLootEditor.Helpers
             return result;
         }
 
-        public static bool SaveJsonNewton<T>(T theobject, string filePath, Dictionary<string, string> langReplace = null, bool WriteIndented = true)
+        public static async Task<bool> SaveJsonNewtonAsync<T>(T theobject, string filePath, Dictionary<string, string> langReplace = null, bool WriteIndented = true)
         {
             try
             {
@@ -86,7 +86,7 @@ namespace RustRBLootEditor.Helpers
                                     jsonString = jsonString.Replace((string)replace.Key, (string)replace.Value);
                             }
 
-                            sw.Write(jsonString);
+                            await sw.WriteAsync(jsonString);
                         }
                     }
 

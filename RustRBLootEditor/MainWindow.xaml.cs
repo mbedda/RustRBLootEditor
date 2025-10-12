@@ -6,6 +6,7 @@ using System;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Interop;
@@ -31,16 +32,22 @@ namespace RustRBLootEditor
             Version version = Assembly.GetExecutingAssembly().GetName().Version;
 
             Title = Title + " - v" + version.Major + "." + version.Minor + "." + version.Build.ToString();
+
+            Loaded += async (_, __) =>
+            {
+                await LoadBGAsync();
+                await viewModel.InitializeAsync();
+            };
         }
 
-        public void LoadBG()
+        public async Task LoadBGAsync()
         {
             string debugpath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             string imagepath = Path.Combine(debugpath, "Assets", viewModel.BgName);
             MemoryStream ms = new MemoryStream();
             BitmapImage bi = new BitmapImage();
 
-            byte[] arrbytFileContent = File.ReadAllBytes(imagepath);
+            byte[] arrbytFileContent = await File.ReadAllBytesAsync(imagepath);
             ms.Write(arrbytFileContent, 0, arrbytFileContent.Length);
             ms.Position = 0;
             bi.BeginInit();
@@ -49,22 +56,16 @@ namespace RustRBLootEditor
             MainGridBrush.ImageSource = bi;
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
+        private async void ImportFile_Click(object sender, RoutedEventArgs e)
         {
-            LoadBG();
-            viewModel.LoadGameItems();
-        }
-
-        private void ImportFile_Click(object sender, RoutedEventArgs e)
-        {
-            Microsoft.Win32.OpenFileDialog openFileDlg = new Microsoft.Win32.OpenFileDialog();
+            OpenFileDialog openFileDlg = new OpenFileDialog();
 
             Nullable<bool> result = openFileDlg.ShowDialog();
             if (result == true)
             {
                 FilePathTB.Text = openFileDlg.FileName;
                 viewModel.Filename = "(" + System.IO.Path.GetFileName(openFileDlg.FileName.Trim()) + ")";
-                viewModel.LoadFile(FilePathTB.Text);
+                await viewModel.LoadFileAsync(FilePathTB.Text);
             }
         }
 
@@ -78,17 +79,17 @@ namespace RustRBLootEditor
         }
 
 
-        private void ExportFileEN_Click(object sender, RoutedEventArgs e)
+        private async void ExportFileEN_Click(object sender, RoutedEventArgs e)
         {
-            ExportLootTable("EN");
+            await ExportLootTable("EN");
         }
 
-        private void ExportFileRU_Click(object sender, RoutedEventArgs e)
+        private async void ExportFileRU_Click(object sender, RoutedEventArgs e)
         {
-            ExportLootTable("RU");
+            await ExportLootTable("RU");
         }
 
-        private void ExportLootTable(string lang = "EN")
+        private async Task ExportLootTable(string lang = "EN")
         {
             if (!viewModel.ValidateDLCsFree())
                 MessageBox.Show("This loot table has paid content that might be against Facepunch's TOS (https://facepunch.com/legal/servers).", "DLC Warning");
@@ -102,7 +103,7 @@ namespace RustRBLootEditor
             if (saveFileDialog.ShowDialog() == true)
             {
                 viewModel.Filename = "(" + System.IO.Path.GetFileName(saveFileDialog.FileName.Trim()) + ")";
-                viewModel.Save(saveFileDialog.FileName, lang);
+                await viewModel.SaveAsync(saveFileDialog.FileName, lang);
             }
         }
 
@@ -116,9 +117,9 @@ namespace RustRBLootEditor
             viewModel.HideGameItemEditor();
         }
 
-        private void SaveGameItems_Click(object sender, RoutedEventArgs e)
+        private async void SaveGameItems_Click(object sender, RoutedEventArgs e)
         {
-            Common.SaveJsonNewton(viewModel.AllItems.Items, "Assets\\items.json");
+            await Common.SaveJsonNewtonAsync(viewModel.AllItems.Items, "Assets\\items.json");
         }
 
         private void Border_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
@@ -133,7 +134,7 @@ namespace RustRBLootEditor
             }
         }
 
-        private void ChangeBGMenuItem_Click(object sender, RoutedEventArgs e)
+        private async void ChangeBGMenuItem_Click(object sender, RoutedEventArgs e)
         {
             Microsoft.Win32.OpenFileDialog openFileDlg = new Microsoft.Win32.OpenFileDialog();
             openFileDlg.Filter = "Images Files (*.png;*.jpeg;*.jpg)|*.png;*.jpeg;*.jpg" +
@@ -149,7 +150,7 @@ namespace RustRBLootEditor
                 string imagepath = Path.Combine(debugpath, "Assets", viewModel.BgName);
 
                 File.Copy(openFileDlg.FileName, imagepath, true);
-                LoadBG();
+                await LoadBGAsync();
             }
         }
 

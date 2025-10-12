@@ -4,8 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RustRBLootEditor" xmlns:converters="clr-namespace:RustRBLootEditor.Converters" xmlns:c="clr-namespace:RustRBLootEditor.Validations"
-        mc:Ignorable="d" Loaded="Window_Loaded" x:Name="RBMainWindow" Initialized="RBMainWindow_Initialized"
-        Title="RB Loot Editor" Height="800" Width="1400" WindowStartupLocation="CenterScreen">
+        mc:Ignorable="d" x:Name="RBMainWindow" Initialized="RBMainWindow_Initialized"
+        Title="RB Loot Editor" Height="800" Width="1400" WindowStartupLocation="CenterScreen" Background="Black">
     <Grid>
         <Grid.Background>
             <ImageBrush x:Name="MainGridBrush" Stretch="UniformToFill"/>
