@@ -142,7 +142,8 @@ namespace RustRBLootEditor.Models
         {
             "mask.bandana", "hat.cap", "shoes.boots", "deer.skull.mask", "hat.beenie", "mask.balaclava", "hoodie", "jacket", "tshirt.long",
             "metal.facemask", "pants", "jacket.snow", "box.wooden.large", "tshirt", "underwear", "spraycan", "buildingskin", "wallpaper.wall",
-            "wallpaper.pack1", "gestures", "spraycandecal", "wallpaper.flooring", "wallpaper.ceiling", "floor.ceiling.wallpaper.pack1"
+            "wallpaper.pack1", "gestures", "spraycandecal", "wallpaper.flooring", "wallpaper.ceiling", "floor.ceiling.wallpaper.pack1", "rocket.launcher",
+            "chainsaw", "shotgun.pump"
         };
 
         //should be removed when https://api.rusthelp.com/v1/facepunch/skins properly includes dlc items
