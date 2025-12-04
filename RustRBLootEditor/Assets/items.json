@@ -2,5266 +2,6661 @@
   {
     "displayName": "Above Ground Pool",
     "shortName": "abovegroundpool",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "MLRS Aiming Module",
     "shortName": "aiming.module.mlrs",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "40mm Shotgun Round",
     "shortName": "ammo.grenadelauncher.buckshot",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "isDLC": false
   },
   {
     "displayName": "40mm HE Grenade",
     "shortName": "ammo.grenadelauncher.he",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "isDLC": false
   },
   {
     "displayName": "40mm Smoke Grenade",
     "shortName": "ammo.grenadelauncher.smoke",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "isDLC": false
   },
   {
     "displayName": "Handmade Shell",
     "shortName": "ammo.handmade.shell",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "isDLC": false
   },
   {
     "displayName": "Nailgun Nails",
     "shortName": "ammo.nailgun.nails",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "isDLC": false
   },
   {
     "displayName": "Incendiary Pistol Bullet",
     "shortName": "ammo.pistol.fire",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "isDLC": false
   },
   {
     "displayName": "HV Pistol Ammo",
     "shortName": "ammo.pistol.hv",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "isDLC": false
   },
   {
     "displayName": "Pistol Bullet",
     "shortName": "ammo.pistol",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "isDLC": false
   },
   {
     "displayName": "Explosive 5.56 Rifle Ammo",
     "shortName": "ammo.rifle.explosive",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "isDLC": false
   },
   {
     "displayName": "HV 5.56 Rifle Ammo",
     "shortName": "ammo.rifle.hv",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "isDLC": false
   },
   {
     "displayName": "Incendiary 5.56 Rifle Ammo",
     "shortName": "ammo.rifle.incendiary",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "isDLC": false
   },
   {
     "displayName": "5.56 Rifle Ammo",
     "shortName": "ammo.rifle",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "isDLC": false
   },
   {
     "displayName": "Rocket",
     "shortName": "ammo.rocket.basic",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "isDLC": false
   },
   {
     "displayName": "Incendiary Rocket",
     "shortName": "ammo.rocket.fire",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "isDLC": false
   },
   {
     "displayName": "High Velocity Rocket",
     "shortName": "ammo.rocket.hv",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "isDLC": false
   },
   {
     "displayName": "MLRS Rocket",
     "shortName": "ammo.rocket.mlrs",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "isDLC": false
   },
   {
     "displayName": "SAM Ammo",
     "shortName": "ammo.rocket.sam",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "isDLC": false
   },
   {
     "displayName": "Homing Missile",
     "shortName": "ammo.rocket.seeker",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "isDLC": false
   },
   {
     "displayName": "Smoke Rocket WIP!!!!",
     "shortName": "ammo.rocket.smoke",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "isDLC": false
   },
   {
     "displayName": "12 Gauge Incendiary Shell",
     "shortName": "ammo.shotgun.fire",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "isDLC": false
   },
   {
     "displayName": "12 Gauge Buckshot",
     "shortName": "ammo.shotgun",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "isDLC": false
   },
   {
     "displayName": "12 Gauge Slug",
     "shortName": "ammo.shotgun.slug",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "isDLC": false
   },
   {
     "displayName": "Anti-Radiation Pills",
     "shortName": "antiradpills",
-    "category": "Medical"
+    "category": "Medical",
+    "isDLC": false
   },
   {
     "displayName": "Apple",
     "shortName": "apple",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Rotten Apple",
     "shortName": "apple.spoiled",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Chippy Arcade Game",
     "shortName": "arcade.machine.chippy",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Bone Arrow",
     "shortName": "arrow.bone",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "isDLC": false
   },
   {
     "displayName": "Fire Arrow",
     "shortName": "arrow.fire",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "isDLC": false
   },
   {
     "displayName": "High Velocity Arrow",
     "shortName": "arrow.hv",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "isDLC": false
   },
   {
     "displayName": "Wooden Arrow",
     "shortName": "arrow.wooden",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "isDLC": false
   },
   {
     "displayName": "Bandit Guard Gear",
     "shortName": "attire.banditguard",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Bunny Onesie",
     "shortName": "attire.bunny.onesie",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Bunny Ears",
     "shortName": "attire.bunnyears",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Egg Suit",
     "shortName": "attire.egg.suit",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Hide Boots",
     "shortName": "attire.hide.boots",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Hide Halterneck",
     "shortName": "attire.hide.helterneck",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Hide Pants",
     "shortName": "attire.hide.pants",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Hide Poncho",
     "shortName": "attire.hide.poncho",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Hide Skirt",
     "shortName": "attire.hide.skirt",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Hide Vest",
     "shortName": "attire.hide.vest",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Nest Hat",
     "shortName": "attire.nesthat",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Ninja Suit",
     "shortName": "attire.ninja.suit",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Reindeer Antlers",
     "shortName": "attire.reindeer.headband",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Snowman Helmet",
     "shortName": "attire.snowman.helmet",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Auto Turret",
     "shortName": "autoturret",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Salvaged Axe",
     "shortName": "axe.salvaged",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": false
   },
   {
     "displayName": "Hammerhead Bolt",
     "shortName": "ballista.bolt.hammerhead",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "isDLC": false
   },
   {
     "displayName": "Incendiary Bolt",
     "shortName": "ballista.bolt.incendiary",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "isDLC": false
   },
   {
     "displayName": "Piercer Bolt",
     "shortName": "ballista.bolt.piercer",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "isDLC": false
   },
   {
     "displayName": "Pitchfork Bolt",
     "shortName": "ballista.bolt.pitchfork",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "isDLC": false
   },
   {
     "displayName": "Mounted Ballista",
     "shortName": "ballista.mounted",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Ballista",
     "shortName": "ballista.static",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Bandage",
     "shortName": "bandage",
-    "category": "Medical"
+    "category": "Medical",
+    "isDLC": false
   },
   {
     "displayName": "A Barrel Costume",
     "shortName": "barrelcostume",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Concrete Barricade",
     "shortName": "barricade.concrete",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Medieval Barricade",
     "shortName": "barricade.medieval",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": true
   },
   {
     "displayName": "Metal Barricade",
     "shortName": "barricade.metal",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Sandbag Barricade",
     "shortName": "barricade.sandbags",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Stone Barricade",
     "shortName": "barricade.stone",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Wooden Barricade Cover",
     "shortName": "barricade.wood.cover",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Wooden Barricade",
     "shortName": "barricade.wood",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Barbed Wooden Barricade",
     "shortName": "barricade.woodwire",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Bath Tub Planter",
     "shortName": "bathtub.planter",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Battering Ram",
     "shortName": "batteringram",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Battery - Small",
     "shortName": "battery.small",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Barbeque",
     "shortName": "bbq",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Beach Chair",
     "shortName": "beachchair",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Beach Parasol",
     "shortName": "beachparasol",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Beach Table",
     "shortName": "beachtable",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Beach Towel",
     "shortName": "beachtowel",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Burnt Bear Meat",
     "shortName": "bearmeat.burned",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Cooked Bear Meat",
     "shortName": "bearmeat.cooked",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Raw Bear Meat",
     "shortName": "bearmeat",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Bed",
     "shortName": "bed",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Black Berry",
     "shortName": "black.berry",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Black Raspberries",
     "shortName": "black.raspberries",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Bleach",
     "shortName": "bleach",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "Blood",
     "shortName": "blood",
-    "category": "Medical"
+    "category": "Medical",
+    "isDLC": false
   },
   {
     "displayName": "Blue Berry",
     "shortName": "blue.berry",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Blueberries",
     "shortName": "blueberries",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Blue Dog Tags",
     "shortName": "bluedogtags",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Blue ID Tag",
     "shortName": "blueidtag",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Blunderbuss",
     "shortName": "blunderbuss",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": true
   },
   {
     "displayName": "Bone Armor",
     "shortName": "bone.armor.suit",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Bone Club",
     "shortName": "bone.club",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Bone Fragments",
     "shortName": "bone.fragments",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Boogie Board",
     "shortName": "boogieboard",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Boom Box",
     "shortName": "boombox",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Frog Boots",
     "shortName": "boots.frog",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Bota Bag",
     "shortName": "botabag",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Vodka Bottle",
     "shortName": "bottle.vodka",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Compound Bow",
     "shortName": "bow.compound",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Hunting Bow",
     "shortName": "bow.hunting",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Repair Bench",
     "shortName": "box.repair.bench",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Large Wood Box",
     "shortName": "box.wooden.large",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Wood Storage Box",
     "shortName": "box.wooden",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Bucket Helmet",
     "shortName": "bucket.helmet",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Water Bucket",
     "shortName": "bucket.water",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": false
   },
   {
     "displayName": "Building Plan",
     "shortName": "building.planner",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Burlap Gloves",
     "shortName": "burlap.gloves.new",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Leather Gloves",
     "shortName": "burlap.gloves",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Burlap Headwrap",
     "shortName": "burlap.headwrap",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Burlap Shirt",
     "shortName": "burlap.shirt",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Burlap Shoes",
     "shortName": "burlap.shoes",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Burlap Trousers",
     "shortName": "burlap.trousers",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Cactus Flesh",
     "shortName": "cactusflesh",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Birthday Cake",
     "shortName": "cakefiveyear",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": false
   },
   {
     "displayName": "Camp Fire",
     "shortName": "campfire",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Empty Can Of Beans",
     "shortName": "can.beans.empty",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Can of Beans",
     "shortName": "can.beans",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Empty Tuna Can",
     "shortName": "can.tuna.empty",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Can of Tuna",
     "shortName": "can.tuna",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Candy Cane",
     "shortName": "candycane",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Candy Cane Club",
     "shortName": "candycaneclub",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Captain's Log",
     "shortName": "captainslog",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": false
   },
   {
     "displayName": "Low Quality Carburetor",
     "shortName": "carburetor1",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "Medium Quality Carburetor",
     "shortName": "carburetor2",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "High Quality Carburetor",
     "shortName": "carburetor3",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "Card Table",
     "shortName": "cardtable",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Carvable Pumpkin",
     "shortName": "carvable.pumpkin",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Cassette - Medium",
     "shortName": "cassette.medium",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Cassette - Long",
     "shortName": "cassette",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Cassette - Short",
     "shortName": "cassette.short",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Scattershot",
     "shortName": "catapult.ammo.boulder",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "isDLC": false
   },
   {
     "displayName": "Propane Explosive Bomb",
     "shortName": "catapult.ammo.explosive",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "isDLC": false
   },
   {
     "displayName": "Firebomb",
     "shortName": "catapult.ammo.incendiary",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "isDLC": false
   },
   {
     "displayName": "Catapult",
     "shortName": "catapult",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "CCTV Camera",
     "shortName": "cctv.camera",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Ceiling Light",
     "shortName": "ceilinglight",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Chainsaw",
     "shortName": "chainsaw",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": false
   },
   {
     "displayName": "Ice Throne",
     "shortName": "chair.icethrone",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Chair",
     "shortName": "chair",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Charcoal",
     "shortName": "charcoal",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Burnt Chicken",
     "shortName": "chicken.burned",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Cooked Chicken",
     "shortName": "chicken.cooked",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Chicken Costume",
     "shortName": "chicken.costume",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Raw Chicken Breast",
     "shortName": "chicken.raw",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Spoiled Chicken",
     "shortName": "chicken.spoiled",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Chinese Lantern",
     "shortName": "chineselantern",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Chinese Lantern White",
     "shortName": "chineselanternwhite",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Chocolate Bar",
     "shortName": "chocolate",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Clan Table",
     "shortName": "clantable",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Clatter Helmet",
     "shortName": "clatter.helmet",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Black Berry Clone",
     "shortName": "clone.black.berry",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Blue Berry Clone",
     "shortName": "clone.blue.berry",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Corn Clone",
     "shortName": "clone.corn",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Green Berry Clone",
     "shortName": "clone.green.berry",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Hemp Clone",
     "shortName": "clone.hemp",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Potato Clone",
     "shortName": "clone.potato",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Pumpkin Plant Clone",
     "shortName": "clone.pumpkin",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Red Berry Clone",
     "shortName": "clone.red.berry",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "White Berry Clone",
     "shortName": "clone.white.berry",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Yellow Berry Clone",
     "shortName": "clone.yellow.berry",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Cloth",
     "shortName": "cloth",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Coal :(",
     "shortName": "coal",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Coffee Can Helmet",
     "shortName": "coffeecan.helmet",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Coffin",
     "shortName": "coffin.storage",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": false
   },
   {
     "displayName": "Composter",
     "shortName": "composter",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Computer Station",
     "shortName": "computerstation",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Concrete Hatchet",
     "shortName": "concretehatchet",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": true
   },
   {
     "displayName": "Concrete Pickaxe",
     "shortName": "concretepickaxe",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": true
   },
   {
     "displayName": "Confetti Cannon",
     "shortName": "confetticannon",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": false
   },
   {
     "displayName": "Connected Speaker",
     "shortName": "connected.speaker",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Corn",
     "shortName": "corn",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Low Quality Crankshaft",
     "shortName": "crankshaft1",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "Medium Quality Crankshaft",
     "shortName": "crankshaft2",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "High Quality Crankshaft",
     "shortName": "crankshaft3",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "Crate Costume",
     "shortName": "cratecostume",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Crossbow",
     "shortName": "crossbow",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Crude Oil",
     "shortName": "crude.oil",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Tool Cupboard",
     "shortName": "cupboard.tool",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Retro Tool Cupboard",
     "shortName": "cupboard.tool.retro",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": true
   },
   {
     "displayName": "Shockbyte Tool Cupboard",
     "shortName": "cupboard.tool.shockbyte",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": true
   },
   {
     "displayName": "Cursed Cauldron",
     "shortName": "cursedcauldron",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": true
   },
   {
     "displayName": "Bone Dart",
     "shortName": "dart.bone",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "isDLC": false
   },
   {
     "displayName": "Bone Helmet",
     "shortName": "deer.skull.mask",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Burnt Deer Meat",
     "shortName": "deermeat.burned",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Cooked Deer Meat",
     "shortName": "deermeat.cooked",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Raw Deer Meat",
     "shortName": "deermeat.raw",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Diesel Fuel",
     "shortName": "diesel_barrel",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Disco Ball",
     "shortName": "discoball",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Disco Floor",
     "shortName": "discofloor.largetiles",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Disco Floor",
     "shortName": "discofloor",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Abyss Metal Hatchet",
     "shortName": "diverhatchet",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": true
   },
   {
     "displayName": "Abyss Metal Pickaxe",
     "shortName": "diverpickaxe",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": true
   },
   {
     "displayName": "Abyss Torch",
     "shortName": "divertorch",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": true
   },
   {
     "displayName": "Diving Fins",
     "shortName": "diving.fins",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Diving Mask",
     "shortName": "diving.mask",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Diving Tank",
     "shortName": "diving.tank",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Wetsuit",
     "shortName": "diving.wetsuit",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Dog Tag",
     "shortName": "dogtagneutral",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Door Closer",
     "shortName": "door.closer",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Wooden Frontier Bar Doors",
     "shortName": "door.double.hinged.bardoors",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": true
   },
   {
     "displayName": "Sheet Metal Double Door",
     "shortName": "door.double.hinged.metal",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Armored Double Door",
     "shortName": "door.double.hinged.toptier",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Wood Double Door",
     "shortName": "door.double.hinged.wood",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Industrial Door",
     "shortName": "door.hinged.industrial.a",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": true
   },
   {
     "displayName": "Sheet Metal Door",
     "shortName": "door.hinged.metal",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Armored Door",
     "shortName": "door.hinged.toptier",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Wooden Door",
     "shortName": "door.hinged.wood",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Door Key",
     "shortName": "door.key",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": false
   },
   {
     "displayName": "Dracula Cape",
     "shortName": "draculacape",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Dracula Mask",
     "shortName": "draculamask",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Dragon Door Knocker",
     "shortName": "dragondoorknocker",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Drone",
     "shortName": "drone",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Drop Box",
     "shortName": "dropbox",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Junkyard Drum Kit",
     "shortName": "drumkit",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Duct Tape",
     "shortName": "ducttape",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "Bronze Egg",
     "shortName": "easter.bronzeegg",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": false
   },
   {
     "displayName": "Gold Egg",
     "shortName": "easter.goldegg",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": false
   },
   {
     "displayName": "Painted Egg",
     "shortName": "easter.paintedeggs",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": false
   },
   {
     "displayName": "Silver Egg",
     "shortName": "easter.silveregg",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": false
   },
   {
     "displayName": "Egg Basket",
     "shortName": "easterbasket",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": false
   },
   {
     "displayName": "Easter Door Wreath",
     "shortName": "easterdoorwreath",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "AND Switch",
     "shortName": "electric.andswitch",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Audio Alarm",
     "shortName": "electric.audioalarm",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Large Rechargeable Battery",
     "shortName": "electric.battery.rechargable.large",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Medium Rechargeable Battery",
     "shortName": "electric.battery.rechargable.medium",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Small Rechargeable Battery",
     "shortName": "electric.battery.rechargable.small",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Blocker",
     "shortName": "electric.blocker",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Button",
     "shortName": "electric.button",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Cable Tunnel",
     "shortName": "electric.cabletunnel",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Counter",
     "shortName": "electric.counter",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Digital Clock",
     "shortName": "electric.digitalclock",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Door Controller",
     "shortName": "electric.doorcontroller",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Flasher Light",
     "shortName": "electric.flasherlight",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Small Generator",
     "shortName": "electric.fuelgenerator.small",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Electric Furnace",
     "shortName": "electric.furnace",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Test Generator",
     "shortName": "electric.generator.small",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "HBHF Sensor",
     "shortName": "electric.hbhfsensor",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Electric Heater",
     "shortName": "electric.heater",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Igniter",
     "shortName": "electric.igniter",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Laser Detector",
     "shortName": "electric.laserdetector",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "OR Switch",
     "shortName": "electric.orswitch",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Pressure Pad",
     "shortName": "electric.pressurepad",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "RAND Switch",
     "shortName": "electric.random.switch",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "RF Broadcaster",
     "shortName": "electric.rf.broadcaster",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "RF Receiver",
     "shortName": "electric.rf.receiver",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Seismic Sensor",
     "shortName": "electric.seismicsensor",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Simple Light",
     "shortName": "electric.simplelight",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Siren Light",
     "shortName": "electric.sirenlight",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Large Solar Panel",
     "shortName": "electric.solarpanel.large",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Splitter",
     "shortName": "electric.splitter",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Sprinkler",
     "shortName": "electric.sprinkler",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Switch",
     "shortName": "electric.switch",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Tesla Coil",
     "shortName": "electric.teslacoil",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Timer",
     "shortName": "electric.timer",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "XOR Switch",
     "shortName": "electric.xorswitch",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Electrical Branch",
     "shortName": "electrical.branch",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Root Combiner",
     "shortName": "electrical.combiner",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Memory Cell",
     "shortName": "electrical.memorycell",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Elevator",
     "shortName": "elevator",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Satchel Charge",
     "shortName": "explosive.satchel",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": false
   },
   {
     "displayName": "Timed Explosive Charge",
     "shortName": "explosive.timed",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": false
   },
   {
     "displayName": "Explosives",
     "shortName": "explosives",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Factory Door",
     "shortName": "factorydoor",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": true
   },
   {
     "displayName": "Animal Fat",
     "shortName": "fat.animal",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Fertilizer",
     "shortName": "fertilizer",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Stone Fireplace",
     "shortName": "fireplace.stone",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Blue Boomer",
     "shortName": "firework.boomer.blue",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Champagne Boomer",
     "shortName": "firework.boomer.champagne",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Green Boomer",
     "shortName": "firework.boomer.green",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Orange Boomer",
     "shortName": "firework.boomer.orange",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Pattern Boomer",
     "shortName": "firework.boomer.pattern",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Red Boomer",
     "shortName": "firework.boomer.red",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Violet Boomer",
     "shortName": "firework.boomer.violet",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Blue Roman Candle",
     "shortName": "firework.romancandle.blue",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Green Roman Candle",
     "shortName": "firework.romancandle.green",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Red Roman Candle",
     "shortName": "firework.romancandle.red",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Violet Roman Candle",
     "shortName": "firework.romancandle.violet",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "White Volcano Firework",
     "shortName": "firework.volcano",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Red Volcano Firework",
     "shortName": "firework.volcano.red",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Violet Volcano Firework",
     "shortName": "firework.volcano.violet",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Anchovy",
     "shortName": "fish.anchovy",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Catfish",
     "shortName": "fish.catfish",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Cooked Fish",
     "shortName": "fish.cooked",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Herring",
     "shortName": "fish.herring",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Minnows",
     "shortName": "fish.minnows",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Orange Roughy",
     "shortName": "fish.orangeroughy",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Raw Fish",
     "shortName": "fish.raw",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Salmon",
     "shortName": "fish.salmon",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Sardine",
     "shortName": "fish.sardine",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Small Shark",
     "shortName": "fish.smallshark",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Small Trout",
     "shortName": "fish.troutsmall",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Yellow Perch",
     "shortName": "fish.yellowperch",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Fishing Tackle",
     "shortName": "fishing.tackle",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": false
   },
   {
     "displayName": "Handmade Fishing Rod",
     "shortName": "fishingrod.handmade",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": false
   },
   {
     "displayName": "Survival Fish Trap",
     "shortName": "fishtrap.small",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Fish Trophy",
     "shortName": "fishtrophy",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Flame Thrower",
     "shortName": "flamethrower",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Flame Turret",
     "shortName": "flameturret",
-    "category": "Traps"
+    "category": "Traps",
+    "isDLC": false
   },
   {
     "displayName": "Flare",
     "shortName": "flare",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": false
   },
   {
     "displayName": "Flashlight",
     "shortName": "flashlight.held",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": false
   },
   {
     "displayName": "Floor grill",
     "shortName": "floor.grill",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Ladder Hatch",
     "shortName": "floor.ladder.hatch",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Floor triangle grill",
     "shortName": "floor.triangle.grill",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Triangle Ladder Hatch",
     "shortName": "floor.triangle.ladder.hatch",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Fluid Combiner",
     "shortName": "fluid.combiner",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Fluid Splitter",
     "shortName": "fluid.splitter",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Fluid Switch & Pump",
     "shortName": "fluid.switch",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Fogger-3000",
     "shortName": "fogmachine",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": true
   },
   {
     "displayName": "Frankenstein Mask",
     "shortName": "frankensteinmask",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Light Frankenstein Head",
     "shortName": "frankensteins.monster.01.head",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Light Frankenstein Legs",
     "shortName": "frankensteins.monster.01.legs",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Light Frankenstein Torso",
     "shortName": "frankensteins.monster.01.torso",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Medium Frankenstein Head",
     "shortName": "frankensteins.monster.02.head",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Medium Frankenstein Legs",
     "shortName": "frankensteins.monster.02.legs",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Medium Frankenstein Torso",
     "shortName": "frankensteins.monster.02.torso",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Heavy Frankenstein Head",
     "shortName": "frankensteins.monster.03.head",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Heavy Frankenstein Legs",
     "shortName": "frankensteins.monster.03.legs",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Heavy Frankenstein Torso",
     "shortName": "frankensteins.monster.03.torso",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Frankenstein Table",
     "shortName": "frankensteintable",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Fridge",
     "shortName": "fridge",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Frontier Mirror Large",
     "shortName": "frontiermirror.large",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Frontier Mirror Medium",
     "shortName": "frontiermirror.medium",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Frontier Mirror Small",
     "shortName": "frontiermirror.small",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Frontier Mirror Standing",
     "shortName": "frontiermirror.standing",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Frontier Hatchet",
     "shortName": "frontier_hatchet",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": true
   },
   {
     "displayName": "Shovel Bass",
     "shortName": "fun.bass",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Portable Boom Box",
     "shortName": "fun.boomboxportable",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Cassette Recorder",
     "shortName": "fun.casetterecorder",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Cowbell",
     "shortName": "fun.cowbell",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Pan Flute",
     "shortName": "fun.flute",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Acoustic Guitar",
     "shortName": "fun.guitar",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": false
   },
   {
     "displayName": "Jerry Can Guitar",
     "shortName": "fun.jerrycanguitar",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Canbourine",
     "shortName": "fun.tambourine",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Plumber's Trumpet",
     "shortName": "fun.trumpet",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Sousaphone",
     "shortName": "fun.tuba",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Large Furnace",
     "shortName": "furnace.large",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Furnace",
     "shortName": "furnace",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Electric Fuse",
     "shortName": "fuse",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "High External Stone Gate",
     "shortName": "gates.external.high.stone",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "High External Wooden Gate",
     "shortName": "gates.external.high.wood",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Gears",
     "shortName": "gears",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "Geiger Counter",
     "shortName": "geiger.counter",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": false
   },
   {
     "displayName": "Wind Turbine",
     "shortName": "generator.wind.scrap",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Ghost Costume",
     "shortName": "ghostsheet",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Giant Candy Decor",
     "shortName": "giantcandycanedecor",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": true
   },
   {
     "displayName": "Giant Lollipop Decor",
     "shortName": "giantlollipops",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": true
   },
   {
     "displayName": "Gingerbread Suit",
     "shortName": "gingerbreadsuit",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Glowing Eyes",
     "shortName": "gloweyes",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Glue",
     "shortName": "glue",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "Gold Frame large",
     "shortName": "goldframe.large",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Gold Frame Medium",
     "shortName": "goldframe.medium",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Gold Frame Small",
     "shortName": "goldframe.small",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Gold Frame Standing",
     "shortName": "goldframe.standing",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Gold Mirror large",
     "shortName": "goldmirror.large",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Gold Mirror Medium",
     "shortName": "goldmirror.medium",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Gold Mirror Small",
     "shortName": "goldmirror.small",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Gold Mirror Standing",
     "shortName": "goldmirror.standing",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Granola Bar",
     "shortName": "granolabar",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Gravestone",
     "shortName": "gravestone",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": false
   },
   {
     "displayName": "Gray ID Tag",
     "shortName": "grayidtag",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Green Berry",
     "shortName": "green.berry",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Green ID Tag",
     "shortName": "greenidtag",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Beancan Grenade",
     "shortName": "grenade.beancan",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "F1 Grenade",
     "shortName": "grenade.f1",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Flashbang",
     "shortName": "grenade.flashbang",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Molotov Cocktail",
     "shortName": "grenade.molotov",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Smoke Grenade",
     "shortName": "grenade.smoke",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": false
   },
   {
     "displayName": "Grub",
     "shortName": "grub",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Water Gun",
     "shortName": "gun.water",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": true
   },
   {
     "displayName": "Gun Powder",
     "shortName": "gunpowder",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Horizontal Weapon Rack",
     "shortName": "gunrack.horizontal",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Frontier Bolts Single Item Rack",
     "shortName": "gunrack.single.1.horizontal",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Frontier Horseshoe Single Item Rack",
     "shortName": "gunrack.single.2.horizontal",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Frontier Horns Single Item Rack",
     "shortName": "gunrack.single.3.horizontal",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Weapon Rack Stand",
     "shortName": "gunrack_stand",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Tall Weapon Rack",
     "shortName": "gunrack_tall.horizontal",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Wide Weapon Rack",
     "shortName": "gunrack_wide.horizontal",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Shotgun Trap",
     "shortName": "guntrap",
-    "category": "Traps"
+    "category": "Traps",
+    "isDLC": false
   },
   {
     "displayName": "Hot Air Balloon Armor",
     "shortName": "hab.armor",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Halloween Candy",
     "shortName": "halloween.candy",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": false
   },
   {
     "displayName": "Large Loot Bag",
     "shortName": "halloween.lootbag.large",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": false
   },
   {
     "displayName": "Medium Loot Bag",
     "shortName": "halloween.lootbag.medium",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": false
   },
   {
     "displayName": "Small Loot Bag",
     "shortName": "halloween.lootbag.small",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": false
   },
   {
     "displayName": "Mummy Suit",
     "shortName": "halloween.mummysuit",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Surgeon Scrubs",
     "shortName": "halloween.surgeonsuit",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Hammer",
     "shortName": "hammer",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": false
   },
   {
     "displayName": "Salvaged Hammer",
     "shortName": "hammer.salvaged",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": false
   },
   {
     "displayName": "Handcuffs",
     "shortName": "handcuffs",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": false
   },
   {
     "displayName": "Beenie Hat",
     "shortName": "hat.beenie",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Boonie Hat",
     "shortName": "hat.boonie",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Bunny Hat",
     "shortName": "hat.bunnyhat",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Candle Hat",
     "shortName": "hat.candle",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Baseball Cap",
     "shortName": "hat.cap",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Dragon Mask",
     "shortName": "hat.dragonmask",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Gas Mask",
     "shortName": "hat.gas.mask",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Miners Hat",
     "shortName": "hat.miner",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Ox Mask",
     "shortName": "hat.oxmask",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Rabbit Mask",
     "shortName": "hat.rabbitmask",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Rat Mask",
     "shortName": "hat.ratmask",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Snake mask",
     "shortName": "hat.snakemask",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Tiger Mask",
     "shortName": "hat.tigermask",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Wellipets Hat",
     "shortName": "hat.wellipets",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Wolf Headdress",
     "shortName": "hat.wolf",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Hatchet",
     "shortName": "hatchet",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": false
   },
   {
     "displayName": "Hazmat Plushy",
     "shortName": "hazmat.plushy",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Arctic Suit",
     "shortName": "hazmatsuit.arcticsuit",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Abyss Divers Suit",
     "shortName": "hazmatsuit.diver",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Frontier Suit",
     "shortName": "hazmatsuit.frontier",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Lumberjack Suit",
     "shortName": "hazmatsuit.lumberjack",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Nomad Suit",
     "shortName": "hazmatsuit.nomadsuit",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Hazmat Suit",
     "shortName": "hazmatsuit",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Space Suit",
     "shortName": "hazmatsuit.spacesuit",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Twitch Rivals Hazmat Suit",
     "shortName": "hazmatsuittwitch",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Scientist Suit",
     "shortName": "hazmatsuit_scientist",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Arctic Scientist Suit",
     "shortName": "hazmatsuit_scientist_arctic",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "NVGM Scientist Suit",
     "shortName": "hazmatsuit_scientist_nvgm",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Scientist Suit",
     "shortName": "hazmatsuit_scientist_peacekeeper",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Hazmat Youtooz",
     "shortName": "hazmatyoutooz",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Head Bag",
     "shortName": "head.bag",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": false
   },
   {
     "displayName": "Advanced Healing Tea",
     "shortName": "healingtea.advanced",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Basic Healing Tea",
     "shortName": "healingtea",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Pure Healing Tea",
     "shortName": "healingtea.pure",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Heavy Plate Helmet",
     "shortName": "heavy.plate.helmet",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Heavy Plate Jacket",
     "shortName": "heavy.plate.jacket",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Heavy Plate Pants",
     "shortName": "heavy.plate.pants",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Heavy Scientist Youtooz",
     "shortName": "heavyscientistyoutooz",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Hitch & Trough",
     "shortName": "hitchtroughcombo",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "HMLMG",
     "shortName": "hmlmg",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Hobo Barrel",
     "shortName": "hobobarrel",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Homing Missile Launcher",
     "shortName": "homingmissile.launcher",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Hoodie",
     "shortName": "hoodie",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Roadsign Horse Armor",
     "shortName": "horse.armor.roadsign",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Wooden Horse Armor",
     "shortName": "horse.armor.wood",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Double Horse Saddle",
     "shortName": "horse.saddle.double",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Horse Saddle",
     "shortName": "horse.saddle",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Single Horse Saddle",
     "shortName": "horse.saddle.single",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Saddle bag",
     "shortName": "horse.saddlebag",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "High Quality Horse Shoes",
     "shortName": "horse.shoes.advanced",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Basic Horse Shoes",
     "shortName": "horse.shoes.basic",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Horse Dung",
     "shortName": "horsedung",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Burnt Horse Meat",
     "shortName": "horsemeat.burned",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Cooked Horse Meat",
     "shortName": "horsemeat.cooked",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Raw Horse Meat",
     "shortName": "horsemeat.raw",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Hose Tool",
     "shortName": "hosetool",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "High Quality Metal Ore",
     "shortName": "hq.metal.ore",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Burnt Human Meat",
     "shortName": "humanmeat.burned",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Cooked Human Meat",
     "shortName": "humanmeat.cooked",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Raw Human Meat",
     "shortName": "humanmeat.raw",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Spoiled Human Meat",
     "shortName": "humanmeat.spoiled",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Large Hunting Trophy",
     "shortName": "huntingtrophylarge",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Small Hunting Trophy",
     "shortName": "huntingtrophysmall",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Salvaged Icepick",
     "shortName": "icepick.salvaged",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": false
   },
   {
     "displayName": "Improvised Shield",
     "shortName": "improvised.shield",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Industrial Combiner",
     "shortName": "industrial.combiner",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Industrial Conveyor",
     "shortName": "industrial.conveyor",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Industrial Crafter",
     "shortName": "industrial.crafter",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Industrial Splitter",
     "shortName": "industrial.splitter",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Green Industrial Wall Light",
     "shortName": "industrial.wall.light.green",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": true
   },
   {
     "displayName": "Industrial Wall Light",
     "shortName": "industrial.wall.light",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": true
   },
   {
     "displayName": "Red Industrial Wall Light",
     "shortName": "industrial.wall.light.red",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": true
   },
   {
     "displayName": "Inner Tube",
     "shortName": "innertube.horse",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Inner Tube",
     "shortName": "innertube",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Inner Tube",
     "shortName": "innertube.unicorn",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Jacket",
     "shortName": "jacket",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Snow Jacket",
     "shortName": "jacket.snow",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Jackhammer",
     "shortName": "jackhammer",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": false
   },
   {
     "displayName": "Jack O Lantern Angry",
     "shortName": "jackolantern.angry",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Jack O Lantern Happy",
     "shortName": "jackolantern.happy",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Pickles",
     "shortName": "jar.pickle",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Blue Jumpsuit",
     "shortName": "jumpsuit.suit.blue",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Jumpsuit",
     "shortName": "jumpsuit.suit",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Waterwell NPC Jumpsuit",
     "shortName": "jumpsuit.waterwellnpc",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Kayak",
     "shortName": "kayak",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Blue Keycard",
     "shortName": "keycard_blue",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": false
   },
   {
     "displayName": "Green Keycard",
     "shortName": "keycard_green",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": false
   },
   {
     "displayName": "Red Keycard",
     "shortName": "keycard_red",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": false
   },
   {
     "displayName": "Bone Knife",
     "shortName": "knife.bone",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Butcher Knife",
     "shortName": "knife.butcher",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Combat Knife",
     "shortName": "knife.combat",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Skinning Knife",
     "shortName": "knife.skinning",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": true
   },
   {
     "displayName": "Knights armour helmet",
     "shortName": "knightsarmour.helmet",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Knights armour skirt plates",
     "shortName": "knightsarmour.skirt",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Knights armour cuirass",
     "shortName": "knighttorso.armour",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Wooden Ladder",
     "shortName": "ladder.wooden.wall",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Lantern",
     "shortName": "lantern",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Large Backpack",
     "shortName": "largebackpack",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Large Candle Set",
     "shortName": "largecandles",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": true
   },
   {
     "displayName": "Large Medkit",
     "shortName": "largemedkit",
-    "category": "Medical"
+    "category": "Medical",
+    "isDLC": false
   },
   {
     "displayName": "Laser Light",
     "shortName": "laserlight",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Lavender ID Tag",
     "shortName": "lavenderidtag",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Leather",
     "shortName": "leather",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Legacy bow",
     "shortName": "legacy bow",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": true
   },
   {
     "displayName": "Legacy Wood Shelter",
     "shortName": "legacy.shelter.wood",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Legacy Furnace",
     "shortName": "legacyfurnace",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Light-Up Frame Large",
     "shortName": "lightup.large",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Light-Up Frame Medium",
     "shortName": "lightupframe.medium",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Light-Up Frame Small",
     "shortName": "lightupframe.small",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Light-Up Frame Standing",
     "shortName": "lightupframe.standing",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Light-Up Mirror Large",
     "shortName": "lightupmirror.large",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Light-Up Mirror Medium",
     "shortName": "lightupmirror.medium",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Light-Up Mirror Small",
     "shortName": "lightupmirror.small",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Light-Up Mirror Standing",
     "shortName": "lightupmirror.standing",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "M249",
     "shortName": "lmg.m249",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Code Lock",
     "shortName": "lock.code",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Key Lock",
     "shortName": "lock.key",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Locker",
     "shortName": "locker",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Longsword",
     "shortName": "longsword",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Low Grade Fuel",
     "shortName": "lowgradefuel",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Lumberjack Hoodie",
     "shortName": "lumberjack hoodie",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Prototype Hatchet",
     "shortName": "lumberjack.hatchet",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": true
   },
   {
     "displayName": "Prototype Pickaxe",
     "shortName": "lumberjack.pickaxe",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": true
   },
   {
     "displayName": "Firecracker String",
     "shortName": "lunar.firecrackers",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": false
   },
   {
     "displayName": "Baseball Bat",
     "shortName": "mace.baseballbat",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": true
   },
   {
     "displayName": "Mace",
     "shortName": "mace",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Machete",
     "shortName": "machete",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Mail Box",
     "shortName": "mailbox",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Paper Map",
     "shortName": "map",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Improvised Balaclava",
     "shortName": "mask.balaclava",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Bandana Mask",
     "shortName": "mask.bandana",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Advanced Max Health Tea",
     "shortName": "maxhealthtea.advanced",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Basic Max Health Tea",
     "shortName": "maxhealthtea",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Pure Max Health Tea",
     "shortName": "maxhealthtea.pure",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Raw Pork",
     "shortName": "meat.boar",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Burnt Pork",
     "shortName": "meat.pork.burned",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Cooked Pork",
     "shortName": "meat.pork.cooked",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Medieval Large Wood Box",
     "shortName": "medieval.box.wooden.large",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Medieval Sheet Metal Double Door",
     "shortName": "medieval.door.double.hinged.metal",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": true
   },
   {
     "displayName": "Medieval Sheet Metal Door",
     "shortName": "medieval.door.hinged.metal",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": true
   },
   {
     "displayName": "Megaphone",
     "shortName": "megaphone",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Metal Detector",
     "shortName": "metal.detector",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": false
   },
   {
     "displayName": "Hockey Mask",
     "shortName": "metal.facemask.hockey",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Ice Metal Facemask",
     "shortName": "metal.facemask.icemask",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Metal Facemask",
     "shortName": "metal.facemask",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Metal Fragments",
     "shortName": "metal.fragments",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Metal Ore",
     "shortName": "metal.ore",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Ice Metal Chest Plate",
     "shortName": "metal.plate.torso.icevest",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Metal Chest Plate",
     "shortName": "metal.plate.torso",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "High Quality Metal",
     "shortName": "metal.refined",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Metal Shield",
     "shortName": "metal.shield",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Metal Blade",
     "shortName": "metalblade",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "Metal Pipe",
     "shortName": "metalpipe",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "Metal Spring",
     "shortName": "metalspring",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "Microphone Stand",
     "shortName": "microphonestand",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Military Flame Thrower",
     "shortName": "military flamethrower",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Minecart Planter",
     "shortName": "minecart.planter",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Mini Crossbow",
     "shortName": "minicrossbow",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Minigun",
     "shortName": "minigun",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Pump Jack",
     "shortName": "mining.pumpjack",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Mining Quarry",
     "shortName": "mining.quarry",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Mint ID Tag",
     "shortName": "mintidtag",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Mixing Table",
     "shortName": "mixingtable",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Mobile Phone",
     "shortName": "mobilephone",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Modular Car Lift",
     "shortName": "modularcarlift",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Movember Moustache",
     "shortName": "movembermoustache",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Card Movember Moustache",
     "shortName": "movembermoustachecard",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Multiple Grenade Launcher",
     "shortName": "multiplegrenadelauncher",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Mummy Mask",
     "shortName": "mummymask",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Mushroom",
     "shortName": "mushroom",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "New Year Gong",
     "shortName": "newyeargong",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Night Vision Goggles",
     "shortName": "nightvisiongoggles",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Note",
     "shortName": "note",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": false
   },
   {
     "displayName": "Orange ID Tag",
     "shortName": "orangeidtag",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Advanced Ore Tea",
     "shortName": "oretea.advanced",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Basic Ore Tea",
     "shortName": "oretea",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Pure Ore Tea",
     "shortName": "oretea.pure",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Paddle",
     "shortName": "paddle",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Paddling Pool",
     "shortName": "paddlingpool",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Pants",
     "shortName": "pants",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Shorts",
     "shortName": "pants.shorts",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Paper",
     "shortName": "paper",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Parachute",
     "shortName": "parachute",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Party Hat",
     "shortName": "partyhat",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Photograph",
     "shortName": "photo",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": false
   },
   {
     "displayName": "Landscape Photo Frame",
     "shortName": "photoframe.landscape",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Large Photo Frame",
     "shortName": "photoframe.large",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Portrait Photo Frame",
     "shortName": "photoframe.portrait",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Wheelbarrow Piano",
     "shortName": "piano",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Pickaxe",
     "shortName": "pickaxe",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": false
   },
   {
     "displayName": "Pinata",
     "shortName": "pinata",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": false
   },
   {
     "displayName": "Pink ID Tag",
     "shortName": "pinkidtag",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Pipe Tool",
     "shortName": "pipetool",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Eoka Pistol",
     "shortName": "pistol.eoka",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "M92 Pistol",
     "shortName": "pistol.m92",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Nailgun",
     "shortName": "pistol.nailgun",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Prototype 17",
     "shortName": "pistol.prototype17",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Python Revolver",
     "shortName": "pistol.python",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Revolver",
     "shortName": "pistol.revolver",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Semi-Automatic Pistol",
     "shortName": "pistol.semiauto",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Water Pistol",
     "shortName": "pistol.water",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": true
   },
   {
     "displayName": "Low Quality Pistons",
     "shortName": "piston1",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "Medium Quality Pistons",
     "shortName": "piston2",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "High Quality Pistons",
     "shortName": "piston3",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "Pitchfork",
     "shortName": "pitchfork",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Large Planter Box",
     "shortName": "planter.large",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Small Planter Box",
     "shortName": "planter.small",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Plant Fiber",
     "shortName": "plantfiber",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Pookie Bear",
     "shortName": "pookie.bear",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Potato",
     "shortName": "potato",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Powered Water Purifier",
     "shortName": "powered.water.purifier",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Prisoner Hood",
     "shortName": "prisonerhood",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Empty Propane Tank",
     "shortName": "propanetank",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "PTZ CCTV Camera",
     "shortName": "ptz.cctv.camera",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Pumpkin",
     "shortName": "pumpkin",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Pumpkin Basket",
     "shortName": "pumpkinbasket",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": false
   },
   {
     "displayName": "Purple ID Tag",
     "shortName": "purpleidtag",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Advanced Rad. Removal Tea",
     "shortName": "radiationremovetea.advanced",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Rad. Removal Tea",
     "shortName": "radiationremovetea",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Pure Rad. Removal Tea",
     "shortName": "radiationremovetea.pure",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Adv. Anti-Rad Tea",
     "shortName": "radiationresisttea.advanced",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Anti-Rad Tea",
     "shortName": "radiationresisttea",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Pure Anti-Rad Tea",
     "shortName": "radiationresisttea.pure",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Rail Road Planter",
     "shortName": "rail.road.planter",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Red Berry",
     "shortName": "red.berry",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Red Dog Tags",
     "shortName": "reddogtags",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Red ID Tag",
     "shortName": "redidtag",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Reinforced Wooden Shield",
     "shortName": "reinforced.wooden.shield",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Research Table",
     "shortName": "research.table",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Research Paper",
     "shortName": "researchpaper",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "High Caliber Revolver",
     "shortName": "revolver.hc",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "RF Transmitter",
     "shortName": "rf.detonator",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": false
   },
   {
     "displayName": "RF Pager",
     "shortName": "rf_pager",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Abyss Assault Rifle",
     "shortName": "rifle.ak.diver",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": true
   },
   {
     "displayName": "Ice Assault Rifle",
     "shortName": "rifle.ak.ice",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": true
   },
   {
     "displayName": "Medieval Assault Rifle",
     "shortName": "rifle.ak.med",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": true
   },
   {
     "displayName": "Assault Rifle",
     "shortName": "rifle.ak",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Bolt Action Rifle",
     "shortName": "rifle.bolt",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "L96 Rifle",
     "shortName": "rifle.l96",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "LR-300 Assault Rifle",
     "shortName": "rifle.lr300",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "M39 Rifle",
     "shortName": "rifle.m39",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Semi-Automatic Rifle",
     "shortName": "rifle.semiauto",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "SKS",
     "shortName": "rifle.sks",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Rifle Body",
     "shortName": "riflebody",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "Riot Helmet",
     "shortName": "riot.helmet",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Roadsign Gloves",
     "shortName": "roadsign.gloves",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Road Sign Jacket",
     "shortName": "roadsign.jacket",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Road Sign Kilt",
     "shortName": "roadsign.kilt",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Road Signs",
     "shortName": "roadsigns",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "Rock",
     "shortName": "rock",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": false
   },
   {
     "displayName": "Dragon Rocket Launcher",
     "shortName": "rocket.launcher.dragon",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": true
   },
   {
     "displayName": "Rocket Launcher",
     "shortName": "rocket.launcher",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Rocking Chair",
     "shortName": "rockingchair",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Teal",
     "shortName": "rockingchair.rockingchair2",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Green",
     "shortName": "rockingchair.rockingchair3",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Rope",
     "shortName": "rope",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "Rowboat",
     "shortName": "rowboat",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Rug Bear Skin",
     "shortName": "rug.bear",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Rug",
     "shortName": "rug",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Rustigé Egg - Red",
     "shortName": "rustige_egg_a",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": true
   },
   {
     "displayName": "Rustigé Egg - Blue",
     "shortName": "rustige_egg_b",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": true
   },
   {
     "displayName": "Rustigé Egg - Purple",
     "shortName": "rustige_egg_c",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": true
   },
   {
     "displayName": "Rustigé Egg - Ivory",
     "shortName": "rustige_egg_d",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": true
   },
   {
     "displayName": "Rustigé Egg - Green",
     "shortName": "rustige_egg_e",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": true
   },
   {
     "displayName": "Rustigé Egg - White",
     "shortName": "rustige_egg_f",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": true
   },
   {
     "displayName": "Salvaged Cleaver",
     "shortName": "salvaged.cleaver",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Salvaged Sword",
     "shortName": "salvaged.sword",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "SAM Site",
     "shortName": "samsite",
-    "category": "Traps"
+    "category": "Traps",
+    "isDLC": false
   },
   {
     "displayName": "Santa Beard",
     "shortName": "santabeard",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Santa Hat",
     "shortName": "santahat",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Scarecrow",
     "shortName": "scarecrow",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Scarecrow Suit",
     "shortName": "scarecrow.suit",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Scarecrow Wrap",
     "shortName": "scarecrowhead",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Heavy Scientist Suit",
     "shortName": "scientistsuit_heavy",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Scrap",
     "shortName": "scrap",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Scrap Frame large",
     "shortName": "scrapframe.large",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Scrap Frame Medium",
     "shortName": "scrapframe.medium",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Scrap Frame Small",
     "shortName": "scrapframe.small",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Scrap Frame Standing",
     "shortName": "scrapframe.standing",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Scrap Mirror Large",
     "shortName": "scrapmirror.large",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Scrap Mirror Medium",
     "shortName": "scrapmirror.medium",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Scrap Mirror Small",
     "shortName": "scrapmirror.small",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Scrap Mirror Standing",
     "shortName": "scrapmirror.standing",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Advanced Scrap Tea",
     "shortName": "scraptea.advanced",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Basic Scrap Tea",
     "shortName": "scraptea",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Pure Scrap Tea",
     "shortName": "scraptea.pure",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Ice Sculpture",
     "shortName": "sculpture.ice",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Search Light",
     "shortName": "searchlight",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Secretlab Chair",
     "shortName": "secretlabchair",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Black Berry Seed",
     "shortName": "seed.black.berry",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Blue Berry Seed",
     "shortName": "seed.blue.berry",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Corn Seed",
     "shortName": "seed.corn",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Green Berry Seed",
     "shortName": "seed.green.berry",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Hemp Seed",
     "shortName": "seed.hemp",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Potato Seed",
     "shortName": "seed.potato",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Pumpkin Seed",
     "shortName": "seed.pumpkin",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Red Berry Seed",
     "shortName": "seed.red.berry",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "White Berry Seed",
     "shortName": "seed.white.berry",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Yellow Berry Seed",
     "shortName": "seed.yellow.berry",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Semi Automatic Body",
     "shortName": "semibody",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "Sewing Kit",
     "shortName": "sewingkit",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "Sheet Metal",
     "shortName": "sheetmetal",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "Salvaged Shelves",
     "shortName": "shelves",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Shirt",
     "shortName": "shirt.collared",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Tank Top",
     "shortName": "shirt.tanktop",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Boots",
     "shortName": "shoes.boots",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Double Barrel Shotgun",
     "shortName": "shotgun.double",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "M4 Shotgun",
     "shortName": "shotgun.m4",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Pump Shotgun",
     "shortName": "shotgun.pump",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Spas-12 Shotgun",
     "shortName": "shotgun.spas12",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Waterpipe Shotgun",
     "shortName": "shotgun.waterpipe",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Shovel",
     "shortName": "shovel",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": false
   },
   {
     "displayName": "Metal horizontal embrasure",
     "shortName": "shutter.metal.embrasure.a",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Metal Vertical embrasure",
     "shortName": "shutter.metal.embrasure.b",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Wood Shutters",
     "shortName": "shutter.wood.a",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Sickle",
     "shortName": "sickle",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": false
   },
   {
     "displayName": "Siege Tower",
     "shortName": "siegetower",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Large Banner Hanging",
     "shortName": "sign.hanging.banner.large",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Two Sided Ornate Hanging Sign",
     "shortName": "sign.hanging.ornate",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Two Sided Hanging Sign",
     "shortName": "sign.hanging",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Small Neon Sign",
     "shortName": "sign.neon.125x125",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": true
   },
   {
     "displayName": "Medium Animated Neon Sign",
     "shortName": "sign.neon.125x215.animated",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": true
   },
   {
     "displayName": "Medium Neon Sign",
     "shortName": "sign.neon.125x215",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": true
   },
   {
     "displayName": "Large Animated Neon Sign",
     "shortName": "sign.neon.xl.animated",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": true
   },
   {
     "displayName": "Large Neon Sign",
     "shortName": "sign.neon.xl",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": true
   },
   {
     "displayName": "Landscape Picture Frame",
     "shortName": "sign.pictureframe.landscape",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Portrait Picture Frame",
     "shortName": "sign.pictureframe.portrait",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Tall Picture Frame",
     "shortName": "sign.pictureframe.tall",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "XL Picture Frame",
     "shortName": "sign.pictureframe.xl",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "XXL Picture Frame",
     "shortName": "sign.pictureframe.xxl",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Large Banner on pole",
     "shortName": "sign.pole.banner.large",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Double Sign Post",
     "shortName": "sign.post.double",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Single Sign Post",
     "shortName": "sign.post.single",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "One Sided Town Sign Post",
     "shortName": "sign.post.town",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Two Sided Town Sign Post",
     "shortName": "sign.post.town.roof",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Huge Wooden Sign",
     "shortName": "sign.wooden.huge",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Large Wooden Sign",
     "shortName": "sign.wooden.large",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Medium Wooden Sign",
     "shortName": "sign.wooden.medium",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Small Wooden Sign",
     "shortName": "sign.wooden.small",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Diver propulsion vehicle",
     "shortName": "skidoo",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Human Skull",
     "shortName": "skull.human",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Skull",
     "shortName": "skull",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": true
   },
   {
     "displayName": "Skull Trophy",
     "shortName": "skull.trophy.jar",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Skull Trophy",
     "shortName": "skull.trophy.jar2",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Skull Trophy",
     "shortName": "skull.trophy",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Skull Trophy",
     "shortName": "skull.trophy.table",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Wolf Skull",
     "shortName": "skull.wolf",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Skull Door Knocker",
     "shortName": "skulldoorknocker",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Skull Spikes",
     "shortName": "skullspikes.candles",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Skull Spikes",
     "shortName": "skullspikes",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Skull Spikes",
     "shortName": "skullspikes.pumpkin",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Skull Fire Pit",
     "shortName": "skull_fire_pit",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Sky Lantern",
     "shortName": "skylantern",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Sky Lantern - Green",
     "shortName": "skylantern.skylantern.green",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Sky Lantern - Orange",
     "shortName": "skylantern.skylantern.orange",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Sky Lantern - Purple",
     "shortName": "skylantern.skylantern.purple",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Sky Lantern - Red",
     "shortName": "skylantern.skylantern.red",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Sled",
     "shortName": "sled",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": false
   },
   {
     "displayName": "Sled",
     "shortName": "sled.xmas",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": false
   },
   {
     "displayName": "Sleeping Bag",
     "shortName": "sleepingbag",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Small Oil Refinery",
     "shortName": "small.oil.refinery",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Small Backpack",
     "shortName": "smallbackpack",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Small Candle Set",
     "shortName": "smallcandles",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": true
   },
   {
     "displayName": "Small Water Bottle",
     "shortName": "smallwaterbottle",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Smart Alarm",
     "shortName": "smart.alarm",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Smart Switch",
     "shortName": "smart.switch",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Custom SMG",
     "shortName": "smg.2",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "MP5A4",
     "shortName": "smg.mp5",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Thompson",
     "shortName": "smg.thompson",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "SMG Body",
     "shortName": "smgbody",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "Snowball",
     "shortName": "snowball",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Snowball Gun",
     "shortName": "snowballgun",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Snow Machine",
     "shortName": "snowmachine",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": true
   },
   {
     "displayName": "Snowman",
     "shortName": "snowman",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Sofa - Pattern",
     "shortName": "sofa.pattern",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Sofa",
     "shortName": "sofa",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Sound Light",
     "shortName": "soundlight",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Low Quality Spark Plugs",
     "shortName": "sparkplug1",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "Medium Quality Spark Plugs",
     "shortName": "sparkplug2",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "High Quality Spark Plugs",
     "shortName": "sparkplug3",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "Lunar New Year Spear",
     "shortName": "spear.cny",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": true
   },
   {
     "displayName": "Stone Spear",
     "shortName": "spear.stone",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Wooden Spear",
     "shortName": "spear.wooden",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Speargun",
     "shortName": "speargun",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Speargun Spear",
     "shortName": "speargun.spear",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "isDLC": false
   },
   {
     "displayName": "Spider Webs",
     "shortName": "spiderweb",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": false
   },
   {
     "displayName": "Wooden Floor Spikes",
     "shortName": "spikes.floor",
-    "category": "Traps"
+    "category": "Traps",
+    "isDLC": false
   },
   {
     "displayName": "Spinning wheel",
     "shortName": "spinner.wheel",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Spooky Speaker",
     "shortName": "spookyspeaker",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": true
   },
   {
     "displayName": "Spray Can",
     "shortName": "spraycan",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": false
   },
   {
     "displayName": "Small Stash",
     "shortName": "stash.small",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Sticks",
     "shortName": "sticks",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "SUPER Stocking",
     "shortName": "stocking.large",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Small Stocking",
     "shortName": "stocking.small",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Stone Pickaxe",
     "shortName": "stone.pickaxe",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": false
   },
   {
     "displayName": "Stone Hatchet",
     "shortName": "stonehatchet",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": false
   },
   {
     "displayName": "Stones",
     "shortName": "stones",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Storage Monitor",
     "shortName": "storage.monitor",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Storage Adaptor",
     "shortName": "storageadaptor",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Unused Storage Barrel Vertical",
     "shortName": "storage_barrel_a",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Storage Barrel Vertical",
     "shortName": "storage_barrel_b",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Storage Barrel Horizontal",
     "shortName": "storage_barrel_c",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Strobe Light",
     "shortName": "strobelight",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": true
   },
   {
     "displayName": "Torpedo",
     "shortName": "submarine.torpedo.straight",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "isDLC": false
   },
   {
     "displayName": "Sulfur Ore",
     "shortName": "sulfur.ore",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Sulfur",
     "shortName": "sulfur",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Sunglasses",
     "shortName": "sunglasses",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Sunglasses",
     "shortName": "sunglasses02black",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Sunglasses",
     "shortName": "sunglasses02camo",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Sunglasses",
     "shortName": "sunglasses02red",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Sunglasses",
     "shortName": "sunglasses03black",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Sunglasses",
     "shortName": "sunglasses03chrome",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Sunglasses",
     "shortName": "sunglasses03gold",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Super Serum",
     "shortName": "supertea",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Supply Signal",
     "shortName": "supply.signal",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": false
   },
   {
     "displayName": "Survey Charge",
     "shortName": "surveycharge",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": false
   },
   {
     "displayName": "Medical Syringe",
     "shortName": "syringe.medical",
-    "category": "Medical"
+    "category": "Medical",
+    "isDLC": false
   },
   {
     "displayName": "Handmade SMG",
     "shortName": "t1_smg",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Table",
     "shortName": "table",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Tactical Gloves",
     "shortName": "tactical.gloves",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Reactive Target",
     "shortName": "target.reactive",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Targeting Computer",
     "shortName": "targeting.computer",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Tarp",
     "shortName": "tarp",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "Tech Trash",
     "shortName": "techparts",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "Telephone",
     "shortName": "telephone",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": false
   },
   {
     "displayName": "Tin Can Alarm",
     "shortName": "tincan.alarm",
-    "category": "Traps"
+    "category": "Traps",
+    "isDLC": false
   },
   {
     "displayName": "Binoculars",
     "shortName": "tool.binoculars",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": false
   },
   {
     "displayName": "Camera",
     "shortName": "tool.camera",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": false
   },
   {
     "displayName": "Instant Camera",
     "shortName": "tool.instant_camera",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": true
   },
   {
     "displayName": "Garry's Mod Tool Gun",
     "shortName": "toolgun",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": true
   },
   {
     "displayName": "Torch",
     "shortName": "torch",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": false
   },
   {
     "displayName": "Cultist Deer Torch",
     "shortName": "torch.torch.skull",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": true
   },
   {
     "displayName": "Torch Holder",
     "shortName": "torchholder",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Snap Trap",
     "shortName": "trap.bear",
-    "category": "Traps"
+    "category": "Traps",
+    "isDLC": false
   },
   {
     "displayName": "Homemade Landmine",
     "shortName": "trap.landmine",
-    "category": "Traps"
+    "category": "Traps",
+    "isDLC": false
   },
   {
     "displayName": "Twitch Rivals Trophy",
     "shortName": "trophy",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Twitch Rivals Trophy 2023",
     "shortName": "trophy2023",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Longsleeve T-Shirt",
     "shortName": "tshirt.long",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "T-Shirt",
     "shortName": "tshirt",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Tugboat",
     "shortName": "tugboat",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Tuna Can Lamp",
     "shortName": "tunalight",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Headset",
     "shortName": "twitch.headset",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Twitch Rivals Desk",
     "shortName": "twitchrivals2023desk",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": true
   },
   {
     "displayName": "Twitch Rivals Flag",
     "shortName": "twitchrivalsflag",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Purple Sunglasses",
     "shortName": "twitchsunglasses",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Two-Way Mirror",
     "shortName": "twowaymirror.window",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Low Quality Valves",
     "shortName": "valve1",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "Medium Quality Valves",
     "shortName": "valve2",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "High Quality Valves",
     "shortName": "valve3",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "Vampire Stake",
     "shortName": "vampire.stake",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Armored Cockpit Vehicle Module",
     "shortName": "vehicle.1mod.cockpit.armored",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "Cockpit Vehicle Module",
     "shortName": "vehicle.1mod.cockpit",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "Cockpit With Engine Vehicle Module",
     "shortName": "vehicle.1mod.cockpit.with.engine",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "Engine Vehicle Module",
     "shortName": "vehicle.1mod.engine",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "Flatbed Vehicle Module",
     "shortName": "vehicle.1mod.flatbed",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "Armored Passenger Vehicle Module",
     "shortName": "vehicle.1mod.passengers.armored",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "Rear Seats Vehicle Module",
     "shortName": "vehicle.1mod.rear.seats",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "Storage Vehicle Module",
     "shortName": "vehicle.1mod.storage",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "Taxi Vehicle Module",
     "shortName": "vehicle.1mod.taxi",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "Camper Vehicle Module",
     "shortName": "vehicle.2mod.camper",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "Large Flatbed Vehicle Module",
     "shortName": "vehicle.2mod.flatbed",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "Fuel Tank Vehicle Module",
     "shortName": "vehicle.2mod.fuel.tank",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "Passenger Vehicle Module",
     "shortName": "vehicle.2mod.passengers",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "Car Radio",
     "shortName": "vehicle.car_radio",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Vending Machine",
     "shortName": "vending.machine",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Walkie Talkie",
     "shortName": "walkietalkie",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "High Ice Wall",
     "shortName": "wall.external.high.ice",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "High External Wooden Wall",
     "shortName": "wall.external.high",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "High External Stone Wall",
     "shortName": "wall.external.high.stone",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Prison Cell Gate",
     "shortName": "wall.frame.cell.gate",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Prison Cell Wall",
     "shortName": "wall.frame.cell",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Chainlink Fence Gate",
     "shortName": "wall.frame.fence.gate",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Chainlink Fence",
     "shortName": "wall.frame.fence",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Garage Door",
     "shortName": "wall.frame.garagedoor",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Lunar Wall Frame Inlay",
     "shortName": "wall.frame.lunar2025_a",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": true
   },
   {
     "displayName": "Lunar Wall Frame Swirling",
     "shortName": "wall.frame.lunar2025_b",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": true
   },
   {
     "displayName": "Lunar Wall Frame Floral",
     "shortName": "wall.frame.lunar2025_c",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": true
   },
   {
     "displayName": "Netting",
     "shortName": "wall.frame.netting",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Metal Shop Front",
     "shortName": "wall.frame.shopfront.metal",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Shop Front",
     "shortName": "wall.frame.shopfront",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Graveyard Fence",
     "shortName": "wall.graveyard.fence",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": false
   },
   {
     "displayName": "Short Ice Wall",
     "shortName": "wall.ice.wall",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Metal Window Bars",
     "shortName": "wall.window.bars.metal",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Reinforced Glass Window",
     "shortName": "wall.window.bars.toptier",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Wooden Window Bars",
     "shortName": "wall.window.bars.wood",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Strengthened Glass Window",
     "shortName": "wall.window.glass.reinforced",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Wallpaper",
     "shortName": "wallpaper",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Wanted Poster",
     "shortName": "wantedposter",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Wanted Poster 2",
     "shortName": "wantedposter.wantedposter2",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Wanted Poster 3",
     "shortName": "wantedposter.wantedposter3",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Wanted Poster 4",
     "shortName": "wantedposter.wantedposter4",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Watch Tower",
     "shortName": "watchtower.wood",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Water Barrel",
     "shortName": "water.barrel",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Large Water Catcher",
     "shortName": "water.catcher.large",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Small Water Catcher",
     "shortName": "water.catcher.small",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Water Purifier",
     "shortName": "water.purifier",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Water Jug",
     "shortName": "waterjug",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Water Pump",
     "shortName": "waterpump",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Variable Zoom Scope",
     "shortName": "weapon.mod.8x.scope",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Burst Module",
     "shortName": "weapon.mod.burstmodule",
-    "category": "Component"
+    "category": "Component",
+    "isDLC": false
   },
   {
     "displayName": "Extended Magazine",
     "shortName": "weapon.mod.extendedmags",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Weapon flashlight",
     "shortName": "weapon.mod.flashlight",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Gas Compression Overdrive",
     "shortName": "weapon.mod.gascompressionovedrive",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Holosight",
     "shortName": "weapon.mod.holosight",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Weapon Lasersight",
     "shortName": "weapon.mod.lasersight",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Muzzle Boost",
     "shortName": "weapon.mod.muzzleboost",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Muzzle Brake",
     "shortName": "weapon.mod.muzzlebrake",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Silencer",
     "shortName": "weapon.mod.silencer",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Simple Handmade Sight",
     "shortName": "weapon.mod.simplesight",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "8x Zoom Scope",
     "shortName": "weapon.mod.small.scope",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "White Berry",
     "shortName": "white.berry",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "White ID Tag",
     "shortName": "whiteidtag",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Wire Tool",
     "shortName": "wiretool",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Burnt Wolf Meat",
     "shortName": "wolfmeat.burned",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Cooked Wolf Meat",
     "shortName": "wolfmeat.cooked",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Raw Wolf Meat",
     "shortName": "wolfmeat.raw",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Spoiled Wolf Meat",
     "shortName": "wolfmeat.spoiled",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Wood Armor Helmet",
     "shortName": "wood.armor.helmet",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Wood Chestplate",
     "shortName": "wood.armor.jacket",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Wood Armor Pants",
     "shortName": "wood.armor.pants",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Wood",
     "shortName": "wood",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Wooden Cross",
     "shortName": "woodcross",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": false
   },
   {
     "displayName": "Wooden Shield",
     "shortName": "wooden.shield",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Wood Frame Large",
     "shortName": "woodframe.large",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Wood Frame Medium",
     "shortName": "woodframe.medium",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Wood Frame Small",
     "shortName": "woodframe.small",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Wood Frame Standing",
     "shortName": "woodframe.standing",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Wood Mirror Large",
     "shortName": "woodmirror.large",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Wood Mirror Medium",
     "shortName": "woodmirror.medium",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Wood Mirror Small",
     "shortName": "woodmirror.small",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Wood Mirror Standing",
     "shortName": "woodmirror.standing",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Advanced Wood Tea",
     "shortName": "woodtea.advanced",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Basic Wood Tea",
     "shortName": "woodtea",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Pure Wood Tea",
     "shortName": "woodtea.pure",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Workbench Level 1",
     "shortName": "workbench1",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Workbench Level 2",
     "shortName": "workbench2",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Workbench Level 3",
     "shortName": "workbench3",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Worm",
     "shortName": "worm",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Wrapped Gift",
     "shortName": "wrappedgift",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": false
   },
   {
     "displayName": "Wrapping Paper",
     "shortName": "wrappingpaper",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": false
   },
   {
     "displayName": "Advent Calendar",
     "shortName": "xmas.advent",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Decorative Baubels",
     "shortName": "xmas.decoration.baubels",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": false
   },
   {
     "displayName": "Decorative Plastic Candy Canes",
     "shortName": "xmas.decoration.candycanes",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": false
   },
   {
     "displayName": "Decorative Gingerbread Men",
     "shortName": "xmas.decoration.gingerbreadmen",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": false
   },
   {
     "displayName": "Tree Lights",
     "shortName": "xmas.decoration.lights",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": false
   },
   {
     "displayName": "Decorative Pinecones",
     "shortName": "xmas.decoration.pinecone",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": false
   },
   {
     "displayName": "Star Tree Topper",
     "shortName": "xmas.decoration.star",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": false
   },
   {
     "displayName": "Decorative Tinsel",
     "shortName": "xmas.decoration.tinsel",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": false
   },
   {
     "displayName": "Festive Doorway Garland",
     "shortName": "xmas.door.garland",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Festive Double Doorway Garland",
     "shortName": "xmas.double.door.garland",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Deluxe Christmas Lights",
     "shortName": "xmas.lightstring.advanced",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": true
   },
   {
     "displayName": "Christmas Lights",
     "shortName": "xmas.lightstring",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Large Present",
     "shortName": "xmas.present.large",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": false
   },
   {
     "displayName": "Medium Present",
     "shortName": "xmas.present.medium",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": false
   },
   {
     "displayName": "Small Present",
     "shortName": "xmas.present.small",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": false
   },
   {
     "displayName": "Christmas Tree",
     "shortName": "xmas.tree",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Festive Window Garland",
     "shortName": "xmas.window.garland",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Christmas Door Wreath",
     "shortName": "xmasdoorwreath",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Xylobone",
     "shortName": "xylophone",
-    "category": "Fun"
+    "category": "Fun",
+    "isDLC": true
   },
   {
     "displayName": "Yellow Berry",
     "shortName": "yellow.berry",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Yellow ID Tag",
     "shortName": "yellowidtag",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Bamboo Barrel",
     "shortName": "bamboo.barrel",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Spoiled Bear Meat",
     "shortName": "bearmeat.spoiled",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Beehive",
     "shortName": "beehive",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": false
   },
   {
     "displayName": "Cooked Big Cat Meat",
     "shortName": "bigcatmeat.cooked",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Raw Big Cat Meat",
     "shortName": "bigcatmeat",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Spoiled Big Cat Meat",
     "shortName": "bigcatmeat.spoiled",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Blow Pipe",
     "shortName": "blowpipe",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Boomerang",
     "shortName": "boomerang",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Bread Loaf",
     "shortName": "bread.loaf",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Chicken Coop",
     "shortName": "chickencoop",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Orchid Clone",
     "shortName": "clone.orchid",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Rose Clone",
     "shortName": "clone.rose",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Sunflower Clone",
     "shortName": "clone.sunflower",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Wheat Clone",
     "shortName": "clone.wheat",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Asbestos Armor Insert",
     "shortName": "clothing.mod.armorinsert_asbestos",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Lead Armor Insert",
     "shortName": "clothing.mod.armorinsert_lead",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Metal Armor Insert",
     "shortName": "clothing.mod.armorinsert_metal",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Wooden Armor Insert",
     "shortName": "clothing.mod.armorinsert_wood",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Coconut Armor Gloves",
     "shortName": "cocoknight.armor.gloves",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Coconut Armor Helmet",
     "shortName": "cocoknight.armor.helmet",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Coconut Armor Pants",
     "shortName": "cocoknight.armor.pants",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Coconut Armor Chestplate",
     "shortName": "cocoknight.armor.torso",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Cooking Workbench",
     "shortName": "cookingworkbench",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Cooling Tea",
     "shortName": "coolingtea",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Crafting Quality Tea",
     "shortName": "craftingtea_quality",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Cooked Crocodile Meat",
     "shortName": "crocodilemeat.cooked",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Raw Crocodile Meat",
     "shortName": "crocodilemeat",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Spoiled Crocodile Meat",
     "shortName": "crocodilemeat.spoiled",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Incapacitate Dart",
     "shortName": "dart.incapacitate",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "isDLC": false
   },
   {
     "displayName": "Radiation Dart",
     "shortName": "dart.radiation",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "isDLC": false
   },
   {
     "displayName": "Scatter Dart",
     "shortName": "dart.scatter",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "isDLC": false
   },
   {
     "displayName": "Wood Dart",
     "shortName": "dart.wood",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "isDLC": false
   },
   {
     "displayName": "Spoiled Deer Meat",
     "shortName": "deermeat.spoiled",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Discord Trophy",
     "shortName": "discord.trophy",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Egg",
     "shortName": "egg",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Spoiled Fish Meat",
     "shortName": "fish.spoiled",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "High External Adobe Gate",
     "shortName": "gates.external.high.adobe",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": true
   },
   {
     "displayName": "Bee Grenade",
     "shortName": "grenade.bee",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Half Height Bamboo Shelves",
     "shortName": "half.bamboo.shelves",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Harvesting Tea",
     "shortName": "harvestingtea",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Jar of Honey",
     "shortName": "honey",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Honeycomb",
     "shortName": "honeycomb",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Hopper",
     "shortName": "hopper",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Horse Costume",
     "shortName": "horse.costume",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": true
   },
   {
     "displayName": "Spoiled Horse Meat",
     "shortName": "horsemeat.spoiled",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Engineering Workbench",
     "shortName": "iotable",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Jungle Rock",
     "shortName": "jungle.rock",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": true
   },
   {
     "displayName": "Obsidian Bone Knife",
     "shortName": "knife.bone.obsidian",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": true
   },
   {
     "displayName": "Beehive Nucleus",
     "shortName": "nucleus",
-    "category": "Resources"
+    "category": "Resources",
+    "isDLC": false
   },
   {
     "displayName": "Orchid",
     "shortName": "orchid",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Outbreak Sprayer",
     "shortName": "outbreak.sprayer",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": false
   },
   {
     "displayName": "Apple Pie",
     "shortName": "pie.apple",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Bear Pie",
     "shortName": "pie.bear",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Big Cat Pie",
     "shortName": "pie.bigcat",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Chicken Pie",
     "shortName": "pie.chicken",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Crocodile Pie",
     "shortName": "pie.crocodile",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Fish Pie",
     "shortName": "pie.fish",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Hunters Pie",
     "shortName": "pie.hunters",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Pork Pie",
     "shortName": "pie.pork",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Pumpkin Pie",
     "shortName": "pie.pumpkin",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Survivor's Pie",
     "shortName": "pie.survivors",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Triangle Planter Box",
     "shortName": "planter.triangle",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Single Plant Pot",
     "shortName": "plantpot.single",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Spoiled Pork Meat",
     "shortName": "porkmeat.spoiled",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Jungle Relic Assault Rifle",
     "shortName": "rifle.ak.jungle",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": true
   },
   {
     "displayName": "Rose",
     "shortName": "rose",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Rustigé Egg - Cerulean",
     "shortName": "rustige_egg_g",
-    "category": "Misc"
+    "category": "Misc",
+    "isDLC": true
   },
   {
     "displayName": "Bamboo Salvaged Shelves",
     "shortName": "salvaged.bamboo.shelves",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Orchid Seed",
     "shortName": "seed.orchid",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Rose Seed",
     "shortName": "seed.rose",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Sunflower Seed",
     "shortName": "seed.sunflower",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Wheat Seed",
     "shortName": "seed.wheat",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Single Shallow Wall Shelves",
     "shortName": "single.shallow.wall.shelves",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Cooked Snake Meat",
     "shortName": "snakemeat.cooked",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Raw Snake Meat",
     "shortName": "snakemeat",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Spoiled Snake Meat",
     "shortName": "snakemeat.spoiled",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Sunflower",
     "shortName": "sunflower",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Sunken Combat Knife",
     "shortName": "sunken.knife",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": true
   },
   {
     "displayName": "Triangle Rail Road Planter",
     "shortName": "triangle.rail.road.planter",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Snake Venom",
     "shortName": "venom.snake",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "High External Adobe Wall",
     "shortName": "wall.external.high.adobe",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": true
   },
   {
     "displayName": "Warming Tea",
     "shortName": "warmingtea",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Wheat",
     "shortName": "wheat",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Wicker Barrel",
     "shortName": "wicker.barrel",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Wood Armor Gloves",
     "shortName": "woodarmor.gloves",
-    "category": "Attire"
+    "category": "Attire",
+    "isDLC": false
   },
   {
     "displayName": "Abyss Horizontal Storage Tank",
     "shortName": "abyss.barrel.horizontal",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Abyss Vertical Storage Tank",
     "shortName": "abyss.barrel.vertical",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": true
   },
   {
     "displayName": "Advanced Cooling Tea",
     "shortName": "advancedcoolingtea",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Advanced Crafting Quality Tea",
     "shortName": "advancedcraftingtea_quality",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Advanced Warming Tea",
     "shortName": "advancedwarmingtea",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Advanced Harvesting Tea",
     "shortName": "advanceharvestingtea",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Bee Catapult Bomb",
     "shortName": "catapult.ammo.bee",
-    "category": "Ammunition"
+    "category": "Ammunition",
+    "isDLC": false
   },
   {
     "displayName": "Command Block",
     "shortName": "command.block",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": false
   },
   {
     "displayName": "Documents",
     "shortName": "documents",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": false
   },
   {
     "displayName": "High External Legacy Gate",
     "shortName": "gates.external.high.legacy",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": true
   },
   {
     "displayName": "Blue Industrial Wall Light",
     "shortName": "industrial.wall.light.blue",
-    "category": "Electrical"
+    "category": "Electrical",
+    "isDLC": true
   },
   {
     "displayName": "Pure Cooling Tea",
     "shortName": "purecoolingtea",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Pure Crafting Quality Tea",
     "shortName": "purecraftingtea_quality",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Pure Harvesting Tea",
     "shortName": "pureharvestingtea",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Pure Warming Tea",
     "shortName": "purewarmingtea",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "Spoiled Produce",
     "shortName": "spoiled.produce",
-    "category": "Food"
+    "category": "Food",
+    "isDLC": false
   },
   {
     "displayName": "High External Legacy Wall",
     "shortName": "wall.external.high.legacy",
-    "category": "Construction"
+    "category": "Construction",
+    "isDLC": true
   },
   {
     "displayName": "Wallpaper Ceiling",
     "shortName": "wallpaper.ceiling",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Wallpaper Flooring",
     "shortName": "wallpaper.flooring",
-    "category": "Items"
+    "category": "Items",
+    "isDLC": false
   },
   {
     "displayName": "Wallpaper Tool",
     "shortName": "wallpaper.tool",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": false
   },
   {
     "displayName": "Wallpaper Wall",
     "shortName": "wallpaper.wall",
-    "category": "Tool"
+    "category": "Tool",
+    "isDLC": false
   },
   {
     "displayName": "Oil Filter Silencer",
     "shortName": "weapon.mod.oilfiltersilencer",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Soda Can Silencer",
     "shortName": "weapon.mod.sodacansilencer",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
   },
   {
     "displayName": "Targeting Attachment",
     "shortName": "weapon.mod.targetingattachment",
-    "category": "Weapon"
+    "category": "Weapon",
+    "isDLC": false
+  },
+  {
+    "displayName": "2 Module Car Chassis",
+    "shortName": "2module car chassis",
+    "category": "Misc",
+    "isDLC": false
+  },
+  {
+    "displayName": "2 Module Car",
+    "shortName": "2module car",
+    "category": "Misc",
+    "isDLC": false
+  },
+  {
+    "displayName": "3 Module Car Chassis",
+    "shortName": "3module car chassis",
+    "category": "Misc",
+    "isDLC": false
+  },
+  {
+    "displayName": "3 Module Car",
+    "shortName": "3module car",
+    "category": "Misc",
+    "isDLC": false
+  },
+  {
+    "displayName": "4 Module Car Chassis",
+    "shortName": "4module car chassis",
+    "category": "Misc",
+    "isDLC": false
+  },
+  {
+    "displayName": "4 Module Car",
+    "shortName": "4module car",
+    "category": "Misc",
+    "isDLC": false
+  },
+  {
+    "displayName": "Advanced Blueprint Fragment",
+    "shortName": "advancedblueprintfragment",
+    "category": "Component",
+    "isDLC": false
+  },
+  {
+    "displayName": "Soccer Ball",
+    "shortName": "ball",
+    "category": "Misc",
+    "isDLC": false
+  },
+  {
+    "displayName": "Basic Blueprint Fragment",
+    "shortName": "basicblueprintfragment",
+    "category": "Component",
+    "isDLC": false
+  },
+  {
+    "displayName": "Fabric Beanbag Seat",
+    "shortName": "beanbagseatfabric",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "Leather Beanbag Seat",
+    "shortName": "beanbagseatleather",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "Caboose",
+    "shortName": "caboose",
+    "category": "Misc",
+    "isDLC": false
+  },
+  {
+    "displayName": "Salvaged Ejector Seat",
+    "shortName": "chair.ejector.seat",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "Cancer Research UK Plushie",
+    "shortName": "charity.plushy.01",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "Ronald McDonald House UK Plushie",
+    "shortName": "charity.plushy.02",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "Circle Balloon",
+    "shortName": "circleballoon2025",
+    "category": "Items",
+    "isDLC": false
+  },
+  {
+    "displayName": "Compass",
+    "shortName": "compass",
+    "category": "Tool",
+    "isDLC": false
+  },
+  {
+    "displayName": "Bulb String Lights",
+    "shortName": "electric.bulbstringlights",
+    "category": "Electrical",
+    "isDLC": true
+  },
+  {
+    "displayName": "Chandelier",
+    "shortName": "electric.chandelier",
+    "category": "Electrical",
+    "isDLC": true
+  },
+  {
+    "displayName": "Fairy Lights",
+    "shortName": "electric.fairylights",
+    "category": "Electrical",
+    "isDLC": true
+  },
+  {
+    "displayName": "Ceiling Fluorescent Light",
+    "shortName": "electric.fluorescentlight.ceiling",
+    "category": "Electrical",
+    "isDLC": true
+  },
+  {
+    "displayName": "Fluorescent Light",
+    "shortName": "electric.fluorescentlight",
+    "category": "Electrical",
+    "isDLC": true
+  },
+  {
+    "displayName": "Spot Light",
+    "shortName": "electric.spotlight",
+    "category": "Electrical",
+    "isDLC": true
+  },
+  {
+    "displayName": "Tripod Spot Light",
+    "shortName": "electric.spotlight.tripod",
+    "category": "Electrical",
+    "isDLC": true
+  },
+  {
+    "displayName": "Electric Table Lamp",
+    "shortName": "electric.tablelight",
+    "category": "Electrical",
+    "isDLC": true
+  },
+  {
+    "displayName": "Wall Cabinet",
+    "shortName": "electric.wallcabinet",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "Hot Air Balloon",
+    "shortName": "hab",
+    "category": "Misc",
+    "isDLC": false
+  },
+  {
+    "displayName": "Birthday Candle Hat",
+    "shortName": "hat.candle.birthday",
+    "category": "Attire",
+    "isDLC": false
+  },
+  {
+    "displayName": "Krieg Hazmat",
+    "shortName": "hazmat.krieg",
+    "category": "Attire",
+    "isDLC": true
+  },
+  {
+    "displayName": "Kick Hazmat",
+    "shortName": "hazmatsuit.kick",
+    "category": "Attire",
+    "isDLC": true
+  },
+  {
+    "displayName": "Pilot Hazmat",
+    "shortName": "hazmatsuit.pilot",
+    "category": "Attire",
+    "isDLC": true
+  },
+  {
+    "displayName": "Heart Balloon",
+    "shortName": "heartballoon2025",
+    "category": "Items",
+    "isDLC": false
+  },
+  {
+    "displayName": "Horse",
+    "shortName": "horse",
+    "category": "Misc",
+    "isDLC": false
+  },
+  {
+    "displayName": "Krieg chainsword",
+    "shortName": "krieg.chainsword",
+    "category": "Tool",
+    "isDLC": true
+  },
+  {
+    "displayName": "Krieg Shotgun",
+    "shortName": "krieg.shotgun",
+    "category": "Weapon",
+    "isDLC": true
+  },
+  {
+    "displayName": "Krieg Storage Crates",
+    "shortName": "krieg.storage.horizontal",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "Krieg Storage Barrel",
+    "shortName": "krieg.storage.vertical",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "Krieg Large Backpack",
+    "shortName": "kriegbackpack",
+    "category": "Attire",
+    "isDLC": true
+  },
+  {
+    "displayName": "Latex Balloon",
+    "shortName": "latexballoon2025",
+    "category": "Items",
+    "isDLC": false
+  },
+  {
+    "displayName": "Clump of Latex Balloons",
+    "shortName": "latexclumpballoon2025",
+    "category": "Items",
+    "isDLC": false
+  },
+  {
+    "displayName": "Flight Control Codelock",
+    "shortName": "lock.code.a.pilot",
+    "category": "Construction",
+    "isDLC": true
+  },
+  {
+    "displayName": "Clothing Mannequin",
+    "shortName": "mannequin",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "Mini Fridge",
+    "shortName": "mini fridge",
+    "category": "Electrical",
+    "isDLC": false
+  },
+  {
+    "displayName": "Minicopter",
+    "shortName": "minicopter",
+    "category": "Misc",
+    "isDLC": false
+  },
+  {
+    "displayName": "Clump of Mixed Balloons",
+    "shortName": "mixedclumpballoon2025",
+    "category": "Items",
+    "isDLC": false
+  },
+  {
+    "displayName": "Twitch Rivals Neon Sign",
+    "shortName": "neonsigntr",
+    "category": "Electrical",
+    "isDLC": true
+  },
+  {
+    "displayName": "Flight Recorder Box",
+    "shortName": "pilot.hazmat.box.wooden",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "M15 Semi-Automatic Pistol",
+    "shortName": "pistol.semiauto.a.m15",
+    "category": "Weapon",
+    "isDLC": true
+  },
+  {
+    "displayName": "RHIB",
+    "shortName": "rhib",
+    "category": "Items",
+    "isDLC": false
+  },
+  {
+    "displayName": "Space LR-300 Assault Rifle",
+    "shortName": "rifle.lr300.space",
+    "category": "Weapon",
+    "isDLC": true
+  },
+  {
+    "displayName": "RPG Launcher",
+    "shortName": "rocket.launcher.rpg7",
+    "category": "Weapon",
+    "isDLC": true
+  },
+  {
+    "displayName": "Scrap Transport Helicopter",
+    "shortName": "scraptransportheli",
+    "category": "Misc",
+    "isDLC": false
+  },
+  {
+    "displayName": "Sedan",
+    "shortName": "sedan",
+    "category": "Misc",
+    "isDLC": false
+  },
+  {
+    "displayName": "Speech Bubble Balloon",
+    "shortName": "speechbubbleballoon2025",
+    "category": "Items",
+    "isDLC": false
+  },
+  {
+    "displayName": "Small Spike Trap",
+    "shortName": "spikes.trap",
+    "category": "Traps",
+    "isDLC": false
+  },
+  {
+    "displayName": "Star Balloon",
+    "shortName": "starballoon2025",
+    "category": "Items",
+    "isDLC": false
+  },
+  {
+    "displayName": "Twitch Rivals 2025 Sofa",
+    "shortName": "twitchrivals2025sofa",
+    "category": "Items",
+    "isDLC": true
   }
 ]

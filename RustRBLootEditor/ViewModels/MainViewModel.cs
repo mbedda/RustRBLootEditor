@@ -287,7 +287,7 @@ namespace RustRBLootEditor.ViewModels
                     {
                         item.category = tmpItem.category;
                         item.displayName = tmpItem.displayName;
-                        item.isDLC = tmpItem.isDLC;
+                        item.isDLC = tmpItem.isDLC ?? false;
 
                         if (item.slots == null && tmpItem.Slots != null)
                             item.slots = new() { min = tmpItem.Slots.min, max = tmpItem.Slots.max };
@@ -378,7 +378,7 @@ namespace RustRBLootEditor.ViewModels
                     shortname = rustItem.shortName,
                     displayName = rustItem.displayName,
                     category = rustItem.category,
-                    isDLC = rustItem.isDLC,
+                    isDLC = rustItem.isDLC ?? false,
                     amountMin = 1,
                     amount = 1,
                     slots = rustItem.Slots != null ? new() { min = rustItem.Slots.min, max = rustItem.Slots.max } : null
@@ -425,7 +425,7 @@ namespace RustRBLootEditor.ViewModels
                         shortname = rustItem.shortName,
                         displayName = rustItem.displayName,
                         category = rustItem.category,
-                        isDLC = rustItem.isDLC,
+                        isDLC = rustItem.isDLC ?? false,
                         amountMin = 1,
                         amount = 1,
                         slots = rustItem.Slots != null ? new() { min = rustItem.Slots.min, max = rustItem.Slots.max } : null

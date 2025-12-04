@@ -11,8 +11,8 @@ using System.Reflection;
 using System.Threading.Tasks;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Text.Json.Serialization;
 using System.Runtime.Serialization;
+using Newtonsoft.Json;
 
 namespace RustRBLootEditor.Models
 {
@@ -46,9 +46,9 @@ namespace RustRBLootEditor.Models
 
             DateTime dt = File.GetLastWriteTime(dlcsPath);
 
-            bool testAPI = false;
+            bool forceSaveDLCsFile = false; //keep false on release
 
-            if (testAPI || (DateTime.Now - dt).TotalMinutes > 30 || !File.Exists(dlcsPath))
+            if (forceSaveDLCsFile || (DateTime.Now - dt).TotalMinutes > 30 || !File.Exists(dlcsPath))
             {
                 var dlcs = await SteamApi.GetDLCs();
 
@@ -66,7 +66,7 @@ namespace RustRBLootEditor.Models
             {
                 if ((!dlc.workshopId.HasValue || dlc.workshopId == 0) 
                     && !string.IsNullOrEmpty(dlc.itemShortName) 
-                    && !DLCsData.DLCItems.Contains(dlc.itemShortName) && !_notDLCs.Contains(dlc.itemShortName))
+                    && !DLCsData.DLCItems.Contains(dlc.itemShortName))
                 {
                     DLCsData.DLCItems.Add(dlc.itemShortName);
                 }
@@ -75,29 +75,6 @@ namespace RustRBLootEditor.Models
                     DLCsData.ProhibitedSkins.Add(dlc.workshopId.Value);
                 }
             }
-
-            if(testAPI)
-            {
-                List<string> notInFPList = new List<string>();
-                foreach (var carbonDLC in _carbonDLCShortnames)
-                {
-                    if (!DLCsData.DLCItems.Contains(carbonDLC))
-                    {
-                        notInFPList.Add(carbonDLC);
-                    }
-                }
-                List<string> notInCarbonList = new List<string>();
-                foreach (var fpDLC in DLCsData.DLCItems)
-                {
-                    if (!_carbonDLCShortnames.Contains(fpDLC))
-                    {
-                        notInCarbonList.Add(fpDLC);
-                    }
-                }
-            }
-
-            if (DLCsData.DLCItems == null || DLCsData.DLCItems.Count == 0 || DLCsData.DLCItems.Count < _carbonDLCShortnames.Count)
-                DLCsData.DLCItems = _carbonDLCShortnames;
 
             return true;
         }
@@ -114,14 +91,52 @@ namespace RustRBLootEditor.Models
 
             await FetchNewItems(appPath, jsonPath, steamPath, items);
 
+            bool testAPI = false; //keep false on release
+
+            if (testAPI)
+            {
+                if (DLCsData != null)
+                {
+                    for (int i = DLCsData.DLCItems.Count - 1; i >= 0; i--)
+                    {
+                        if (!items.Any(s => s.shortName == DLCsData.DLCItems[i]))
+                            DLCsData.DLCItems.RemoveAt(i);
+                    }
+                }
+
+                List<string> _verifiedDLCShortnames = items.Where(s => s.isDLC == true).Select(s=>s.shortName).ToList();
+
+                List<string> notInRustHelpList = new List<string>();
+                foreach (var verifiedDLC in _verifiedDLCShortnames)
+                {
+                    if (!DLCsData.DLCItems.Contains(verifiedDLC))
+                    {
+                        notInRustHelpList.Add(verifiedDLC);
+                    }
+                }
+                List<string> notInVerifiedList = new List<string>();
+                foreach (var fpDLC in DLCsData.DLCItems)
+                {
+                    if (!_verifiedDLCShortnames.Contains(fpDLC))
+                    {
+                        notInVerifiedList.Add(fpDLC);
+                    }
+                }
+                string notInVerifiedListString = string.Join(", ", notInVerifiedList.Select(s => $"\"{s}\""));
+            }
+
             if (DLCsData != null)
             {
                 foreach (var item in items)
                 {
-                    if(DLCsData.DLCItems.Contains(item.shortName))
+                    if (!item.isDLC.HasValue && DLCsData.DLCItems.Contains(item.shortName))
                         item.isDLC = true;
+                    else if (item.isDLC.HasValue && item.isDLC.Value && !DLCsData.DLCItems.Contains(item.shortName))
+                        DLCsData.DLCItems.Add(item.shortName);
                 }
             }
+
+            //await Common.SaveJsonNewtonAsync(items, jsonPath); //only do this manually to force update file, comment on release
 
             await LoadImages(appPath, steamPath, items);
 
@@ -130,55 +145,12 @@ namespace RustRBLootEditor.Models
             Items = new ObservableCollection<RustItem>(items.OrderBy(x => x.displayName));
         }
 
-        private readonly List<string> _blacklistedItems = new()
+        private readonly List<string> _ignoredItems = new()
         {
             "ammo.snowballgun", "spraycandecal", "workcart", "wagon", "trike", "snowmobiletomaha", "submarinesolo", "snowmobile", "scraptransportheli.repair",
             "motorbike_sidecar", "motorbike", "mlrs", "minihelicopter.repair", "locomotive", "habrepair", "submarineduo", "blueprintbase",
             "bicycle", "attackhelicopter", "vehicle.chassis.2mod", "vehicle.chassis.3mod", "vehicle.chassis.4mod", "weaponrack.doublelight", "weaponrack.light",
             "oubreak_scientist", "gates.external.high.frontier", "wall.external.high.frontier", "clothing.mannequin"
-        };
-
-        private readonly List<string> _notDLCs = new()
-        {
-            "mask.bandana", "hat.cap", "shoes.boots", "deer.skull.mask", "hat.beenie", "mask.balaclava", "hoodie", "jacket", "tshirt.long",
-            "metal.facemask", "pants", "jacket.snow", "box.wooden.large", "tshirt", "underwear", "spraycan", "buildingskin", "wallpaper.wall",
-            "wallpaper.pack1", "gestures", "spraycandecal", "wallpaper.flooring", "wallpaper.ceiling", "floor.ceiling.wallpaper.pack1", "rocket.launcher",
-            "chainsaw", "shotgun.pump"
-        };
-
-        //should be removed when https://api.rusthelp.com/v1/facepunch/skins properly includes dlc items
-        private readonly List<string> _carbonDLCShortnames = new()
-        {
-            "discord.trophy", "fogmachine", "strobelight", "snowmobiletomaha", "gates.external.high.adobe", "gates.external.high.legacy", "wall.external.high.adobe", "wall.external.high.legacy", "cocoknight.armor.gloves",
-            "cocoknight.armor.helmet", "cocoknight.armor.pants", "cocoknight.armor.torso", "boots.frog", "draculacape", "draculamask", "frankensteinmask", "mummymask", "metal.facemask.hockey",
-            "clatter.helmet", "knightsarmour.helmet", "hat.wellipets", "metal.facemask.icemask", "attire.ninja.suit", "knightsarmour.skirt", "hazmatsuit.arcticsuit", "hazmatsuit.diver", "hazmatsuit.frontier",
-            "hazmatsuit.lumberjack", "hazmatsuit.nomadsuit", "hazmatsuit.spacesuit", "knighttorso.armour", "metal.plate.torso.icevest", "barricade.medieval", "chair.icethrone", "firework.boomer.blue",
-            "firework.boomer.champagne", "firework.boomer.green", "firework.boomer.orange", "firework.boomer.pattern", "firework.boomer.red", "firework.boomer.violet", "firework.romancandle.blue", "firework.romancandle.green", "firework.romancandle.red",
-            "firework.romancandle.violet", "firework.volcano", "firework.volcano.red", "firework.volcano.violet", "half.bamboo.shelves", "hazmat.plushy", "jackolantern.angry", "jackolantern.happy", "abyss.barrel.horizontal",
-            "abyss.barrel.vertical", "wicker.barrel", "bamboo.barrel", "medieval.box.wooden.large", "legacyfurnace", "wall.frame.lunar2025_a", "wall.frame.lunar2025_b", "wall.frame.lunar2025_c", "sculpture.ice",
-            "secretlabchair", "salvaged.bamboo.shelves", "sign.hanging.banner.large", "sign.hanging", "sign.hanging.ornate", "sign.pictureframe.landscape", "sign.pictureframe.portrait", "sign.pictureframe.tall", "sign.pictureframe.xl",
-            "sign.pictureframe.xxl", "sign.pole.banner.large", "sign.post.double", "sign.post.single", "sign.post.town", "sign.post.town.roof", "sofa", "sofa.pattern", "cupboard.tool.retro",
-            "cupboard.tool.shockbyte", "single.shallow.wall.shelves", "gunrack.horizontal", "gunrack.single.1.horizontal", "gunrack.single.2.horizontal", "gunrack.single.3.horizontal", "gunrack_stand", "gunrack_tall.horizontal", "gunrack_wide.horizontal",
-            "hazmatyoutooz", "heavyscientistyoutooz", "fun.bass", "fun.cowbell", "drumkit", "fun.flute", "fun.jerrycanguitar", "piano", "fun.tambourine",
-            "fun.trumpet", "fun.tuba", "xylophone", "chineselantern", "chineselanternwhite", "dragondoorknocker", "hat.dragonmask", "newyeargong", "hat.oxmask",
-            "hat.rabbitmask", "hat.ratmask", "skylantern", "skylantern.skylantern.green", "skylantern.skylantern.orange", "skylantern.skylantern.purple", "skylantern.skylantern.red", "hat.snakemask", "hat.tigermask",
-            "arcade.machine.chippy", "door.double.hinged.bardoors", "bathtub.planter", "fishtrophy", "huntingtrophylarge", "huntingtrophysmall", "minecart.planter", "rail.road.planter", "triangle.rail.road.planter",
-            "rockingchair", "rockingchair.rockingchair2", "rockingchair.rockingchair3", "knife.skinning", "storage_barrel_a", "storage_barrel_b", "storage_barrel_c", "torchholder", "wantedposter.wantedposter2",
-            "wantedposter.wantedposter3", "wantedposter.wantedposter4", "wantedposter", "hat.bunnyhat", "chicken.costume", "easterdoorwreath", "attire.egg.suit", "rustige_egg_a", "rustige_egg_b",
-            "rustige_egg_c", "rustige_egg_d", "rustige_egg_e", "rustige_egg_f", "rustige_egg_g", "horse.costume", "attire.nesthat", "largecandles", "smallcandles",
-            "carvable.pumpkin", "cursedcauldron", "scarecrow", "skullspikes.candles", "skullspikes.pumpkin", "skullspikes", "skulldoorknocker", "skull_fire_pit", "spookyspeaker",
-            "halloween.surgeonsuit", "skull.trophy.jar", "skull.trophy.jar2", "skull.trophy.table", "skull.trophy", "medieval.door.double.hinged.metal", "medieval.door.hinged.metal", "movembermoustachecard", "movembermoustache",
-            "factorydoor", "industrial.wall.light.blue", "industrial.wall.light.green", "industrial.wall.light", "industrial.wall.light.red", "abovegroundpool", "beachchair", "beachparasol", "beachtable",
-            "beachtowel", "boogieboard", "innertube", "innertube.horse", "innertube.unicorn", "tool.instant_camera", "paddlingpool", "photoframe.landscape", "photoframe.large",
-            "photoframe.portrait", "sunglasses02black", "sunglasses02camo", "sunglasses02red", "sunglasses03black", "sunglasses03chrome", "sunglasses03gold", "sunglasses", "gun.water",
-            "pistol.water", "trophy", "trophy2023", "twitchsunglasses", "twitch.headset", "hobobarrel", "door.hinged.industrial.a", "twitchrivals2023desk", "xmas.lightstring",
-            "xmas.door.garland", "xmas.double.door.garland", "giantcandycanedecor", "giantlollipops", "sign.neon.125x125", "sign.neon.125x215.animated", "sign.neon.125x215", "sign.neon.xl.animated", "sign.neon.xl",
-            "xmas.lightstring.advanced", "snowmachine", "snowman", "santabeard", "attire.snowman.helmet", "xmas.window.garland", "xmasdoorwreath", "concretehatchet", "concretepickaxe",
-            "lumberjack.hatchet", "lumberjack.pickaxe", "vehicle.car_radio", "boombox", "fun.boomboxportable", "cassette", "cassette.medium", "cassette.short", "fun.casetterecorder",
-            "discoball", "discofloor", "discofloor.largetiles", "connected.speaker", "laserlight", "megaphone", "microphonestand", "mobilephone", "soundlight",
-            "rifle.ak.diver", "rifle.ak.ice", "rifle.ak.jungle", "rifle.ak.med", "blunderbuss", "knife.bone.obsidian", "spear.cny", "diverhatchet", "diverpickaxe",
-            "divertorch", "frontier_hatchet", "mace.baseballbat", "torch.torch.skull", "skull", "sunken.knife", "legacy bow", "jungle.rock", "rocket.launcher.dragon",
-            "toolgun", "hazmatsuit.pilot", "pilot.hazmat.box.wooden", "lock.code.a.pilot", "chair.ejector.seat", "pistol.semiauto.a.m15"
         };
 
 
@@ -198,7 +170,7 @@ namespace RustRBLootEditor.Models
             {
                 string shortname = Path.GetFileNameWithoutExtension(item);
                 
-                if(_blacklistedItems.Contains(shortname)) continue;
+                if(_ignoredItems.Contains(shortname)) continue;
 
                 if (!currentItems.Any(s => s.shortName == shortname) && File.Exists(item.Replace(".png", ".json")))
                 {
@@ -356,8 +328,9 @@ namespace RustRBLootEditor.Models
             set { SetProperty(ref _category, value); }
         }
 
-        [IgnoreDataMember]
-        public bool isDLC { get; set; }
+        [DataMember(EmitDefaultValue = false)]
+        [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+        public bool? isDLC { get; set; }
 
         [IgnoreDataMember]
         public ImageSource? ImageSource { get; set; }
