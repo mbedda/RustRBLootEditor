@@ -6411,7 +6411,7 @@
     "displayName": "Circle Balloon",
     "shortName": "circleballoon2025",
     "category": "Items",
-    "isDLC": false
+    "isDLC": true
   },
   {
     "displayName": "Compass",
@@ -6483,7 +6483,7 @@
     "displayName": "Birthday Candle Hat",
     "shortName": "hat.candle.birthday",
     "category": "Attire",
-    "isDLC": false
+    "isDLC": true
   },
   {
     "displayName": "Krieg Hazmat",
@@ -6507,7 +6507,7 @@
     "displayName": "Heart Balloon",
     "shortName": "heartballoon2025",
     "category": "Items",
-    "isDLC": false
+    "isDLC": true
   },
   {
     "displayName": "Horse",
@@ -6549,13 +6549,13 @@
     "displayName": "Latex Balloon",
     "shortName": "latexballoon2025",
     "category": "Items",
-    "isDLC": false
+    "isDLC": true
   },
   {
     "displayName": "Clump of Latex Balloons",
     "shortName": "latexclumpballoon2025",
     "category": "Items",
-    "isDLC": false
+    "isDLC": true
   },
   {
     "displayName": "Flight Control Codelock",
@@ -6585,7 +6585,7 @@
     "displayName": "Clump of Mixed Balloons",
     "shortName": "mixedclumpballoon2025",
     "category": "Items",
-    "isDLC": false
+    "isDLC": true
   },
   {
     "displayName": "Twitch Rivals Neon Sign",
@@ -6639,7 +6639,7 @@
     "displayName": "Speech Bubble Balloon",
     "shortName": "speechbubbleballoon2025",
     "category": "Items",
-    "isDLC": false
+    "isDLC": true
   },
   {
     "displayName": "Small Spike Trap",
@@ -6651,7 +6651,7 @@
     "displayName": "Star Balloon",
     "shortName": "starballoon2025",
     "category": "Items",
-    "isDLC": false
+    "isDLC": true
   },
   {
     "displayName": "Twitch Rivals 2025 Sofa",
