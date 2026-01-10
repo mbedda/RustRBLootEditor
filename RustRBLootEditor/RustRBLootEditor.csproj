@@ -9,11 +9,12 @@
     <ApplicationIcon>hazmat_xQg_icon.ico</ApplicationIcon>
     <FileVersion>$(Version)</FileVersion>
     <AssemblyVersion>$(Version)</AssemblyVersion>
-    <Version>1.7.1.0</Version>
+    <Version>1.7.2.0</Version>
     <Authors>beee</Authors>
     <PackageProjectUrl>https://github.com/mbedda/RustRBLootEditor</PackageProjectUrl>
     <RepositoryUrl>https://github.com/mbedda/RustRBLootEditor.git</RepositoryUrl>
     <PackageLicenseFile>C:\Users\mbedd\source\repos\RustRBLootEditor\RustRBLootEditor\MIT-License.txt</PackageLicenseFile>
+    <RollForward>LatestMinor</RollForward>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -21,7 +22,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DebugType>none</DebugType>
+    <DebugType>full</DebugType>
   </PropertyGroup>
 
   <ItemGroup>
@@ -113,6 +114,7 @@
     <None Remove="Assets\RustItems\hazmatsuit.kick.png" />
     <None Remove="Assets\RustItems\hazmatsuit.pilot.png" />
     <None Remove="Assets\RustItems\heartballoon2025.png" />
+    <None Remove="Assets\RustItems\heavy.scientist.plushie.png" />
     <None Remove="Assets\RustItems\honey.png" />
     <None Remove="Assets\RustItems\honeycomb.png" />
     <None Remove="Assets\RustItems\hopper.png" />
@@ -165,6 +167,7 @@
     <None Remove="Assets\RustItems\rose.png" />
     <None Remove="Assets\RustItems\rustige_egg_g.png" />
     <None Remove="Assets\RustItems\salvaged.bamboo.shelves.png" />
+    <None Remove="Assets\RustItems\scientist.plushie.png" />
     <None Remove="Assets\RustItems\scraptransportheli.png" />
     <None Remove="Assets\RustItems\sedan.png" />
     <None Remove="Assets\RustItems\seed.orchid.png" />
@@ -461,6 +464,9 @@
     <Content Include="Assets\RustItems\heartballoon2025.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\RustItems\heavy.scientist.plushie.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\RustItems\honey.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -615,6 +621,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\RustItems\salvaged.bamboo.shelves.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\scientist.plushie.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\RustItems\scraptransportheli.png">

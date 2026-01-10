@@ -698,7 +698,7 @@ namespace RustRBLootEditor.ViewModels
 
             foreach (var item in LootTableFile.LootItems)
             {
-                if (item.isDLC || AllItems.DLCsData.ProhibitedSkins.Contains(item.skin))
+                if (item.isDLC == true || AllItems.DLCsData.ProhibitedSkins.Contains(item.skin))
                 {
                     return false;
                 }

@@ -131,7 +131,7 @@ namespace RustRBLootEditor.Models
                 {
                     if (!item.isDLC.HasValue && DLCsData.DLCItems.Contains(item.shortName))
                         item.isDLC = true;
-                    else if (item.isDLC.HasValue && item.isDLC.Value && !DLCsData.DLCItems.Contains(item.shortName))
+                    else if (item.isDLC == true && !DLCsData.DLCItems.Contains(item.shortName))
                         DLCsData.DLCItems.Add(item.shortName);
                 }
             }

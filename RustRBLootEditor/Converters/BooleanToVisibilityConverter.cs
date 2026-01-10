@@ -34,7 +34,7 @@ namespace RustRBLootEditor.Converters
         private object GetVisibility(object value)
         {
             if (!(value is bool))
-                return DependencyProperty.UnsetValue;
+                return Visibility.Collapsed;
             bool objValue = (bool)value;
             if ((objValue && TriggerValue && IsHidden) || (!objValue && !TriggerValue && IsHidden))
             {

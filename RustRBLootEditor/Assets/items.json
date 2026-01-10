@@ -6658,5 +6658,17 @@
     "shortName": "twitchrivals2025sofa",
     "category": "Items",
     "isDLC": true
+  },
+  {
+    "displayName": "Heavy Scientist Plushie",
+    "shortName": "heavy.scientist.plushie",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "Scientist Plushie",
+    "shortName": "scientist.plushie",
+    "category": "Items",
+    "isDLC": true
   }
 ]

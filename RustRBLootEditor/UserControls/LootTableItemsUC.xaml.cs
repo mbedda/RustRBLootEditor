@@ -241,7 +241,7 @@ namespace RustRBLootEditor.UserControls
             {
                 LootItem item = allItems[i] as LootItem;
 
-                if (item.isDLC)
+                if (item.isDLC == true)
                 {
                     viewModel.RemoveLootTableItem(item);
                     count++;
