@@ -79,7 +79,7 @@ namespace RustRBLootEditor.Models
             return true;
         }
 
-        public async Task Load(string steamPath)
+        public async Task Load(string steamPath, bool fetchFromStaging = false)
         {
             string appPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             string jsonPath = Path.Combine(appPath, "Assets", "items.json");
@@ -89,7 +89,7 @@ namespace RustRBLootEditor.Models
             if (File.Exists(jsonPath))
                 items = await Common.LoadJsonAsync<List<RustItem>>(jsonPath);
 
-            await FetchNewItems(appPath, jsonPath, steamPath, items);
+            await FetchNewItems(appPath, jsonPath, steamPath, items, fetchFromStaging);
 
             bool testAPI = false; //keep false on release
 
@@ -154,11 +154,11 @@ namespace RustRBLootEditor.Models
         };
 
 
-        private async Task FetchNewItems(string appPath, string jsonPath, string steamPath, List<RustItem> currentItems)
+        private async Task FetchNewItems(string appPath, string jsonPath, string steamPath, List<RustItem> currentItems, bool fetchFromStaging = false)
         {
             if (string.IsNullOrEmpty(steamPath)) return;
 
-            string itemsDirectory = Path.Combine(steamPath, "steamapps\\common\\Rust\\Bundles\\items");
+            string itemsDirectory = Path.Combine(steamPath, $"steamapps\\common\\{(fetchFromStaging ? "RustStaging" : "Rust")}\\Bundles\\items");
 
             if (!Directory.Exists(itemsDirectory)) return;
 
@@ -197,12 +197,12 @@ namespace RustRBLootEditor.Models
             }
         }
 
-        private async Task ResizeAndSaveImageFromSteam(string appPath, string shortname, string steamPath)
+        private async Task ResizeAndSaveImageFromSteam(string appPath, string shortname, string steamPath, bool fetchFromStaging = false)
         {
             string itempath = Path.Combine(appPath, "Assets", "RustItems", $"{shortname}.png");
             if (File.Exists(itempath)) return;
 
-            string itemSteamPath = Path.Combine(steamPath, $"steamapps\\common\\Rust\\Bundles\\items\\{shortname}.png");
+            string itemSteamPath = Path.Combine(steamPath, $"steamapps\\common\\{(fetchFromStaging ? "RustStaging" : "Rust")}\\Bundles\\items\\{shortname}.png");
             if (!File.Exists(itemSteamPath)) return;
 
             await using FileStream fs = new FileStream(itemSteamPath, FileMode.Open);

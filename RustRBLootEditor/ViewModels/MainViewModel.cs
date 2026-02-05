@@ -150,6 +150,7 @@ namespace RustRBLootEditor.ViewModels
 
         public string SteamPath { get; set; }
         public string ExePath { get; set; }
+        public bool FetchFromStaging { get; set; } = false;
 
         public MainViewModel()
         {
@@ -190,7 +191,7 @@ namespace RustRBLootEditor.ViewModels
             ShowLoading("Loading Game Files...");
 
             if (AllItems != null)
-                await AllItems.Load(SteamPath);
+                await AllItems.Load(SteamPath, FetchFromStaging);
 
             HideLoading();
         }
@@ -237,7 +238,7 @@ namespace RustRBLootEditor.ViewModels
                         item2 = item2.Replace("\\\\", "\\");
                         item2 = item2.Replace("\"", "");
 
-                        string pat = Path.Combine(item2, "steamapps", "common", "Rust", "Rust.exe");
+                        string pat = Path.Combine(item2, "steamapps", "common", FetchFromStaging ? "RustStaging" : "Rust", "Rust.exe");
 
                         if (File.Exists(pat))
                         {
