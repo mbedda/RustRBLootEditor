@@ -6670,5 +6670,210 @@
     "shortName": "scientist.plushie",
     "category": "Items",
     "isDLC": true
+  },
+  {
+    "displayName": "Paintball",
+    "shortName": "ammo.paintball",
+    "category": "Ammunition",
+    "isDLC": true
+  },
+  {
+    "displayName": "Anchor",
+    "shortName": "anchor",
+    "category": "Items"
+  },
+  {
+    "displayName": "Boat Building Plan",
+    "shortName": "boat.planner",
+    "category": "Construction"
+  },
+  {
+    "displayName": "Boat Building Station",
+    "shortName": "boatbuildingstation",
+    "category": "Items"
+  },
+  {
+    "displayName": "Cannon",
+    "shortName": "cannon",
+    "category": "Items"
+  },
+  {
+    "displayName": "Cannonball",
+    "shortName": "cannonball",
+    "category": "Ammunition"
+  },
+  {
+    "displayName": "Coconut",
+    "shortName": "coconut",
+    "category": "Food"
+  },
+  {
+    "displayName": "Double Diving Tank",
+    "shortName": "diving.tank.double",
+    "category": "Attire"
+  },
+  {
+    "displayName": "Wooden Boat Door",
+    "shortName": "door.hinged.boat.wood",
+    "category": "Construction"
+  },
+  {
+    "displayName": "Portable Easel",
+    "shortName": "easel",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "Ornate Frame XL",
+    "shortName": "goldframe.xl",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "Ornate Frame XXL",
+    "shortName": "goldframe.xxl",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "Naval Scientist Suit",
+    "shortName": "hazmatsuit_scientist_naval",
+    "category": "Attire"
+  },
+  {
+    "displayName": "Lunar New Year Horse Armor",
+    "shortName": "horse.armor.lny26",
+    "category": "Attire",
+    "isDLC": true
+  },
+  {
+    "displayName": "Wooden Boat Ladder",
+    "shortName": "ladder.wooden.boat",
+    "category": "Construction"
+  },
+  {
+    "displayName": "Light-Up Frame XL",
+    "shortName": "lightup.xl",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "Light-Up Frame XXL",
+    "shortName": "lightup.xxl",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "Mr Spice Can",
+    "shortName": "mrspice.can",
+    "category": "Food"
+  },
+  {
+    "displayName": "Paintable Reactive Target",
+    "shortName": "paintabletarget.reactive",
+    "category": "Misc",
+    "isDLC": true
+  },
+  {
+    "displayName": "Paintball Gun",
+    "shortName": "paintballgun",
+    "category": "Weapon",
+    "isDLC": true
+  },
+  {
+    "displayName": "Paintball Overalls",
+    "shortName": "paintballoveralls.suit",
+    "category": "Attire",
+    "isDLC": true
+  },
+  {
+    "displayName": "Plank",
+    "shortName": "plank",
+    "category": "Items"
+  },
+  {
+    "displayName": "PT Boat",
+    "shortName": "ptboat",
+    "category": "Items"
+  },
+  {
+    "displayName": "Sail",
+    "shortName": "sail",
+    "category": "Items"
+  },
+  {
+    "displayName": "Shutter Frame XL",
+    "shortName": "scrapframe.xl",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "Shutter Frame XXL",
+    "shortName": "scrapframe.xxl",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "Artist Canvas Standing",
+    "shortName": "sign.artistcanvas.l",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "Artist Canvas Large",
+    "shortName": "sign.artistcanvas.m",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "Artist Canvas Medium",
+    "shortName": "sign.artistcanvas.s",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "Artist Canvas XL",
+    "shortName": "sign.artistcanvas.xl",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "Artist Canvas Small",
+    "shortName": "sign.artistcanvas.xs",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "Artist Canvas XXL",
+    "shortName": "sign.artistcanvas.xxl",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "Silly Horse Mask",
+    "shortName": "silly.horse.mask",
+    "category": "Attire",
+    "isDLC": true
+  },
+  {
+    "displayName": "Small Boat Engine",
+    "shortName": "smallengine",
+    "category": "Items"
+  },
+  {
+    "displayName": "Small Ramp",
+    "shortName": "small_ramp",
+    "category": "Items"
+  },
+  {
+    "displayName": "Steering Wheel",
+    "shortName": "steeringwheel.boat",
+    "category": "Items"
+  },
+  {
+    "displayName": "Paintable Window",
+    "shortName": "window.paintable",
+    "category": "Construction",
+    "isDLC": true
   }
 ]
