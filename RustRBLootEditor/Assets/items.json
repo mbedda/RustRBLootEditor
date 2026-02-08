@@ -6875,5 +6875,11 @@
     "shortName": "window.paintable",
     "category": "Construction",
     "isDLC": true
+  },
+  {
+    "displayName": "Horse Mask",
+    "shortName": "hat.horsemask",
+    "category": "Attire",
+    "isDLC": true
   }
 ]

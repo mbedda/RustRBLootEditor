@@ -150,8 +150,7 @@ namespace RustRBLootEditor.Models
             "ammo.snowballgun", "spraycandecal", "workcart", "wagon", "trike", "snowmobiletomaha", "submarinesolo", "snowmobile", "scraptransportheli.repair",
             "motorbike_sidecar", "motorbike", "mlrs", "minihelicopter.repair", "locomotive", "habrepair", "submarineduo", "blueprintbase",
             "bicycle", "attackhelicopter", "vehicle.chassis.2mod", "vehicle.chassis.3mod", "vehicle.chassis.4mod", "weaponrack.doublelight", "weaponrack.light",
-            "oubreak_scientist", "gates.external.high.frontier", "wall.external.high.frontier", "clothing.mannequin", "50cal.mounted", "50cal.mounted.left", "50cal.mounted.right",
-            "hat.horsemask"
+            "oubreak_scientist", "gates.external.high.frontier", "wall.external.high.frontier", "clothing.mannequin", "50cal.mounted", "50cal.mounted.left", "50cal.mounted.right"
         };
 
 

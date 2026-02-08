@@ -9,7 +9,7 @@
     <ApplicationIcon>hazmat_xQg_icon.ico</ApplicationIcon>
     <FileVersion>$(Version)</FileVersion>
     <AssemblyVersion>$(Version)</AssemblyVersion>
-    <Version>1.7.3.0</Version>
+    <Version>1.7.4.0</Version>
     <Authors>beee</Authors>
     <PackageProjectUrl>https://github.com/mbedda/RustRBLootEditor</PackageProjectUrl>
     <RepositoryUrl>https://github.com/mbedda/RustRBLootEditor.git</RepositoryUrl>
@@ -122,6 +122,7 @@
     <None Remove="Assets\RustItems\half.bamboo.shelves.png" />
     <None Remove="Assets\RustItems\harvestingtea.png" />
     <None Remove="Assets\RustItems\hat.candle.birthday.png" />
+    <None Remove="Assets\RustItems\hat.horsemask.png" />
     <None Remove="Assets\RustItems\hazmat.krieg.png" />
     <None Remove="Assets\RustItems\hazmatsuit.kick.png" />
     <None Remove="Assets\RustItems\hazmatsuit.pilot.png" />
@@ -523,6 +524,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\RustItems\hat.candle.birthday.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\hat.horsemask.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\RustItems\hazmat.krieg.png">
