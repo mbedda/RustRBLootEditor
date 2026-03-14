@@ -85,6 +85,22 @@
     <None Remove="Assets\RustItems\coconut.png" />
     <None Remove="Assets\RustItems\command.block.png" />
     <None Remove="Assets\RustItems\compass.png" />
+    <None Remove="Assets\RustItems\component.box.ammo.large.png" />
+    <None Remove="Assets\RustItems\component.box.armor.large.png" />
+    <None Remove="Assets\RustItems\component.box.charcoal.large.png" />
+    <None Remove="Assets\RustItems\component.box.clothing.large.png" />
+    <None Remove="Assets\RustItems\component.box.comps.large.png" />
+    <None Remove="Assets\RustItems\component.box.explosives.large.png" />
+    <None Remove="Assets\RustItems\component.box.food.large.png" />
+    <None Remove="Assets\RustItems\component.box.guns.large.png" />
+    <None Remove="Assets\RustItems\component.box.meds.large.png" />
+    <None Remove="Assets\RustItems\component.box.metal.large.png" />
+    <None Remove="Assets\RustItems\component.box.ore.large.png" />
+    <None Remove="Assets\RustItems\component.box.scrap.large.png" />
+    <None Remove="Assets\RustItems\component.box.stone.large.png" />
+    <None Remove="Assets\RustItems\component.box.sulfur.large.png" />
+    <None Remove="Assets\RustItems\component.box.tools.large.png" />
+    <None Remove="Assets\RustItems\component.box.wood.large.png" />
     <None Remove="Assets\RustItems\cookingworkbench.png" />
     <None Remove="Assets\RustItems\coolingtea.png" />
     <None Remove="Assets\RustItems\craftingtea_quality.png" />
@@ -413,6 +429,54 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\RustItems\compass.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\component.box.ammo.large.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\component.box.armor.large.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\component.box.charcoal.large.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\component.box.clothing.large.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\component.box.comps.large.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\component.box.explosives.large.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\component.box.food.large.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\component.box.guns.large.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\component.box.meds.large.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\component.box.metal.large.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\component.box.ore.large.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\component.box.scrap.large.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\component.box.stone.large.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\component.box.sulfur.large.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\component.box.tools.large.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\component.box.wood.large.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\RustItems\cookingworkbench.png">

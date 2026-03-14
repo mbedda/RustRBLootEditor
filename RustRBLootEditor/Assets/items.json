@@ -4692,12 +4692,6 @@
     "isDLC": false
   },
   {
-    "displayName": "Unused Storage Barrel Vertical",
-    "shortName": "storage_barrel_a",
-    "category": "Items",
-    "isDLC": true
-  },
-  {
     "displayName": "Storage Barrel Vertical",
     "shortName": "storage_barrel_b",
     "category": "Items",
@@ -6880,6 +6874,102 @@
     "displayName": "Horse Mask",
     "shortName": "hat.horsemask",
     "category": "Attire",
+    "isDLC": true
+  },
+  {
+    "displayName": "Ammo Storage Box",
+    "shortName": "component.box.ammo.large",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "Armor Storage Box",
+    "shortName": "component.box.armor.large",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "Charcoal Storage Box",
+    "shortName": "component.box.charcoal.large",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "Clothing Storage Box",
+    "shortName": "component.box.clothing.large",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "Comps Storage Box",
+    "shortName": "component.box.comps.large",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "Explosives Storage Box",
+    "shortName": "component.box.explosives.large",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "Food Storage Box",
+    "shortName": "component.box.food.large",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "Guns Storage Box",
+    "shortName": "component.box.guns.large",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "Meds Storage Box",
+    "shortName": "component.box.meds.large",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "Metal Storage Box",
+    "shortName": "component.box.metal.large",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "Ore Storage Box",
+    "shortName": "component.box.ore.large",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "Scrap Storage Box",
+    "shortName": "component.box.scrap.large",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "Stone Storage Box",
+    "shortName": "component.box.stone.large",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "Sulfur Storage Box",
+    "shortName": "component.box.sulfur.large",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "Tools Storage Box",
+    "shortName": "component.box.tools.large",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "Wood Storage Box",
+    "shortName": "component.box.wood.large",
+    "category": "Items",
     "isDLC": true
   }
 ]
