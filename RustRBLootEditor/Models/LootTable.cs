@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using Prism.Mvvm;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -25,6 +26,26 @@ namespace RustRBLootEditor.Models
             get { return lootItems; }
             set { SetProperty(ref lootItems, value); }
         }
+
+        public static List<LootItem> FromBoatLootItems(List<BoatLootItem> boatLootItems)
+        {
+            return boatLootItems.Select(x =>
+            {
+                LootItem lootItem = new LootItem();
+                lootItem.FromBoatLootItem(x);
+                return lootItem;
+            }).ToList();
+        }
+
+        public static List<BoatLootItem> ToBoatLootItems(List<LootItem> lootItems)
+        {
+            return lootItems.Select(x =>
+            {
+                BoatLootItem boatLootItem = new BoatLootItem();
+                boatLootItem.FromLootItem(x);
+                return boatLootItem;
+            }).ToList();
+        }
     }
 
     public class LootItem : BindableBase
@@ -37,6 +58,17 @@ namespace RustRBLootEditor.Models
             category = "Misc";
             probability = 1.0f;
             stacksize = -1;
+        }
+
+        public void FromBoatLootItem(BoatLootItem boatLootItem)
+        {
+            shortname = boatLootItem.shortname;
+            amountMin = boatLootItem.amountMin;
+            amount = boatLootItem.amountMax;
+            probability = MathF.Round(boatLootItem.chance / 100f, 2);
+            skin = boatLootItem.skin;
+            blueprint = boatLootItem.blueprint;
+            name = boatLootItem.name;
         }
 
         private ArmorSlots _slots;
@@ -79,17 +111,17 @@ namespace RustRBLootEditor.Models
             set { SetProperty(ref _skin, value); }
         }
 
-        private long _amount;
+        private int _amount;
         [JsonProperty(Order = 5)]
-        public long amount
+        public int amount
         {
             get { return _amount; }
             set { SetProperty(ref _amount, value); }
         }
 
-        private long _amountMin;
+        private int _amountMin;
         [JsonProperty(Order = 6)]
-        public long amountMin
+        public int amountMin
         {
             get { return _amountMin; }
             set { SetProperty(ref _amountMin, value); }
@@ -103,9 +135,9 @@ namespace RustRBLootEditor.Models
             set { SetProperty(ref _probability, value); }
         }
 
-        private long _stacksize;
+        private int _stacksize;
         [JsonProperty(Order = 8)]
-        public long stacksize
+        public int stacksize
         {
             get { return _stacksize; }
             set { SetProperty(ref _stacksize, value); }
@@ -162,5 +194,40 @@ namespace RustRBLootEditor.Models
                 set { SetProperty(ref _max, value); }
             }
         }
+    }
+
+    public class BoatLootItem
+    {
+        public void FromLootItem(LootItem lootItem)
+        {
+            shortname = lootItem.shortname;
+            amountMin = lootItem.amountMin;
+            amountMax = lootItem.amount;
+            chance = MathF.Round(lootItem.probability * 100f, 2);
+            skin = lootItem.skin;
+            blueprint = lootItem.blueprint;
+            name = lootItem.name;
+        }
+
+        [JsonProperty(Order = 0, PropertyName = "Item Shortname")]
+        public string shortname { get; set; } = string.Empty;
+
+        [JsonProperty(Order = 1, PropertyName = "Minimum Amount")]
+        public int amountMin { get; set; } = 0;
+
+        [JsonProperty(Order = 2, PropertyName = "Maximum Amount")]
+        public int amountMax { get; set; } = 0;
+
+        [JsonProperty(Order = 3, PropertyName = "Drop Chance Percent (0 - 100)")]
+        public float chance { get; set; } = 100.0f;
+
+        [JsonProperty(Order = 4, PropertyName = "Skin ID (0 = Default)")]
+        public ulong skin { get; set; } = 0;
+
+        [JsonProperty(Order = 5, PropertyName = "Is Blueprint")]
+        public bool blueprint { get; set; }
+
+        [JsonProperty(Order = 6, PropertyName = "Custom Item Display Name (Leave Empty For Default)")]
+        public string name { get; set; }
     }
 }

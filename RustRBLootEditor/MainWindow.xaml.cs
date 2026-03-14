@@ -56,7 +56,17 @@ namespace RustRBLootEditor
             MainGridBrush.ImageSource = bi;
         }
 
-        private async void ImportFile_Click(object sender, RoutedEventArgs e)
+        private async void ImportBasesFile_Click(object sender, RoutedEventArgs e)
+        {
+            await ImportFileAsync();
+        }
+
+        private async void ImportBoatsFile_Click(object sender, RoutedEventArgs e)
+        {
+            await ImportFileAsync(true);
+        }
+
+        private async Task ImportFileAsync(bool forRBoats = false)
         {
             OpenFileDialog openFileDlg = new OpenFileDialog();
 
@@ -65,11 +75,11 @@ namespace RustRBLootEditor
             {
                 FilePathTB.Text = openFileDlg.FileName;
                 viewModel.Filename = "(" + System.IO.Path.GetFileName(openFileDlg.FileName.Trim()) + ")";
-                await viewModel.LoadFileAsync(FilePathTB.Text);
+                await viewModel.LoadFileAsync(FilePathTB.Text, forRBoats);
             }
         }
 
-        private void ExportFile_Click(object sender, RoutedEventArgs e)
+        private void OpenMenu_Click(object sender, RoutedEventArgs e)
         {
             Button button = sender as Button;
             ContextMenu contextMenu = button.ContextMenu;
@@ -89,7 +99,12 @@ namespace RustRBLootEditor
             await ExportLootTable("RU");
         }
 
-        private async Task ExportLootTable(string lang = "EN")
+        private async void ExportBoatsFile_Click(object sender, RoutedEventArgs e)
+        {
+            await ExportLootTable(forRBoats: true);
+        }
+
+        private async Task ExportLootTable(string lang = "EN", bool forRBoats = false)
         {
             if (!viewModel.ValidateDLCsFree())
                 MessageBox.Show("This loot table has paid content that might be against Facepunch's TOS (https://facepunch.com/legal/servers).", "DLC Warning");
@@ -103,7 +118,7 @@ namespace RustRBLootEditor
             if (saveFileDialog.ShowDialog() == true)
             {
                 viewModel.Filename = "(" + System.IO.Path.GetFileName(saveFileDialog.FileName.Trim()) + ")";
-                await viewModel.SaveAsync(saveFileDialog.FileName, lang);
+                await viewModel.SaveAsync(saveFileDialog.FileName, lang, forRBoats);
             }
         }
 

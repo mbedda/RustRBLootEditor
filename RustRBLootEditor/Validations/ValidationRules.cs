@@ -50,12 +50,12 @@ namespace RustRBLootEditor.Validations
 
         public override ValidationResult Validate(object value, CultureInfo cultureInfo)
         {
-            long amount = 0;
+            int amount = 0;
 
             try
             {
                 if (((string)value).Length > 0)
-                    amount = long.Parse((String)value);
+                    amount = int.Parse((String)value);
             }
             catch (Exception e)
             {

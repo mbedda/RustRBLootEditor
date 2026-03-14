@@ -250,27 +250,40 @@ namespace RustRBLootEditor.ViewModels
             }
         }
 
-        public async Task LoadFileAsync(string filepath)
+        public async Task LoadFileAsync(string filepath, bool forBoats = false)
         {
             ShowLoading("Loading Loot File...");
             LootTableFile = new LootTableFile();
 
-            Dictionary<string, string> ru_dict = new();
+            List<LootItem> tmpLootItems = null;
 
-            ru_dict.Add("\"Слоты модулей брони\"", "\"armor module slots\"");
-            ru_dict.Add("\"краткое_название\"", "\"shortname\"");
-            ru_dict.Add("\"имя\"", "\"name\"");
-            ru_dict.Add("\"чертёж\"", "\"blueprint\"");
-            ru_dict.Add("\"скин\"", "\"skin\"");
-            ru_dict.Add("\"количество\"", "\"amount\"");
-            ru_dict.Add("\"мин_количество\"", "\"amountMin\"");
-            ru_dict.Add("\"вероятность\"", "\"probability\"");
-            ru_dict.Add("\"размер_стека\"", "\"stacksize\"");
-            ru_dict.Add("\"мин\"", "\"min\"");
-            ru_dict.Add("\"макс\"", "\"max\"");
+            if(!forBoats)
+            {
+                Dictionary<string, string> ru_dict = new();
+
+                ru_dict.Add("\"Слоты модулей брони\"", "\"armor module slots\"");
+                ru_dict.Add("\"краткое_название\"", "\"shortname\"");
+                ru_dict.Add("\"имя\"", "\"name\"");
+                ru_dict.Add("\"чертёж\"", "\"blueprint\"");
+                ru_dict.Add("\"скин\"", "\"skin\"");
+                ru_dict.Add("\"количество\"", "\"amount\"");
+                ru_dict.Add("\"мин_количество\"", "\"amountMin\"");
+                ru_dict.Add("\"вероятность\"", "\"probability\"");
+                ru_dict.Add("\"размер_стека\"", "\"stacksize\"");
+                ru_dict.Add("\"мин\"", "\"min\"");
+                ru_dict.Add("\"макс\"", "\"max\"");
 
 
-            List<LootItem> tmpLootItems = await Common.LoadJsonNewton<List<LootItem>>(filepath, ru_dict);
+                tmpLootItems = await Common.LoadJsonNewton<List<LootItem>>(filepath, ru_dict);
+            }
+            else
+            {
+                List<BoatLootItem> boatLootItems = await Common.LoadJsonNewton<List<BoatLootItem>>(filepath);
+                if (boatLootItems != null)
+                {
+                    tmpLootItems = LootTableFile.FromBoatLootItems(boatLootItems);
+                }
+            }
 
             if (tmpLootItems != null)
             {
@@ -315,28 +328,35 @@ namespace RustRBLootEditor.ViewModels
             HideLoading();
         }
 
-        public async Task SaveAsync(string filepath, string lang = "EN")
+        public async Task SaveAsync(string filepath, string lang = "EN", bool forBoats = false)
         {
-            Dictionary<string, string> langReplace = null;
-
-            if (lang == "RU")
+            if (!forBoats)
             {
-                langReplace = new();
+                Dictionary<string, string> langReplace = null;
 
-                langReplace.Add("\"armor module slots\"", "\"Слоты модулей брони\"");
-                langReplace.Add("\"shortname\"", "\"краткое_название\"");
-                langReplace.Add("\"name\"", "\"имя\"");
-                langReplace.Add("\"blueprint\"", "\"чертёж\"");
-                langReplace.Add("\"skin\"", "\"скин\"");
-                langReplace.Add("\"amount\"", "\"количество\"");
-                langReplace.Add("\"amountMin\"", "\"мин_количество\"");
-                langReplace.Add("\"probability\"", "\"вероятность\"");
-                langReplace.Add("\"stacksize\"", "\"размер_стека\"");
-                langReplace.Add("\"min\"", "\"мин\"");
-                langReplace.Add("\"max\"", "\"макс\"");
+                if (lang == "RU")
+                {
+                    langReplace = new();
+
+                    langReplace.Add("\"armor module slots\"", "\"Слоты модулей брони\"");
+                    langReplace.Add("\"shortname\"", "\"краткое_название\"");
+                    langReplace.Add("\"name\"", "\"имя\"");
+                    langReplace.Add("\"blueprint\"", "\"чертёж\"");
+                    langReplace.Add("\"skin\"", "\"скин\"");
+                    langReplace.Add("\"amount\"", "\"количество\"");
+                    langReplace.Add("\"amountMin\"", "\"мин_количество\"");
+                    langReplace.Add("\"probability\"", "\"вероятность\"");
+                    langReplace.Add("\"stacksize\"", "\"размер_стека\"");
+                    langReplace.Add("\"min\"", "\"мин\"");
+                    langReplace.Add("\"max\"", "\"макс\"");
+                }
+
+                await Common.SaveJsonNewtonAsync(LootTableFile.LootItems, filepath, langReplace);
             }
-
-            await Common.SaveJsonNewtonAsync(LootTableFile.LootItems, filepath, langReplace);
+            else
+            {
+                await Common.SaveJsonNewtonAsync(LootTableFile.ToBoatLootItems(LootTableFile.LootItems.ToList()), filepath);
+            }
         }
 
         public void ShowLoading(string text)
