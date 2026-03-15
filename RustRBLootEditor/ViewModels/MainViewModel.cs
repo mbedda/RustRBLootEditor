@@ -289,9 +289,16 @@ namespace RustRBLootEditor.ViewModels
             {
                 List<ulong> skins = new List<ulong>();
 
-                foreach (var item in tmpLootItems)
+                for (int i = tmpLootItems.Count - 1; i >= 0; i--)
                 {
-                    RustItem tmpItem = AllItems.GetRustItem(item.shortname);
+                    if(string.IsNullOrEmpty(tmpLootItems[i].shortname))
+                    {
+                        tmpLootItems.RemoveAt(i);
+                        continue;
+                    }
+
+                    var item = tmpLootItems[i];
+                    RustItem tmpItem = AllItems.GetRustItem(tmpLootItems[i].shortname);
 
                     if (item.skin > 0)
                         if (!skins.Contains(item.skin))
