@@ -2937,49 +2937,49 @@
     "displayName": "Light-Up Frame Large",
     "shortName": "lightup.large",
     "category": "Items",
-    "isDLC": false
+    "isDLC": true
   },
   {
     "displayName": "Light-Up Frame Medium",
     "shortName": "lightupframe.medium",
     "category": "Items",
-    "isDLC": false
+    "isDLC": true
   },
   {
     "displayName": "Light-Up Frame Small",
     "shortName": "lightupframe.small",
     "category": "Items",
-    "isDLC": false
+    "isDLC": true
   },
   {
     "displayName": "Light-Up Frame Standing",
     "shortName": "lightupframe.standing",
     "category": "Items",
-    "isDLC": false
+    "isDLC": true
   },
   {
     "displayName": "Light-Up Mirror Large",
     "shortName": "lightupmirror.large",
     "category": "Items",
-    "isDLC": false
+    "isDLC": true
   },
   {
     "displayName": "Light-Up Mirror Medium",
     "shortName": "lightupmirror.medium",
     "category": "Items",
-    "isDLC": false
+    "isDLC": true
   },
   {
     "displayName": "Light-Up Mirror Small",
     "shortName": "lightupmirror.small",
     "category": "Items",
-    "isDLC": false
+    "isDLC": true
   },
   {
     "displayName": "Light-Up Mirror Standing",
     "shortName": "lightupmirror.standing",
     "category": "Items",
-    "isDLC": false
+    "isDLC": true
   },
   {
     "displayName": "M249",
@@ -6971,5 +6971,221 @@
     "shortName": "component.box.wood.large",
     "category": "Items",
     "isDLC": true
+  },
+  {
+    "displayName": "Mortar Shell",
+    "shortName": "ammo.mortar.basic",
+    "category": "Ammunition",
+    "isDLC": false
+  },
+  {
+    "displayName": "Fragmentation Mortar Shell",
+    "shortName": "ammo.mortar.fragment",
+    "category": "Ammunition",
+    "isDLC": false
+  },
+  {
+    "displayName": "Ballistic helmet",
+    "shortName": "ballistic.helmet",
+    "category": "Attire",
+    "isDLC": false
+  },
+  {
+    "displayName": "Ballistic leg armour",
+    "shortName": "ballistic.legarmor",
+    "category": "Attire",
+    "isDLC": false
+  },
+  {
+    "displayName": "Ballistic vest",
+    "shortName": "ballistic.vest",
+    "category": "Attire",
+    "isDLC": false
+  },
+  {
+    "displayName": "BDU pants",
+    "shortName": "bdu.pants",
+    "category": "Attire",
+    "isDLC": false
+  },
+  {
+    "displayName": "BDU shirt",
+    "shortName": "bdu.shirt",
+    "category": "Attire",
+    "isDLC": false
+  },
+  {
+    "displayName": "Bunny Costume",
+    "shortName": "bunny.suit",
+    "category": "Attire",
+    "isDLC": true
+  },
+  {
+    "displayName": "Bowless Crossbow",
+    "shortName": "crossbowbowless",
+    "category": "Weapon",
+    "isDLC": true
+  },
+  {
+    "displayName": "Wumpus Plush",
+    "shortName": "discord.plushie",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "Armored Ladder Hatch",
+    "shortName": "floor.ladder.hatch.toptier",
+    "category": "Construction",
+    "isDLC": false
+  },
+  {
+    "displayName": "Armored Triangle Ladder Hatch",
+    "shortName": "floor.triangle.ladder.hatch.toptier",
+    "category": "Construction",
+    "isDLC": false
+  },
+  {
+    "displayName": "Water Wheel",
+    "shortName": "generator.water",
+    "category": "Electrical",
+    "isDLC": false
+  },
+  {
+    "displayName": "Half Height Industrial Shelves",
+    "shortName": "halfheight.industrial.shelves",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "Industrial Auto Turret",
+    "shortName": "industrial.autoturret",
+    "category": "Electrical",
+    "isDLC": true
+  },
+  {
+    "displayName": "Industrial Electric Furnace",
+    "shortName": "industrial.electric.furnace",
+    "category": "Electrical",
+    "isDLC": true
+  },
+  {
+    "displayName": "Large Industrial Furnace",
+    "shortName": "industrial.furnace.large",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "Industrial Garage Door",
+    "shortName": "industrial.garagedoor",
+    "category": "Construction",
+    "isDLC": true
+  },
+  {
+    "displayName": "Industrial Storage Horizontal Barrel",
+    "shortName": "industrial.storage.horizontal",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "Industrial Storage Vertical Barrel",
+    "shortName": "industrial.storage.vertical",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "Industrial Torch",
+    "shortName": "industrial.torch",
+    "category": "Tool",
+    "isDLC": true
+  },
+  {
+    "displayName": "M16A2",
+    "shortName": "m16a2",
+    "category": "Weapon",
+    "isDLC": false
+  },
+  {
+    "displayName": "Mortar",
+    "shortName": "mortar.deployable",
+    "category": "Construction",
+    "isDLC": false
+  },
+  {
+    "displayName": "Rustigé Egg - Amethyst",
+    "shortName": "rustige_egg_h",
+    "category": "Misc",
+    "isDLC": true
+  },
+  {
+    "displayName": "Salvaged Industrial Shelves",
+    "shortName": "salvaged.industrial.shelves",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "Industrial Wall Shelves",
+    "shortName": "wall.shallow.industrial.shelves",
+    "category": "Items",
+    "isDLC": true
+  },
+  {
+    "displayName": "Accelerated Workbench Upgrade",
+    "shortName": "workbench.upgrade.accelerated",
+    "category": "Component",
+    "isDLC": false
+  },
+  {
+    "displayName": "Comfort Workbench Upgrade",
+    "shortName": "workbench.upgrade.comfort",
+    "category": "Component",
+    "isDLC": false
+  },
+  {
+    "displayName": "Defensive Workbench Upgrade",
+    "shortName": "workbench.upgrade.defensive",
+    "category": "Component",
+    "isDLC": false
+  },
+  {
+    "displayName": "Efficiency Workbench Upgrade",
+    "shortName": "workbench.upgrade.efficiency",
+    "category": "Component",
+    "isDLC": false
+  },
+  {
+    "displayName": "Prototype Workbench Upgrade",
+    "shortName": "workbench.upgrade.prototype",
+    "category": "Component",
+    "isDLC": false
+  },
+  {
+    "displayName": "Range Workbench Upgrade",
+    "shortName": "workbench.upgrade.range",
+    "category": "Component",
+    "isDLC": false
+  },
+  {
+    "displayName": "Recycle Bin Workbench Upgrade",
+    "shortName": "workbench.upgrade.recyclebin",
+    "category": "Component",
+    "isDLC": false
+  },
+  {
+    "displayName": "Reinforced Workbench Upgrade",
+    "shortName": "workbench.upgrade.reinforced",
+    "category": "Component",
+    "isDLC": false
+  },
+  {
+    "displayName": "Salvage Workbench Upgrade",
+    "shortName": "workbench.upgrade.salvage",
+    "category": "Component",
+    "isDLC": false
+  },
+  {
+    "displayName": "Surplus Workbench Upgrade",
+    "shortName": "workbench.upgrade.surplus",
+    "category": "Component",
+    "isDLC": false
   }
 ]

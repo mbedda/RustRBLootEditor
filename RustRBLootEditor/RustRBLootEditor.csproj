@@ -9,7 +9,7 @@
     <ApplicationIcon>hazmat_xQg_icon.ico</ApplicationIcon>
     <FileVersion>$(Version)</FileVersion>
     <AssemblyVersion>$(Version)</AssemblyVersion>
-    <Version>1.8.0.0</Version>
+    <Version>1.8.1.0</Version>
     <Authors>beee</Authors>
     <PackageProjectUrl>https://github.com/mbedda/RustRBLootEditor</PackageProjectUrl>
     <RepositoryUrl>https://github.com/mbedda/RustRBLootEditor.git</RepositoryUrl>
@@ -43,11 +43,18 @@
     <None Remove="Assets\RustItems\advancedcraftingtea_quality.png" />
     <None Remove="Assets\RustItems\advancedwarmingtea.png" />
     <None Remove="Assets\RustItems\advanceharvestingtea.png" />
+    <None Remove="Assets\RustItems\ammo.mortar.basic.png" />
+    <None Remove="Assets\RustItems\ammo.mortar.fragment.png" />
     <None Remove="Assets\RustItems\ammo.paintball.png" />
     <None Remove="Assets\RustItems\anchor.png" />
     <None Remove="Assets\RustItems\ball.png" />
+    <None Remove="Assets\RustItems\ballistic.helmet.png" />
+    <None Remove="Assets\RustItems\ballistic.legarmor.png" />
+    <None Remove="Assets\RustItems\ballistic.vest.png" />
     <None Remove="Assets\RustItems\bamboo.barrel.png" />
     <None Remove="Assets\RustItems\basicblueprintfragment.png" />
+    <None Remove="Assets\RustItems\bdu.pants.png" />
+    <None Remove="Assets\RustItems\bdu.shirt.png" />
     <None Remove="Assets\RustItems\beanbagseatfabric.png" />
     <None Remove="Assets\RustItems\beanbagseatleather.png" />
     <None Remove="Assets\RustItems\bearmeat.spoiled.png" />
@@ -60,6 +67,7 @@
     <None Remove="Assets\RustItems\boatbuildingstation.png" />
     <None Remove="Assets\RustItems\boomerang.png" />
     <None Remove="Assets\RustItems\bread.loaf.png" />
+    <None Remove="Assets\RustItems\bunny.suit.png" />
     <None Remove="Assets\RustItems\caboose.png" />
     <None Remove="Assets\RustItems\cannon.png" />
     <None Remove="Assets\RustItems\cannonball.png" />
@@ -107,11 +115,13 @@
     <None Remove="Assets\RustItems\crocodilemeat.cooked.png" />
     <None Remove="Assets\RustItems\crocodilemeat.png" />
     <None Remove="Assets\RustItems\crocodilemeat.spoiled.png" />
+    <None Remove="Assets\RustItems\crossbowbowless.png" />
     <None Remove="Assets\RustItems\dart.incapacitate.png" />
     <None Remove="Assets\RustItems\dart.radiation.png" />
     <None Remove="Assets\RustItems\dart.scatter.png" />
     <None Remove="Assets\RustItems\dart.wood.png" />
     <None Remove="Assets\RustItems\deermeat.spoiled.png" />
+    <None Remove="Assets\RustItems\discord.plushie.png" />
     <None Remove="Assets\RustItems\discord.trophy.png" />
     <None Remove="Assets\RustItems\diving.tank.double.png" />
     <None Remove="Assets\RustItems\documents.png" />
@@ -128,14 +138,18 @@
     <None Remove="Assets\RustItems\electric.tablelight.png" />
     <None Remove="Assets\RustItems\electric.wallcabinet.png" />
     <None Remove="Assets\RustItems\fish.spoiled.png" />
+    <None Remove="Assets\RustItems\floor.ladder.hatch.toptier.png" />
+    <None Remove="Assets\RustItems\floor.triangle.ladder.hatch.toptier.png" />
     <None Remove="Assets\RustItems\gates.external.high.adobe.png" />
     <None Remove="Assets\RustItems\gates.external.high.frontier.png" />
     <None Remove="Assets\RustItems\gates.external.high.legacy.png" />
+    <None Remove="Assets\RustItems\generator.water.png" />
     <None Remove="Assets\RustItems\goldframe.xl.png" />
     <None Remove="Assets\RustItems\goldframe.xxl.png" />
     <None Remove="Assets\RustItems\grenade.bee.png" />
     <None Remove="Assets\RustItems\hab.png" />
     <None Remove="Assets\RustItems\half.bamboo.shelves.png" />
+    <None Remove="Assets\RustItems\halfheight.industrial.shelves.png" />
     <None Remove="Assets\RustItems\harvestingtea.png" />
     <None Remove="Assets\RustItems\hat.candle.birthday.png" />
     <None Remove="Assets\RustItems\hat.horsemask.png" />
@@ -152,6 +166,13 @@
     <None Remove="Assets\RustItems\horse.costume.png" />
     <None Remove="Assets\RustItems\horse.png" />
     <None Remove="Assets\RustItems\horsemeat.spoiled.png" />
+    <None Remove="Assets\RustItems\industrial.autoturret.png" />
+    <None Remove="Assets\RustItems\industrial.electric.furnace.png" />
+    <None Remove="Assets\RustItems\industrial.furnace.large.png" />
+    <None Remove="Assets\RustItems\industrial.garagedoor.png" />
+    <None Remove="Assets\RustItems\industrial.storage.horizontal.png" />
+    <None Remove="Assets\RustItems\industrial.storage.vertical.png" />
+    <None Remove="Assets\RustItems\industrial.torch.png" />
     <None Remove="Assets\RustItems\industrial.wall.light.blue.png" />
     <None Remove="Assets\RustItems\iotable.png" />
     <None Remove="Assets\RustItems\jungle.rock.png" />
@@ -167,10 +188,12 @@
     <None Remove="Assets\RustItems\lightup.xl.png" />
     <None Remove="Assets\RustItems\lightup.xxl.png" />
     <None Remove="Assets\RustItems\lock.code.a.pilot.png" />
+    <None Remove="Assets\RustItems\m16a2.png" />
     <None Remove="Assets\RustItems\mannequin.png" />
     <None Remove="Assets\RustItems\mini fridge.png" />
     <None Remove="Assets\RustItems\minicopter.png" />
     <None Remove="Assets\RustItems\mixedclumpballoon2025.png" />
+    <None Remove="Assets\RustItems\mortar.deployable.png" />
     <None Remove="Assets\RustItems\mrspice.can.png" />
     <None Remove="Assets\RustItems\neonsigntr.png" />
     <None Remove="Assets\RustItems\nucleus.png" />
@@ -206,8 +229,10 @@
     <None Remove="Assets\RustItems\rocket.launcher.rpg7.png" />
     <None Remove="Assets\RustItems\rose.png" />
     <None Remove="Assets\RustItems\rustige_egg_g.png" />
+    <None Remove="Assets\RustItems\rustige_egg_h.png" />
     <None Remove="Assets\RustItems\sail.png" />
     <None Remove="Assets\RustItems\salvaged.bamboo.shelves.png" />
+    <None Remove="Assets\RustItems\salvaged.industrial.shelves.png" />
     <None Remove="Assets\RustItems\scientist.plushie.png" />
     <None Remove="Assets\RustItems\scrapframe.xl.png" />
     <None Remove="Assets\RustItems\scrapframe.xxl.png" />
@@ -243,6 +268,7 @@
     <None Remove="Assets\RustItems\wall.external.high.adobe.png" />
     <None Remove="Assets\RustItems\wall.external.high.frontier.png" />
     <None Remove="Assets\RustItems\wall.external.high.legacy.png" />
+    <None Remove="Assets\RustItems\wall.shallow.industrial.shelves.png" />
     <None Remove="Assets\RustItems\wallpaper.ceiling.png" />
     <None Remove="Assets\RustItems\wallpaper.flooring.png" />
     <None Remove="Assets\RustItems\wallpaper.tool.png" />
@@ -255,6 +281,16 @@
     <None Remove="Assets\RustItems\wicker.barrel.png" />
     <None Remove="Assets\RustItems\window.paintable.png" />
     <None Remove="Assets\RustItems\woodarmor.gloves.png" />
+    <None Remove="Assets\RustItems\workbench.upgrade.accelerated.png" />
+    <None Remove="Assets\RustItems\workbench.upgrade.comfort.png" />
+    <None Remove="Assets\RustItems\workbench.upgrade.defensive.png" />
+    <None Remove="Assets\RustItems\workbench.upgrade.efficiency.png" />
+    <None Remove="Assets\RustItems\workbench.upgrade.prototype.png" />
+    <None Remove="Assets\RustItems\workbench.upgrade.range.png" />
+    <None Remove="Assets\RustItems\workbench.upgrade.recyclebin.png" />
+    <None Remove="Assets\RustItems\workbench.upgrade.reinforced.png" />
+    <None Remove="Assets\RustItems\workbench.upgrade.salvage.png" />
+    <None Remove="Assets\RustItems\workbench.upgrade.surplus.png" />
     <None Remove="Assets\settings.png" />
     <None Remove="Assets\unavailable.png" />
   </ItemGroup>
@@ -305,6 +341,12 @@
     <Content Include="Assets\RustItems\advanceharvestingtea.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\RustItems\ammo.mortar.basic.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\ammo.mortar.fragment.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\RustItems\ammo.paintball.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -314,10 +356,25 @@
     <Content Include="Assets\RustItems\ball.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\RustItems\ballistic.helmet.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\ballistic.legarmor.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\ballistic.vest.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\RustItems\bamboo.barrel.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\RustItems\basicblueprintfragment.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\bdu.pants.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\bdu.shirt.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\RustItems\beanbagseatfabric.png">
@@ -354,6 +411,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\RustItems\bread.loaf.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\bunny.suit.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\RustItems\caboose.png">
@@ -497,6 +557,9 @@
     <Content Include="Assets\RustItems\crocodilemeat.spoiled.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\RustItems\crossbowbowless.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\RustItems\dart.incapacitate.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -510,6 +573,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\RustItems\deermeat.spoiled.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\discord.plushie.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\RustItems\discord.trophy.png">
@@ -560,6 +626,12 @@
     <Content Include="Assets\RustItems\fish.spoiled.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\RustItems\floor.ladder.hatch.toptier.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\floor.triangle.ladder.hatch.toptier.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\RustItems\gates.external.high.adobe.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -567,6 +639,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\RustItems\gates.external.high.legacy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\generator.water.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\RustItems\goldframe.xl.png">
@@ -582,6 +657,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\RustItems\half.bamboo.shelves.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\halfheight.industrial.shelves.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\RustItems\harvestingtea.png">
@@ -632,6 +710,27 @@
     <Content Include="Assets\RustItems\horsemeat.spoiled.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\RustItems\industrial.autoturret.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\industrial.electric.furnace.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\industrial.furnace.large.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\industrial.garagedoor.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\industrial.storage.horizontal.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\industrial.storage.vertical.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\industrial.torch.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\RustItems\industrial.wall.light.blue.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -677,6 +776,9 @@
     <Content Include="Assets\RustItems\lock.code.a.pilot.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\RustItems\m16a2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\RustItems\mannequin.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -687,6 +789,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\RustItems\mixedclumpballoon2025.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\mortar.deployable.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\RustItems\mrspice.can.png">
@@ -794,10 +899,16 @@
     <Content Include="Assets\RustItems\rustige_egg_g.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\RustItems\rustige_egg_h.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\RustItems\sail.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\RustItems\salvaged.bamboo.shelves.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\salvaged.industrial.shelves.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\RustItems\scientist.plushie.png">
@@ -905,6 +1016,9 @@
     <Content Include="Assets\RustItems\wall.external.high.legacy.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\RustItems\wall.shallow.industrial.shelves.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\RustItems\wallpaper.ceiling.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -939,6 +1053,36 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\RustItems\woodarmor.gloves.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\workbench.upgrade.accelerated.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\workbench.upgrade.comfort.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\workbench.upgrade.defensive.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\workbench.upgrade.efficiency.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\workbench.upgrade.prototype.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\workbench.upgrade.range.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\workbench.upgrade.recyclebin.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\workbench.upgrade.reinforced.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\workbench.upgrade.salvage.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\workbench.upgrade.surplus.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="hazmat_xQg_icon.ico" />

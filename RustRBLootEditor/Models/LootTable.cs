@@ -65,7 +65,7 @@ namespace RustRBLootEditor.Models
             shortname = boatLootItem.shortname;
             amountMin = boatLootItem.amountMin;
             amount = boatLootItem.amountMax;
-            probability = MathF.Round(boatLootItem.chance / 100f, 2);
+            probability = MathF.Round(boatLootItem.chance / 100f, 4);
             skin = boatLootItem.skin;
             blueprint = boatLootItem.blueprint;
             name = boatLootItem.name;
