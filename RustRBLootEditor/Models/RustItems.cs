@@ -91,10 +91,6 @@ namespace RustRBLootEditor.Models
 
             await FetchNewItems(appPath, jsonPath, steamPath, items, fetchFromStaging);
 
-#if DEBUG
-            await UpdateMissingStackSizes(items, steamPath, jsonPath, fetchFromStaging);
-#endif
-
             bool testAPI = false; //keep false on release
 
             if (testAPI)
@@ -189,8 +185,7 @@ namespace RustRBLootEditor.Models
                     {
                         shortName = bundleItem.shortname,
                         category = bundleItem.Category,
-                        displayName = bundleItem.Name,
-                        stackSize = bundleItem.stackable
+                        displayName = bundleItem.Name
                     });
 
                     newItemsFound = true;
@@ -202,41 +197,6 @@ namespace RustRBLootEditor.Models
                 await Common.SaveJsonNewtonAsync(currentItems, jsonPath);
             }
         }
-
-#if DEBUG
-        private async Task UpdateMissingStackSizes(List<RustItem> currentItems, string steamPath, string jsonPath, bool fetchFromStaging = false)
-        {
-            if (string.IsNullOrEmpty(steamPath)) return;
-
-            string itemsDirectory = Path.Combine(steamPath, $"steamapps\\common\\{(fetchFromStaging ? "RustStaging" : "Rust")}\\Bundles\\items");
-
-            if (!Directory.Exists(itemsDirectory)) return;
-
-            bool updatedAny = false;
-
-            foreach (var item in currentItems)
-            {
-                if (item.stackSize == 0)
-                {
-                    string itemJsonPath = Path.Combine(itemsDirectory, $"{item.shortName}.json");
-                    if (File.Exists(itemJsonPath))
-                    {
-                        BundleItem bundleItem = await Common.LoadJsonAsync<BundleItem>(itemJsonPath);
-                        if (bundleItem != null && bundleItem.stackable > 0)
-                        {
-                            item.stackSize = bundleItem.stackable;
-                            updatedAny = true;
-                        }
-                    }
-                }
-            }
-
-            if (updatedAny)
-            {
-                await Common.SaveJsonNewtonAsync(currentItems, jsonPath);
-            }
-        }
-#endif
 
         private async Task ResizeAndSaveImageFromSteam(string appPath, string shortname, string steamPath, bool fetchFromStaging = false)
         {
@@ -367,13 +327,6 @@ namespace RustRBLootEditor.Models
         {
             get { return _category; }
             set { SetProperty(ref _category, value); }
-        }
-
-        private int _stackSize;
-        public int stackSize
-        {
-            get { return _stackSize; }
-            set { SetProperty(ref _stackSize, value); }
         }
 
         [DataMember(EmitDefaultValue = false)]

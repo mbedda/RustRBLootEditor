@@ -310,7 +310,6 @@ namespace RustRBLootEditor.ViewModels
                     if (tmpItem != null)
                     {
                         item.category = tmpItem.category;
-                        item.vanillaStackSize = tmpItem.stackSize;
                         item.displayName = tmpItem.displayName;
                         item.isDLC = tmpItem.isDLC ?? false;
 
@@ -711,7 +710,6 @@ namespace RustRBLootEditor.ViewModels
             var warnings = new List<string>();
 
             double amountMultiplier = 1d;
-            bool useNativeStackLimits = false;
             float lowProbabilityThreshold = 0.10f;
             float badTableRatio = 0.80f;
             int excessiveStacksPerEntry = 10;
@@ -894,44 +892,16 @@ namespace RustRBLootEditor.ViewModels
                     ? -1
                     : loot.stacksize;
 
-                int effectiveStackSize = configuredStackSize;
-                bool stackSizeKnown = true;
-                bool usingNativeStackSize = false;
-
-                if (useNativeStackLimits && effectiveStackSize <= 0)
-                {
-                    effectiveStackSize = loot.vanillaStackSize;
-                    usingNativeStackSize = effectiveStackSize > 0;
-                    stackSizeKnown = usingNativeStackSize;
-                }
-
-                if (!stackSizeKnown)
-                {
-                    continue;
-                }
-
-                long maximumStacks = effectiveStackSize > 0
-                    ? DivideRoundUp(amountMax, effectiveStackSize)
-                    : 1L;
-
-                if (maximumStacks < excessiveStacksPerEntry)
-                {
-                    continue;
-                }
-
                 if (configuredStackSize > 0)
                 {
-                    warnings.Add(
-                        $"{label} has stacksize {configuredStackSize} set too low. " +
-                        $"Its amount can reach {amountMax}, producing up to {maximumStacks} stacks " +
-                        $"when selected ({FormatPercent(effectiveChance)} effective chance).");
-                }
-                else if (usingNativeStackSize)
-                {
-                    warnings.Add(
-                        $"{label} uses its native stack size of {effectiveStackSize}. " +
-                        $"Its amount can reach {amountMax}, producing up to {maximumStacks} stacks " +
-                        $"when selected ({FormatPercent(effectiveChance)} effective chance).");
+                    long maximumStacks = DivideRoundUp(amountMax, configuredStackSize);
+                    if (maximumStacks >= excessiveStacksPerEntry)
+                    {
+                        warnings.Add(
+                            $"{label} has stacksize {configuredStackSize} set too low. " +
+                            $"Its amount can reach {amountMax}, producing up to {maximumStacks} stacks " +
+                            $"when selected ({FormatPercent(effectiveChance)} effective chance).");
+                    }
                 }
             }
 
@@ -955,6 +925,11 @@ namespace RustRBLootEditor.ViewModels
                 warnings.Add(
                     $"The table has an average effective spawn chance of only " +
                     $"{FormatPercent(averageEffectiveChance)} per entry.");
+            }
+
+            if (!ValidateDLCsFree())
+            {
+                warnings.Add("This loot table has paid content that might be against Facepunch's TOS (https://facepunch.com/legal/servers).");
             }
 
             return warnings;
@@ -988,7 +963,7 @@ namespace RustRBLootEditor.ViewModels
                 if (item == null)
                     continue;
 
-                if (item.isDLC == true || AllItems.DLCsData.ProhibitedSkins.Contains(item.skin))
+                if (item.isDLC == true || (AllItems?.DLCsData?.ProhibitedSkins != null && AllItems.DLCsData.ProhibitedSkins.Contains(item.skin)))
                 {
                     return false;
                 }

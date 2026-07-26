@@ -204,5 +204,22 @@ namespace RustRBLootEditor.Tests
 
             Assert.Empty(warnings);
         }
+
+        [Fact]
+        public void ValidateLootTable_ContainsDLCItem_ReturnsDLCWarning()
+        {
+            var vm = new MainViewModel();
+            vm.LootTableFile = new LootTableFile
+            {
+                LootItems = new ObservableCollection<LootItem>
+                {
+                    new LootItem { shortname = "hazmatsuit.arcticsuit", isDLC = true, probability = 0.5f, amountMin = 1, amount = 1, stacksize = 1 }
+                }
+            };
+
+            var warnings = vm.ValidateLootTable();
+
+            Assert.Contains(warnings, w => w.Contains("This loot table has paid content"));
+        }
     }
 }
