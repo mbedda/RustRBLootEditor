@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+using Newtonsoft.Json;
 using Prism.Mvvm;
 using System;
 using System.Collections.Generic;
@@ -17,7 +17,7 @@ namespace RustRBLootEditor.Models
 
         internal void DoSort()
         {
-            LootItems = new ObservableCollection<LootItem>(LootItems.OrderBy(x => x.displayName));
+            LootItems = new ObservableCollection<LootItem>(LootItems.OrderBy(x => x?.displayName));
         }
 
         private ObservableCollection<LootItem> lootItems;

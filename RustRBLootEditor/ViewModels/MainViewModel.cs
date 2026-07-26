@@ -1,4 +1,4 @@
-﻿using Microsoft.Win32;
+using Microsoft.Win32;
 using Prism.Commands;
 using Prism.Mvvm;
 using RustRBLootEditor.Helpers;
@@ -291,6 +291,9 @@ namespace RustRBLootEditor.ViewModels
 
                 for (int i = tmpLootItems.Count - 1; i >= 0; i--)
                 {
+                    if (tmpLootItems[i] == null)
+                        continue;
+
                     if(string.IsNullOrEmpty(tmpLootItems[i].shortname))
                     {
                         tmpLootItems.RemoveAt(i);
@@ -485,6 +488,8 @@ namespace RustRBLootEditor.ViewModels
 
         public void ShowLootItemEditor(LootItem lootItem)
         {
+            if(lootItem == null) return;
+
             SelectedItemOriginalSkin = lootItem.skin;
             SelectedEditItem = lootItem;
             LootItemEditorOn = true;
@@ -980,6 +985,9 @@ namespace RustRBLootEditor.ViewModels
 
             foreach (var item in LootTableFile.LootItems)
             {
+                if (item == null)
+                    continue;
+
                 if (item.isDLC == true || AllItems.DLCsData.ProhibitedSkins.Contains(item.skin))
                 {
                     return false;
