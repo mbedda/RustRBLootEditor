@@ -47,6 +47,7 @@
     <None Remove="Assets\RustItems\ammo.mortar.fragment.png" />
     <None Remove="Assets\RustItems\ammo.paintball.png" />
     <None Remove="Assets\RustItems\anchor.png" />
+    <None Remove="Assets\RustItems\apartment.master_key.png" />
     <None Remove="Assets\RustItems\ball.png" />
     <None Remove="Assets\RustItems\ballistic.helmet.png" />
     <None Remove="Assets\RustItems\ballistic.legarmor.png" />
@@ -73,8 +74,11 @@
     <None Remove="Assets\RustItems\cannonball.png" />
     <None Remove="Assets\RustItems\catapult.ammo.bee.png" />
     <None Remove="Assets\RustItems\chair.ejector.seat.png" />
+    <None Remove="Assets\RustItems\charity.plushie.05.png" />
     <None Remove="Assets\RustItems\charity.plushy.01.png" />
     <None Remove="Assets\RustItems\charity.plushy.02.png" />
+    <None Remove="Assets\RustItems\charity.plushy.03.png" />
+    <None Remove="Assets\RustItems\charity.plushy.04.png" />
     <None Remove="Assets\RustItems\chickencoop.png" />
     <None Remove="Assets\RustItems\circleballoon2025.png" />
     <None Remove="Assets\RustItems\clone.orchid.png" />
@@ -176,6 +180,7 @@
     <None Remove="Assets\RustItems\industrial.wall.light.blue.png" />
     <None Remove="Assets\RustItems\iotable.png" />
     <None Remove="Assets\RustItems\jungle.rock.png" />
+    <None Remove="Assets\RustItems\kickgems.png" />
     <None Remove="Assets\RustItems\knife.bone.obsidian.png" />
     <None Remove="Assets\RustItems\krieg.chainsword.png" />
     <None Remove="Assets\RustItems\krieg.shotgun.png" />
@@ -353,6 +358,9 @@
     <Content Include="Assets\RustItems\anchor.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\RustItems\apartment.master_key.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\RustItems\ball.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -431,10 +439,19 @@
     <Content Include="Assets\RustItems\chair.ejector.seat.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\RustItems\charity.plushie.05.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\RustItems\charity.plushy.01.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\RustItems\charity.plushy.02.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\charity.plushy.03.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\charity.plushy.04.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\RustItems\chickencoop.png">
@@ -738,6 +755,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\RustItems\jungle.rock.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\RustItems\kickgems.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\RustItems\knife.bone.obsidian.png">
