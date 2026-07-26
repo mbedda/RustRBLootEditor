@@ -1,4 +1,4 @@
-﻿using Microsoft.Win32;
+using Microsoft.Win32;
 using RustRBLootEditor.Helpers;
 using RustRBLootEditor.Models;
 using RustRBLootEditor.ViewModels;
@@ -121,7 +121,7 @@ namespace RustRBLootEditor
                         warningMessage += "- " + warning + "\n";
                     }
                     warningMessage += "\nDo you want to continue exporting?";
-                    var result = MessageBox.Show(warningMessage, "Loot Table Warnings", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+                    var result = ScrollableMessageBox.Show(this, warningMessage, "Loot Table Warnings", MessageBoxButton.YesNo, MessageBoxImage.Warning);
                     if (result == MessageBoxResult.No)
                     {
                         return; // User chose not to continue

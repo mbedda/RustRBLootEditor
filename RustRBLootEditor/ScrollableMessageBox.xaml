@@ -1,0 +1,65 @@
+<Window x:Class="RustRBLootEditor.ScrollableMessageBox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Warnings" Height="Auto" Width="550"
+        WindowStartupLocation="CenterOwner" SizeToContent="WidthAndHeight"
+        MinWidth="450" MaxWidth="800" MaxHeight="650"
+        Background="#222222" Foreground="White"
+        ResizeMode="NoResize" ShowInTaskbar="False">
+    <Window.Resources>
+        <Style x:Key="DialogButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#3A3A3C"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Padding" Value="20,7"/>
+            <Setter Property="Margin" Value="5,0"/>
+            <Setter Property="MinWidth" Value="85"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" CornerRadius="4" BorderBrush="#555555" BorderThickness="1">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#E05D38"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title & Icon -->
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,10">
+            <TextBlock x:Name="TitleTextBlock" Text="Loot Table Warnings" FontSize="16" FontWeight="Bold" Foreground="#FF5E3A" VerticalAlignment="Center"/>
+        </StackPanel>
+
+        <!-- Scrollable Message Content -->
+        <Border Grid.Row="1" Background="#181818" CornerRadius="4" BorderBrush="#333333" BorderThickness="1" Padding="10">
+            <ScrollViewer MaxHeight="450" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+                <TextBox x:Name="MessageTextBox" IsReadOnly="True" TextWrapping="Wrap" 
+                         Background="Transparent" Foreground="#E0E0E0" BorderThickness="0" 
+                         FontSize="13" FontFamily="Segoe UI, Arial" Focusable="True" IsUndoEnabled="False"/>
+            </ScrollViewer>
+        </Border>
+
+        <!-- Action Buttons -->
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,15,0,0">
+            <Button x:Name="BtnYes" Content="Yes" Style="{StaticResource DialogButtonStyle}" Click="BtnYes_Click" Visibility="Collapsed"/>
+            <Button x:Name="BtnNo" Content="No" Style="{StaticResource DialogButtonStyle}" Click="BtnNo_Click" Visibility="Collapsed"/>
+            <Button x:Name="BtnOk" Content="OK" Style="{StaticResource DialogButtonStyle}" Click="BtnOk_Click" Visibility="Collapsed"/>
+            <Button x:Name="BtnCancel" Content="Cancel" Style="{StaticResource DialogButtonStyle}" Click="BtnCancel_Click" Visibility="Collapsed"/>
+        </StackPanel>
+    </Grid>
+</Window>
