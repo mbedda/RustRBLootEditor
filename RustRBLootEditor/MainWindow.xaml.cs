@@ -106,8 +106,19 @@ namespace RustRBLootEditor
 
         private async Task ExportLootTable(string lang = "EN", bool forRBoats = false)
         {
-            if (forRBoats && !viewModel.ValidateDLCsFree())
-                MessageBox.Show("This loot table has paid content that might be against Facepunch's TOS (https://facepunch.com/legal/servers).", "DLC Warning");
+            if (forRBoats)
+            {
+                var dlcWarnings = viewModel.ValidateDLCsFree();
+                if (dlcWarnings.Count > 0)
+                {
+                    string warningMessage = "This loot table has paid content that might be against Facepunch's TOS (https://facepunch.com/legal/servers):\n\n";
+                    foreach (var warning in dlcWarnings)
+                    {
+                        warningMessage += "- " + warning + "\n";
+                    }
+                    ScrollableMessageBox.Show(this, warningMessage, "DLC Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
+                }
+            }
 
             if(!forRBoats)
             {

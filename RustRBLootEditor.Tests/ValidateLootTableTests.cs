@@ -221,5 +221,49 @@ namespace RustRBLootEditor.Tests
 
             Assert.Contains(warnings, w => w.Contains("This loot table has paid content"));
         }
+
+        [Fact]
+        public void ValidateDLCsFree_ContainsDLCItemAndSkin_ReturnsSpecificWarnings()
+        {
+            var vm = new MainViewModel();
+            vm.LootTableFile = new LootTableFile
+            {
+                LootItems = new ObservableCollection<LootItem>
+                {
+                    new LootItem { displayName = "Arctic Suit", shortname = "hazmatsuit.arcticsuit", isDLC = true },
+                    new LootItem { displayName = "Scrap", shortname = "scrap", isDLC = false }
+                }
+            };
+
+            var dlcWarnings = vm.ValidateDLCsFree();
+
+            Assert.Single(dlcWarnings);
+            Assert.Contains("Arctic Suit is a DLC item.", dlcWarnings[0]);
+        }
+
+        [Fact]
+        public void ValidateDLCsFree_ContainsProhibitedSkin_ReturnsMarketSkinWarning()
+        {
+            var vm = new MainViewModel();
+            vm.AllItems = new RustItems
+            {
+                DLCsData = new DLCsData
+                {
+                    ProhibitedSkins = new List<ulong> { 123456 }
+                }
+            };
+            vm.LootTableFile = new LootTableFile
+            {
+                LootItems = new ObservableCollection<LootItem>
+                {
+                    new LootItem { displayName = "Custom Rock", shortname = "rock", skin = 123456 }
+                }
+            };
+
+            var dlcWarnings = vm.ValidateDLCsFree();
+
+            Assert.Single(dlcWarnings);
+            Assert.Contains("Custom Rock uses market skin 123456.", dlcWarnings[0]);
+        }
     }
 }

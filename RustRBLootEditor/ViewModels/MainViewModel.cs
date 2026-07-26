@@ -720,6 +720,16 @@ namespace RustRBLootEditor.ViewModels
                 return warnings;
             }
 
+            var dlcWarnings = ValidateDLCsFree();
+            if (dlcWarnings.Count > 0)
+            {
+                warnings.Add("This loot table has paid content that might be against Facepunch's TOS (https://facepunch.com/legal/servers):");
+                foreach (var dlcWarning in dlcWarnings)
+                {
+                    warnings.Add($"  • {dlcWarning}");
+                }
+            }
+
             lowProbabilityThreshold = Math.Max(0f, Math.Min(1f, lowProbabilityThreshold));
             badTableRatio = Math.Max(0f, Math.Min(1f, badTableRatio));
             excessiveStacksPerEntry = Math.Max(2, excessiveStacksPerEntry);
@@ -927,11 +937,6 @@ namespace RustRBLootEditor.ViewModels
                     $"{FormatPercent(averageEffectiveChance)} per entry.");
             }
 
-            if (!ValidateDLCsFree())
-            {
-                warnings.Add("This loot table has paid content that might be against Facepunch's TOS (https://facepunch.com/legal/servers).");
-            }
-
             return warnings;
 
             static long DivideRoundUp(long value, long divisor)
@@ -954,22 +959,39 @@ namespace RustRBLootEditor.ViewModels
             return ratio < 10.0 ? true : false;
         }
 
-        public bool ValidateDLCsFree()
+        public List<string> ValidateDLCsFree()
         {
-            if (LootTableFile == null || LootTableFile.LootItems == null) return true;
+            var warnings = new List<string>();
+
+            if (LootTableFile == null || LootTableFile.LootItems == null) return warnings;
 
             foreach (var item in LootTableFile.LootItems)
             {
                 if (item == null)
                     continue;
 
-                if (item.isDLC == true || (AllItems?.DLCsData?.ProhibitedSkins != null && AllItems.DLCsData.ProhibitedSkins.Contains(item.skin)))
+                string label = !string.IsNullOrWhiteSpace(item.displayName)
+                    ? item.displayName
+                    : (!string.IsNullOrWhiteSpace(item.shortname) ? item.shortname : "Unknown Item");
+
+                bool isDlcItem = item.isDLC == true;
+                bool isProhibitedSkin = item.skin > 0 && AllItems?.DLCsData?.ProhibitedSkins != null && AllItems.DLCsData.ProhibitedSkins.Contains(item.skin);
+
+                if (isDlcItem && isProhibitedSkin)
                 {
-                    return false;
+                    warnings.Add($"{label} is a DLC item and uses market skin {item.skin}.");
+                }
+                else if (isDlcItem)
+                {
+                    warnings.Add($"{label} is a DLC item.");
+                }
+                else if (isProhibitedSkin)
+                {
+                    warnings.Add($"{label} uses market skin {item.skin}.");
                 }
             }
 
-            return true;
+            return warnings;
         }
     }
 }
