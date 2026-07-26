@@ -109,8 +109,25 @@ namespace RustRBLootEditor
             if (!viewModel.ValidateDLCsFree())
                 MessageBox.Show("This loot table has paid content that might be against Facepunch's TOS (https://facepunch.com/legal/servers).", "DLC Warning");
 
-            if (!viewModel.ValidateProbability())
-                MessageBox.Show("This loot table has more than 80% of its items with probability less than 0.9 or amount of 0, this may cause raid bases to not spawn enough items.", "Probability Warning");
+            if(!forRBoats)
+            {
+                var warnings = viewModel.ValidateLootTable();
+
+                if (warnings.Count > 0)
+                {
+                    string warningMessage = "The following warnings were found in the loot table:\n\n";
+                    foreach (var warning in warnings)
+                    {
+                        warningMessage += "- " + warning + "\n";
+                    }
+                    warningMessage += "\nDo you want to continue exporting?";
+                    var result = MessageBox.Show(warningMessage, "Loot Table Warnings", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+                    if (result == MessageBoxResult.No)
+                    {
+                        return; // User chose not to continue
+                    }
+                }
+            }
 
             SaveFileDialog saveFileDialog = new SaveFileDialog();
             saveFileDialog.Filter = "JSON file (*.json)|*.json";

@@ -179,13 +179,14 @@ namespace RustRBLootEditor.Models
 
                     if (string.IsNullOrEmpty(bundleItem.Name) || bundleItem.ItemType == "Liquid") continue;
                     
-                    await ResizeAndSaveImageFromSteam(appPath, shortname, steamPath);
+                    await ResizeAndSaveImageFromSteam(appPath, shortname, steamPath, fetchFromStaging);
 
                     currentItems.Add(new RustItem()
                     {
                         shortName = bundleItem.shortname,
                         category = bundleItem.Category,
-                        displayName = bundleItem.Name
+                        displayName = bundleItem.Name,
+                        stackSize = bundleItem.stackable
                     });
 
                     newItemsFound = true;
@@ -327,6 +328,13 @@ namespace RustRBLootEditor.Models
         {
             get { return _category; }
             set { SetProperty(ref _category, value); }
+        }
+
+        private int _stackSize;
+        public int stackSize
+        {
+            get { return _stackSize; }
+            set { SetProperty(ref _stackSize, value); }
         }
 
         [DataMember(EmitDefaultValue = false)]

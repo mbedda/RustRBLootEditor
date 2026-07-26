@@ -307,6 +307,7 @@ namespace RustRBLootEditor.ViewModels
                     if (tmpItem != null)
                     {
                         item.category = tmpItem.category;
+                        item.vanillaStackSize = tmpItem.stackSize;
                         item.displayName = tmpItem.displayName;
                         item.isDLC = tmpItem.isDLC ?? false;
 
@@ -700,15 +701,268 @@ namespace RustRBLootEditor.ViewModels
             return changeOccurred;
         }
 
-        public bool ValidateProbability()
+        public List<string> ValidateLootTable()
         {
-            if (LootTableFile == null || LootTableFile.LootItems == null || LootTableFile.LootItems.Count == 0) return true;
+            var warnings = new List<string>();
 
-            int highPropCount = LootTableFile.LootItems.Where(s => s.probability >= 0.9f && s.amount > 0).Count();
+            double amountMultiplier = 1d;
+            bool useNativeStackLimits = false;
+            float lowProbabilityThreshold = 0.10f;
+            float badTableRatio = 0.80f;
+            int excessiveStacksPerEntry = 10;
 
-            float ratio = (float)highPropCount / (float)LootTableFile.LootItems.Count;
+            if (LootTableFile == null || LootTableFile.LootItems == null || LootTableFile.LootItems.Count == 0)
+            {
+                warnings.Add("The loot table is empty.");
+                return warnings;
+            }
 
-            return ratio >= 0.8 ? true : false;
+            lowProbabilityThreshold = Math.Max(0f, Math.Min(1f, lowProbabilityThreshold));
+            badTableRatio = Math.Max(0f, Math.Min(1f, badTableRatio));
+            excessiveStacksPerEntry = Math.Max(2, excessiveStacksPerEntry);
+
+            if (double.IsNaN(amountMultiplier) ||
+                double.IsInfinity(amountMultiplier) ||
+                amountMultiplier < 0d)
+            {
+                warnings.Add($"The amount multiplier {amountMultiplier} is invalid.");
+                amountMultiplier = 1d;
+            }
+
+            int nonNullEntries = 0;
+            bool allProbabilitiesAreZero = true;
+            bool allStackSizesAreZero = true;
+
+            foreach (LootItem loot in LootTableFile.LootItems)
+            {
+                if (loot == null)
+                {
+                    continue;
+                }
+
+                nonNullEntries++;
+
+                if (loot.probability != 0f)
+                {
+                    allProbabilitiesAreZero = false;
+                }
+
+                if (loot.stacksize != 0)
+                {
+                    allStackSizesAreZero = false;
+                }
+            }
+
+            if (nonNullEntries == 0)
+            {
+                warnings.Add("The loot table contains no valid entries.");
+                return warnings;
+            }
+
+            if (allProbabilitiesAreZero)
+            {
+                warnings.Add(
+                    "Every probability is 0. Raidable Bases treats this as probability 1 (100%) for every entry.");
+            }
+
+            if (allStackSizesAreZero)
+            {
+                warnings.Add(
+                    "Every stacksize is 0. Raidable Bases treats this as stacksize -1 for every entry.");
+            }
+
+            int weakEntries = 0;
+            double totalEffectiveChance = 0d;
+
+            for (int index = 0; index < LootTableFile.LootItems.Count; index++)
+            {
+                LootItem loot = LootTableFile.LootItems[index];
+                string label = loot == null || string.IsNullOrWhiteSpace(loot.shortname)
+                    ? $"Entry {index + 1}"
+                    : loot.shortname;
+
+                if (loot == null)
+                {
+                    warnings.Add($"{label} is null.");
+                    weakEntries++;
+                    continue;
+                }
+
+                bool hasValidShortname = !string.IsNullOrWhiteSpace(loot.shortname);
+
+                if (!hasValidShortname)
+                {
+                    warnings.Add($"{label} has no shortname.");
+                }
+
+                double probability;
+
+                if (allProbabilitiesAreZero)
+                {
+                    probability = 1d;
+                }
+                else if (float.IsNaN(loot.probability) ||
+                         float.IsInfinity(loot.probability))
+                {
+                    warnings.Add($"{label} has an invalid probability.");
+                    probability = 0d;
+                }
+                else
+                {
+                    if (loot.probability < 0f || loot.probability > 1f)
+                    {
+                        warnings.Add(
+                            $"{label} has probability {loot.probability}. Probability must be between 0 and 1.");
+                    }
+
+                    probability = Math.Max(0d, Math.Min(1d, loot.probability));
+                }
+
+                if (loot.amount == 0)
+                {
+                    warnings.Add($"{label} has amount 0 and will not be loaded.");
+                    weakEntries++;
+                    continue;
+                }
+
+                int amountMin = loot.amountMin;
+                int amountMax = loot.amount;
+
+                if (amountMin < 0)
+                {
+                    warnings.Add(
+                        $"{label} has amountMin {amountMin} and can roll a non-positive amount.");
+                }
+
+                if (amountMax < amountMin)
+                {
+                    warnings.Add(
+                        $"{label} has amount {amountMax} below amountMin {amountMin}; Raidable Bases will use {amountMin}.");
+
+                    amountMax = amountMin;
+                }
+
+                // Mirrors RaidableBases.AddToLoot().
+                if (amountMax > 1 && amountMultiplier != 1d)
+                {
+                    double scaledMax = Math.Ceiling(amountMax * amountMultiplier);
+                    double scaledMin = Math.Ceiling(amountMin * amountMultiplier);
+
+                    amountMax = (int)Math.Min(
+                        int.MaxValue - 1d,
+                        Math.Max(0d, scaledMax));
+
+                    amountMin = (int)Math.Min(
+                        amountMax,
+                        Math.Max(0d, scaledMin));
+                }
+
+                if (amountMax <= 0)
+                {
+                    warnings.Add($"{label} cannot produce a positive amount.");
+                    weakEntries++;
+                    continue;
+                }
+
+                long possibleRolls = amountMin < amountMax
+                    ? (long)amountMax - amountMin + 1L
+                    : 1L;
+
+                long firstPositiveAmount = Math.Max(1L, amountMin);
+                long positiveRolls = amountMax >= firstPositiveAmount
+                    ? amountMax - firstPositiveAmount + 1L
+                    : 0L;
+
+                double positiveAmountChance = positiveRolls / (double)possibleRolls;
+                double effectiveChance = hasValidShortname
+                    ? probability * positiveAmountChance
+                    : 0d;
+
+                totalEffectiveChance += effectiveChance;
+
+                if (effectiveChance <= lowProbabilityThreshold)
+                {
+                    weakEntries++;
+                }
+
+                int configuredStackSize = allStackSizesAreZero
+                    ? -1
+                    : loot.stacksize;
+
+                int effectiveStackSize = configuredStackSize;
+                bool stackSizeKnown = true;
+                bool usingNativeStackSize = false;
+
+                if (useNativeStackLimits && effectiveStackSize <= 0)
+                {
+                    effectiveStackSize = loot.vanillaStackSize;
+                    usingNativeStackSize = effectiveStackSize > 0;
+                    stackSizeKnown = usingNativeStackSize;
+                }
+
+                if (!stackSizeKnown)
+                {
+                    continue;
+                }
+
+                long maximumStacks = effectiveStackSize > 0
+                    ? DivideRoundUp(amountMax, effectiveStackSize)
+                    : 1L;
+
+                if (maximumStacks < excessiveStacksPerEntry)
+                {
+                    continue;
+                }
+
+                if (configuredStackSize > 0)
+                {
+                    warnings.Add(
+                        $"{label} has stacksize {configuredStackSize} set too low. " +
+                        $"Its amount can reach {amountMax}, producing up to {maximumStacks} stacks " +
+                        $"when selected ({FormatPercent(effectiveChance)} effective chance).");
+                }
+                else if (usingNativeStackSize)
+                {
+                    warnings.Add(
+                        $"{label} uses its native stack size of {effectiveStackSize}. " +
+                        $"Its amount can reach {amountMax}, producing up to {maximumStacks} stacks " +
+                        $"when selected ({FormatPercent(effectiveChance)} effective chance).");
+                }
+            }
+
+            double weakRatio = weakEntries / (double)LootTableFile.LootItems.Count;
+
+            if (weakRatio >= badTableRatio)
+            {
+                warnings.Add(
+                    $"{weakEntries} of {LootTableFile.LootItems.Count} entries ({FormatPercent(weakRatio)}) " +
+                    $"have an effective chance at or below {FormatPercent(lowProbabilityThreshold)}, " +
+                    "or cannot produce an item. Effective chance includes probability and the chance " +
+                    "of rolling an amount above 0.");
+            }
+
+            double averageEffectiveChance =
+                totalEffectiveChance / LootTableFile.LootItems.Count;
+
+            if (averageEffectiveChance <= lowProbabilityThreshold &&
+                weakRatio < badTableRatio)
+            {
+                warnings.Add(
+                    $"The table has an average effective spawn chance of only " +
+                    $"{FormatPercent(averageEffectiveChance)} per entry.");
+            }
+
+            return warnings;
+
+            static long DivideRoundUp(long value, long divisor)
+            {
+                return ((value - 1L) / divisor) + 1L;
+            }
+
+            static string FormatPercent(double value)
+            {
+                return $"{value * 100d:0.#}%";
+            }
         }
 
         public bool ValidateStackSize(LootItem item)

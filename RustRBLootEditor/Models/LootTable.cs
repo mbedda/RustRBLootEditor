@@ -153,6 +153,15 @@ namespace RustRBLootEditor.Models
         }
 
         [IgnoreDataMember]
+        private int _vanillaStackSize;
+        [IgnoreDataMember]
+        public int vanillaStackSize
+        {
+            get { return _vanillaStackSize; }
+            set { SetProperty(ref _vanillaStackSize, value); }
+        }
+
+        [IgnoreDataMember]
         private string _displayName;
         [IgnoreDataMember]
         public string displayName
