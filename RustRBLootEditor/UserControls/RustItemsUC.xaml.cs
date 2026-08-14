@@ -1,4 +1,4 @@
-﻿using RustRBLootEditor.Models;
+using RustRBLootEditor.Models;
 using RustRBLootEditor.UI;
 using RustRBLootEditor.ViewModels;
 using System;
@@ -91,11 +91,14 @@ namespace RustRBLootEditor.UserControls
             t.Stop();
             Dispatcher.Invoke(() =>
             {
+                var filterText = filtertxt.Text.Trim();
                 CollectionViewSource.GetDefaultView(AllItemsListbox.ItemsSource).Filter = (o) =>
                 {
-                    if (String.IsNullOrEmpty(filtertxt.Text)) return true;
+                    if (String.IsNullOrEmpty(filterText)) return true;
                     RustItem item = (RustItem)o;
-                    return (item.displayName.ToLower() + item.shortName.ToLower() + item.category.ToLower()).Contains(filtertxt.Text.Trim().ToLower());
+                    return (item.displayName?.IndexOf(filterText, StringComparison.OrdinalIgnoreCase) >= 0) ||
+                           (item.shortName?.IndexOf(filterText, StringComparison.OrdinalIgnoreCase) >= 0) ||
+                           (item.category?.IndexOf(filterText, StringComparison.OrdinalIgnoreCase) >= 0);
                 };
             });
         }

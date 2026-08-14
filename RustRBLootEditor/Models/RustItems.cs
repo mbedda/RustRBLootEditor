@@ -32,8 +32,12 @@ namespace RustRBLootEditor.Models
 
         public DLCsData DLCsData { get; set; }
 
+        private Dictionary<string, RustItem> _itemsDict;
+
         public RustItem GetRustItem(string shortname)
         {
+            if (_itemsDict != null && _itemsDict.TryGetValue(shortname, out var item))
+                return item;
             return Items.FirstOrDefault(s => s.shortName == shortname);
         }
 
@@ -143,6 +147,18 @@ namespace RustRBLootEditor.Models
             await CheckForArmorSlotsSupport(items);
 
             Items = new ObservableCollection<RustItem>(items.OrderBy(x => x.displayName));
+            if (_itemsDict == null)
+            {
+                _itemsDict = new Dictionary<string, RustItem>();
+            }
+            else
+            {
+                _itemsDict.Clear();
+            }
+            foreach (var item in items)
+            {
+                _itemsDict[item.shortName] = item;
+            }
         }
 
         private readonly List<string> _ignoredItems = new()

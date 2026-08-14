@@ -694,6 +694,7 @@ namespace RustRBLootEditor.ViewModels
                         {
                             client.DownloadFile(address, fileName);
                             changeOccurred = true;
+                            RustRBLootEditor.Converters.RelativeUriFromLootItemMultiConverter.ClearCache(fileName);
                         }
                         catch { }
                     }
