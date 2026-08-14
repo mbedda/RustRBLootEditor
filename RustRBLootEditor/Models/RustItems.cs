@@ -136,9 +136,14 @@ namespace RustRBLootEditor.Models
                 }
             }
 
-            //await Common.SaveJsonNewtonAsync(items, jsonPath); //only do this manually to force update file, comment on release
+            bool imagesUpdated = await LoadImages(appPath, steamPath, items, fetchFromStaging);
+            
+            int removedCount = items.RemoveAll(i => i.ImageSource == null);
 
-            await LoadImages(appPath, steamPath, items);
+            if (imagesUpdated || removedCount > 0)
+            {
+                await Common.SaveJsonNewtonAsync(items, jsonPath);
+            }
 
             CheckForArmorSlotsSupport(items);
 
@@ -163,7 +168,8 @@ namespace RustRBLootEditor.Models
             "motorbike_sidecar", "motorbike", "mlrs", "minihelicopter.repair", "locomotive", "habrepair", "submarineduo", "blueprintbase",
             "bicycle", "attackhelicopter", "vehicle.chassis.2mod", "vehicle.chassis.3mod", "vehicle.chassis.4mod", "weaponrack.doublelight", "weaponrack.light",
             "oubreak_scientist", "gates.external.high.frontier", "wall.external.high.frontier", "clothing.mannequin", "50cal.mounted", "50cal.mounted.left", "50cal.mounted.right",
-            "storage_barrel_a", "twowaymirror.window", "wallpaper", "dart.bone"
+            "storage_barrel_a", "twowaymirror.window", "wallpaper", "dart.bone", "2module car chassis", "2module car", "2module.car.chassis", "2module.car", "3module car chassis", 
+            "3module car", "3module.car.chassis", "3module.car", "4module car chassis", "4module car", "4module.car.chassis", "4module.car",
         };
 
 
@@ -192,14 +198,16 @@ namespace RustRBLootEditor.Models
 
                     if (string.IsNullOrEmpty(bundleItem.Name) || bundleItem.ItemType == "Liquid") continue;
                     
-                    await ResizeAndSaveImageFromSteam(appPath, shortname, steamPath, fetchFromStaging);
-
-                    currentItems.Add(new RustItem()
+                    var newItem = new RustItem()
                     {
                         shortName = bundleItem.shortname,
                         category = bundleItem.Category,
                         displayName = bundleItem.Name
-                    });
+                    };
+                    
+                    await ResizeAndSaveImageFromSteam(appPath, newItem, steamPath, fetchFromStaging);
+
+                    currentItems.Add(newItem);
 
                     newItemsFound = true;
                 }
@@ -211,39 +219,41 @@ namespace RustRBLootEditor.Models
             }
         }
 
-        private async Task ResizeAndSaveImageFromSteam(string appPath, string shortname, string steamPath, bool fetchFromStaging = false)
+        private async Task<bool> ResizeAndSaveImageFromSteam(string appPath, RustItem item, string steamPath, bool fetchFromStaging = false)
         {
-            string itempath = Path.Combine(appPath, "Assets", "RustItems", $"{shortname}.png");
-            if (File.Exists(itempath)) return;
+            string itemSteamPath = Path.Combine(steamPath, $"steamapps\\common\\{(fetchFromStaging ? "RustStaging" : "Rust")}\\Bundles\\items\\{item.shortName}.png");
+            if (!File.Exists(itemSteamPath)) return false;
 
-            string itemSteamPath = Path.Combine(steamPath, $"steamapps\\common\\{(fetchFromStaging ? "RustStaging" : "Rust")}\\Bundles\\items\\{shortname}.png");
-            if (!File.Exists(itemSteamPath)) return;
+            var steamFileInfo = new FileInfo(itemSteamPath);
+            string itempath = Path.Combine(appPath, "Assets", "RustItems", $"{item.shortName}.png");
+            
+            if (File.Exists(itempath) && item.OriginalFileSize == steamFileInfo.Length) return false;
 
-            await using FileStream fs = new FileStream(itemSteamPath, FileMode.Open);
-            using Image source = new Bitmap(fs);
-            using Image destination = new Bitmap(100, 100);
-
-            using (var g = Graphics.FromImage(destination))
+            await Task.Run(() =>
             {
-                g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBilinear;
-                g.DrawImage(source, new Rectangle(0, 0, destination.Width, destination.Height), new Rectangle(0, 0, source.Width, source.Height), GraphicsUnit.Pixel);
-            }
-            destination.Save(itempath, ImageFormat.Png);
+                using FileStream fs = new FileStream(itemSteamPath, FileMode.Open, FileAccess.Read, FileShare.Read);
+                using Image source = new Bitmap(fs);
+                using Image destination = new Bitmap(100, 100);
+
+                using (var g = Graphics.FromImage(destination))
+                {
+                    g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBilinear;
+                    g.DrawImage(source, new Rectangle(0, 0, destination.Width, destination.Height), new Rectangle(0, 0, source.Width, source.Height), GraphicsUnit.Pixel);
+                }
+                destination.Save(itempath, ImageFormat.Png);
+            });
+            
+            item.OriginalFileSize = steamFileInfo.Length;
+            return true;
         }
 
-        private async Task LoadImages(string appPath, string steampath, List<RustItem> currentItems)
+        private async Task<bool> LoadImages(string appPath, string steampath, List<RustItem> currentItems, bool fetchFromStaging = false)
         {
-            BitmapImage? noImage = new BitmapImage(new Uri("/RustRBLootEditor;component/Assets/unavailable.png", UriKind.Relative));
-            noImage.Freeze();
-
             var tasks = currentItems.Select(async item =>
             {
                 string itemImagePath = Path.Combine(appPath, "Assets", "RustItems", $"{item.shortName}.png");
 
-                if (!File.Exists(itemImagePath))
-                {
-                    await ResizeAndSaveImageFromSteam(appPath, item.shortName, steampath);
-                }
+                bool updated = await ResizeAndSaveImageFromSteam(appPath, item, steampath, fetchFromStaging);
 
                 if (File.Exists(itemImagePath))
                 {
@@ -261,13 +271,12 @@ namespace RustRBLootEditor.Models
                         }
                     });
                 }
-                else
-                {
-                    item.ImageSource = noImage;
-                }
+                
+                return updated;
             });
 
-            await Task.WhenAll(tasks);
+            var results = await Task.WhenAll(tasks);
+            return results.Any(r => r);
         }
 
         private void CheckForArmorSlotsSupport(List<RustItem> currentItems)
@@ -344,6 +353,10 @@ namespace RustRBLootEditor.Models
             get { return _category; }
             set { SetProperty(ref _category, value); }
         }
+        
+        [DataMember(EmitDefaultValue = false)]
+        [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+        public long? OriginalFileSize { get; set; }
 
         [DataMember(EmitDefaultValue = false)]
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
