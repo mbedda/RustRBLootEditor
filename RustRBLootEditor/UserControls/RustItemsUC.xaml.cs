@@ -86,16 +86,34 @@ namespace RustRBLootEditor.UserControls
             t.Start();
         }
 
+        private void showDlcCheckbox_Changed(object sender, RoutedEventArgs e)
+        {
+            if (t != null)
+            {
+                t.Stop();
+                t.Start();
+            }
+        }
+
         private void T_Elapsed(object? sender, ElapsedEventArgs e)
         {
             t.Stop();
             Dispatcher.Invoke(() =>
             {
                 var filterText = filtertxt.Text.Trim();
+                bool showDlc = showDlcCheckbox.IsChecked ?? true;
+                bool dlcOnly = filterText.Equals("dlc", StringComparison.OrdinalIgnoreCase);
+
                 CollectionViewSource.GetDefaultView(AllItemsListbox.ItemsSource).Filter = (o) =>
                 {
-                    if (String.IsNullOrEmpty(filterText)) return true;
                     RustItem item = (RustItem)o;
+
+                    if (!showDlc && item.isDLC == true) return false;
+
+                    if (dlcOnly) return item.isDLC == true;
+
+                    if (String.IsNullOrEmpty(filterText)) return true;
+
                     return (item.displayName?.IndexOf(filterText, StringComparison.OrdinalIgnoreCase) >= 0) ||
                            (item.shortName?.IndexOf(filterText, StringComparison.OrdinalIgnoreCase) >= 0) ||
                            (item.category?.IndexOf(filterText, StringComparison.OrdinalIgnoreCase) >= 0);
