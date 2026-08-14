@@ -58,7 +58,7 @@
                      SelectionMode="Extended" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" PreviewKeyDown="LootTableItemsListbox_PreviewKeyDown"
                      Margin="10" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Background="{x:Null}" BorderThickness="3" BorderBrush="#33000000"
                      VirtualizingPanel.IsVirtualizing='True' VirtualizingPanel.IsVirtualizingWhenGrouping='True' VirtualizingPanel.ScrollUnit='Pixel'
-                     VirtualizingPanel.VirtualizationMode="Recycling" VirtualizingPanel.CacheLengthUnit="Item" VirtualizingPanel.CacheLength="1">
+                     VirtualizingPanel.VirtualizationMode="Recycling" VirtualizingPanel.CacheLengthUnit="Item" VirtualizingPanel.CacheLength="20,20">
             <ListBox.ContextMenu>
                 <ContextMenu>
                     <MenuItem Header="Set all prohibited skins to 0" Click="ResetAllDLCSkinLootItem_Click" CommandParameter="{Binding}"/>
@@ -126,8 +126,8 @@
                             <Image HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5">
                                 <Image.Source>
                                     <MultiBinding Converter="{StaticResource RelativeUriFromLootItemMultiConverter}" ConverterParameter="Assets\\RustItems">
-                                        <Binding Path="skin" UpdateSourceTrigger="PropertyChanged" IsAsync="True" />
-                                        <Binding Path="." IsAsync="True" />
+                                        <Binding Path="skin" UpdateSourceTrigger="PropertyChanged" />
+                                        <Binding Path="." />
                                     </MultiBinding>
                                 </Image.Source>
                             </Image>

@@ -27,13 +27,13 @@
             <TextBlock Grid.Column="0" FontWeight="Bold" Foreground="White" FontFamily="Lato Bold" VerticalAlignment="Center">
                 GAME ITEMS <Run Text="{Binding ElementName=AllItemsListbox, Path=Items.Count, Mode=OneWay, StringFormat=(0)}" Foreground="#9bcf3e" /> <Run Text="    Right click to add" FontFamily="Lato Light Italic"/>
             </TextBlock>
-            <CheckBox x:Name="showDlcCheckbox" Grid.Column="1" Content="DLC" Foreground="White" VerticalAlignment="Center" Margin="10,0" IsChecked="True" Checked="showDlcCheckbox_Changed" Unchecked="showDlcCheckbox_Changed"/>
+            <CheckBox x:Name="showDlcCheckbox" Grid.Column="1" Content="Show DLCs" Foreground="White" VerticalAlignment="Center" VerticalContentAlignment="Center" Margin="10,0" IsChecked="True" Checked="showDlcCheckbox_Changed" Unchecked="showDlcCheckbox_Changed"/>
             <TextBox x:Name="filtertxt" Grid.Column="2" TextChanged="filtertxt_TextChanged"/>
         </Grid>
         <ListBox x:Name="AllItemsListbox" ItemsSource="{Binding Source={StaticResource ListBoxItems}}" Grid.Row="1" ItemContainerStyle="{StaticResource inventoryItemStyle}"
                  SelectionMode="Extended" Margin="10,10,10,10" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Background="{x:Null}" BorderThickness="3" 
                  BorderBrush="#33000000" Grid.ColumnSpan="2" VirtualizingPanel.IsVirtualizing='True' VirtualizingPanel.IsVirtualizingWhenGrouping='True' VirtualizingPanel.VirtualizationMode="Recycling"
-                 VirtualizingPanel.ScrollUnit='Pixel' VirtualizingPanel.CacheLengthUnit="Item" VirtualizingPanel.CacheLength="1">
+                 VirtualizingPanel.ScrollUnit='Pixel' VirtualizingPanel.CacheLengthUnit="Item" VirtualizingPanel.CacheLength="20,20">
             <ListBox.ItemsPanel>
                 <ItemsPanelTemplate>
                     <controls:VirtualizingWrapPanel IsItemsHost="True" />
@@ -59,7 +59,7 @@
                             </ToolTip>
                         </Grid.ToolTip>
                         <Grid>
-                            <Image Source="{Binding ImageSource, IsAsync=true}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5"></Image>
+                            <Image Source="{Binding ImageSource}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5"></Image>
                             <!--<Image Source="{Binding image}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5"></Image>-->
                             <!--<Image Source="{Binding shortName, Converter={StaticResource RelativeUriFromShortnameConverter}, ConverterParameter='Assets\\RustItems', IsAsync=true}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5"></Image>-->
                             <TextBlock Margin="0,0,5,5" Visibility="Hidden" Text="{Binding displayName}" Foreground="White" FontWeight="Bold" FontSize="11"
