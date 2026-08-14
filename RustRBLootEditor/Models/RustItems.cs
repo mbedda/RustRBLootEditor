@@ -101,11 +101,7 @@ namespace RustRBLootEditor.Models
             {
                 if (DLCsData != null)
                 {
-                    for (int i = DLCsData.DLCItems.Count - 1; i >= 0; i--)
-                    {
-                        if (!items.Any(s => s.shortName == DLCsData.DLCItems[i]))
-                            DLCsData.DLCItems.RemoveAt(i);
-                    }
+                    DLCsData.DLCItems.RemoveWhere(dlc => !items.Any(s => s.shortName == dlc));
                 }
 
                 List<string> _verifiedDLCShortnames = items.Where(s => s.isDLC == true).Select(s=>s.shortName).ToList();
@@ -144,7 +140,7 @@ namespace RustRBLootEditor.Models
 
             await LoadImages(appPath, steamPath, items);
 
-            await CheckForArmorSlotsSupport(items);
+            CheckForArmorSlotsSupport(items);
 
             Items = new ObservableCollection<RustItem>(items.OrderBy(x => x.displayName));
             if (_itemsDict == null)
@@ -161,7 +157,7 @@ namespace RustRBLootEditor.Models
             }
         }
 
-        private readonly List<string> _ignoredItems = new()
+        private readonly HashSet<string> _ignoredItems = new()
         {
             "ammo.snowballgun", "spraycandecal", "workcart", "wagon", "trike", "snowmobiletomaha", "submarinesolo", "snowmobile", "scraptransportheli.repair",
             "motorbike_sidecar", "motorbike", "mlrs", "minihelicopter.repair", "locomotive", "habrepair", "submarineduo", "blueprintbase",
@@ -182,6 +178,7 @@ namespace RustRBLootEditor.Models
             var itemFiles = Directory.EnumerateFiles(itemsDirectory, "*.png");
 
             bool newItemsFound = false;
+            var currentItemShortnames = new HashSet<string>(currentItems.Select(s => s.shortName));
 
             foreach (var item in itemFiles)
             {
@@ -189,7 +186,7 @@ namespace RustRBLootEditor.Models
                 
                 if(_ignoredItems.Contains(shortname)) continue;
 
-                if (!currentItems.Any(s => s.shortName == shortname) && File.Exists(item.Replace(".png", ".json")))
+                if (!currentItemShortnames.Contains(shortname) && File.Exists(item.Replace(".png", ".json")))
                 {
                     BundleItem bundleItem = await Common.LoadJsonAsync<BundleItem>(item.Replace(".png", ".json"));
 
@@ -236,11 +233,12 @@ namespace RustRBLootEditor.Models
 
         private async Task LoadImages(string appPath, string steampath, List<RustItem> currentItems)
         {
-            foreach (var item in currentItems)
+            BitmapImage? noImage = new BitmapImage(new Uri("/RustRBLootEditor;component/Assets/unavailable.png", UriKind.Relative));
+            noImage.Freeze();
+
+            var tasks = currentItems.Select(async item =>
             {
                 string itemImagePath = Path.Combine(appPath, "Assets", "RustItems", $"{item.shortName}.png");
-
-                BitmapImage? noImage = new BitmapImage(new Uri("/RustRBLootEditor;component/Assets/unavailable.png", UriKind.Relative));
 
                 if (!File.Exists(itemImagePath))
                 {
@@ -267,10 +265,12 @@ namespace RustRBLootEditor.Models
                 {
                     item.ImageSource = noImage;
                 }
-            }
+            });
+
+            await Task.WhenAll(tasks);
         }
 
-        private async Task CheckForArmorSlotsSupport(List<RustItem> currentItems)
+        private void CheckForArmorSlotsSupport(List<RustItem> currentItems)
         {
             foreach (var item in currentItems)
             {
@@ -318,8 +318,8 @@ namespace RustRBLootEditor.Models
     public class DLCsData
     {
         public List<RustDLCData> Data { get; set; }
-        public List<string> DLCItems { get; set; } = new List<string>();
-        public List<ulong> ProhibitedSkins { get; set; } = new List<ulong>();
+        public HashSet<string> DLCItems { get; set; } = new HashSet<string>();
+        public HashSet<ulong> ProhibitedSkins { get; set; } = new HashSet<ulong>();
     }
 
     public class RustItem : BindableBase
