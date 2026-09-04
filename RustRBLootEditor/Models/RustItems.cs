@@ -169,7 +169,7 @@ namespace RustRBLootEditor.Models
             "bicycle", "attackhelicopter", "vehicle.chassis.2mod", "vehicle.chassis.3mod", "vehicle.chassis.4mod", "weaponrack.doublelight", "weaponrack.light",
             "oubreak_scientist", "gates.external.high.frontier", "wall.external.high.frontier", "clothing.mannequin", "50cal.mounted", "50cal.mounted.left", "50cal.mounted.right",
             "storage_barrel_a", "twowaymirror.window", "wallpaper", "dart.bone", "2module car chassis", "2module car", "2module.car.chassis", "2module.car", "3module car chassis", 
-            "3module car", "3module.car.chassis", "3module.car", "4module car chassis", "4module car", "4module.car.chassis", "4module.car",
+            "3module car", "3module.car.chassis", "3module.car", "4module car chassis", "4module car", "4module.car.chassis", "4module.car", "electric.cabletunnel",
         };
 
 

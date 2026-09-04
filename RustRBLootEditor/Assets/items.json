@@ -199,28 +199,28 @@
     "displayName": "Bone Arrow",
     "shortName": "arrow.bone",
     "category": "Ammunition",
-    "OriginalFileSize": 112937,
+    "OriginalFileSize": 114875,
     "isDLC": false
   },
   {
     "displayName": "Fire Arrow",
     "shortName": "arrow.fire",
     "category": "Ammunition",
-    "OriginalFileSize": 83480,
+    "OriginalFileSize": 94516,
     "isDLC": false
   },
   {
     "displayName": "High Velocity Arrow",
     "shortName": "arrow.hv",
     "category": "Ammunition",
-    "OriginalFileSize": 111796,
+    "OriginalFileSize": 101122,
     "isDLC": false
   },
   {
     "displayName": "Wooden Arrow",
     "shortName": "arrow.wooden",
     "category": "Ammunition",
-    "OriginalFileSize": 94168,
+    "OriginalFileSize": 84872,
     "isDLC": false
   },
   {
@@ -1554,13 +1554,6 @@
     "isDLC": false
   },
   {
-    "displayName": "Cable Tunnel",
-    "shortName": "electric.cabletunnel",
-    "category": "Electrical",
-    "OriginalFileSize": 111648,
-    "isDLC": false
-  },
-  {
     "displayName": "Counter",
     "shortName": "electric.counter",
     "category": "Electrical",
@@ -1823,98 +1816,98 @@
     "displayName": "Blue Boomer",
     "shortName": "firework.boomer.blue",
     "category": "Fun",
-    "OriginalFileSize": 135000,
+    "OriginalFileSize": 240884,
     "isDLC": true
   },
   {
     "displayName": "Champagne Boomer",
     "shortName": "firework.boomer.champagne",
     "category": "Fun",
-    "OriginalFileSize": 163772,
+    "OriginalFileSize": 243949,
     "isDLC": true
   },
   {
     "displayName": "Green Boomer",
     "shortName": "firework.boomer.green",
     "category": "Fun",
-    "OriginalFileSize": 134930,
+    "OriginalFileSize": 201390,
     "isDLC": true
   },
   {
     "displayName": "Orange Boomer",
     "shortName": "firework.boomer.orange",
     "category": "Fun",
-    "OriginalFileSize": 135089,
+    "OriginalFileSize": 315242,
     "isDLC": true
   },
   {
     "displayName": "Pattern Boomer",
     "shortName": "firework.boomer.pattern",
     "category": "Fun",
-    "OriginalFileSize": 133922,
+    "OriginalFileSize": 202052,
     "isDLC": true
   },
   {
     "displayName": "Red Boomer",
     "shortName": "firework.boomer.red",
     "category": "Fun",
-    "OriginalFileSize": 134869,
+    "OriginalFileSize": 210240,
     "isDLC": true
   },
   {
     "displayName": "Violet Boomer",
     "shortName": "firework.boomer.violet",
     "category": "Fun",
-    "OriginalFileSize": 134918,
+    "OriginalFileSize": 264057,
     "isDLC": true
   },
   {
     "displayName": "Blue Roman Candle",
     "shortName": "firework.romancandle.blue",
     "category": "Fun",
-    "OriginalFileSize": 141400,
+    "OriginalFileSize": 260733,
     "isDLC": true
   },
   {
     "displayName": "Green Roman Candle",
     "shortName": "firework.romancandle.green",
     "category": "Fun",
-    "OriginalFileSize": 141510,
+    "OriginalFileSize": 222752,
     "isDLC": true
   },
   {
     "displayName": "Red Roman Candle",
     "shortName": "firework.romancandle.red",
     "category": "Fun",
-    "OriginalFileSize": 141475,
+    "OriginalFileSize": 222340,
     "isDLC": true
   },
   {
     "displayName": "Violet Roman Candle",
     "shortName": "firework.romancandle.violet",
     "category": "Fun",
-    "OriginalFileSize": 141505,
+    "OriginalFileSize": 261659,
     "isDLC": true
   },
   {
     "displayName": "White Volcano Firework",
     "shortName": "firework.volcano",
     "category": "Fun",
-    "OriginalFileSize": 235036,
+    "OriginalFileSize": 224577,
     "isDLC": true
   },
   {
     "displayName": "Red Volcano Firework",
     "shortName": "firework.volcano.red",
     "category": "Fun",
-    "OriginalFileSize": 235043,
+    "OriginalFileSize": 259956,
     "isDLC": true
   },
   {
     "displayName": "Violet Volcano Firework",
     "shortName": "firework.volcano.violet",
     "category": "Fun",
-    "OriginalFileSize": 235082,
+    "OriginalFileSize": 292455,
     "isDLC": true
   },
   {
@@ -2054,7 +2047,7 @@
     "displayName": "Flashlight",
     "shortName": "flashlight.held",
     "category": "Tool",
-    "OriginalFileSize": 111648,
+    "OriginalFileSize": 171031,
     "isDLC": false
   },
   {
@@ -4277,12 +4270,6 @@
     "isDLC": false
   },
   {
-    "displayName": "Research Paper",
-    "shortName": "researchpaper",
-    "category": "Resources",
-    "isDLC": false
-  },
-  {
     "displayName": "High Caliber Revolver",
     "shortName": "revolver.hc",
     "category": "Weapon",
@@ -6274,21 +6261,21 @@
     "displayName": "Wood Armor Helmet",
     "shortName": "wood.armor.helmet",
     "category": "Attire",
-    "OriginalFileSize": 188521,
+    "OriginalFileSize": 184768,
     "isDLC": false
   },
   {
     "displayName": "Wood Chestplate",
     "shortName": "wood.armor.jacket",
     "category": "Attire",
-    "OriginalFileSize": 207636,
+    "OriginalFileSize": 236335,
     "isDLC": false
   },
   {
     "displayName": "Wood Armor Pants",
     "shortName": "wood.armor.pants",
     "category": "Attire",
-    "OriginalFileSize": 163128,
+    "OriginalFileSize": 153334,
     "isDLC": false
   },
   {
@@ -7170,7 +7157,7 @@
     "displayName": "Wood Armor Gloves",
     "shortName": "woodarmor.gloves",
     "category": "Attire",
-    "OriginalFileSize": 271903,
+    "OriginalFileSize": 284939,
     "isDLC": false
   },
   {
@@ -8426,6 +8413,55 @@
     "displayName": "Thruster Module",
     "shortName": "thruster.module",
     "category": "Component",
-    "OriginalFileSize": 289002
+    "OriginalFileSize": 289002,
+    "isDLC": false
+  },
+  {
+    "displayName": "White Boomer",
+    "shortName": "firework.boomer.white",
+    "category": "Fun",
+    "OriginalFileSize": 171170,
+    "isDLC": true
+  },
+  {
+    "displayName": "Medical Honey Bandage",
+    "shortName": "medical.honey.bandage",
+    "category": "Medical",
+    "OriginalFileSize": 188468
+  },
+  {
+    "displayName": "Crystal Assault Rifle Sapphire",
+    "shortName": "rifle.ak.glass.blue",
+    "category": "Weapon",
+    "OriginalFileSize": 103892,
+    "isDLC": true
+  },
+  {
+    "displayName": "Crystal Assault Rifle Emerald",
+    "shortName": "rifle.ak.glass.green",
+    "category": "Weapon",
+    "OriginalFileSize": 104451,
+    "isDLC": true
+  },
+  {
+    "displayName": "Crystal Assault Rifle Pink Diamond",
+    "shortName": "rifle.ak.glass.pink",
+    "category": "Weapon",
+    "OriginalFileSize": 105607,
+    "isDLC": true
+  },
+  {
+    "displayName": "Crystal Assault Rifle Diamond",
+    "shortName": "rifle.ak.glass",
+    "category": "Weapon",
+    "OriginalFileSize": 95399,
+    "isDLC": true
+  },
+  {
+    "displayName": "Crystal Assault Rifle Ruby",
+    "shortName": "rifle.ak.glass.red",
+    "category": "Weapon",
+    "OriginalFileSize": 102226,
+    "isDLC": true
   }
 ]
