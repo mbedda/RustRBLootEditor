@@ -147,7 +147,7 @@ namespace RustRBLootEditor.Models
 
             CheckForArmorSlotsSupport(items);
 
-            Items = new ObservableCollection<RustItem>(items.OrderBy(x => x.category).ThenBy(x => x.displayName));
+            Items = new ObservableCollection<RustItem>(items.OrderBy(x => x.category).ThenBy(x => x.shortName));
             if (_itemsDict == null)
             {
                 _itemsDict = new Dictionary<string, RustItem>();
