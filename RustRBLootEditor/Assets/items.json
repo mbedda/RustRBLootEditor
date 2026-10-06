@@ -416,7 +416,7 @@
     "displayName": "Sandbag Barricade",
     "shortName": "barricade.sandbags",
     "category": "Construction",
-    "OriginalFileSize": 245243,
+    "OriginalFileSize": 238007,
     "isDLC": false
   },
   {
@@ -2061,7 +2061,7 @@
     "displayName": "Ladder Hatch",
     "shortName": "floor.ladder.hatch",
     "category": "Construction",
-    "OriginalFileSize": 174062,
+    "OriginalFileSize": 213955,
     "isDLC": false
   },
   {
@@ -2075,7 +2075,7 @@
     "displayName": "Triangle Ladder Hatch",
     "shortName": "floor.triangle.ladder.hatch",
     "category": "Construction",
-    "OriginalFileSize": 229075,
+    "OriginalFileSize": 236355,
     "isDLC": false
   },
   {
@@ -8134,14 +8134,14 @@
     "displayName": "Armored Ladder Hatch",
     "shortName": "floor.ladder.hatch.toptier",
     "category": "Construction",
-    "OriginalFileSize": 162926,
+    "OriginalFileSize": 182059,
     "isDLC": false
   },
   {
     "displayName": "Armored Triangle Ladder Hatch",
     "shortName": "floor.triangle.ladder.hatch.toptier",
     "category": "Construction",
-    "OriginalFileSize": 198563,
+    "OriginalFileSize": 183805,
     "isDLC": false
   },
   {
@@ -8463,5 +8463,340 @@
     "category": "Weapon",
     "OriginalFileSize": 102226,
     "isDLC": true
+  },
+  {
+    "displayName": "#barricade.sandbags.half",
+    "shortName": "barricade.sandbags.half",
+    "category": "Construction",
+    "OriginalFileSize": 155721,
+    "isDLC": false
+  },
+  {
+    "displayName": "#barricade.sandbags.pillbox",
+    "shortName": "barricade.sandbags.pillbox",
+    "category": "Construction",
+    "OriginalFileSize": 218386,
+    "isDLC": false
+  },
+  {
+    "displayName": "#barricade.sandbags.three.quarter",
+    "shortName": "barricade.sandbags.three.quarter",
+    "category": "Construction",
+    "OriginalFileSize": 202661,
+    "isDLC": false
+  },
+  {
+    "displayName": "Cooked Beef",
+    "shortName": "beefmeat.cooked",
+    "category": "Food",
+    "OriginalFileSize": 257328,
+    "isDLC": false
+  },
+  {
+    "displayName": "Raw Beef",
+    "shortName": "beefmeat",
+    "category": "Food",
+    "OriginalFileSize": 223178,
+    "isDLC": false
+  },
+  {
+    "displayName": "Spoiled Beef",
+    "shortName": "beefmeat.spoiled",
+    "category": "Food",
+    "OriginalFileSize": 305350,
+    "isDLC": false
+  },
+  {
+    "displayName": "Brioche Bread",
+    "shortName": "bread.brioche.loaf",
+    "category": "Food",
+    "OriginalFileSize": 1016411,
+    "isDLC": false
+  },
+  {
+    "displayName": "Cream",
+    "shortName": "cream",
+    "category": "Food",
+    "OriginalFileSize": 179129,
+    "isDLC": false
+  },
+  {
+    "displayName": "Biofuel Generator",
+    "shortName": "generator.biofuel",
+    "category": "Items",
+    "OriginalFileSize": 1095240,
+    "isDLC": false
+  },
+  {
+    "displayName": "Plague Doctor Hazmat Suit",
+    "shortName": "hazmat.plague",
+    "category": "Attire",
+    "OriginalFileSize": 163725,
+    "isDLC": true
+  },
+  {
+    "displayName": "Creamy Pure Healing Tea",
+    "shortName": "healingtea.pure.creamy",
+    "category": "Food",
+    "OriginalFileSize": 80135,
+    "isDLC": false
+  },
+  {
+    "displayName": "Milky Pure Healing Tea",
+    "shortName": "healingtea.pure.milky",
+    "category": "Food",
+    "OriginalFileSize": 77466,
+    "isDLC": false
+  },
+  {
+    "displayName": "Creamy Pure Max Health Tea",
+    "shortName": "maxhealthtea.pure.creamy",
+    "category": "Food",
+    "OriginalFileSize": 79496,
+    "isDLC": false
+  },
+  {
+    "displayName": "Milky Pure Max Health Tea",
+    "shortName": "maxhealthtea.pure.milky",
+    "category": "Food",
+    "OriginalFileSize": 76760,
+    "isDLC": false
+  },
+  {
+    "displayName": "Milk",
+    "shortName": "milk",
+    "category": "Food",
+    "OriginalFileSize": 177561,
+    "isDLC": false
+  },
+  {
+    "displayName": "Cooked Mutton",
+    "shortName": "muttonmeat.cooked",
+    "category": "Food",
+    "OriginalFileSize": 252021,
+    "isDLC": false
+  },
+  {
+    "displayName": "Raw Mutton",
+    "shortName": "muttonmeat",
+    "category": "Food",
+    "OriginalFileSize": 225557,
+    "isDLC": false
+  },
+  {
+    "displayName": "Spoiled Mutton",
+    "shortName": "muttonmeat.spoiled",
+    "category": "Food",
+    "OriginalFileSize": 272591,
+    "isDLC": false
+  },
+  {
+    "displayName": "Creamy Pure Ore Tea",
+    "shortName": "oretea.pure.creamy",
+    "category": "Food",
+    "OriginalFileSize": 77815
+  },
+  {
+    "displayName": "Milky Pure Ore Tea",
+    "shortName": "oretea.pure.milky",
+    "category": "Food",
+    "OriginalFileSize": 75144,
+    "isDLC": false
+  },
+  {
+    "displayName": "Rich Apple Pie",
+    "shortName": "pie.apple.rich",
+    "category": "Food",
+    "OriginalFileSize": 268191,
+    "isDLC": false
+  },
+  {
+    "displayName": "Rich Bear Pie",
+    "shortName": "pie.bear.rich",
+    "category": "Food",
+    "OriginalFileSize": 269723,
+    "isDLC": false
+  },
+  {
+    "displayName": "Beef Pie",
+    "shortName": "pie.beef",
+    "category": "Food",
+    "OriginalFileSize": 241604,
+    "isDLC": false
+  },
+  {
+    "displayName": "Rich Beef Pie",
+    "shortName": "pie.beef.rich",
+    "category": "Food",
+    "OriginalFileSize": 272649,
+    "isDLC": false
+  },
+  {
+    "displayName": "Rich Big Cat Pie",
+    "shortName": "pie.bigcat.rich",
+    "category": "Food",
+    "OriginalFileSize": 275132,
+    "isDLC": false
+  },
+  {
+    "displayName": "Rich Chicken Pie",
+    "shortName": "pie.chicken.rich",
+    "category": "Food",
+    "OriginalFileSize": 269694,
+    "isDLC": false
+  },
+  {
+    "displayName": "Rich Fish Pie",
+    "shortName": "pie.fish.rich",
+    "category": "Food",
+    "OriginalFileSize": 258762,
+    "isDLC": false
+  },
+  {
+    "displayName": "Rich Hunters Pie",
+    "shortName": "pie.hunters.rich",
+    "category": "Food",
+    "OriginalFileSize": 273711,
+    "isDLC": false
+  },
+  {
+    "displayName": "Shepherds Pie",
+    "shortName": "pie.mutton",
+    "category": "Food",
+    "OriginalFileSize": 236598,
+    "isDLC": false
+  },
+  {
+    "displayName": "Rich Shepherds Pie",
+    "shortName": "pie.mutton.rich",
+    "category": "Food",
+    "OriginalFileSize": 268048,
+    "isDLC": false
+  },
+  {
+    "displayName": "Rich Pork Pie",
+    "shortName": "pie.pork.rich",
+    "category": "Food",
+    "OriginalFileSize": 275241,
+    "isDLC": false
+  },
+  {
+    "displayName": "Rich Pumpkin Pie",
+    "shortName": "pie.pumpkin.rich",
+    "category": "Food",
+    "OriginalFileSize": 269119,
+    "isDLC": false
+  },
+  {
+    "displayName": "Creamy Pure Cooling Tea",
+    "shortName": "purecoolingtea.creamy",
+    "category": "Food",
+    "OriginalFileSize": 87630,
+    "isDLC": false
+  },
+  {
+    "displayName": "Milky Pure Cooling Tea",
+    "shortName": "purecoolingtea.milky",
+    "category": "Food",
+    "OriginalFileSize": 84980,
+    "isDLC": false
+  },
+  {
+    "displayName": "Creamy Pure Harvesting Tea",
+    "shortName": "pureharvestingtea.creamy",
+    "category": "Food",
+    "OriginalFileSize": 80336,
+    "isDLC": false
+  },
+  {
+    "displayName": "Milky Pure Harvesting Tea",
+    "shortName": "pureharvestingtea.milky",
+    "category": "Food",
+    "OriginalFileSize": 77760,
+    "isDLC": false
+  },
+  {
+    "displayName": "Creamy Pure Warming Tea",
+    "shortName": "purewarmingtea.creamy",
+    "category": "Food",
+    "OriginalFileSize": 82144,
+    "isDLC": false
+  },
+  {
+    "displayName": "Milky Pure Warming Tea",
+    "shortName": "purewarmingtea.milky",
+    "category": "Food",
+    "OriginalFileSize": 79505,
+    "isDLC": false
+  },
+  {
+    "displayName": "Creamy Pure Anti-Rad Tea",
+    "shortName": "radiationresisttea.pure.creamy",
+    "category": "Food",
+    "OriginalFileSize": 83005,
+    "isDLC": false
+  },
+  {
+    "displayName": "Milky Pure Anti-Rad Tea",
+    "shortName": "radiationresisttea.pure.milky",
+    "category": "Food",
+    "OriginalFileSize": 80445,
+    "isDLC": false
+  },
+  {
+    "displayName": "Creamy Pure Scrap Tea",
+    "shortName": "scraptea.pure.creamy",
+    "category": "Food",
+    "OriginalFileSize": 76698,
+    "isDLC": false
+  },
+  {
+    "displayName": "Milky Pure Scrap Tea",
+    "shortName": "scraptea.pure.milky",
+    "category": "Food",
+    "OriginalFileSize": 74168,
+    "isDLC": false
+  },
+  {
+    "displayName": "Skimmed Milk",
+    "shortName": "skimmedmilk",
+    "category": "Food",
+    "OriginalFileSize": 178701,
+    "isDLC": false
+  },
+  {
+    "displayName": "Animal Fence Gate",
+    "shortName": "wall.animal.fence.gate",
+    "category": "Construction",
+    "OriginalFileSize": 153832,
+    "isDLC": false
+  },
+  {
+    "displayName": "Animal Fence",
+    "shortName": "wall.animal.fence",
+    "category": "Construction",
+    "OriginalFileSize": 130416,
+    "isDLC": false
+  },
+  {
+    "displayName": "Creamy Pure Wood Tea",
+    "shortName": "woodtea.pure.creamy",
+    "category": "Food",
+    "OriginalFileSize": 76718,
+    "isDLC": false
+  },
+  {
+    "displayName": "Milky Pure Wood Tea",
+    "shortName": "woodtea.pure.milky",
+    "category": "Food",
+    "OriginalFileSize": 74031,
+    "isDLC": false
+  },
+  {
+    "displayName": "Wool",
+    "shortName": "wool",
+    "category": "Resources",
+    "OriginalFileSize": 239923,
+    "isDLC": false
   }
 ]
